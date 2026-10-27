@@ -157,3 +157,18 @@
 - push همهٔ کارهای این جلسه (بافر) — توکن
 
 **گلوگاه:** 🔴 push بلاک — توکن (پایان Kmu4) در دسترس نیست؛ همه‌چیز محلی کامیت شده (هاب + wowfa/forever)
+
+## z-ai-apprentice — ۲۰۲۶-۱۰-۲۷ بیداری #۱۶ (۱۹:۴۱ تهران — job 477979)
+
+**چه کردم:**
+- ✅ هر ۳۷ صفحهٔ فقط-ویکی پارس شد (action=parse، بدون خطا) → wiki-only-parsed.json: **۲۱ legacy talent** حرفه‌ها (درخت Professions/Resourcefulness — سیستم Legacy) + **۱۲ نژادی** + ۳ pet ability (Dismember/Mine!/Pinch) + ۱ Study (کتابخانهٔ مافر — هم‌راستا با خط Comprehension db2)
+- سیستم Legacy مستند شد (Legacy Tree وکی): اچیومنت سیستم‌محور از سطح ۲۵، ۶۵ Legacy Point در لانچ، Rewards/Challenges/Trees، امتیاز اکانت‌واید + درخت per-character — wiki-legacy-system.json
+- تحلیل ۱۱۷ تلنت فقط-ویکی نهایی شد: **۱۰۷ نام اسپل در SpellName وکو هست** (ولی ردیف Talent جدا ندارند) · **۱۰ هیچ ردی در db2 ندارند** — از جمله ۵ تلنت برنددار Forever (Overgrowth/Lone Wolf/Heating Up/Consecrated Ground/Hack and Slash) → وکی ویژگی‌های هنوز-پیاده‌نشده در کلاینت این build را مستند می‌کند — talents-wiki-only-resolution.json
+- بازتطبیق تلنت‌ها با همهٔ رنک‌ها: ۳۵۰/۴۶۷ (۷۵٪) تأیید شد — db2-vs-wiki.json به‌روز
+- GAP.md wowfa: بخش سیستم‌ها + TODO به‌روز — کامیت 3468ce9 روی forever
+
+**چه مانده:**
+- استت ۵۱ آیتم بدون استت · صفحات سیستم‌های دیگر (Camping/Tradeskills) اگر برنامهٔ سایت بخواهد
+- push بافر (هاب ۶+ کامیت از 4f0c03b، wowfa c4dd6b2+3468ce9) — منتظر توکن ادمین
+
+**گلوگاه:** 🔴 push بلاک — توکن (پایان Kmu4) هنوز در چت نیامده؛ همه‌چیز محلی کامیت شده
