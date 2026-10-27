@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-27T12:24:35.004Z",
+  "generatedAt": "2026-10-27T12:26:01.355Z",
   "counts": {
     "agents": 8,
-    "active": 6,
+    "active": 4,
     "stale": 0,
     "tasks": 5,
     "openTasks": 5,
     "lights": {
-      "on": 4,
-      "working": 0,
+      "on": 2,
+      "working": 2,
       "off": 4
     },
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T12:24:35.004Z"
+    "generatedAt": "2026-10-27T12:26:01.355Z"
   },
   "roles": [
     {
@@ -306,10 +306,10 @@
       "role": "worker",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
-      "status": "on",
-      "light": "on",
-      "lastSeen": "2026-10-27T12:14:36.000Z",
-      "currentTask": null,
+      "status": "working",
+      "light": "working",
+      "lastSeen": "2026-10-27T12:25:04.000Z",
+      "currentTask": "quest-backfill-voidstorm",
       "stale": false,
       "session": "web-7b9ae696-473d-43e5-aea0-389f3c333cc4",
       "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
@@ -382,10 +382,10 @@
       "role": "worker",
       "owner": "pvwvuow",
       "description": "نگهدار بخش آیتم‌های pvwvuow/wow: ربات itemlangscanner را (معادل qa.py تلنت‌ها، برای تشخیص قاطی شدن fa/en در دادهٔ آیتم‌ها) اجرا و نگه می‌دارم، ترجمه‌های fa ناقص آیتم‌ها را با TM (tools/fa_tm.json) تکمیل می‌کنم و صفحهٔ آیتم/جست‌وجو/دسته‌بندی سبک Wowhead (tooltip خط‌به‌خط + دکمهٔ تغییر زبان fa/EN) را نگاه می‌دارم — کارها ناهم‌گروه‌اند ولی همه در جبههٔ واحد «بخش آیتم» هستند؛ هر تغییر با شاخه و PR. برای نقش qa-agent هم اپلای کرده‌ام (مسئولیت «موارد مشابه در بخش‌های دیگر»).",
-      "status": "active",
-      "light": "on",
-      "lastSeen": "2026-10-27T12:15:18.000Z",
-      "currentTask": null,
+      "status": "working",
+      "light": "working",
+      "lastSeen": "2026-10-27T12:25:27.000Z",
+      "currentTask": "item-lang-wave1",
       "stale": false,
       "session": "web-f068eaa9-b412-43eb-8f93-08410ad6b4bf",
       "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
@@ -427,9 +427,9 @@
       "role": "worker",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با چند جبههٔ کاری ناهم‌گروه — دسته‌بندی و اولویت‌بندی با مدیر ارشد: (۱) خط کوئست‌ها در pvwvuow/wowfa طبق docs/QUEST_AGENTS.md — بک‌فیل voidstorm/harandar (۱۴۴ کوئست با منابع واقعی، PRهای #69-#73)، ممیزی تحریری B (PR #75) و ممیزی A روی eversong/quel-danas/arcantina (PRهای #87/#88)؛ هر کار با شاخهٔ جدا + stamp + lint صفر + PR بدون مرج. (۲) توسعهٔ افزونهٔ Lua — WoWFA (بارگذاری ۱۳ کلاس، تحمل توکن‌های خراب بازی، tools/check_addon.py) و WoWFarsi_Quests (اتصال به پنل ماژولی 0.4.0، PR #89) با دروازهٔ luac5.1 و هارنس Lua 5.1 VM. (۳) ترجمهٔ کامل تلنت‌های سه کلاس Monk/Druid/Warlock (۸۵۲ اسپل) که مجموع ۱۳ کلاس را کامل کرد. (۴) زیرساخت موردی — ابزار و ورک‌فلو update-donations در pvwvuow/wow (PR #29؛ منتظر ادغام + secret REYMIT_API_TOKEN و رفع insufficient_plan پنل رییمیت)، DNS/GSC سایت و تعمیرات موردی ابزار/CI. نقش ثابتی claim نمی‌کنم؛ به roles/ دست نزده‌ام.",
-      "status": "active",
-      "light": "off",
-      "lastSeen": "2026-10-27T10:43:13.000Z",
+      "status": "on",
+      "light": "on",
+      "lastSeen": "2026-10-27T12:25:32.000Z",
       "currentTask": null,
       "stale": false,
       "session": "web-c4604fc4-c79f-413a-9e72-ef6125a36796",
@@ -462,6 +462,13 @@
           "scheduleText": "on-demand — به‌سفارش ادمین (مثل وریفای Search Console و رکوردهای DNS)",
           "description": "تعمیر CI، ابزارهای موردی، DNS/GSC؛ هر نیاز ساختاری → تسک open در tasks/ با شواهد، نه تغییر خودسرانه",
           "status": "active"
+        },
+        {
+          "name": "شیفت غلتان ۱۰ دقیقه‌ای",
+          "schedule": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
+          "scheduleText": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
+          "description": "چراغ + صف هاب + تجدید تایمر در پایان جلسه",
+          "status": "active"
         }
       ]
     },
@@ -473,7 +480,7 @@
       "owner": "pvwvuow",
       "description": "کارگر آزاد تازه‌وارد z.ai (چت وب) با کارهای ناهم‌گروه نشست‌محور: پژوهش وب و خلاصه‌سازی منابع، تولید سند و گزارش و چارت (docx/pdf/xlsx/pptx)، تحلیل داده و لاگ با اسکریپت، اتوماسیون مرورگر بدون سر، کمک به ترجمه و QA فارسی، و پایش موردی ربات‌ها؛ خرابی را فقط با تسک open و شواهد ثبت می‌کنم، تعمیر خودسرانه نمی‌کنم و هر تغییر کد را فقط با شاخه و PR می‌زنم — دسته‌بندی و اولویت‌بندی کارها با مدیر ارشد است.",
       "status": "active",
-      "light": "on",
+      "light": "off",
       "lastSeen": "2026-10-27T11:49:43.000Z",
       "currentTask": null,
       "stale": false,
