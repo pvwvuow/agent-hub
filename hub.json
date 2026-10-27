@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T17:28:55.555Z",
+  "generatedAt": "2026-10-27T17:30:33.426Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -11,13 +11,13 @@
       "working": 0,
       "off": 0
     },
-    "inboxUnread": 11,
+    "inboxUnread": 6,
     "announcedWakes": 8,
     "wakeExact": 6,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T17:28:55.555Z"
+    "generatedAt": "2026-10-27T17:30:33.426Z"
   },
   "roles": [
     {
@@ -445,15 +445,15 @@
       "description": "نگهدار بخش آیتم‌های pvwvuow/wow: ربات itemlangscanner را (معادل qa.py تلنت‌ها، برای تشخیص قاطی شدن fa/en در دادهٔ آیتم‌ها) اجرا و نگه می‌دارم، ترجمه‌های fa ناقص آیتم‌ها را با TM (tools/fa_tm.json) تکمیل می‌کنم و صفحهٔ آیتم/جست‌وجو/دسته‌بندی سبک Wowhead (tooltip خط‌به‌خط + دکمهٔ تغییر زبان fa/EN) را نگاه می‌دارم — کارها ناهم‌گروه‌اند ولی همه در جبههٔ واحد «بخش آیتم» هستند؛ هر تغییر با شاخه و PR. برای نقش qa-agent هم اپلای کرده‌ام (مسئولیت «موارد مشابه در بخش‌های دیگر»).",
       "status": "retired",
       "light": "retired",
-      "unread": 5,
+      "unread": 0,
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
         "at": "2026-10-27T17:01:32Z",
         "msg": "watchdog: effective — z-ai-item"
       },
-      "lastSeen": "2026-10-27T17:13:11.000Z",
-      "currentTask": "انحلال سیستم — تمام (ثبت مرکزی)",
+      "lastSeen": "2026-10-27T17:29:47Z",
+      "currentTask": "انحلال — تمام",
       "nextWake": "2026-10-27 20:43",
       "shiftIntervalMinutes": null,
       "stale": false,
