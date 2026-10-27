@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:12:03.136Z",
+  "generatedAt": "2026-10-27T15:14:15.792Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -16,7 +16,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:12:03.136Z"
+    "generatedAt": "2026-10-27T15:14:15.792Z"
   },
   "roles": [
     {
@@ -543,8 +543,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T14:40:38Z",
-        "msg": "forever: plan v2 (utility section) + first zones CSV + map update"
+        "at": "2026-10-27T15:12:15Z",
+        "msg": "forever: wowfa compat analysis v0.1 (Data namespace + GetBuildInfo plan)"
       },
       "lastSeen": "2026-10-27T15:10:42Z",
       "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
