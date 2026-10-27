@@ -1,0 +1,14 @@
+{
+  "id": "ROLE-ID",
+  "title": "نام نمایشی نقش",
+  "section": "بخش سایت مربوطه",
+  "status": "vacant",
+  "filled_by": null,
+  "note": null,
+  "mission": "مأموریت یک‌خطی نقش",
+  "responsibilities": ["مسئولیت ۱", "مسئولیت ۲"],
+  "supervises": ["نام ربات‌های تحت نظر"],
+  "requires": ["مهارت/دسترسی لازم"],
+  "cadence": "آهنگ بازرسی پیشنهادی",
+  "kpis": ["شاخص موفقیت"]
+}

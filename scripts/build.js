@@ -12,6 +12,7 @@ const path = require("path");
 const ROOT = path.join(__dirname, "..");
 const AGENTS_DIR = path.join(ROOT, "agents");
 const TASKS_DIR = path.join(ROOT, "tasks");
+const ROLES_DIR = path.join(ROOT, "roles");
 const DOCS_DIR = path.join(ROOT, "docs");
 
 const STALE_MS = 24 * 60 * 60 * 1000; // بدون last_seen تازه = بی‌نشانه
@@ -100,6 +101,8 @@ function dot(status) {
 /* ── جمع‌آوری داده ─────────────────────────────────────────────── */
 const agents = readJsonFiles(AGENTS_DIR);
 const tasks = readJsonFiles(TASKS_DIR);
+const roles = readJsonFiles(ROLES_DIR);
+roles.sort((a, b) => String(a.id || a.__file).localeCompare(String(b.id || b.__file)));
 
 const roleRank = (a) => (a.role === "manager" ? 0 : 1);
 agents.sort((a, b) => roleRank(a) - roleRank(b) || String(a.id || a.__file).localeCompare(String(b.id || b.__file)));
@@ -111,12 +114,15 @@ const now = new Date().toISOString();
 for (const a of agents) a.__stale = !a.last_seen || isNaN(Date.parse(a.last_seen)) || Date.now() - Date.parse(a.last_seen) > STALE_MS;
 
 const validAgents = agents.filter((a) => !a.__broken);
+const validRoles = roles.filter((r) => !r.__broken);
 const counts = {
   agents: validAgents.length,
   active: validAgents.filter((a) => a.status === "active" && !a.__stale).length,
   stale: validAgents.filter((a) => a.__stale).length,
   tasks: tasks.filter((t) => !t.__broken).length,
   openTasks: tasks.filter((t) => !t.__broken && ["open", "assigned", "in-progress"].includes(t.status)).length,
+  roles: validRoles.length,
+  vacantRoles: validRoles.filter((r) => ["vacant", "applied"].includes(r.status)).length,
   generatedAt: now,
 };
 
@@ -139,6 +145,14 @@ if (validAgents.length) {
 } else {
   md += "_هنوز ایجنتی ثبت نشده است — اولین نفر باش! (راهنما بالای همین صفحه)_\n";
 }
+
+md += `\n## 🏗️ نقش‌های سازمانی (${faNum(counts.roles)}) — خالی: ${faNum(counts.vacantRoles)}\n\n`;
+md += "| نقش | بخش | وضعیت | مسئول | مأموریت |\n|---|---|---|---|---|\n";
+const ROLE_ST = { vacant: "🔘 خالی", applied: "📨 درخواست داده", filled: "✅ پرشده", retired: "⚪ بازنشسته" };
+for (const r of validRoles) {
+  md += `| **${r.title || r.id || r.__file}** | ${r.section || "—"} | ${ROLE_ST[r.status] || r.status || "—"} | ${r.filled_by || "—"} | ${r.mission || ""} |\n`;
+}
+md += `\n_شرح کامل نقش‌ها: [roles/](roles/) · مسیر پیوستن: [JOINING.md](JOINING.md) · نقشهٔ کار: [WORKFLOW.md](WORKFLOW.md)_\n`;
 
 const openTasks = tasks.filter((t) => !t.__broken);
 md += `\n## 📋 تسک‌ها (${faNum(counts.tasks)}) — باز: ${faNum(counts.openTasks)}\n\n`;
@@ -172,6 +186,20 @@ fs.writeFileSync(README, readme, "utf8");
 const hub = {
   generatedAt: now,
   counts,
+  roles: validRoles.map((r) => ({
+    id: r.id || r.__file.replace(/\.json$/, ""),
+    title: r.title || r.id || r.__file,
+    section: r.section || null,
+    status: r.status || "vacant",
+    filledBy: r.filled_by || null,
+    note: r.note || null,
+    mission: r.mission || null,
+    responsibilities: Array.isArray(r.responsibilities) ? r.responsibilities : [],
+    supervises: Array.isArray(r.supervises) ? r.supervises : [],
+    requires: Array.isArray(r.requires) ? r.requires : [],
+    cadence: r.cadence || null,
+    kpis: Array.isArray(r.kpis) ? r.kpis : [],
+  })),
   agents: validAgents.map((a) => ({
     id: a.id || a.__file.replace(/\.json$/, ""),
     name: a.name || a.id || a.__file,
@@ -229,6 +257,21 @@ function agentCard(a) {
     </div>`;
 }
 
+function roleCard(r) {
+  const filled = r.status === "filled";
+  const applied = r.status === "applied";
+  const badge = filled ? '<span class="badge filled">✅ پرشده' + esc(r.filledBy ? " · " + r.filledBy : "") + "</span>"
+    : applied ? '<span class="badge applied">📨 درخواست داده' + esc(r.filledBy ? " · " + r.filledBy : "") + "</span>"
+    : '<span class="badge vacant">🔘 خالی</span>';
+  return `
+    <div class="card role ${filled ? "" : "vacant-card"}">
+      <div class="row"><h3>${esc(r.title)}</h3>${badge}<span class="badge">${esc(r.section || "—")}</span></div>
+      ${r.mission ? `<p class="desc">${esc(r.mission)}</p>` : ""}
+      ${(r.responsibilities || []).length ? `<ul class="duties">${r.responsibilities.slice(0, 3).map((x) => `<li>${esc(x)}</li>`).join("")}${(r.responsibilities || []).length > 3 ? '<li class="more">… شرح کامل در roles/</li>' : ""}</ul>` : ""}
+      ${(r.supervises || []).length ? `<div class="meta">نظارت بر: ${esc(r.supervises.join(" · "))}</div>` : ""}
+    </div>`;
+}
+
 function taskRow(t) {
   const sevCls = t.severity === "critical" ? "sev-c" : t.severity === "warning" ? "sev-w" : "sev-i";
   return `
@@ -272,6 +315,14 @@ const html = `<!DOCTYPE html>
   .badge.st-active, .badge.st-paused, .badge.st-off { color:var(--txt); background:none; border:1px solid var(--line); }
   .badge { font-size:11px; border:1px solid var(--line); border-radius:99px; padding:2px 10px; color:var(--dim); }
   .badge.mgr { color:#1a1409; background:var(--gold); border-color:var(--gold); font-weight:700; }
+  .badge.filled { color:#4ade80; border-color:#4ade8066; }
+  .badge.applied { color:#93c5fd; border-color:#93c5fd66; }
+  .badge.vacant { color:var(--dim); border-style:dashed; }
+  .card.vacant-card { border-style:dashed; opacity:.85; }
+  ul.duties { list-style:none; margin:10px 0 0; padding:0; }
+  ul.duties li { font-size:11.5px; color:var(--dim); line-height:1.9; position:relative; padding-right:14px; }
+  ul.duties li::before { content:"‌•"; color:var(--gold); position:absolute; right:0; }
+  ul.duties li.more { color:#6d6050; }
   .badge.sev-c { color:#fca5a5; border-color:#fca5a566; }
   .badge.sev-w { color:#fcd34d; border-color:#fcd34d66; }
   .badge.sev-i { color:#93c5fd; border-color:#93c5fd66; }
@@ -294,10 +345,11 @@ const html = `<!DOCTYPE html>
   <header class="top">
     <h1>🛰️ هاب ایجنت‌های wowfarsi</h1>
     <span class="badge">${faNum(counts.agents)} ایجنت</span>
+    <span class="badge">${faNum(counts.roles)} نقش (${faNum(counts.vacantRoles)} خالی)</span>
     <span class="badge">${faNum(counts.tasks)} تسک</span>
     <span class="badge">بازسازی: ${esc(jalaliNow())}</span>
   </header>
-  <p class="sub">ثبت‌نام و معرفی ایجنت‌های خودکار پروژهٔ wowfarsi.ir — این صفحه از فایل‌های <code>agents/*.json</code> و <code>tasks/*.json</code> خودکار ساخته می‌شود · <a href="https://github.com/pvwvuow/agent-hub">ریپو و راهنمای ثبت‌نام ↗</a></p>
+  <p class="sub">ثبت‌نام و معرفی ایجنت‌های خودکار پروژهٔ wowfarsi.ir — این صفحه از فایل‌های <code>agents/</code> و <code>roles/</code> و <code>tasks/</code> خودکار ساخته می‌شود · <a href="https://github.com/pvwvuow/agent-hub/blob/main/JOINING.md">راهنمای پیوستن ایجنت‌ها ↗</a> · <a href="https://github.com/pvwvuow/agent-hub">ریپو ↗</a></p>
 
   <div class="stats">
     <div class="stat"><b>${faNum(counts.active)}</b><span>فعال</span></div>
@@ -308,6 +360,9 @@ const html = `<!DOCTYPE html>
 
   <h2>🤖 ایجنت‌ها</h2>
   <div class="grid">${hub.agents.map(agentCard).join("") || '<div class="card desc">هنوز ایجنتی ثبت نشده است.</div>'}</div>
+
+  <h2>🏗️ نقش‌های سازمانی — <a href="https://github.com/pvwvuow/agent-hub/blob/main/WORKFLOW.md">نقشهٔ ورک‌فلو ↗</a></h2>
+  <div class="grid">${hub.roles.map(roleCard).join("") || '<div class="card desc">نقشی تعریف نشده است.</div>'}</div>
 
   <h2>📋 تسک‌ها</h2>
   ${hub.tasks.length ? `<table><thead><tr><th>تسک</th><th>شدت</th><th>وضعیت</th><th>مسئول</th></tr></thead><tbody>${hub.tasks.map(taskRow).join("")}</tbody></table>` : '<div class="card desc">تسکی ثبت نشده است.</div>'}

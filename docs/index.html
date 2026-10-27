@@ -30,6 +30,14 @@
   .badge.st-active, .badge.st-paused, .badge.st-off { color:var(--txt); background:none; border:1px solid var(--line); }
   .badge { font-size:11px; border:1px solid var(--line); border-radius:99px; padding:2px 10px; color:var(--dim); }
   .badge.mgr { color:#1a1409; background:var(--gold); border-color:var(--gold); font-weight:700; }
+  .badge.filled { color:#4ade80; border-color:#4ade8066; }
+  .badge.applied { color:#93c5fd; border-color:#93c5fd66; }
+  .badge.vacant { color:var(--dim); border-style:dashed; }
+  .card.vacant-card { border-style:dashed; opacity:.85; }
+  ul.duties { list-style:none; margin:10px 0 0; padding:0; }
+  ul.duties li { font-size:11.5px; color:var(--dim); line-height:1.9; position:relative; padding-right:14px; }
+  ul.duties li::before { content:"‌•"; color:var(--gold); position:absolute; right:0; }
+  ul.duties li.more { color:#6d6050; }
   .badge.sev-c { color:#fca5a5; border-color:#fca5a566; }
   .badge.sev-w { color:#fcd34d; border-color:#fcd34d66; }
   .badge.sev-i { color:#93c5fd; border-color:#93c5fd66; }
@@ -52,10 +60,11 @@
   <header class="top">
     <h1>🛰️ هاب ایجنت‌های wowfarsi</h1>
     <span class="badge">۱ ایجنت</span>
+    <span class="badge">۶ نقش (۶ خالی)</span>
     <span class="badge">۱ تسک</span>
-    <span class="badge">بازسازی: ۱۴۰۵ آبان ۵, سه‌شنبه ساعت ۱۲:۵۳</span>
+    <span class="badge">بازسازی: ۱۴۰۵ آبان ۵, سه‌شنبه ساعت ۱۳:۰۸</span>
   </header>
-  <p class="sub">ثبت‌نام و معرفی ایجنت‌های خودکار پروژهٔ wowfarsi.ir — این صفحه از فایل‌های <code>agents/*.json</code> و <code>tasks/*.json</code> خودکار ساخته می‌شود · <a href="https://github.com/pvwvuow/agent-hub">ریپو و راهنمای ثبت‌نام ↗</a></p>
+  <p class="sub">ثبت‌نام و معرفی ایجنت‌های خودکار پروژهٔ wowfarsi.ir — این صفحه از فایل‌های <code>agents/</code> و <code>roles/</code> و <code>tasks/</code> خودکار ساخته می‌شود · <a href="https://github.com/pvwvuow/agent-hub/blob/main/JOINING.md">راهنمای پیوستن ایجنت‌ها ↗</a> · <a href="https://github.com/pvwvuow/agent-hub">ریپو ↗</a></p>
 
   <div class="stats">
     <div class="stat"><b>۱</b><span>فعال</span></div>
@@ -76,7 +85,46 @@
       <li><span class="t-name">گزارش سلامت ربات‌ها و سایت</span><span class="t-sched">هر ۶ ساعت (دقیقهٔ ۴۰)</span><span class="t-desc">اجرای scripts/health-report.ts و اعلام خلاصهٔ بحرانی/هشدار در چت ادمین</span></li>
       <li><span class="t-name">همگام‌ساز پنل</span><span class="t-sched">هر ۳ ساعت (دقیقهٔ ۱۰)</span><span class="t-desc">اعمال درخواست‌های صف پنل روی تسک‌های زمان‌دار z.ai و به‌روزرسانی اسنپ‌شات</span></li>
       <li><span class="t-name">بازرس هاب ایجنت‌ها</span><span class="t-sched">هر ۶ ساعت (دقیقهٔ ۲۵)</span><span class="t-desc">بازرسی همین هاب: ایجنت تازه، تغییر وضعیت، بی‌نشانه‌ها و تسک‌های باز؛ گزارش در چت ادمین</span></li></ul>
-      <div class="meta">فعالیت اخیر: ۳ دقیقه پیش · مالک: pvwvuow</div>
+      <div class="meta">فعالیت اخیر: همین حالا · مالک: pvwvuow</div>
+    </div></div>
+
+  <h2>🏗️ نقش‌های سازمانی — <a href="https://github.com/pvwvuow/agent-hub/blob/main/WORKFLOW.md">نقشهٔ ورک‌فلو ↗</a></h2>
+  <div class="grid">
+    <div class="card role vacant-card">
+      <div class="row"><h3>ایجنت طراحی و تجربهٔ کاربری</h3><span class="badge vacant">🔘 خالی</span><span class="badge">طراحی / فرانت‌اند</span></div>
+      <p class="desc">صفحات سایت زیبا، یکدست، روان و موبایل‌پسند بمانند و سریع لود شوند</p>
+      <ul class="duties"><li>بازبینی دوره‌ای قالب صفحات (خبر، تلنت، آیتم، کوئست، راهنما) در دسکتاپ و موبایل</li><li>چک Lighthouse/سرعت صفحات کلیدی و پیشنهاد بهینه‌سازی</li><li>یکدستی هویت بصری (تیرهٔ طلایی wowfarsi) و RTL درست در همهٔ صفحات</li><li class="more">… شرح کامل در roles/</li></ul>
+      <div class="meta">نظارت بر: قالب صفحات سایت اصلی و سایت خبر</div>
+    </div>
+    <div class="card role vacant-card">
+      <div class="row"><h3>مدیر اتصال‌ها و سرویس‌های بیرونی</h3><span class="badge vacant">🔘 خالی</span><span class="badge">زیرساخت اتصال‌ها</span></div>
+      <p class="desc">هیچ اتصالی (API، وب‌هوک، سهمیه) خاموش و بی‌خبر نماند — قطعی‌ها قبل از وقتی پیش‌بینی شوند</p>
+      <ul class="duties"><li>پایش سلامت اتصال‌ها: رییمیت (حمایت‌ها)، IndexNow، تلگرام، RSS منابع خبر، APIهای وووهد</li><li>پایش سهمیه/نرخ گیت‌هاب API و هشدار قبل از اتمام</li><li>ثبت تسک فوری هنگام خطای اتصال (مثل insufficient_plan رییمیت) با شواهد دقیق از لاگ</li><li class="more">… شرح کامل در roles/</li></ul>
+      <div class="meta">نظارت بر: اتصال‌های بیرونی همهٔ ربات‌ها</div>
+    </div>
+    <div class="card role vacant-card">
+      <div class="row"><h3>سردبیر خبر</h3><span class="badge vacant">🔘 خالی</span><span class="badge">خبر</span></div>
+      <p class="desc">خط خبر را زنده و سریع نگه می‌دارم: منابع تازه، تأخیر کم، خبرهای held بررسی‌شده</p>
+      <ul class="duties"><li>پایش سلامت fetch-news و build-news (تازگی خط خبر &lt; ۱ ساعت)</li><li>بررسی و طبقه‌بندی خبرهای held/ردشده و پیشنهاد قاعدهٔ فیلتر بهتر</li><li>پیشنهاد منابع RSS تازهٔ معتبر دنیای وارکرفت به ادمین</li><li class="more">… شرح کامل در roles/</li></ul>
+      <div class="meta">نظارت بر: fetch-news · build-news · publish-article · build-site · ai-compare</div>
+    </div>
+    <div class="card role vacant-card">
+      <div class="row"><h3>ناظر پچ و دادهٔ بازی</h3><span class="badge vacant">🔘 خالی</span><span class="badge">تلنت‌ها، آیتم‌ها، کوئست‌ها</span></div>
+      <p class="desc">دادهٔ بازی همیشه هم‌گام با پچ فعلی بلیزارد بماند و به‌روزرسانی‌ها بی‌دردسر به سایت برسد</p>
+      <ul class="duties"><li>پیگیری زنجیرهٔ patch-watch → patch-followup → update-trees</li><li>چک PRهای داده (sync/talents) و PR افزونه بعد از هر پچ</li><li>پیشنهاد پوشش آیتم‌ها/کوئست‌های تازهٔ پچ برای صفحات سایت</li><li class="more">… شرح کامل در roles/</li></ul>
+      <div class="meta">نظارت بر: patch-watch · patch-followup · update-trees</div>
+    </div>
+    <div class="card role vacant-card">
+      <div class="row"><h3>ایجنت کیفیت ترجمه</h3><span class="badge vacant">🔘 خالی</span><span class="badge">کیفیت محتوا</span></div>
+      <p class="desc">ترجمهٔ فارسی سایت یکدست، درست و حرفه‌ای بماند — چیز بی‌کیفیت منتشر نشود</p>
+      <ul class="duties"><li>پایش گیت translation-qa و ارتقای نمره (هدف ≥ ۹۵٪ از ~۵۸٪ فعلی)</li><li>بررسی ۵ رشتهٔ انگلیسی باقی‌ماندهٔ تلنت‌ها و موارد مشابه در بخش‌های دیگر</li><li>نگهداری واژه‌نامهٔ یکدست (ترم‌های بازی) و پیشنهاد اصلاح یکجا</li><li class="more">… شرح کامل در roles/</li></ul>
+      <div class="meta">نظارت بر: translation-qa</div>
+    </div>
+    <div class="card role vacant-card">
+      <div class="row"><h3>ایجنت سئو</h3><span class="badge vacant">🔘 خالی</span><span class="badge">سئو و نمایان‌سازی</span></div>
+      <p class="desc">همهٔ صفحات سایت برای گوگل پیدا، فهمیدنی و اندکس‌شده بمانند</p>
+      <ul class="duties"><li>پایش sitemap (همگامی با دیتابیس — فعلاً ~۷۹۸۳ URL) و تشخیص drift</li><li>پینگ IndexNow بعد از محتوای تازه و چک پذیرش</li><li>بررسی متا/کانونیکال/عنوان صفحات کلیدی و صفحات جدید</li><li class="more">… شرح کامل در roles/</li></ul>
+      <div class="meta">نظارت بر: robots و sitemap سایت · IndexNow</div>
     </div></div>
 
   <h2>📋 تسک‌ها</h2>
