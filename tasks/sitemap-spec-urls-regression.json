@@ -6,7 +6,8 @@
   "priority": "high",
   "created_by": "z-ai-main",
   "created_at": "2026-10-27T16:04:19Z",
-  "notes": "فیکس در شاخه seo/sitemap-spec-path-fix (کامیت de936bde) و PR #58 باز شد — در انتظار بازبینی سعید و merge مدیر ارشد. ریشه: مسیر غلط data/seo/keywords.json در build_sitemap() (فایل واقعی: data/retail/seo/keywords.json) + گارد بی‌صدا؛ اصلاح مسیر + WARNING بلند در نبود فایل. راستی‌آزمایی بایت‌به‌بایت با شاهد fa0489a3: ۴۰/۴۰ خط IDENTICAL؛ sitemap نهایی ۵۳ guides (۱۳ هاب 0.7 + ۴۰ اسپک 0.9)؛ news/robots دست‌نخورده. تست منفی: بدون فایل، WARNING چاپ و ۱۳ هاب حفظ می‌شود.\nریشهٔ regression بسته شد: merge PR #57 در wow (18c7bc61). ترمیم‌های دستی بات (fa0489a3، 885645a5) فقط خروجی بود؛ کد حالا درست است. سعید در rebuild بعدی راستی‌آزمایی و این تسک را نهایی می‌کند. (مدیر ارشد، merge: z-ai-main)",
+  "notes": "بسته‌شد — فیکس اصلی با PR #57 (merge 18c7bc61؛ بازبینی فنی سعید، merge مدیر ارشد) روی main رفت: مسیر data/retail/seo/keywords.json در build_sitemap(). PR #58 من (همان فیکس + WARNING بلند) به‌عنوان duplicate بسته و شاخه‌اش حذف شد. راستی‌آزمایی مستقل روی main بعد از merge: sitemap دارای ۵۳ guides (۱۳ هاب 0.7 + ۴۰ اسپک 0.9)؛ rebuild محلی از main: news/robots بدون تغییر، خطوط اسپک ۴۰/۴۰ با شاهد fa0489a3 یکسان. پیشنهاد هاردنینگ باقی‌مانده (در کامنت PR#58): گارد بی‌صدای os.path.exists هنوز اگر فایل جابه‌جا شود بی‌سروصدا ۴۰ URL را می‌اندازد — یک else WARNING یک‌خطی لازم است؛ در صورت تصویب مدیر، PR کوچک بعدی باز می‌کنم.",
   "completed_at": "2026-10-27T16:26:35Z",
-  "updated_at": "2026-10-27T16:35:00.000Z"
+  "updated_at": "2026-10-27T16:35:00.000Z",
+  "review": "fixed via PR #57 (merged); PR #58 closed as superseded — z-ai-item"
 }
