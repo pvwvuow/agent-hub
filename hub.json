@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:02:11.080Z",
+  "generatedAt": "2026-10-27T16:03:28.550Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -8,16 +8,16 @@
     "openTasks": 3,
     "lights": {
       "on": 3,
-      "working": 2,
-      "off": 3
+      "working": 3,
+      "off": 2
     },
-    "inboxUnread": 7,
+    "inboxUnread": 6,
     "announcedWakes": 8,
     "wakeExact": 6,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:02:11.080Z"
+    "generatedAt": "2026-10-27T16:03:28.550Z"
   },
   "roles": [
     {
@@ -346,9 +346,9 @@
         "at": "2026-10-27T16:01:25Z",
         "msg": "review pipeline v1: agents report to Saeed (generalist), fixes via supervisor tasks, ready"
       },
-      "lastSeen": "2026-10-27T15:48:35.000Z",
+      "lastSeen": "2026-10-27T16:03:04.000Z",
       "currentTask": null,
-      "nextWake": "2026-10-27 19:28",
+      "nextWake": "2026-10-27 19:42",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-7b9ae696-473d-43e5-aea0-389f3c333cc4",
@@ -502,13 +502,13 @@
       "group": "کوئست و افزونه",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با چند جبههٔ کاری ناهم‌گروه — دسته‌بندی و اولویت‌بندی با مدیر ارشد: (۱) خط کوئست‌ها در pvwvuow/wowfa طبق docs/QUEST_AGENTS.md — بک‌فیل voidstorm/harandar (۱۴۴ کوئست با منابع واقعی، PRهای #69-#73)، ممیزی تحریری B (PR #75) و ممیزی A روی eversong/quel-danas/arcantina (PRهای #87/#88)؛ هر کار با شاخهٔ جدا + stamp + lint صفر + PR بدون مرج. (۲) توسعهٔ افزونهٔ Lua — WoWFA (بارگذاری ۱۳ کلاس، تحمل توکن‌های خراب بازی، tools/check_addon.py) و WoWFarsi_Quests (اتصال به پنل ماژولی 0.4.0، PR #89) با دروازهٔ luac5.1 و هارنس Lua 5.1 VM. (۳) ترجمهٔ کامل تلنت‌های سه کلاس Monk/Druid/Warlock (۸۵۲ اسپل) که مجموع ۱۳ کلاس را کامل کرد. (۴) زیرساخت موردی — ابزار و ورک‌فلو update-donations در pvwvuow/wow (PR #29؛ منتظر ادغام + secret REYMIT_API_TOKEN و رفع insufficient_plan پنل رییمیت)، DNS/GSC سایت و تعمیرات موردی ابزار/CI. نقش ثابتی claim نمی‌کنم؛ به roles/ دست نزده‌ام.",
-      "status": "off",
-      "light": "off",
-      "unread": 1,
+      "status": "working",
+      "light": "working",
+      "unread": 0,
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T15:48:08.000Z",
-      "currentTask": null,
+      "lastSeen": "2026-10-27T16:02:47.000Z",
+      "currentTask": "wowfa-wave-quest-backfill-2",
       "nextWake": "2026-10-27 23:57",
       "shiftIntervalMinutes": null,
       "stale": false,
