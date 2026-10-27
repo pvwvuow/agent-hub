@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-10-27T16:03:28.550Z",
+  "generatedAt": "2026-10-27T16:05:06.409Z",
   "counts": {
     "agents": 8,
     "active": 0,
     "stale": 0,
-    "tasks": 8,
-    "openTasks": 3,
+    "tasks": 10,
+    "openTasks": 5,
     "lights": {
-      "on": 3,
-      "working": 3,
-      "off": 2
+      "on": 2,
+      "working": 2,
+      "off": 4
     },
-    "inboxUnread": 6,
+    "inboxUnread": 7,
     "announcedWakes": 8,
     "wakeExact": 6,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:03:28.550Z"
+    "generatedAt": "2026-10-27T16:05:06.409Z"
   },
   "roles": [
     {
@@ -392,8 +392,8 @@
       "group": "مدیریت و نظارت",
       "owner": "pvwvuow",
       "description": "سعید (تغییر نام از مسعود به دستور مستقیم ادمین — ۲۰۲۶-۱۰-۲۷): بازرس رسمی تیم wowfarsi — وضعیت و اقدامات همهٔ ایجنت‌ها را چک می‌کند (چراغ‌های هاب، تسک جاری هر ایجنت، کامیت‌ها و PRهای تازهٔ wow/wowfa/wowheadFA، وضعیت CI) و گزارش فارسی را در reports/saeed/ همین هاب پوش می‌کند تا مدیر ارشد (z-ai-main) در بیداری غلتان ۵ دقیقه‌ای‌اش بخواند و دستور جدید به ایجنت‌ها بدهد. قانون امضای اجباری: هر پیام گزارش در چت با «سعید تمام!!» تمام می‌شود تا ادمین منبع پیام را بشناسد. شیفت غلتان ۱۰ دقیقه‌ای خودم را در چت خودم می‌سازم و در پایان هر جلسه تجدید می‌کنم.",
-      "status": "working",
-      "light": "working",
+      "status": "on",
+      "light": "on",
       "unread": 0,
       "lightByCommit": false,
       "lastCommit": {
@@ -401,7 +401,7 @@
         "at": "2026-10-27T15:50:55Z",
         "msg": "saeed: activity report to z-ai-main (rename live + 13/21 verdicts + QA pilot + chain) + he"
       },
-      "lastSeen": "2026-10-27T15:50:53.000Z",
+      "lastSeen": "2026-10-27T16:03:32.000Z",
       "currentTask": "گزارش فعالیت به مدیر ارشد + تجدید زنجیره — ادامهٔ review-held-news-21 در بیداری بعدی",
       "nextWake": "2026-10-27 19:29",
       "shiftIntervalMinutes": null,
@@ -447,18 +447,18 @@
       "group": "آیتم و زبان",
       "owner": "pvwvuow",
       "description": "نگهدار بخش آیتم‌های pvwvuow/wow: ربات itemlangscanner را (معادل qa.py تلنت‌ها، برای تشخیص قاطی شدن fa/en در دادهٔ آیتم‌ها) اجرا و نگه می‌دارم، ترجمه‌های fa ناقص آیتم‌ها را با TM (tools/fa_tm.json) تکمیل می‌کنم و صفحهٔ آیتم/جست‌وجو/دسته‌بندی سبک Wowhead (tooltip خط‌به‌خط + دکمهٔ تغییر زبان fa/EN) را نگاه می‌دارم — کارها ناهم‌گروه‌اند ولی همه در جبههٔ واحد «بخش آیتم» هستند؛ هر تغییر با شاخه و PR. برای نقش qa-agent هم اپلای کرده‌ام (مسئولیت «موارد مشابه در بخش‌های دیگر»).",
-      "status": "on",
-      "light": "on",
-      "unread": 0,
+      "status": "off",
+      "light": "off",
+      "unread": 1,
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
         "at": "2026-10-27T15:59:45Z",
         "msg": "watchdog: effective — z-ai-item"
       },
-      "lastSeen": "2026-10-27T15:59:45Z",
+      "lastSeen": "2026-10-27T16:03:55Z",
       "currentTask": null,
-      "nextWake": "2026-10-27 19:23",
+      "nextWake": "2026-10-27 19:41",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-f068eaa9-b412-43eb-8f93-08410ad6b4bf",
@@ -615,8 +615,8 @@
       "group": "راهنماهای Retail",
       "owner": "pvwvuow",
       "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
-      "status": "on",
-      "light": "on",
+      "status": "off",
+      "light": "off",
       "unread": 0,
       "lightByCommit": false,
       "lastCommit": {
@@ -624,8 +624,8 @@
         "at": "2026-10-27T15:53:49Z",
         "msg": "watchdog: armed — z-ai-wow-retail (jobs 477966/477965/477964 @ 600/720/840s; heartbeat las"
       },
-      "lastSeen": "2026-10-27T15:58:00.000Z",
-      "currentTask": "شیفت‌چک",
+      "lastSeen": "2026-10-27T16:04:19.000Z",
+      "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
       "stale": false,
@@ -697,6 +697,29 @@
       "notes": [
         "بر خلاف حدس اولیهٔ موتور عیب‌یابی (404)، علت دقیق از لاگ خام = insufficient_plan است؛ قاعدهٔ طبقه‌بندی در src/lib/diagnostics.ts بعداً همین الگو را یاد می‌گیرد."
       ]
+    },
+    {
+      "id": "build-news-spec-guides-dropped-path-bug",
+      "title": "build_news بعد از merge PR#56 هنوز ۴۰ URL اسپک را حذف می‌کند — مسیر بانک کلیدواژه اشتباه است",
+      "severity": "warning",
+      "status": "open",
+      "assignee": "z-ai-wow-retail",
+      "assignees": [
+        "z-ai-wow-retail"
+      ],
+      "createdBy": "z-ai-wow-retail",
+      "createdAt": "2026-10-27T16:08:00.000Z",
+      "updatedAt": "2026-10-27T16:08:00.000Z",
+      "evidence": {
+        "merge_of_56": "be55922b (15:47 UTC توسط مدیر ارشد)",
+        "regression_commit": "c6ed110f (اولین rebuild بعد از merge)",
+        "loc_after_rebuild": 7998,
+        "guides_after_rebuild": 13,
+        "restore4_commit": "fa0489a3 [bot]",
+        "live_check": "بعد از ترمیم چهارم: 8038 loc و 53 guides؛ تست وصلهٔ PR#57: 8041 loc و 53 guides"
+      },
+      "plan": [],
+      "notes": []
     },
     {
       "id": "review-held-news-21",
@@ -849,6 +872,22 @@
       ],
       "createdBy": null,
       "createdAt": null,
+      "updatedAt": null,
+      "evidence": null,
+      "plan": [],
+      "notes": []
+    },
+    {
+      "id": "sitemap-spec-urls-regression",
+      "title": "بازگشت باگ sitemap: بعد از merge PR#56، rebuild اخبار ۴۰ URL اسپک را حذف می‌کند (keywords.json path missing)",
+      "severity": "info",
+      "status": "open",
+      "assignee": "z-ai-item",
+      "assignees": [
+        "z-ai-item"
+      ],
+      "createdBy": "z-ai-main",
+      "createdAt": "2026-10-27T16:04:19Z",
       "updatedAt": null,
       "evidence": null,
       "plan": [],
