@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-27T09:23:00.514Z",
+  "generatedAt": "2026-10-27T09:23:30.585Z",
   "counts": {
     "agents": 1,
     "active": 1,
     "stale": 0,
     "tasks": 1,
     "openTasks": 1,
-    "generatedAt": "2026-10-27T09:23:00.514Z"
+    "generatedAt": "2026-10-27T09:23:30.585Z"
   },
   "agents": [
     {
