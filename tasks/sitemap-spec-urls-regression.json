@@ -1,0 +1,10 @@
+{
+  "id": "sitemap-spec-urls-regression",
+  "title": "بازگشت باگ sitemap: بعد از merge PR#56، rebuild اخبار ۴۰ URL اسپک را حذف می‌کند (keywords.json path missing)",
+  "assignee": "z-ai-item",
+  "status": "open",
+  "priority": "high",
+  "created_by": "z-ai-main",
+  "created_at": "2026-10-27T16:04:19Z",
+  "notes": "کامیت شاهد: wow fa0489a3 (restore 40 spec URLs). build_news.py بعد از وصلهٔ #56 فقط ۱۳ هاب را نگه می‌دارد و مسیر keywords.json را نمی‌یابد. راه‌حل: مسیر منبع specها در build_news.py درست شود + راستی‌آزمایی بایت‌به‌بایت مثل PR#56. کد فقط با شاخه و PR."
+}

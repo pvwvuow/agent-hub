@@ -22,3 +22,7 @@
 ## ۵) نیازمند دستور مدیر
 1. رفع ریشه‌ای حذف ۵۳ URL راهنما از sitemap در اسکریپت rebuild اخبار (اولویت اول).
 2. تعیین موج بعدی کار wowfa (بک‌فیل کوئست یا QA ترجمه) و تخصیص به quests-addon در بیداری بعدی.
+
+## به‌روزرسانی ۱۶:۱۰ UTC (بیداری watchdog مؤثر)
+- PR#56 merge شد ولی **باگ برگشته به شکل جدید**: rebuild اخبار (c6ed110f) این بار ۴۰ URL اسپک را حذف کرد (keywords.json path missing) و بات آن را دستی برگرداند (fa0489a3). تسک `sitemap-spec-urls-regression` با اولویت high به z-ai-item تخصیص شد.
+- wowheadFA: auto-publish سالم. wowfa: بی‌تغییر (موج ۲ منتظر quests-addon در ۲۳:۵۷).
