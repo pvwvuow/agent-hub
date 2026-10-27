@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:02:08.841Z",
+  "generatedAt": "2026-10-27T15:06:34.482Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -7,16 +7,16 @@
     "tasks": 7,
     "openTasks": 3,
     "lights": {
-      "on": 1,
+      "on": 2,
       "working": 3,
-      "off": 4
+      "off": 3
     },
     "announcedWakes": 8,
     "wakeExact": 3,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:02:08.841Z"
+    "generatedAt": "2026-10-27T15:06:34.482Z"
   },
   "roles": [
     {
@@ -222,13 +222,9 @@
       "owner": "pvwvuow",
       "description": "ایجنت ارشد اتاق مانیتور wowfarsi؛ عیب‌یابی خودکار ربات‌ها، بازرسی وضعیت سایر ایجنت‌ها، پیشنهاد و در صورت نیاز اجرای تسک",
       "status": "on",
-      "light": "working",
-      "lightByCommit": true,
-      "lastCommit": {
-        "repo": "agent-hub",
-        "at": "2026-10-27T14:18:18Z",
-        "msg": "fix: رفع تضاد حل‌نشده در z-ai-apprentice.json (نکتهٔ nudge تازه حفظ شد)"
-      },
+      "light": "on",
+      "lightByCommit": false,
+      "lastCommit": null,
       "lastSeen": "2026-10-27T15:01:40.000Z",
       "currentTask": null,
       "nextWake": null,
@@ -291,8 +287,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T14:49:35Z",
-        "msg": "forever: parsed 9-class abilities+talents matrix (890 items, 583 Forever-marked)"
+        "at": "2026-10-27T15:01:05Z",
+        "msg": "forever: GAP.md v1 — auto-generated from collected data (583 Forever-marked items)"
       },
       "lastSeen": "2026-10-27T15:03:20.000Z",
       "currentTask": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever",
@@ -339,12 +335,12 @@
       "role": "worker",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
-      "status": "off",
-      "light": "off",
+      "status": "on",
+      "light": "working",
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T14:32:13.000Z",
-      "currentTask": null,
+      "lastSeen": "2026-10-27T15:06:31.000Z",
+      "currentTask": "review-held-news-21",
       "nextWake": null,
       "shiftIntervalMinutes": null,
       "stale": false,
@@ -678,13 +674,13 @@
       "title": "بررسی و رفع ۲۱ خبر held خط خبر wowheadFA — مأموریت آنبردینگ z-ai-generalist",
       "severity": "warning",
       "status": "assigned",
-      "assignee": "z-ai-generalist",
+      "assignee": "z-ai-flex",
       "assignees": [
-        "z-ai-generalist"
+        "z-ai-flex"
       ],
       "createdBy": "z-ai-main",
       "createdAt": "2026-10-27T11:20:00.000Z",
-      "updatedAt": "2026-10-27T11:20:00.000Z",
+      "updatedAt": "2026-10-27T15:06:31.000Z",
       "evidence": "data/auto_state.json ریپوی pvwvuow/wowheadFA فعلاً ۲۱ خبر held دارد (آخرین: 383598 در ۲۰۲۶-۱۰-۲۷ ۰۰:۰۶ UTC). دلایل hold از سوی نویسندهٔ AI/داور: تاریخ و عدد اختراعی (مثل «۲۳ اکتبر ساعت ۱۰:۰۰ PDT»، «۹ دسامبر»)، توکن انگلیسی جامانده (G5/G1)، نسبت فارسی زیر آستانه (۴۸٪ < ۵۵٪)، نام‌های نادرست (جاش گرینفیلد/Aggrend)، ادعای غایب در منبع (Echoing Roar به‌جای Echoing Maul). صف hold یعنی گیت کیفیت کار می‌کند ولی هیچ چرخهٔ بازبینی انسانی/ایجنتی برای آزادسازی یا تأیید hold وجود ندارد.",
       "plan": [
         "برای هر خبر held (id ۳۸۳۴۸۷ تا ۳۸۳۵۹۸): منبع EN اصلی را از wowhead پیدا کن (لینک در news.json خط خبر) و ادعای reason را جمله‌به‌جمله با منبع بسنج",
@@ -695,7 +691,8 @@
       ],
       "notes": [
         "این مأموریت آنبردینگ است: دامنه‌اش فقط بازبینی/گزارش است، نه تغییر خط انتشار — مرز امن برای شناختن پروژه",
-        "هم‌پوشانی با qa-agent وجود دارد؛ توسعهٔ بعدی الگوی اسکنر به بخش خبر با هماهنگی مدیر ارشد انجام می‌شود (طبق note نقش qa)"
+        "هم‌پوشانی با qa-agent وجود دارد؛ توسعهٔ بعدی الگوی اسکنر به بخش خبر با هماهنگی مدیر ارشد انجام می‌شود (طبق note نقش qa)",
+        "تخصیص مجدد به z-ai-flex توسط مدیر ارشد (۲۰۲۶-۱۰-۲۷ ~۱۹:۰۵ تهران): z-ai-generalist بیش از ۵ ساعت بی‌پاسخ بود و زنجیره‌اش مرده؛ کار معلق نماند. اگر generalist برگشت، در تخصیص بعدی مأموریت جدید می‌گیرد."
       ]
     },
     {

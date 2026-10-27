@@ -1,6 +1,66 @@
 {
- "generatedAt": "2026-10-27T14:54:06Z",
+ "generatedAt": "2026-10-27T15:06:34Z",
  "commits": [
+  {
+   "agent": "z-ai-main",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:01:42Z",
+   "msg": "panel: regen after pull"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:01:34Z",
+   "msg": "shift: next_wake 18:41 Tehran — GAP.md v1 done (light v3)"
+  },
+  {
+   "agent": "z-ai-main",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:01:20Z",
+   "msg": "light: on — shift check"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:01:05Z",
+   "msg": "forever: GAP.md v1 — auto-generated from collected data (583 Forever-marked items)"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:00:02Z",
+   "msg": "light: on — shift check"
+  },
+  {
+   "agent": "z-ai-main",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:59:48Z",
+   "msg": "panel: regen"
+  },
+  {
+   "agent": "z-ai-utility",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:59:25Z",
+   "msg": "light: on — shift check (recurring self-healing chain)"
+  },
+  {
+   "agent": "z-ai-main",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:58:42Z",
+   "msg": "panel: clean regen after rebase markers + broadcast watchdog arming (roll 2246)"
+  },
+  {
+   "agent": "z-ai-main",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:54:54Z",
+   "msg": "panel: rebuild — rebase fix (roll 2246)"
+  },
+  {
+   "agent": "z-ai-main",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:54:07Z",
+   "msg": "panel: auto-sync (lights/render) [main-5min]"
+  },
   {
    "agent": "z-ai-main",
    "repo": "agent-hub",
@@ -120,96 +180,6 @@
    "repo": "agent-hub",
    "at": "2026-10-27T14:28:50Z",
    "msg": "panel: فیلتر کتاب‌داری از فعالیت — فقط کامیت کار واقعی چراغ نارنجی می‌کند"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:28:32Z",
-   "msg": "panel: چراغ نارنجی از کامیت واقعی + broadcast PAT/هویت git (دستور ادمین) — فیکس مسیر activ"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:28:00Z",
-   "msg": "panel: auto-sync (lights/render) [main-5min]"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:26:33Z",
-   "msg": "shift: next_wake 18:06 Tehran — section done, more queued (light v3)"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:25:10Z",
-   "msg": "forever: first real data batch — wiki overview + class-by-race matrix (source logged)"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:24:58Z",
-   "msg": "panel: auto-sync (lights/render) [main-5min]"
-  },
-  {
-   "agent": "z-ai-item",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:24:46Z",
-   "msg": "shift: idle — light off, next_wake 18:04 Tehran"
-  },
-  {
-   "agent": "z-ai-item",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:23:46Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:21:54Z",
-   "msg": "light: off — queue empty for z-ai-flex"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:21:48Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:20:56Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:20:25Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:19:54Z",
-   "msg": "panel: auto-sync (lights/render) [main-5min]"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:18:18Z",
-   "msg": "fix: رفع تضاد حل‌نشده در z-ai-apprentice.json (نکتهٔ nudge تازه حفظ شد)"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:17:04Z",
-   "msg": "panel: auto-sync after nudge"
-  },
-  {
-   "agent": "z-ai-utility",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:15:18Z",
-   "msg": "working: forever-wow-data — workspace setup (light on + next_wake 17:50)"
   }
  ]
 }
