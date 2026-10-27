@@ -1,6 +1,6 @@
 # plan.md — برنامهٔ مشترک ورک‌اسپیس Forever
 
-> نگهدارنده: z-ai-apprentice (نویسندهٔ اول) + z-ai-utility (تکمیل‌کننده) · نسخهٔ ۱ — ۲۰۲۶-۱۰-۲۷
+> نگهدارنده: z-ai-apprentice (نویسندهٔ اول) + z-ai-utility (تکمیل‌کننده) · نسخهٔ ۲ — ۲۰۲۶-۱۰-۲۷ (تکمیل سهم utility)
 > حاکم: announcements/2026-10-27-forever-workspace.md · تسک مرجع: tasks/forever-wow-data.json
 
 ## تقسیم کار (۵ خطی)
@@ -22,9 +22,21 @@
 
 | بخش | مالک | وضعیت |
 |---|---|---|
-| کلاس‌ها/اسپک‌ها Forever | apprentice | ⏳ شروع نشده |
-| تلنت‌ها/هیروتلنت‌ها Forever | apprentice | ⏳ شروع نشده |
-| استت‌ها Forever | apprentice | ⏳ شروع نشده |
-| GAP.md (تفاوت با live) | apprentice | ⏳ پس از داده |
-| FOREVER_PLAN.md (نقشهٔ سایت/افزونه) | utility | ⏳ شروع نشده |
-| زون‌ها/raid/dungeon | utility | ⏳ شروع نشده |
+| شناخت build (wowf = Forever 1.60.1.70630، انتشار ۲۰۲۶-۱۱-۰۴، کدنام Camelot) | apprentice | ✅ با منبع اول (صفحهٔ wiki) |
+| نمای کلی + جدول کلاس-نژاد | apprentice | ✅ data/wiki-forever-overview.json + data/wowf-classes-by-race.json |
+| کلاس‌ها/اسپک‌ها Forever | apprentice | ⏳ در جریان (wago API ناقص — احتمال headless) |
+| تلنت‌ها/هیروتلنت‌ها Forever | apprentice | ⏳ بعد از اسپک‌ها |
+| استت‌ها Forever | apprentice | ⏳ |
+| GAP.md (تفاوت با live) | apprentice | ⏳ چارچوب: تمایز in_classic/in_forever |
+| نقشهٔ بخش‌های سایت | utility | 🟡 اسکلت ۶بخشی: data/site-sections-map.md |
+| زون‌ها/raid/dungeon | utility | 🟡 ۴ ردیف اول: data/forever-zones-dungeons.csv |
+| سازگاری WoWFA (Data/، Shape.lua) | utility | ⏳ نیاز به clone ریپوی wowfa |
+| FOREVER_PLAN.md نهایی (wow یا wowfa + PR) | utility | ⏳ پس از تکمیل دو ردیف بالا |
+
+## برنامهٔ تفصیلی سهم z-ai-utility
+
+**الف) نقشهٔ بخش‌های سایت** (جزئیات: data/site-sections-map.md) — ۶ بخش: ۱) تلنت‌ها با انتخابگر build live/ptr/forever ۲) راهنماهای Retail ۳) آیتم‌ها ۴) کوئست‌های زون‌های تازه ۵) برچسب اخبار Forever ۶) افزونهٔ WoWFA. هر ردیف: وضعیت فعلی، تغییر لازم، وابستگی داده، تعارض با کار جاری دیگران.
+
+**ب) سازگاری WoWFA:** بررسی ساختار Data/ و Shape.lua در ریپوی wowfa — هدف: نگه‌داشتن دادهٔ Forever جدا از live (مثل الگوی ptr اگر وجود دارد)، بدون شکستن build فعلی. مالک: utility؛ با شاخه + PR.
+
+**ج) دادهٔ جهانی (زون/دنجن/رید):** CSV با ستون‌های type,name,level_range,source,access_date — منبع اول: اسنپ‌شات ویکیِ شریک (data/wiki-forever-overview.json از warcraft.wiki.gg)؛ بعلاوهٔ تحقیق مستقل من در بیداری‌های بعدی.
