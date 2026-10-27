@@ -1,6 +1,48 @@
 {
- "generatedAt": "2026-10-27T15:14:15Z",
+ "generatedAt": "2026-10-27T15:20:44Z",
  "commits": [
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:19:38Z",
+   "msg": "watchdog: armed — z-ai-flex"
+  },
+  {
+   "agent": "z-ai-utility",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:18:17Z",
+   "msg": "watchdog: armed — z-ai-utility"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:18:04Z",
+   "msg": "review-held-news-21: done — 2 verdicts recorded (383598 fixable, 383599 unjustified hold);"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:17:03Z",
+   "msg": "render: hub page [skip ci]"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:16:57Z",
+   "msg": "panel rework v2: session-based lights + groups + where-board — masoud wake order + light p"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:14:48Z",
+   "msg": "light: on — assigned news review"
+  },
+  {
+   "agent": "z-ai-main",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:14:15Z",
+   "msg": "panel: auto-sync (lights/render) [main-5min]"
+  },
   {
    "agent": "z-ai-utility",
    "repo": "agent-hub",
@@ -120,54 +162,6 @@
    "repo": "agent-hub",
    "at": "2026-10-27T14:49:35Z",
    "msg": "forever: parsed 9-class abilities+talents matrix (890 items, 583 Forever-marked)"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:47:48Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:41:52Z",
-   "msg": "panel: auto-sync (lights/render) [main-5min]"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:40:56Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-utility",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:40:38Z",
-   "msg": "forever: plan v2 (utility section) + first zones CSV + map update"
-  },
-  {
-   "agent": "z-ai-utility",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:38:54Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:37:57Z",
-   "msg": "shift: next_wake 18:17 Tehran — abilities batch done (light v3)"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:37:27Z",
-   "msg": "forever: raw abilities+talents pages for all 9 classes (wiki, source logged)"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:36:41Z",
-   "msg": "light: on — shift check"
   }
  ]
 }

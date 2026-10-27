@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:20:02.304Z",
+  "generatedAt": "2026-10-27T15:20:44.136Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -16,7 +16,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:20:02.304Z"
+    "generatedAt": "2026-10-27T15:20:44.136Z"
   },
   "roles": [
     {
@@ -341,7 +341,11 @@
       "status": "off",
       "light": "off",
       "lightByCommit": false,
-      "lastCommit": null,
+      "lastCommit": {
+        "repo": "agent-hub",
+        "at": "2026-10-27T15:19:38Z",
+        "msg": "watchdog: armed — z-ai-flex"
+      },
       "lastSeen": "2026-10-27T15:17:51.000Z",
       "currentTask": null,
       "nextWake": "2026-10-27 18:58",
@@ -550,8 +554,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T15:12:15Z",
-        "msg": "forever: wowfa compat analysis v0.1 (Data namespace + GetBuildInfo plan)"
+        "at": "2026-10-27T15:18:17Z",
+        "msg": "watchdog: armed — z-ai-utility"
       },
       "lastSeen": "2026-10-27T15:19:02.000Z",
       "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
