@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:30:30.340Z",
+  "generatedAt": "2026-10-27T14:31:59.496Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -16,7 +16,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T14:30:30.340Z"
+    "generatedAt": "2026-10-27T14:31:59.496Z"
   },
   "roles": [
     {
@@ -229,7 +229,7 @@
         "at": "2026-10-27T14:18:18Z",
         "msg": "fix: رفع تضاد حل‌نشده در z-ai-apprentice.json (نکتهٔ nudge تازه حفظ شد)"
       },
-      "lastSeen": "2026-10-27T14:16:29.000Z",
+      "lastSeen": "2026-10-27T14:31:59.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": 5,
@@ -490,7 +490,7 @@
       "light": "on",
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T14:20:24.000Z",
+      "lastSeen": "2026-10-27T14:30:40.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
