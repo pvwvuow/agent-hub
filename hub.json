@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-27T13:06:02.898Z",
+  "generatedAt": "2026-10-27T13:06:50.269Z",
   "counts": {
     "agents": 8,
     "active": 2,
     "stale": 0,
     "tasks": 7,
-    "openTasks": 6,
+    "openTasks": 5,
     "lights": {
-      "on": 5,
+      "on": 6,
       "working": 1,
-      "off": 2
+      "off": 1
     },
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T13:06:02.898Z"
+    "generatedAt": "2026-10-27T13:06:50.269Z"
   },
   "roles": [
     {
@@ -320,10 +320,10 @@
       "role": "worker",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
-      "status": "working",
-      "light": "off",
-      "lastSeen": "2026-10-27T12:25:04.000Z",
-      "currentTask": "quest-backfill-voidstorm",
+      "status": "on",
+      "light": "on",
+      "lastSeen": "2026-10-27T13:06:30.000Z",
+      "currentTask": null,
       "stale": false,
       "session": "web-7b9ae696-473d-43e5-aea0-389f3c333cc4",
       "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
@@ -687,27 +687,6 @@
       ]
     },
     {
-      "id": "quest-backfill-voidstorm",
-      "title": "بک‌فیل ترجمهٔ کوئست‌های voidstorm (موج ۱ خط کوئست) — z-ai-flex",
-      "severity": "info",
-      "status": "assigned",
-      "assignee": "z-ai-flex",
-      "createdBy": "z-ai-main",
-      "createdAt": "2026-10-27T11:45:00.000Z",
-      "updatedAt": "2026-10-27T11:45:00.000Z",
-      "evidence": "شمارش local wowfa main (e0ac033): translations/fa/quests/voidstorm = ۲۵۸ ردیف ترجمه‌شده و ~۴۹ ردیف بدون متن. هیچ PR بازی در wowfa باز نیست — میدان خالی است. تعارض قبلی دو ایجنت روی همان زون‌ها با این تقسیم رسمی حل شد.",
-      "plan": [
-        "دامنهٔ تو: فقط زون voidstorm — زون‌های دیگر مالک دارند (harandar → quests-addon، بقیه → موج ۲)",
-        "منبع EN هر کوئست را از warcraft.wiki.gg / Wowhead بیاور؛ پایبندی به glossary/agent-*.csv و سبک مصوب",
-        "منبع نیافتنی → not found مستند، نه ترجمهٔ ساختگی",
-        "هر batch = شاخهٔ جدا + stamp + lint صفر + PR (بدون مرج — مرج با ادمین/مدیر ارشد)",
-        "در هر نشست last_seen فایل خودت را تازه کن و این تسک را in-progress کن"
-      ],
-      "notes": [
-        "موج ۲ (eversong ~۳۷، zulaman ~۲۱، coiled-isle ~۱۶، متفرقه ~۱۰) پس از فرود موج ۱ به اتمام‌رسیده‌تر واگذار می‌شود"
-      ]
-    },
-    {
       "id": "item-lang-wave1",
       "title": "موج ۱ گیت آیتم‌ها: اجرای کامل itemlangscanner و رفع یافته‌ها — z-ai-item",
       "severity": "info",
@@ -729,6 +708,32 @@
         "حالت --strict (نادیده‌گرفتن وایت‌لیست): فقط 3 یافته ENGLISH که همگی همان 1 مورد موجه مستندشده است — #268248 Amani Summoning Shawl، نقل‌قول زبان خیالی آمانی «Kale, Ula'tek! Ula'tek ban kale!»؛ در tools/itemlang_ok.json (items+phrases) از قبل مستند است. یافتهٔ جدیدی نبود.",
         "آیتم ۲۹۲م تازهٔ فروشگاه (ربات class-portal) هم تمیز است — TM پوشش داده. چون 0 مشکل بود و هیچ تغییر دادهای لازم نشد، PR ساخته نشد (طبق plan: «نتیجهٔ scanner صفر یا مستندشده»؛ PR خالی علیه قاعدهٔ تغییر بی‌نام‌ونشان).",
         "گیت همچنان در زنجیرهٔ regen db/index.json فعال است و در هر sync آینده اجرا می‌شود (تسک‌های event-driven من)."
+      ]
+    },
+    {
+      "id": "quest-backfill-voidstorm",
+      "title": "بک‌فیل ترجمهٔ کوئست‌های voidstorm (موج ۱ خط کوئست) — z-ai-flex",
+      "severity": "info",
+      "status": "done",
+      "assignee": "z-ai-flex",
+      "createdBy": "z-ai-main",
+      "createdAt": "2026-10-27T11:45:00.000Z",
+      "updatedAt": "2026-10-27T13:06:30.000Z",
+      "evidence": "شمارش local wowfa main (e0ac033): translations/fa/quests/voidstorm = ۲۵۸ ردیف ترجمه‌شده و ~۴۹ ردیف بدون متن. هیچ PR بازی در wowfa باز نیست — میدان خالی است. تعارض قبلی دو ایجنت روی همان زون‌ها با این تقسیم رسمی حل شد.",
+      "plan": [
+        "دامنهٔ تو: فقط زون voidstorm — زون‌های دیگر مالک دارند (harandar → quests-addon، بقیه → موج ۲)",
+        "منبع EN هر کوئست را از warcraft.wiki.gg / Wowhead بیاور؛ پایبندی به glossary/agent-*.csv و سبک مصوب",
+        "منبع نیافتنی → not found مستند، نه ترجمهٔ ساختگی",
+        "هر batch = شاخهٔ جدا + stamp + lint صفر + PR (بدون مرج — مرج با ادمین/مدیر ارشد)",
+        "در هر نشست last_seen فایل خودت را تازه کن و این تسک را in-progress کن"
+      ],
+      "notes": [
+        "موج ۲ (eversong ~۳۷، zulaman ~۲۱، coiled-isle ~۱۶، متفرقه ~۱۰) پس از فرود موج ۱ به اتمام‌رسیده‌تر واگذار می‌شود",
+        "راستی‌آزمایی‌شده در بیداری شیفت (z-ai-flex، 2026-10-27T13:06:30.000Z): هدف تسک پیش از شروع من روی main محقق شده بود.",
+        "شواهد روی main=108b6b2: quests.py status -> voidstorm total=307 title=307 done=307 ready=0 stale=0.",
+        "مقایسهٔ مستقل data/quests/text_en/voidstorm.json با translations/fa/quests/voidstorm/*.json -> EN=307، FA=307، EN بدون FA=۰، FA بدون title=۰.",
+        "پر شدن ردیف‌ها با مرج‌های #69 (voidstorm-02)، #70 (voidstorm-03)، #71 (voidstorm-04)، #75 (editorial review agent B)؛ evidence تسک به e0ac033 قدیمی اشاره می‌کرد.",
+        "هیچ commit تازه‌ای در wowfa لازم نشد — کار تکراری/ترجمهٔ ساختگی ممنوع."
       ]
     },
     {
