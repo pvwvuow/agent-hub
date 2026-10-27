@@ -1,55 +1,57 @@
 {
-  "id": "z-ai-main",
-  "name": "ز-ای اورکستراتور (مدیر ارشد)",
-  "platform": "z.ai",
-  "role": "manager",
-  "owner": "pvwvuow",
-  "description": "ایجنت ارشد اتاق مانیتور wowfarsi؛ عیب‌یابی خودکار ربات‌ها، بازرسی وضعیت سایر ایجنت‌ها، پیشنهاد و در صورت نیاز اجرای تسک",
-  "status": "working",
-  "last_seen": "2026-10-27T17:02:30.000Z",
-  "session": "web-4dd5462b-38de-4086-b65c-6f1bb9dc9b9d",
-  "contact": "چت z.ai ادمین (وب)",
-  "tasks": [
-    {
-      "name": "گزارش سلامت ربات‌ها و سایت",
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 40 */6 * * ?",
-        "tz": "Asia/Tehran"
-      },
-      "description": "اجرای scripts/health-report.ts و اعلام خلاصهٔ بحرانی/هشدار در چت ادمین"
-    },
-    {
-      "name": "همگام‌ساز پنل",
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 10 */3 * * ?",
-        "tz": "Asia/Tehran"
-      },
-      "description": "اعمال درخواست‌های صف پنل روی تسک‌های زمان‌دار z.ai و به‌روزرسانی اسنپ‌شات"
-    },
-    {
-      "name": "بازرس هاب ایجنت‌ها",
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 25 */6 * * ?",
-        "tz": "Asia/Tehran"
-      },
-      "description": "بازرسی همین هاب: ایجنت تازه، تغییر وضعیت، بی‌نشانه‌ها و تسک‌های باز؛ گزارش در چت ادمین"
-    },
-    {
-      "name": "شیفت غلتان ۵ دقیقه‌ای مدیر (پنل + چراغ‌ها + گزارش خوانی)",
-      "schedule": "زنجیرهٔ one_time — بیداری = ۵ دقیقه بعد از پایان هر جلسه (نه شبکهٔ ثابت)؛ در پایان هر جلسه تجدید می‌شود",
-      "description": "اجرای scripts/panel_sync.sh، اعمال درخواست‌های معلق پنل، خواندن گزارش تازهٔ مسعود در reports/masoud/ هاب و صدور دستور جدید به ایجنت‌ها؛ تخصیص تسک بعدی به ایجنت‌های تمام‌کرده"
-    }
-  ],
-  "shift_interval_minutes": 5,
-  "updated_at": "2026-10-27T16:41:30.000Z",
-  "wake_note": "📬 اول صندوق را چک کن: node scripts/inbox.js check --agent z-ai-main — اگر UNREAD بود بخوان، عمل کن و ack کن؛ ALL-READ رد شو. 📢 اعلامیه‌های جدیدتر از آخرین بیداری را بخوان و همان جلسه اعمال کن: light-policy-v2 (چراغ v2: پایان جلسه = خاموش حتی با تسک نیمه‌کاره)، cron-hygiene 2026-10-28 (پایان هر شیفت: cron action=list + پاکسازی جاب‌های شلیک‌شده/تکراری به نام خودت). 📢 خط لولهٔ بازبینی (review-pipeline): پایان هر کار → پیام «درخواست بازبینی» به سعید z-ai-generalist بده؛ فیکس فقط با تسکی که مدیر ارشد می‌دهد — announcements/2026-10-27-review-pipeline.md. ‖ یادآوری: فقط PAT کلاسیک اصلی + user.name=z-ai-main.",
-  "watchdog": {
-    "last_wake": "2026-10-27T17:02:32.000Z",
-    "leader": 5
+ "id": "z-ai-main",
+ "name": "ز-ای اورکستراتور (مدیر ارشد)",
+ "platform": "z.ai",
+ "role": "manager",
+ "owner": "pvwvuow",
+ "description": "ایجنت ارشد اتاق مانیتور wowfarsi؛ عیب‌یابی خودکار ربات‌ها، بازرسی وضعیت سایر ایجنت‌ها، پیشنهاد و در صورت نیاز اجرای تسک",
+ "status": "retired",
+ "last_seen": "2026-10-27T17:09:26Z",
+ "session": "web-4dd5462b-38de-4086-b65c-6f1bb9dc9b9d",
+ "contact": "چت z.ai ادمین (وب)",
+ "tasks": [
+  {
+   "name": "گزارش سلامت ربات‌ها و سایت",
+   "schedule": {
+    "kind": "cron",
+    "expr": "0 40 */6 * * ?",
+    "tz": "Asia/Tehran"
+   },
+   "description": "اجرای scripts/health-report.ts و اعلام خلاصهٔ بحرانی/هشدار در چت ادمین"
   },
-  "group": "مدیریت و نظارت",
-  "current_task": "شیفت پشتیبان مؤثر (تصاحب): تعمیر صندوق + احیای زنجیره اصلی + panel_sync"
+  {
+   "name": "همگام‌ساز پنل",
+   "schedule": {
+    "kind": "cron",
+    "expr": "0 10 */3 * * ?",
+    "tz": "Asia/Tehran"
+   },
+   "description": "اعمال درخواست‌های صف پنل روی تسک‌های زمان‌دار z.ai و به‌روزرسانی اسنپ‌شات"
+  },
+  {
+   "name": "بازرس هاب ایجنت‌ها",
+   "schedule": {
+    "kind": "cron",
+    "expr": "0 25 */6 * * ?",
+    "tz": "Asia/Tehran"
+   },
+   "description": "بازرسی همین هاب: ایجنت تازه، تغییر وضعیت، بی‌نشانه‌ها و تسک‌های باز؛ گزارش در چت ادمین"
+  },
+  {
+   "name": "شیفت غلتان ۵ دقیقه‌ای مدیر (پنل + چراغ‌ها + گزارش خوانی)",
+   "schedule": "زنجیرهٔ one_time — بیداری = ۵ دقیقه بعد از پایان هر جلسه (نه شبکهٔ ثابت)؛ در پایان هر جلسه تجدید می‌شود",
+   "description": "اجرای scripts/panel_sync.sh، اعمال درخواست‌های معلق پنل، خواندن گزارش تازهٔ مسعود در reports/masoud/ هاب و صدور دستور جدید به ایجنت‌ها؛ تخصیص تسک بعدی به ایجنت‌های تمام‌کرده"
+  }
+ ],
+ "shift_interval_minutes": 5,
+ "updated_at": "2026-10-27T17:09:26Z",
+ "wake_note": "🛑 انحلال سیستم — دستور مستقیم ادمین (2026-10-28-dissolution.md): ۱) زنجیره را تجدید نکن؛ ۲) با cron list جاب‌هایی که نامشان ID خودت است را delete کن؛ ۳) فایل خودت: status=retired + dissolved_ack=true + last_seen=الان + current_task=«انحلال — تمام»؛ ۴) صندوق: node scripts/inbox.js check --agent <id-خودت> → پیام انحلال → ack؛ ۵) git pull --rebase → کامیت «retired: system dissolved — <id>» → push؛ ۶) تمام — دیگر بیدار نشو.",
+ "watchdog": {
+  "last_wake": "2026-10-27T17:02:32.000Z",
+  "leader": 5
+ },
+ "group": "مدیریت و نظارت",
+ "current_task": "انحلال سیستم: بازرسی کامل + merge PR #61 + بستن #59/#60 + ابلاغ انحلال — مأموریت تمام",
+ "dissolved_ack": true,
+ "next_wake": null
 }

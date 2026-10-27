@@ -145,7 +145,10 @@ function humanSchedule(s) {
   return `کرون: ${expr}`;
 }
 
-const STATUS_FA = { active: "فعال", paused: "مکث‌شده", retired: "بازنشسته", on: "روشن", working: "در حال کار", off: "خاموش" };
+const STATUS_FA = { active: "فعال", paused: "مکث‌شده", retired: "منحل‌شده", on: "روشن", working: "در حال کار", off: "خاموش" };
+
+/* انحلال سیستم (اعلامیهٔ 2026-10-28-dissolution.md):
+   status=retired یا dissolved_ack=true → نقطهٔ خاکستری‌قرمز «منحل‌شده» — مستقل از تازگی ضربان، محو نمی‌شود */
 
 /* چراغ وضعیت — پروتکل چراغ v2 (اعلامیهٔ 2026-10-27-light-policy-v2.md)
    چراغ = وضعیت «جلسهٔ کاری» که خود ایجنت اعلام می‌کند، نه حدس خودکار پنل:
@@ -155,13 +158,14 @@ const STATUS_FA = { active: "فعال", paused: "مکث‌شده", retired: "ب�
 function lightOf(a) {
   const t = Date.parse(a.last_seen || "");
   const fresh = !isNaN(t) && Date.now() - t <= FRESH_MS;
+  if (a.status === "retired" || a.dissolved_ack === true) return { key: "retired", fresh };
   if (a.status === "off") return { key: "off", fresh };
   if (!fresh) return { key: "off", fresh };
   if (a.status === "working") return { key: "working", fresh };
   return { key: "on", fresh };
 }
-const LIGHT_FA = { on: "🟢 روشن", working: "🟠 در حال کار", off: "⚫ خاموش" };
-const LIGHT_CLS = { on: "st-active", working: "st-working", off: "st-off" };
+const LIGHT_FA = { on: "🟢 روشن", working: "🟠 در حال کار", off: "⚫ خاموش", retired: "🟤 منحل‌شده" };
+const LIGHT_CLS = { on: "st-active", working: "st-working", off: "st-off", retired: "st-retired" };
 const ROLE_FA = { manager: "مدیر ارشد", worker: "کارگر" };
 const SEV_FA = { critical: "بحرانی", warning: "هشدار", info: "اطلاع" };
 const TASK_STATUS_FA = { open: "باز", assigned: "پذیرفته‌شده", "in-progress": "در حال اجرا", done: "انجام‌شده", rejected: "رد‌شده" };
@@ -584,6 +588,7 @@ const html = `<!DOCTYPE html>
   .st-working { background:#fb923c; }
   .st-paused { background:#facc15; }
   .st-off { background:#6b7280; }
+  .st-retired { background:#a05252; }
   .badge.st-active, .badge.st-working, .badge.st-paused, .badge.st-off { color:var(--txt); background:none; border:1px solid var(--line); }
   .badge { font-size:11px; border:1px solid var(--line); border-radius:99px; padding:2px 10px; color:var(--dim); }
   .badge.mgr { color:#04060b; background:var(--gold); border-color:var(--gold); font-weight:700; }

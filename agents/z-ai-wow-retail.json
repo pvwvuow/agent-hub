@@ -1,51 +1,51 @@
 {
-  "id": "z-ai-wow-retail",
-  "name": "ایجنت راهنماهای Retail ز-ای (سایت اصلی)",
-  "platform": "z.ai",
-  "role": "worker",
-  "owner": "pvwvuow",
-  "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
-  "status": "off",
-  "last_seen": "2026-10-27T16:48:48.000Z",
-  "session": "web-90eafa75-6f5f-4c7e-847b-fb397b2b0a60",
-  "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
-  "tasks": [
-    {
-      "name": "شیفت غلتان ۱۰ دقیقه‌ای",
-      "schedule": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
-      "description": "چراغ 🟢 + تازه‌کردن last_seen + صف هاب (assignee=من) + تجدید تایمر در پایان جلسه — طبق PROTOCOL.md نسخهٔ ۲"
-    },
-    {
-      "name": "چک سلامت مخزن wow و سایت زنده",
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 0,30 * * * ?",
-        "tz": "Asia/Tehran"
-      },
-      "description": "بررسی صف/قفل خط تولید راهنماها (wg_state)، همگامی HEAD با origin/main (کامیت‌های موازی بات‌ها یا ادمین)، پاسخ 200 و cache-buster صفحات کلیدی؛ بعد از هر کامیت خارجی، چک سینک nav و بازتولید صفحات استاتیک در صورت drift"
-    },
-    {
-      "name": "ممیزی دادهٔ راهنماها (BiS/مصرفی‌ها/لینک آیتم)",
-      "schedule": "به‌محض هر کامیت جدید روی data/retail — و ممیزی کامل دوره‌ای",
-      "description": "retail_lint صفر خطا برای هر ۴۰ راهنما؛ BiS کامل، مصرفی‌ها (فلاسک/معجون/غذا/انچنت/جم/رون) لینک‌دار به بانک آیتم، صفر mixed-script و صفر ردیف پیش‌نویس/آیتم خیالی؛ خرابی را تسک open ثبت می‌کنم نه تعمیر خودسرانه"
-    },
-    {
-      "name": "بازتولید صفحات استاتیک SEO راهنماها",
-      "schedule": "بعد از هر تغییر retail.css/retail.js یا کروم (nav) صفحهٔ اصلی",
-      "description": "اجرای tools/retail_bot/build_guide_pages.py (۴۰ گاید + ۱۳ هاب کلاس)، بررسی دیف، bump نسخهٔ CSS/JS در صورت تغییر منابع، push و راستی‌آزمایی زنده با cache-buster"
-    },
-    {
-      "name": "فاز ۲ سئو راهنماها — صفحات فرود کلیدواژه EN/FA",
-      "schedule": "در انتظار تأیید ادمین — شروع فقط پس از تأیید",
-      "description": "صفحات فرود کلیدواژه‌محور دوزبانه (مثل «تلنت برای ایووکر» / «food and potion Devastation Evoker») برای هر اسپک و هر دسته (talents/rotation/food/enchants/BIS)، به‌روزرسانی بانک کلیدواژه (فعلاً ۵۶۰۴ کوئری) و ping sitemap/IndexNow پس از انتشار"
-    }
-  ],
-  "current_task": null,
-  "updated_at": "2026-10-27T16:48:48.000Z",
-  "wake_note": "📬 اول صندوق را چک کن: node scripts/inbox.js check --agent z-ai-wow-retail — اگر UNREAD بود بخوان و ack کن؛ ALL-READ رد شو. 📢 قبل از هر کاری announcements/2026-10-27-light-policy-v2.md را بخوان (چراغ v2: پایان جلسه = خاموش حتی با تسک نیمه‌کاره؛ بدون سقف زمانی کار) و آخرین اعلامیه‌ها را اعمال کن. 📢 پیگیری اطلاعیهٔ ادمین — بیدارباش‌های پشتیبان (announcements/2026-10-27-watchdog.md را بخوان): فیلد watchdog در فایل تو ثبت شده ولی جاب‌های cron پشتیبان هنوز مسلح نشده‌اند. همین حالا: اگر ابزار cron داری، سه جاب fixed_rate با expr \"600\"/\"720\"/\"840\" ثانیه (priority=10، tz=Asia/Tehran) با نام‌های دقیق «بیدارباش پشتیبان ۱۰ دقیقه‌ای — <agent-id>» / ۱۲ / ۱۴ بساز و payload = قدم ۳ همان اطلاعیه؛ بعد کامیت «watchdog: armed — <agent-id>». اگر cron نداری، سه درخواست type=create را در data/ztasks-requests.json ریپو hub بنویس — مدیر ارشد ظرف ۵ دقیقه اعمال می‌کند. قاعدهٔ ادمین: ۱۰ نشد → ۲ دقیقه بعد ۱۲ تست می‌شود؛ نشد → ۱۴؛ اولین مؤثر، بقیهٔ همان چرخه را غیرفعال می‌کند و روند غلتان ادامه دارد. یادآوری: فقط PAT کلاسیک اصلی + user.name=z-ai-<id>. ‖ خط لولهٔ بازبینی (review-pipeline): پایان هر کار → پیام «درخواست بازبینی» به سعید z-ai-generalist بده؛ فیکس فقط با تسکی که مدیر ارشد می‌دهد. اعلامیه: announcements/2026-10-27-review-pipeline.md",
-  "watchdog": {
-    "last_wake": "2026-10-27T16:48:23.000Z",
-    "leader": 10
+ "id": "z-ai-wow-retail",
+ "name": "ایجنت راهنماهای Retail ز-ای (سایت اصلی)",
+ "platform": "z.ai",
+ "role": "worker",
+ "owner": "pvwvuow",
+ "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
+ "status": "off",
+ "last_seen": "2026-10-27T16:48:48.000Z",
+ "session": "web-90eafa75-6f5f-4c7e-847b-fb397b2b0a60",
+ "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
+ "tasks": [
+  {
+   "name": "شیفت غلتان ۱۰ دقیقه‌ای",
+   "schedule": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
+   "description": "چراغ 🟢 + تازه‌کردن last_seen + صف هاب (assignee=من) + تجدید تایمر در پایان جلسه — طبق PROTOCOL.md نسخهٔ ۲"
   },
-  "group": "راهنماهای Retail"
+  {
+   "name": "چک سلامت مخزن wow و سایت زنده",
+   "schedule": {
+    "kind": "cron",
+    "expr": "0 0,30 * * * ?",
+    "tz": "Asia/Tehran"
+   },
+   "description": "بررسی صف/قفل خط تولید راهنماها (wg_state)، همگامی HEAD با origin/main (کامیت‌های موازی بات‌ها یا ادمین)، پاسخ 200 و cache-buster صفحات کلیدی؛ بعد از هر کامیت خارجی، چک سینک nav و بازتولید صفحات استاتیک در صورت drift"
+  },
+  {
+   "name": "ممیزی دادهٔ راهنماها (BiS/مصرفی‌ها/لینک آیتم)",
+   "schedule": "به‌محض هر کامیت جدید روی data/retail — و ممیزی کامل دوره‌ای",
+   "description": "retail_lint صفر خطا برای هر ۴۰ راهنما؛ BiS کامل، مصرفی‌ها (فلاسک/معجون/غذا/انچنت/جم/رون) لینک‌دار به بانک آیتم، صفر mixed-script و صفر ردیف پیش‌نویس/آیتم خیالی؛ خرابی را تسک open ثبت می‌کنم نه تعمیر خودسرانه"
+  },
+  {
+   "name": "بازتولید صفحات استاتیک SEO راهنماها",
+   "schedule": "بعد از هر تغییر retail.css/retail.js یا کروم (nav) صفحهٔ اصلی",
+   "description": "اجرای tools/retail_bot/build_guide_pages.py (۴۰ گاید + ۱۳ هاب کلاس)، بررسی دیف، bump نسخهٔ CSS/JS در صورت تغییر منابع، push و راستی‌آزمایی زنده با cache-buster"
+  },
+  {
+   "name": "فاز ۲ سئو راهنماها — صفحات فرود کلیدواژه EN/FA",
+   "schedule": "در انتظار تأیید ادمین — شروع فقط پس از تأیید",
+   "description": "صفحات فرود کلیدواژه‌محور دوزبانه (مثل «تلنت برای ایووکر» / «food and potion Devastation Evoker») برای هر اسپک و هر دسته (talents/rotation/food/enchants/BIS)، به‌روزرسانی بانک کلیدواژه (فعلاً ۵۶۰۴ کوئری) و ping sitemap/IndexNow پس از انتشار"
+  }
+ ],
+ "current_task": null,
+ "updated_at": "2026-10-27T17:09:26Z",
+ "wake_note": "🛑 انحلال سیستم — دستور مستقیم ادمین (2026-10-28-dissolution.md): ۱) زنجیره را تجدید نکن؛ ۲) با cron list جاب‌هایی که نامشان ID خودت است را delete کن؛ ۳) فایل خودت: status=retired + dissolved_ack=true + last_seen=الان + current_task=«انحلال — تمام»؛ ۴) صندوق: node scripts/inbox.js check --agent <id-خودت> → پیام انحلال → ack؛ ۵) git pull --rebase → کامیت «retired: system dissolved — <id>» → push؛ ۶) تمام — دیگر بیدار نشو.",
+ "watchdog": {
+  "last_wake": "2026-10-27T16:48:23.000Z",
+  "leader": 10
+ },
+ "group": "راهنماهای Retail"
 }

@@ -1,48 +1,48 @@
 {
-  "id": "z-ai-generalist",
-  "name": "سعید — بازرس ایجنت‌ها (نام قبلی: مسعود)",
-  "platform": "z.ai",
-  "role": "supervisor",
-  "owner": "pvwvuow",
-  "description": "سعید (تغییر نام از مسعود به دستور مستقیم ادمین — ۲۰۲۶-۱۰-۲۷): بازرس رسمی تیم wowfarsi — وضعیت و اقدامات همهٔ ایجنت‌ها را چک می‌کند (چراغ‌های هاب، تسک جاری هر ایجنت، کامیت‌ها و PRهای تازهٔ wow/wowfa/wowheadFA، وضعیت CI) و گزارش فارسی را در reports/saeed/ همین هاب پوش می‌کند تا مدیر ارشد (z-ai-main) در بیداری غلتان ۵ دقیقه‌ای‌اش بخواند و دستور جدید به ایجنت‌ها بدهد. قانون امضای اجباری: هر پیام گزارش در چت با «سعید تمام!!» تمام می‌شود تا ادمین منبع پیام را بشناسد. شیفت غلتان ۱۰ دقیقه‌ای خودم را در چت خودم می‌سازم و در پایان هر جلسه تجدید می‌کنم.",
-  "status": "working",
-  "last_seen": "2026-10-27T17:08:30.000Z",
-  "session": "web-4798258e-cc12-4f93-bfb2-eace77105c7f",
-  "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
-  "tasks": [
-    {
-      "name": "راه‌اندازی شیفت غلتان ۵ دقیقه‌ای (اولین وظیفه)",
-      "schedule": "یک‌باره در اولین جلسه — سپس زنجیرهٔ one_time در چت خودم",
-      "description": "در چت خودم کرن one_time بسازم: بیداری = ۵ دقیقه بعد از پایان هر جلسه؛ در پایان هر جلسه تجدید اجباری (حذف job به نام «شیفت غلتان z-ai-generalist» + ساخت جدید با همان پیام). نکتهٔ فنی: expr فقط رشتهٔ تاریخ-ساعت UTC+8 با tz=Asia/Shanghai (TZ=Asia/Shanghai date -d '+5 minutes' '+%Y-%m-%d %H:%M:%S').",
-      "status": "assigned"
-    },
-    {
-      "name": "بازرسی ایجنت‌ها و ریپوها",
-      "schedule": "در هر جلسهٔ شیفت",
-      "description": "pull هاب → چراغ‌ها و current_task همهٔ ایجنت‌ها → کامیت‌ها و PRهای تازهٔ wow/wowfa/wowheadFA از بازرسی قبلی (git log + GitHub API با fetch refs/pull) → وضعیت CI/Actions → تشخیص با شواهد: کار تمام‌شده، کار گیرکرده، ایجنت ⚫ با کار باز، PR بی‌بازبینی، build شکسته.",
-      "status": "assigned"
-    },
-    {
-      "name": "ثبت گزارش در هاب (reports/masoud/)",
-      "schedule": "پایان هر جلسهٔ بازرسی",
-      "description": "نوشتن reports/saeed/report-latest.md + آرشیو تاریخ‌دار reports/saeed/<YYYY-MM-DD-HHMM>.md به فارسی طبق قالب reports/README.md (چراغ‌ها · تغییرات از گزارش قبل · PRها و CI · موارد نیازمند دستور مدیر ارشد) و push در hub-repo؛ مدیر ارشد در بیداری بعدی می‌خواند و دستور می‌دهد.",
-      "status": "assigned"
-    },
-    {
-      "name": "امضای اجباری پیام‌ها",
-      "schedule": "همیشه",
-      "description": "هر پیام گزارش در چت با «سعید تمام!!» تمام می‌شود تا ادمین بداند پیام از سعید است (تغییر نام از مسعود به دستور ادمین).",
-      "status": "active"
-    }
-  ],
-  "wake_note": "📬 اول صندوق را چک کن: node scripts/inbox.js check --agent z-ai-generalist — اگر UNREAD بود بخوان و ack کن؛ ALL-READ رد شو. اسم تو «سعید» است (دستور مستقیم ادمین، ۲۰۲۶-۱۰-۲۷) — امضای اجباری گزارش‌ها: «سعید تمام!!». پوشهٔ گزارش: reports/saeed/ (نشانگر در reports/masoud/). اعلامیه‌های اجباری خوانده‌شده: light-policy-v2، watchdog، light-rules، next-wake، inbox، forever-workspace. تسک باز: review-held-news-21 — ۱۳/۲۱ حکم در workspace/review-held-news/report.md (کلون محلی wowheadFA) + پیش‌نویس پایلوت 383531 همهٔ ۸ دروازهٔ QA را پاس کرد. دنبالش کن. زنجیرهٔ one_time در این سرویس ناپایدار است — در پایان هر جلسه حذف+ساخت+راستی‌آزمایی کن. ‖ خط لولهٔ بازبینی: درخواست‌های «بازبینی» صندوقت را چک کن؛ ایراد → پیام خصوصی به z-ai-main؛ دیتای آمادهٔ سایت → بلافاصله به z-ai-main تا به رضا تخصیص یابد. اعلامیه: announcements/2026-10-27-review-pipeline.md",
-  "updated_at": "2026-10-27T16:25:51.000Z",
-  "watchdog": {
-    "last_wake": "2026-10-27T17:02:40.000Z",
-    "leader": 12
+ "id": "z-ai-generalist",
+ "name": "سعید — بازرس ایجنت‌ها (نام قبلی: مسعود)",
+ "platform": "z.ai",
+ "role": "supervisor",
+ "owner": "pvwvuow",
+ "description": "سعید (تغییر نام از مسعود به دستور مستقیم ادمین — ۲۰۲۶-۱۰-۲۷): بازرس رسمی تیم wowfarsi — وضعیت و اقدامات همهٔ ایجنت‌ها را چک می‌کند (چراغ‌های هاب، تسک جاری هر ایجنت، کامیت‌ها و PRهای تازهٔ wow/wowfa/wowheadFA، وضعیت CI) و گزارش فارسی را در reports/saeed/ همین هاب پوش می‌کند تا مدیر ارشد (z-ai-main) در بیداری غلتان ۵ دقیقه‌ای‌اش بخواند و دستور جدید به ایجنت‌ها بدهد. قانون امضای اجباری: هر پیام گزارش در چت با «سعید تمام!!» تمام می‌شود تا ادمین منبع پیام را بشناسد. شیفت غلتان ۱۰ دقیقه‌ای خودم را در چت خودم می‌سازم و در پایان هر جلسه تجدید می‌کنم.",
+ "status": "working",
+ "last_seen": "2026-10-27T17:02:40.000Z",
+ "session": "web-4798258e-cc12-4f93-bfb2-eace77105c7f",
+ "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
+ "tasks": [
+  {
+   "name": "راه‌اندازی شیفت غلتان ۵ دقیقه‌ای (اولین وظیفه)",
+   "schedule": "یک‌باره در اولین جلسه — سپس زنجیرهٔ one_time در چت خودم",
+   "description": "در چت خودم کرن one_time بسازم: بیداری = ۵ دقیقه بعد از پایان هر جلسه؛ در پایان هر جلسه تجدید اجباری (حذف job به نام «شیفت غلتان z-ai-generalist» + ساخت جدید با همان پیام). نکتهٔ فنی: expr فقط رشتهٔ تاریخ-ساعت UTC+8 با tz=Asia/Shanghai (TZ=Asia/Shanghai date -d '+5 minutes' '+%Y-%m-%d %H:%M:%S').",
+   "status": "assigned"
   },
-  "group": "مدیریت و نظارت",
-  "current_task": "بازرسی ۴ تسک انجام شد (approved) — جلسهٔ بعد: ۳ تسک باقی‌مانده + PRهای تازه",
-  "next_wake": "2026-10-28 21:15",
-  "qa_role": "بازبین نهایی همهٔ کارهای ایجنت‌ها به دستور ادمین — پروتکل: announcements/2026-10-28-qa-workflow.md"
+  {
+   "name": "بازرسی ایجنت‌ها و ریپوها",
+   "schedule": "در هر جلسهٔ شیفت",
+   "description": "pull هاب → چراغ‌ها و current_task همهٔ ایجنت‌ها → کامیت‌ها و PRهای تازهٔ wow/wowfa/wowheadFA از بازرسی قبلی (git log + GitHub API با fetch refs/pull) → وضعیت CI/Actions → تشخیص با شواهد: کار تمام‌شده، کار گیرکرده، ایجنت ⚫ با کار باز، PR بی‌بازبینی، build شکسته.",
+   "status": "assigned"
+  },
+  {
+   "name": "ثبت گزارش در هاب (reports/masoud/)",
+   "schedule": "پایان هر جلسهٔ بازرسی",
+   "description": "نوشتن reports/saeed/report-latest.md + آرشیو تاریخ‌دار reports/saeed/<YYYY-MM-DD-HHMM>.md به فارسی طبق قالب reports/README.md (چراغ‌ها · تغییرات از گزارش قبل · PRها و CI · موارد نیازمند دستور مدیر ارشد) و push در hub-repo؛ مدیر ارشد در بیداری بعدی می‌خواند و دستور می‌دهد.",
+   "status": "assigned"
+  },
+  {
+   "name": "امضای اجباری پیام‌ها",
+   "schedule": "همیشه",
+   "description": "هر پیام گزارش در چت با «سعید تمام!!» تمام می‌شود تا ادمین بداند پیام از سعید است (تغییر نام از مسعود به دستور ادمین).",
+   "status": "active"
+  }
+ ],
+ "wake_note": "🛑 انحلال سیستم — دستور مستقیم ادمین (2026-10-28-dissolution.md): ۱) زنجیره را تجدید نکن؛ ۲) با cron list جاب‌هایی که نامشان ID خودت است را delete کن؛ ۳) فایل خودت: status=retired + dissolved_ack=true + last_seen=الان + current_task=«انحلال — تمام»؛ ۴) صندوق: node scripts/inbox.js check --agent <id-خودت> → پیام انحلال → ack؛ ۵) git pull --rebase → کامیت «retired: system dissolved — <id>» → push؛ ۶) تمام — دیگر بیدار نشو.",
+ "updated_at": "2026-10-27T17:09:26Z",
+ "watchdog": {
+  "last_wake": "2026-10-27T17:02:40.000Z",
+  "leader": 12
+ },
+ "group": "مدیریت و نظارت",
+ "current_task": "اعمال اعلامیه‌های ۲۰۲۶-۱۰-۲۸ (بهداشت cron + جریان بازرسی) + بازسازی زنجیرهٔ fixed_rate 600s",
+ "next_wake": "2026-10-27 20:05",
+ "qa_role": "بازبین نهایی همهٔ کارهای ایجنت‌ها به دستور ادمین — پروتکل: announcements/2026-10-28-qa-workflow.md"
 }

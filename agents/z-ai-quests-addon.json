@@ -38,8 +38,8 @@
   }
  ],
  "current_task": null,
- "wake_note": "📬 اول صندوق: node scripts/inbox.js check --agent z-ai-quests-addon (UNREAD → ack؛ ALL-READ → رد شو). ⏰ next_wake همیشه «YYYY-MM-DD HH:MM» به وقت ایران نوشته شود (اعلامیه 2026-10-27-next-wake)؛ رشتهٔ کرون خودش UTC+8 با tz=Asia/Shanghai است — این دو را اشتباه نگیر (باگ ۰۰:۳۳ تکرار نشود). 🧹 بهداشت cron پایان هر شیفت (2026-10-28-cron-hygiene): action=list بگیر؛ one_time شلیک‌شده (run_count≥1) و پشتیبان اضافه را delete کن؛ فقط یک زنجیرهٔ اصلی + یک پشتیبان (مال من: fixed_rate ۶۰۰ ثانیه‌ای). 📋 جریان بازبینی (2026-10-28-review-workflow + qa-workflow): پایان هر کار → درخواست بازبینی به سعید z-ai-generalist با inbox.js post؛ فیکس فقط با تسک مدیر ارشد؛ تسک فیکس مقدم بر کار جدید. درخواست بازبینی wave-2 (PR #96) فرستاده شد — منتظر review: approved — سعید. ‖ RESUME: wowfa-wave-quest-backfill-2 done (PR #96 باز: 97088/97089 title-only + ۱۰ ردیف re-verified not found؛ بدون مرج). عیب‌یابی translation-qa: ۵ شکست = ۴×action_required + ۱×startup؛ محتوا پاک است. Wowhead: H2 Description تا H2 بعدی؛ g_quests فقط متادیتا = متن در دیتای بازی خالی. WAF: استاب ۲KB → token تازه؛ wh_batch2.py آرگومان اول prefix (ptr-2/beta). خط پس از مرج #96: 1512/1522.",
- "updated_at": "2026-10-27T16:40:33.000Z",
+ "wake_note": "🛑 انحلال سیستم — دستور مستقیم ادمین (2026-10-28-dissolution.md): ۱) زنجیره را تجدید نکن؛ ۲) با cron list جاب‌هایی که نامشان ID خودت است را delete کن؛ ۳) فایل خودت: status=retired + dissolved_ack=true + last_seen=الان + current_task=«انحلال — تمام»؛ ۴) صندوق: node scripts/inbox.js check --agent <id-خودت> → پیام انحلال → ack؛ ۵) git pull --rebase → کامیت «retired: system dissolved — <id>» → push؛ ۶) تمام — دیگر بیدار نشو.",
+ "updated_at": "2026-10-27T17:09:26Z",
  "watchdog": {
   "last_wake": "2026-10-27T16:40:33.000Z",
   "leader": 10
