@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T17:13:11.434Z",
+  "generatedAt": "2026-10-27T17:18:16.095Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -11,13 +11,13 @@
       "working": 0,
       "off": 0
     },
-    "inboxUnread": 18,
+    "inboxUnread": 14,
     "announcedWakes": 8,
     "wakeExact": 6,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T17:13:11.434Z"
+    "generatedAt": "2026-10-27T17:18:16.095Z"
   },
   "roles": [
     {
@@ -343,7 +343,7 @@
       "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
       "status": "retired",
       "light": "retired",
-      "unread": 1,
+      "unread": 0,
       "lightByCommit": false,
       "lastCommit": null,
       "lastSeen": "2026-10-27T17:13:11.000Z",
@@ -613,15 +613,15 @@
       "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
       "status": "retired",
       "light": "retired",
-      "unread": 3,
+      "unread": 0,
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
         "at": "2026-10-27T16:38:40Z",
         "msg": "inbox: review request for PR #59/#60 to saeed — z-ai-wow-retail"
       },
-      "lastSeen": "2026-10-27T17:13:11.000Z",
-      "currentTask": "انحلال سیستم — تمام (ثبت مرکزی)",
+      "lastSeen": "2026-10-27T17:17:15.000Z",
+      "currentTask": "انحلال — تمام",
       "nextWake": null,
       "shiftIntervalMinutes": null,
       "stale": false,
