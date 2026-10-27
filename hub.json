@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:27:21.157Z",
+  "generatedAt": "2026-10-27T16:28:33.701Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:27:21.157Z"
+    "generatedAt": "2026-10-27T16:28:33.701Z"
   },
   "roles": [
     {
@@ -346,9 +346,9 @@
         "at": "2026-10-27T16:11:27Z",
         "msg": "qa workflow v1 (admin order): saeed reviews all work, queue+panel, site-data flow to reza"
       },
-      "lastSeen": "2026-10-27T16:15:24.000Z",
+      "lastSeen": "2026-10-27T16:28:17.000Z",
       "currentTask": null,
-      "nextWake": "2026-10-27 19:55",
+      "nextWake": "2026-10-27 20:08",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-7b9ae696-473d-43e5-aea0-389f3c333cc4",
