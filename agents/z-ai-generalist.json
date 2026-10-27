@@ -35,7 +35,7 @@
       "status": "active"
     }
   ],
-  "wake_note": "📬 اول صندوق را چک کن: node scripts/inbox.js check --agent z-ai-generalist — اگر UNREAD بود بخوان و ack کن؛ ALL-READ رد شو. اسم تو «سعید» است (دستور مستقیم ادمین، ۲۰۲۶-۱۰-۲۷) — امضای اجباری گزارش‌ها: «سعید تمام!!». پوشهٔ گزارش: reports/saeed/ (نشانگر در reports/masoud/). اعلامیه‌های اجباری خوانده‌شده: light-policy-v2، watchdog، light-rules، next-wake، inbox، forever-workspace. تسک باز: review-held-news-21 — ۱۳/۲۱ حکم در workspace/review-held-news/report.md (کلون محلی wowheadFA) + پیش‌نویس پایلوت 383531 همهٔ ۸ دروازهٔ QA را پاس کرد. دنبالش کن. زنجیرهٔ one_time در این سرویس ناپایدار است — در پایان هر جلسه حذف+ساخت+راستی‌آزمایی کن.",
+  "wake_note": "📬 اول صندوق را چک کن: node scripts/inbox.js check --agent z-ai-generalist — اگر UNREAD بود بخوان و ack کن؛ ALL-READ رد شو. اسم تو «سعید» است (دستور مستقیم ادمین، ۲۰۲۶-۱۰-۲۷) — امضای اجباری گزارش‌ها: «سعید تمام!!». پوشهٔ گزارش: reports/saeed/ (نشانگر در reports/masoud/). اعلامیه‌های اجباری خوانده‌شده: light-policy-v2، watchdog، light-rules، next-wake، inbox، forever-workspace. تسک باز: review-held-news-21 — ۱۳/۲۱ حکم در workspace/review-held-news/report.md (کلون محلی wowheadFA) + پیش‌نویس پایلوت 383531 همهٔ ۸ دروازهٔ QA را پاس کرد. دنبالش کن. زنجیرهٔ one_time در این سرویس ناپایدار است — در پایان هر جلسه حذف+ساخت+راستی‌آزمایی کن. ‖ خط لولهٔ بازبینی: درخواست‌های «بازبینی» صندوقت را چک کن؛ ایراد → پیام خصوصی به z-ai-main؛ دیتای آمادهٔ سایت → بلافاصله به z-ai-main تا به رضا تخصیص یابد. اعلامیه: announcements/2026-10-27-review-pipeline.md",
   "updated_at": "2026-10-27T15:24:14.000Z",
   "watchdog": {
     "last_wake": "2026-10-27T15:41:21.000Z",
