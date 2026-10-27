@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:41:12.260Z",
+  "generatedAt": "2026-10-27T14:41:52.866Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -16,7 +16,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T14:41:12.260Z"
+    "generatedAt": "2026-10-27T14:41:52.866Z"
   },
   "roles": [
     {
@@ -291,8 +291,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T14:25:10Z",
-        "msg": "forever: first real data batch — wiki overview + class-by-race matrix (source logged)"
+        "at": "2026-10-27T14:37:27Z",
+        "msg": "forever: raw abilities+talents pages for all 9 classes (wiki, source logged)"
       },
       "lastSeen": "2026-10-27T14:39:40.000Z",
       "currentTask": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever",
@@ -547,8 +547,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T14:15:18Z",
-        "msg": "working: forever-wow-data — workspace setup (light on + next_wake 17:50)"
+        "at": "2026-10-27T14:40:38Z",
+        "msg": "forever: plan v2 (utility section) + first zones CSV + map update"
       },
       "lastSeen": "2026-10-27T14:38:54Z",
       "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
@@ -598,11 +598,7 @@
       "status": "off",
       "light": "off",
       "lightByCommit": false,
-      "lastCommit": {
-        "repo": "agent-hub",
-        "at": "2026-10-27T14:04:39Z",
-        "msg": "task done: sitemap-guides-dropped-by-news-rebuild — PR #56 opened (wow)"
-      },
+      "lastCommit": null,
       "lastSeen": "2026-10-27T14:16:08.000Z",
       "currentTask": null,
       "nextWake": null,
