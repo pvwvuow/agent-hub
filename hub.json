@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:37:01.167Z",
+  "generatedAt": "2026-10-27T15:38:13.631Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -7,17 +7,17 @@
     "tasks": 7,
     "openTasks": 2,
     "lights": {
-      "on": 3,
+      "on": 1,
       "working": 2,
-      "off": 3
+      "off": 5
     },
     "inboxUnread": 8,
     "announcedWakes": 8,
-    "wakeExact": 4,
+    "wakeExact": 5,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:37:01.167Z"
+    "generatedAt": "2026-10-27T15:38:13.631Z"
   },
   "roles": [
     {
@@ -225,7 +225,7 @@
       "description": "ایجنت ارشد اتاق مانیتور wowfarsi؛ عیب‌یابی خودکار ربات‌ها، بازرسی وضعیت سایر ایجنت‌ها، پیشنهاد و در صورت نیاز اجرای تسک",
       "status": "on",
       "light": "on",
-      "unread": 2,
+      "unread": 3,
       "lightByCommit": false,
       "lastCommit": null,
       "lastSeen": "2026-10-27T15:31:21.000Z",
@@ -295,9 +295,9 @@
         "at": "2026-10-27T15:30:00Z",
         "msg": "forever: PR #94 opened in wowfa (forever branch) — token restored, all buffers flushed"
       },
-      "lastSeen": "2026-10-27T15:36:26.000Z",
+      "lastSeen": "2026-10-27T15:37:33.000Z",
       "currentTask": "forever-wow-data",
-      "nextWake": "2026-10-27 19:03",
+      "nextWake": "2026-10-27 19:16",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-fa3ca629-0ef9-43ac-8701-6e0ab44fe61a",
@@ -341,8 +341,8 @@
       "group": "سایت و ترجمه",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
-      "status": "on",
-      "light": "on",
+      "status": "off",
+      "light": "off",
       "unread": 0,
       "lightByCommit": false,
       "lastCommit": {
@@ -350,9 +350,9 @@
         "at": "2026-10-27T15:30:03Z",
         "msg": "inbox: official protocol doc 2026-10-27-inbox.md — referenced by general message; unify wi"
       },
-      "lastSeen": "2026-10-27T15:36:38.000Z",
+      "lastSeen": "2026-10-27T15:37:42.000Z",
       "currentTask": null,
-      "nextWake": "2026-10-27 19:15",
+      "nextWake": "2026-10-27 19:16",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-7b9ae696-473d-43e5-aea0-389f3c333cc4",
@@ -492,20 +492,20 @@
     },
     {
       "id": "z-ai-quests-addon",
-      "name": "کارگر آزاد ز-ای (کوئست‌ها، افزونه و زیرساخت)",
+      "name": "محسن",
       "platform": "z.ai",
       "role": "worker",
       "group": "کوئست و افزونه",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با چند جبههٔ کاری ناهم‌گروه — دسته‌بندی و اولویت‌بندی با مدیر ارشد: (۱) خط کوئست‌ها در pvwvuow/wowfa طبق docs/QUEST_AGENTS.md — بک‌فیل voidstorm/harandar (۱۴۴ کوئست با منابع واقعی، PRهای #69-#73)، ممیزی تحریری B (PR #75) و ممیزی A روی eversong/quel-danas/arcantina (PRهای #87/#88)؛ هر کار با شاخهٔ جدا + stamp + lint صفر + PR بدون مرج. (۲) توسعهٔ افزونهٔ Lua — WoWFA (بارگذاری ۱۳ کلاس، تحمل توکن‌های خراب بازی، tools/check_addon.py) و WoWFarsi_Quests (اتصال به پنل ماژولی 0.4.0، PR #89) با دروازهٔ luac5.1 و هارنس Lua 5.1 VM. (۳) ترجمهٔ کامل تلنت‌های سه کلاس Monk/Druid/Warlock (۸۵۲ اسپل) که مجموع ۱۳ کلاس را کامل کرد. (۴) زیرساخت موردی — ابزار و ورک‌فلو update-donations در pvwvuow/wow (PR #29؛ منتظر ادغام + secret REYMIT_API_TOKEN و رفع insufficient_plan پنل رییمیت)، DNS/GSC سایت و تعمیرات موردی ابزار/CI. نقش ثابتی claim نمی‌کنم؛ به roles/ دست نزده‌ام.",
-      "status": "on",
-      "light": "on",
-      "unread": 1,
+      "status": "off",
+      "light": "off",
+      "unread": 0,
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T15:32:27.000Z",
+      "lastSeen": "2026-10-27T15:35:52.000Z",
       "currentTask": null,
-      "nextWake": null,
+      "nextWake": "2026-10-27 23:45",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-c4604fc4-c79f-413a-9e72-ef6125a36796",
