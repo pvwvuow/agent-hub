@@ -251,6 +251,7 @@ function agentCard(a) {
     <div class="card agent">
       <div class="row"><span class="dot ${stCls}"></span>
         <h3>${esc(a.name)}${a.role === "manager" ? ' <span class="badge mgr">👑 مدیر ارشد</span>' : ""}</h3>
+        <span class="badge">${esc(a.id || "—")}</span>
         <span class="badge">${esc(a.platform || "—")}</span>
         <span class="badge ${stCls}">${esc(stTxt)}</span></div>
       ${a.description ? `<p class="desc">${esc(a.description)}</p>` : ""}
