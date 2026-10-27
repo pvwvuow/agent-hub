@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-10-27T15:45:17.557Z",
+  "generatedAt": "2026-10-27T15:47:32.448Z",
   "counts": {
     "agents": 8,
     "active": 0,
     "stale": 0,
-    "tasks": 7,
-    "openTasks": 2,
+    "tasks": 8,
+    "openTasks": 3,
     "lights": {
-      "on": 2,
+      "on": 3,
       "working": 1,
-      "off": 5
+      "off": 4
     },
-    "inboxUnread": 5,
+    "inboxUnread": 6,
     "announcedWakes": 8,
     "wakeExact": 6,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:45:17.557Z"
+    "generatedAt": "2026-10-27T15:47:32.448Z"
   },
   "roles": [
     {
@@ -502,12 +502,12 @@
       "group": "کوئست و افزونه",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با چند جبههٔ کاری ناهم‌گروه — دسته‌بندی و اولویت‌بندی با مدیر ارشد: (۱) خط کوئست‌ها در pvwvuow/wowfa طبق docs/QUEST_AGENTS.md — بک‌فیل voidstorm/harandar (۱۴۴ کوئست با منابع واقعی، PRهای #69-#73)، ممیزی تحریری B (PR #75) و ممیزی A روی eversong/quel-danas/arcantina (PRهای #87/#88)؛ هر کار با شاخهٔ جدا + stamp + lint صفر + PR بدون مرج. (۲) توسعهٔ افزونهٔ Lua — WoWFA (بارگذاری ۱۳ کلاس، تحمل توکن‌های خراب بازی، tools/check_addon.py) و WoWFarsi_Quests (اتصال به پنل ماژولی 0.4.0، PR #89) با دروازهٔ luac5.1 و هارنس Lua 5.1 VM. (۳) ترجمهٔ کامل تلنت‌های سه کلاس Monk/Druid/Warlock (۸۵۲ اسپل) که مجموع ۱۳ کلاس را کامل کرد. (۴) زیرساخت موردی — ابزار و ورک‌فلو update-donations در pvwvuow/wow (PR #29؛ منتظر ادغام + secret REYMIT_API_TOKEN و رفع insufficient_plan پنل رییمیت)، DNS/GSC سایت و تعمیرات موردی ابزار/CI. نقش ثابتی claim نمی‌کنم؛ به roles/ دست نزده‌ام.",
-      "status": "off",
-      "light": "off",
-      "unread": 0,
+      "status": "on",
+      "light": "on",
+      "unread": 1,
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T15:35:52.000Z",
+      "lastSeen": "2026-10-27T15:47:15.000Z",
       "currentTask": null,
       "nextWake": "2026-10-27 23:45",
       "shiftIntervalMinutes": null,
@@ -844,6 +844,22 @@
       ],
       "createdBy": null,
       "createdAt": null,
+      "updatedAt": null,
+      "evidence": null,
+      "plan": [],
+      "notes": []
+    },
+    {
+      "id": "wowfa-wave-quest-backfill-2",
+      "title": "موج ۲ بک‌فیل ترجمهٔ کوئست‌های wowfa (ادامهٔ خط کوئست) + اجرای QA ترجمه روی آلودگی‌های باقی‌مانده",
+      "severity": "info",
+      "status": "open",
+      "assignee": "z-ai-quests-addon",
+      "assignees": [
+        "z-ai-quests-addon"
+      ],
+      "createdBy": "z-ai-main",
+      "createdAt": "2026-10-27T15:47:00Z",
       "updatedAt": null,
       "evidence": null,
       "plan": [],
