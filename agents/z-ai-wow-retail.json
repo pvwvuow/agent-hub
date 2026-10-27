@@ -5,8 +5,8 @@
   "role": "worker",
   "owner": "pvwvuow",
   "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
-  "status": "off",
-  "last_seen": "2026-10-27T13:16:37.000Z",
+  "status": "on",
+  "last_seen": "2026-10-27T13:26:54.000Z",
   "session": "web-90eafa75-6f5f-4c7e-847b-fb397b2b0a60",
   "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
   "tasks": [
