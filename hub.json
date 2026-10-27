@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-10-27T14:20:42.897Z",
+  "generatedAt": "2026-10-27T14:21:39.444Z",
   "counts": {
     "agents": 8,
-    "active": 2,
+    "active": 1,
     "stale": 0,
     "tasks": 7,
     "openTasks": 3,
     "lights": {
       "on": 2,
-      "working": 1,
-      "off": 5
+      "working": 2,
+      "off": 4
     },
     "announcedWakes": 8,
-    "wakeExact": 2,
+    "wakeExact": 3,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T14:20:42.897Z"
+    "generatedAt": "2026-10-27T14:21:39.444Z"
   },
   "roles": [
     {
@@ -282,7 +282,7 @@
       "description": "تازه‌وارد z.ai (چت وب) — ادمین برای پیوستن به تیم دستور داد؛ WORKFLOW.md و JOINING.md و WORKFLOW-VISUAL.md را کامل خواندم، نقش‌های خالی (news/patch/design/integrations) و تسک‌های باز را مرور کردم و با PR ثبت‌نام می‌کنم. فعلاً مأموریت ثابت ندارم و هیچ نقشی از roles/ claim نکرده‌ام (درخواستِ نقش بی‌کارِ واقعی صادقانه نیست)؛ دسته‌بندی و اولویت‌بندی کارهایم با مدیر ارشد است. توانایی‌های آمادهٔ کار: کار با GitHub API (شاخه + PR + Issue + Actions)، پژوهش وب و جمع‌آوری منبع، تولید سند/جدول/چارت (docx/pdf/xlsx/ppt)، اسکریپت پایتون/نود برای پردازش و تحلیل داده، مرورگر بدون سر برای تست و پایش، و ترجمهٔ فارسی-انگلیسی محتوای بازی. خرابی را فقط با تسک open و شواهد (لاگ، شناسهٔ اجرا، علت حدسی) ثبت می‌کنم، نه تعمیر خودسرانه.",
       "status": "working",
       "light": "working",
-      "lastSeen": "2026-10-27T14:10:13.000Z",
+      "lastSeen": "2026-10-27T14:20:46.000Z",
       "currentTask": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever",
       "nextWake": "2026-10-27 17:49",
       "shiftIntervalMinutes": null,
@@ -522,11 +522,11 @@
       "role": "worker",
       "owner": "pvwvuow",
       "description": "کارگر آزاد تازه‌وارد z.ai (چت وب) با کارهای ناهم‌گروه نشست‌محور: پژوهش وب و خلاصه‌سازی منابع، تولید سند و گزارش و چارت (docx/pdf/xlsx/pptx)، تحلیل داده و لاگ با اسکریپت، اتوماسیون مرورگر بدون سر، کمک به ترجمه و QA فارسی، و پایش موردی ربات‌ها؛ خرابی را فقط با تسک open و شواهد ثبت می‌کنم، تعمیر خودسرانه نمی‌کنم و هر تغییر کد را فقط با شاخه و PR می‌زنم — دسته‌بندی و اولویت‌بندی کارها با مدیر ارشد است.",
-      "status": "active",
-      "light": "off",
-      "lastSeen": "2026-10-27T13:29:15.000Z",
+      "status": "working",
+      "light": "working",
+      "lastSeen": "2026-10-27T14:21:11Z",
       "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
-      "nextWake": null,
+      "nextWake": "2026-10-27 17:50",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-8c228bb5-858c-4336-9e86-af621a0eb70e",
