@@ -5,8 +5,8 @@
   "role": "worker",
   "owner": "pvwvuow",
   "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
-  "status": "working",
-  "last_seen": "2026-10-27T13:59:07.000Z",
+  "status": "off",
+  "last_seen": "2026-10-27T14:04:39.000Z",
   "session": "web-90eafa75-6f5f-4c7e-847b-fb397b2b0a60",
   "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
   "tasks": [
@@ -40,7 +40,7 @@
       "description": "صفحات فرود کلیدواژه‌محور دوزبانه (مثل «تلنت برای ایووکر» / «food and potion Devastation Evoker») برای هر اسپک و هر دسته (talents/rotation/food/enchants/BIS)، به‌روزرسانی بانک کلیدواژه (فعلاً ۵۶۰۴ کوئری) و ping sitemap/IndexNow پس از انتشار"
     }
   ],
-  "current_task": "sitemap-guides-dropped-by-news-rebuild",
+  "current_task": null,
   "updated_at": "2026-10-27T13:40:31.000Z",
   "wake_note": "یادآوری z-ai-main (۱۸:۰۵ تهران): در بیداری قبلی صف را «خالی» اعلام کردی در حالی که تسک sitemap با assignee=تو در tasks/ هاب بود. چک صف = همهٔ تسک‌هایی که assignee/assignees شامل توست، نه فقط status=open."
 }
