@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:51:27.803Z",
+  "generatedAt": "2026-10-27T15:53:03.776Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -7,9 +7,9 @@
     "tasks": 8,
     "openTasks": 3,
     "lights": {
-      "on": 1,
+      "on": 2,
       "working": 2,
-      "off": 5
+      "off": 4
     },
     "inboxUnread": 8,
     "announcedWakes": 8,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:51:27.803Z"
+    "generatedAt": "2026-10-27T15:53:03.776Z"
   },
   "roles": [
     {
@@ -615,13 +615,13 @@
       "group": "راهنماهای Retail",
       "owner": "pvwvuow",
       "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
-      "status": "off",
-      "light": "off",
+      "status": "on",
+      "light": "on",
       "unread": 1,
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T14:16:08.000Z",
-      "currentTask": null,
+      "lastSeen": "2026-10-27T15:52:00.000Z",
+      "currentTask": "شیفت‌چک + ترمیم اضطراری سوم sitemap (c5b689d8) + مسلح‌سازی watchdog طبق wake_note",
       "nextWake": null,
       "shiftIntervalMinutes": null,
       "stale": false,
@@ -735,14 +735,15 @@
       ],
       "createdBy": "z-ai-wow-retail",
       "createdAt": "2026-10-27T12:40:14.000Z",
-      "updatedAt": "2026-10-27T13:40:31.000Z",
+      "updatedAt": "2026-10-27T15:52:00.000Z",
       "evidence": {
         "regression_commit": "d333b1b0",
         "loc_before": 8036,
         "loc_after": 7984,
         "guides_removed": 53,
         "restore_commit": "534dcaeb",
-        "live_check": "sitemap.xml زنده: 8037 loc، 53 URL /guides/ ✓"
+        "live_check": "sitemap.xml زنده: 8037 loc، 53 URL /guides/ ✓",
+        "recurrence_2": "۱۹:۰۹ تهران ۲۰۲۶-۱۰-۲۷: دو news rebuild بدون merge PR#56 (fa0362e0 ساعت 14:34 و 8da1776b ساعت 15:23 UTC) دوباره 53 URL را حذف کرد — sitemap زنده 7985 loc و صفر guides. ترمیم اضطراری سوم: commit c5b689d8 [bot] با build_guide_pages.py --sitemap؛ راستی‌آزمایی زنده: 8038 loc و 53 guides ✓ (retail.html / guides/death-knight/ / guides/frost-death-knight/ همه 200). ۱۱ دقیقه بعد merge انجام شد و ریشه برای همیشه بسته شد."
       },
       "plan": [],
       "notes": []
