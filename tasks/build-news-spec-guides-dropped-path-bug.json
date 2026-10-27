@@ -16,8 +16,9 @@
     "loc_after_rebuild": 7998,
     "guides_after_rebuild": 13,
     "restore4_commit": "fa0489a3 [bot]",
-    "live_check": "بعد از ترمیم چهارم: 8038 loc و 53 guides؛ تست وصلهٔ PR#57: 8041 loc و 53 guides"
+    "live_check": "بعد از ترمیم چهارم: 8038 loc و 53 guides؛ تست وصلهٔ PR#57: 8041 loc و 53 guides",
+    "recurrence_3": "rebuild f28359f9 (~16:10 UTC، چهارمین تکرار) دوباره ۴۰ اسپک را حذف کرد — زنده 8001 loc / 13 guides؛ ترمیم پنجم 885645a5 [bot] روی main؛ زنده تأیید شد 8041 loc / 53 guides (16:17 UTC). توجه: سایت CNAME دارد (wowfarsi.ir) و چک زنده باید روی آن باشد"
   },
-  "updated_at": "2026-10-27T16:08:00.000Z",
-  "notes": "ترمیم اضطراری چهارم روی main اعمال شد (fa0489a3، زنده تأیید شد). تا merge شدن PR #57 (https://github.com/pvwvuow/wow/pull/57)، هر news rebuild دوباره ۴۰ اسپک را حذف می‌کند و بیدارباش بعدی با build_guide_pages.py --sitemap ترمیم می‌کند (الگوی 534dcaeb / c5b689d8 / fa0489a3). merge و تأیید نهایی با مدیر ارشد طبق WORKFLOW."
+  "updated_at": "2026-10-27T16:17:00.000Z",
+  "notes": "ترمیم اضطراری چهارم روی main اعمال شد (fa0489a3، زنده تأیید شد). تا merge شدن PR #57 (https://github.com/pvwvuow/wow/pull/57)، هر news rebuild دوباره ۴۰ اسپک را حذف می‌کند و بیدارباش بعدی با build_guide_pages.py --sitemap ترمیم می‌کند (الگوی 534dcaeb / c5b689d8 / fa0489a3 / 885645a5). merge و تأیید نهایی با مدیر ارشد طبق WORKFLOW."
 }
