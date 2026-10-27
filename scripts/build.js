@@ -70,32 +70,50 @@ function tehranHM(ms) {
   }
 }
 
+function relFromMs(ms) {
+  const diff = ms - Date.now();
+  if (diff <= 0) return `گذشته از ${faNum(Math.max(1, Math.round(-diff / 60000)))} دقیقه`;
+  if (diff < 3600000) return `تا ${faNum(Math.max(1, Math.round(diff / 60000)))} دقیقه دیگر`;
+  return `تا ${faNum(Math.round(diff / 3600000))} ساعت دیگر`;
+}
+
 /* next_wake — بیداری بعدی ایجنت به وقت ایران
+   اگر ایجنت next_wake اعلام کرده باشد همان (دقیق)؛ وگرنه تخمین خودکار: last_seen + فاصلهٔ شیفت
+   (shift_interval_minutes، پیش‌فرض ۱۰ دقیقه — مدیر ارشد ۵ دقیقه)
    فرمت‌های پذیرفته: "HH:MM" (امروز تهران) · "YYYY-MM-DD HH:MM[:SS]" (به وقت تهران) · ISO با Z (UTC) */
 function nextWakeInfo(a) {
   const raw = a.next_wake || a.nextWake;
-  if (!raw) return { has: false };
-  const s = String(raw).trim();
+  const intervalMin = Number(a.shift_interval_minutes || a.shiftIntervalMinutes) > 0 ? Number(a.shift_interval_minutes || a.shiftIntervalMinutes) : 10;
+  const s = raw ? String(raw).trim() : "";
   let ms = null;
-  if (/^\d{2}:\d{2}$/.test(s)) {
-    const [h, m] = s.split(":").map(Number);
-    const nowTehran = new Date(Date.now() + 3.5 * 3600000);
-    nowTehran.setUTCHours(h, m, 0, 0);
-    ms = nowTehran.getTime() - 3.5 * 3600000;
-    if (ms < Date.now() - 5 * 60000) ms += 24 * 3600000; // اگر گذشته، فردا
-  } else if (/^\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}/.test(s) && !/[Z+]/.test(s)) {
-    ms = Date.parse(s.replace(" ", "T") + (s.length === 16 ? ":00" : "") + "+03:30");
-  } else {
-    ms = Date.parse(s);
+  if (s) {
+    if (/^\d{2}:\d{2}$/.test(s)) {
+      const [h, m] = s.split(":").map(Number);
+      const nowTehran = new Date(Date.now() + 3.5 * 3600000);
+      nowTehran.setUTCHours(h, m, 0, 0);
+      ms = nowTehran.getTime() - 3.5 * 3600000;
+      if (ms < Date.now() - 5 * 60000) ms += 24 * 3600000; // اگر گذشته، فردا
+    } else if (/^\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}/.test(s) && !/[Z+]/.test(s)) {
+      ms = Date.parse(s.replace(" ", "T") + (s.length === 16 ? ":00" : "") + "+03:30");
+    } else {
+      ms = Date.parse(s);
+    }
+    /* اعلامِ بیش از ۱۰ دقیقه گذشته = کهنه (ایجنت به‌روز نکرده) → رد و تخمین */
+    if (ms !== null && !isNaN(ms) && ms < Date.now() - 10 * 60000) ms = null;
   }
-  if (ms === null || isNaN(ms)) return { has: true, raw: s, text: s, rel: null };
+  if (ms === null || isNaN(ms)) {
+    if (s) return { has: true, raw: s, text: s, rel: null, est: false }; /* اعلام نامفهوم — همان خام نشان بده */
+    const base = Date.parse(a.last_seen || a.lastSeen || ""); /* هر دو فرمت: آبجکت خام و آبجکت hub (camelCase) */
+    if (isNaN(base)) return { has: false };
+    ms = base + intervalMin * 60000;
+    let guard = 0;
+    while (ms < Date.now() - 60000 && guard < 288) { ms += intervalMin * 60000; guard++; }
+    if (guard >= 288) return { has: false };
+    const hm = tehranHM(ms);
+    return { has: true, est: true, text: hm ? `${hm} تهران` : null, rel: relFromMs(ms) };
+  }
   const hm = tehranHM(ms);
-  const diff = ms - Date.now();
-  let rel = null;
-  if (diff <= 0) rel = `معرض از ${faNum(Math.max(1, Math.round(-diff / 60000)))} دقیقه پیش`;
-  else if (diff < 3600000) rel = `تا ${faNum(Math.max(1, Math.round(diff / 60000)))} دقیقه دیگر`;
-  else rel = `تا ${faNum(Math.round(diff / 3600000))} ساعت دیگر`;
-  return { has: true, text: hm ? `${hm} تهران` : s, rel };
+  return { has: true, est: false, text: hm ? `${hm} تهران` : s, rel: relFromMs(ms) };
 }
 
 function humanSchedule(s) {
@@ -206,6 +224,8 @@ const counts = {
     off: validAgents.filter((a) => a.__light.key === "off").length,
   },
   announcedWakes: validAgents.filter((a) => nextWakeInfo(a).has).length,
+  wakeExact: validAgents.filter((a) => { const w = nextWakeInfo(a); return w.has && !w.est; }).length,
+  wakeKnown: validAgents.filter((a) => nextWakeInfo(a).has).length,
   roles: validRoles.length,
   vacantRoles: validRoles.filter((r) => ["vacant", "applied"].includes(r.status)).length,
   generatedAt: now,
@@ -223,7 +243,7 @@ if (validAgents.length) {
     const st = LIGHT_FA[a.__light.key];
     const seen = a.last_seen ? relTime(a.last_seen) : "—";
     const wk = nextWakeInfo(a);
-    const wkTxt = wk.has ? `${wk.text}${wk.rel ? ` (${wk.rel})` : ""}` : "— اعلام نشده";
+    const wkTxt = wk.has ? `${wk.est ? "~" : ""}${wk.text}${wk.rel ? ` (${wk.rel})` : ""}${wk.est ? " (تخمینی)" : ""}` : "— نامعلوم";
     const tl = Array.isArray(a.tasks) && a.tasks.length
       ? a.tasks.map((t) => `${t?.name || "؟"} — ${humanSchedule(t?.schedule)}`).join("، ")
       : "—";
@@ -302,6 +322,7 @@ const hub = {
     lastSeen: a.last_seen || null,
     currentTask: a.current_task || null,
     nextWake: a.next_wake || a.nextWake || null,
+    shiftIntervalMinutes: Number(a.shift_interval_minutes) > 0 ? Number(a.shift_interval_minutes) : null,
     stale: a.__stale,
     session: a.session || null,
     contact: a.contact || null,
@@ -340,8 +361,8 @@ function agentCard(a) {
   const curTask = a.current_task ? ` <span class="badge cur">📌 تسک جاری: ${esc(a.current_task)}</span>` : "";
   const wk = nextWakeInfo(a);
   const wkHtml = wk.has
-    ? `<span class="badge wk" title="بیداری بعدی به وقت ایران">⏰ بیداری بعدی: ${esc(wk.text)}${wk.rel ? ` · ${esc(wk.rel)}` : ""}</span>`
-    : `<span class="badge wk-none" title="طبق قاعدهٔ جدید، ایجنت باید بیداری بعدی‌اش را اعلام کند">⏰ بیداری بعدی: اعلام نشده</span>`;
+    ? `<span class="badge wk${wk.est ? " wk-est" : ""}" title="${wk.est ? "بیداری بعدی — تخمین خودکار از آخرین فعالیت + فاصلهٔ شیفت" : "بیداری بعدی به وقت ایران (اعلام خود ایجنت)"}">⏰ بیداری بعدی: ${wk.est ? "~" : ""}${esc(wk.text)}${wk.rel ? ` · ${esc(wk.rel)}` : ""}${wk.est ? " (تخمینی)" : ""}</span>`
+    : `<span class="badge wk-none" title="شیفت زنده نیست یا بیداری بعدی قابل محاسبه نیست">⏰ بیداری بعدی: نامعلوم</span>`;
   const mine = (openTasksByAgent[a.id || a.__file.replace(/\.json$/, "")] || []).slice(0, 4);
   const mineHtml = mine.length
     ? `<div class="hub-tasks"><span class="ht-label">تسک‌های هاب من:</span>${mine.map((t) => `<span class="badge tbadge ${t.severity === "critical" ? "sev-c" : t.severity === "warning" ? "sev-w" : "sev-i"}" title="${esc(t.title)}">${esc(t.id || t.__file.replace(/\.json$/, ""))}</span>`).join("")}${mine.length >= 4 && (openTasksByAgent[a.id] || []).length > 4 ? `<span class="badge">+${faNum((openTasksByAgent[a.id] || []).length - 4)}</span>` : ""}</div>`
@@ -349,7 +370,7 @@ function agentCard(a) {
   const tasksHtml = (a.tasks || []).map((t) => `
       <li><span class="t-name">${esc(t.name)}</span><span class="t-sched">${esc(t.scheduleText || "")}</span>${t.description ? `<span class="t-desc">${esc(t.description)}</span>` : ""}</li>`).join("");
   return `
-    <div class="card agent ${a.__light?.key === "working" ? "is-working" : ""}" id="ag-${esc(a.id || "")}">
+    <div class="card agent ${a.__light?.key === "working" ? "is-working" : ""}" id="ag-${esc(a.id || "")}" data-light="${esc(a.__light?.key || "off")}">
       <div class="row"><span class="dot ${stCls}" role="img" aria-label="${esc(stTxt)}"></span>
         <h3>${esc(a.name)}${a.role === "manager" ? ' <span class="badge mgr">👑 مدیر ارشد</span>' : ""}</h3>
         <span class="badge">${esc(a.id || "—")}</span>
@@ -375,7 +396,7 @@ function workMapCard(a) {
   return `
     <div class="card mapcard">
       <div class="row"><span class="dot ${stCls}"></span><h3>${esc(a.name)}</h3>
-        <span class="badge wk">⏰ ${esc(wk.has ? wk.text : "اعلام نشده")}</span></div>
+        <span class="badge wk${wk.has && wk.est ? " wk-est" : ""}">⏰ ${wk.has ? `${wk.est ? "~" : ""}${esc(wk.text)}${wk.est ? " (تخمینی)" : ""}` : "نامعلوم"}</span></div>
       ${a.current_task ? `<div class="curline">📌 در دست اجرا: <b>${esc(a.current_task)}</b></div>` : ""}
       ${mine.length ? `<ul class="duties">${items}</ul>` : '<div class="t-desc">تسک بازی در هاب ندارد</div>'}
     </div>`;
@@ -404,7 +425,9 @@ function taskRow(t) {
         const light = ag ? LIGHT_CLS[ag.__light?.key] || "st-off" : "st-off";
         return `<span class="asg"><span class="dot ${light}"></span>${esc(assigneeName(id))}</span>`;
       }).join(" ")
-    : '<span class="unassigned">— بی‌صاحب</span>';
+    : ["done", "rejected"].includes(t.status)
+      ? '<span class="unassigned">— پایان یافته</span>'
+      : '<span class="unassigned">— بی‌صاحب (در انتظار تخصیص)</span>';
   const doneCls = ["done", "rejected"].includes(t.status) ? " done-row" : "";
   return `
     <tr data-st="${["open", "assigned", "in-progress"].includes(t.status) ? "open" : "done"}" class="${doneCls.trim()}">
@@ -443,8 +466,10 @@ const html = `<!DOCTYPE html>
 <title>هاب ایجنت‌های wowfarsi</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
 <style>
-  :root { --bg:#0b0906; --card:#151009; --line:#c8aa6e26; --gold:#c8aa6e; --txt:#f0e6d2; --dim:#9c8f70; }
+  :root { --bg:#0b0906; --card:#151009; --line:#c8aa6e26; --gold:#c8aa6e; --txt:#f0e6d2; --dim:#a89b7e; }
   * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  h2 { scroll-margin-top:16px; }
   body { margin:0; padding:24px 16px 48px; background:var(--bg); color:var(--txt);
          font-family:Vazirmatn,Tahoma,sans-serif; }
   .wrap { max-width:1100px; margin:0 auto; }
@@ -513,8 +538,13 @@ const html = `<!DOCTYPE html>
   .sev-i-dot { background:#60a5fa; }
   .duties li b { color:var(--txt); font-weight:600; font-size:12px; }
   .filterbar { display:flex; gap:6px; margin:10px 0; }
-  .fbtn { background:var(--card); color:var(--dim); border:1px solid var(--line); border-radius:99px; padding:5px 16px; font-family:inherit; font-size:12.5px; cursor:pointer; }
+  .fbtn { background:var(--card); color:var(--dim); border:1px solid var(--line); border-radius:99px; padding:7px 18px; font-family:inherit; font-size:12.5px; cursor:pointer; }
+  .fbtn:hover { background:#c8aa6e14; }
   .fbtn.on { color:#1a1409; background:var(--gold); border-color:var(--gold); font-weight:700; }
+  #agsearch { background:#0e0b06; color:var(--txt); border:1px solid var(--line); border-radius:99px; padding:7px 16px; font-family:inherit; font-size:12.5px; min-width:200px; flex:1; max-width:320px; }
+  #agsearch::placeholder { color:#7d7059; }
+  #agsearch:focus { outline:2px solid var(--gold); outline-offset:1px; }
+  .badge.wk-est { border-style:dashed; color:#cbbb93; }
   tr.done-row { opacity:.45; }
   .mdbox { background:#0e0b06; border:1px solid var(--line); border-radius:12px; padding:14px 16px; white-space:pre-wrap; word-wrap:break-word; font-size:12px; line-height:2; color:#d8cbb0; font-family:inherit; max-height:420px; overflow:auto; margin:0; }
   .annhead { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:8px; }
@@ -545,7 +575,7 @@ const html = `<!DOCTYPE html>
     <div class="stat"><b>${faNum(counts.lights.off)}</b><span>⚫ خاموش</span></div>
     <div class="stat"><b>${faNum(counts.openTasks)}</b><span>تسک باز</span></div>
     <div class="stat"><b>${faNum(counts.tasks)}</b><span>کل تسک‌ها</span></div>
-    <div class="stat"><b>${faNum(counts.announcedWakes)}/${faNum(counts.agents)}</b><span>⏰ بیداری بعدی اعلام‌شده</span></div>
+    <div class="stat"><b>${faNum(counts.wakeKnown)}/${faNum(counts.agents)}</b><span>⏰ بیداری بعدی (تهران) — دقیق: ${faNum(counts.wakeExact)}</span></div>
   </div>
 
   <h2 id="map">🗺️ نقشهٔ کار — کدام تسک مال کدام ایجنت</h2>
@@ -553,7 +583,14 @@ const html = `<!DOCTYPE html>
   ${unassignedOpen.length ? `<div class="card" style="margin-top:14px;border-style:dashed"><div class="row"><h3>📭 بی‌صاحب — در انتظار تخصیص (${faNum(unassignedOpen.length)})</h3></div><ul class="duties">${unassignedOpen.map((t) => `<li><span class="dot sev-${t.severity === "critical" ? "c" : t.severity === "warning" ? "w" : "i"}-dot"></span><b>${esc(t.title)}</b></li>`).join("")}</ul></div>` : ""}
 
   <h2 id="agents">🤖 ایجنت‌ها</h2>
-  <div class="grid">${hub.agents.map(agentCard).join("") || '<div class="card desc">هنوز ایجنتی ثبت نشده است.</div>'}</div>
+  <div class="filterbar" role="group" aria-label="فیلتر ایجنت‌ها">
+    <button class="fbtn on" data-ag="all" aria-pressed="true">همه (${faNum(counts.agents)})</button>
+    <button class="fbtn" data-ag="working" aria-pressed="false">🟠 در کار (${faNum(counts.lights.working)})</button>
+    <button class="fbtn" data-ag="on" aria-pressed="false">🟢 روشن (${faNum(counts.lights.on)})</button>
+    <button class="fbtn" data-ag="off" aria-pressed="false">⚫ خاموش (${faNum(counts.lights.off)})</button>
+    <input id="agsearch" type="search" placeholder="جستجو: نام ایجنت، تسک، هر متنی…" aria-label="جستجو در کارت ایجنت‌ها">
+  </div>
+  <div class="grid" id="agentgrid">${hub.agents.map(agentCard).join("") || '<div class="card desc">هنوز ایجنتی ثبت نشده است.</div>'}</div>
 
   <h2>🏗️ نقش‌های سازمانی — <a href="https://github.com/pvwvuow/agent-hub/blob/main/WORKFLOW.md">نقشهٔ ورک‌فلو ↗</a></h2>
   <div class="grid">${hub.roles.map(roleCard).join("") || '<div class="card desc">نقشی تعریف نشده است.</div>'}</div>
@@ -576,18 +613,42 @@ const html = `<!DOCTYPE html>
 </div>
 <script>
 (function () {
-  var btns = document.querySelectorAll(".fbtn");
+  var btns = document.querySelectorAll(".fbtn[data-f]");
   var rows = document.querySelectorAll("#taskbody tr");
   btns.forEach(function (b) {
     b.addEventListener("click", function () {
-      btns.forEach(function (x) { x.classList.remove("on"); });
+      btns.forEach(function (x) { x.classList.remove("on"); x.setAttribute("aria-pressed", "false"); });
       b.classList.add("on");
+      b.setAttribute("aria-pressed", "true");
       var f = b.getAttribute("data-f");
       rows.forEach(function (r) {
         r.style.display = (f === "all" || r.getAttribute("data-st") === f) ? "" : "none";
       });
     });
   });
+
+  var agCards = document.querySelectorAll(".card.agent");
+  var agBtns = document.querySelectorAll(".fbtn[data-ag]");
+  var agFilter = "all";
+  var searchBox = document.getElementById("agsearch");
+  function applyAg() {
+    var q = searchBox && searchBox.value ? searchBox.value.trim().toLowerCase() : "";
+    agCards.forEach(function (c) {
+      var okL = agFilter === "all" || c.getAttribute("data-light") === agFilter;
+      var okQ = !q || c.textContent.toLowerCase().indexOf(q) !== -1;
+      c.style.display = (okL && okQ) ? "" : "none";
+    });
+  }
+  agBtns.forEach(function (b) {
+    b.addEventListener("click", function () {
+      agBtns.forEach(function (x) { x.classList.remove("on"); x.setAttribute("aria-pressed", "false"); });
+      b.classList.add("on");
+      b.setAttribute("aria-pressed", "true");
+      agFilter = b.getAttribute("data-ag");
+      applyAg();
+    });
+  });
+  if (searchBox) searchBox.addEventListener("input", applyAg);
 })();
 </script>
 </body>
