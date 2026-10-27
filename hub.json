@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T17:02:04.422Z",
+  "generatedAt": "2026-10-27T17:02:35.578Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -7,17 +7,17 @@
     "tasks": 10,
     "openTasks": 2,
     "lights": {
-      "on": 3,
-      "working": 0,
+      "on": 1,
+      "working": 2,
       "off": 5
     },
-    "inboxUnread": 20,
+    "inboxUnread": 24,
     "announcedWakes": 8,
     "wakeExact": 6,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T17:02:04.422Z"
+    "generatedAt": "2026-10-27T17:02:35.578Z"
   },
   "roles": [
     {
@@ -223,17 +223,17 @@
       "group": "مدیریت و نظارت",
       "owner": "pvwvuow",
       "description": "ایجنت ارشد اتاق مانیتور wowfarsi؛ عیب‌یابی خودکار ربات‌ها، بازرسی وضعیت سایر ایجنت‌ها، پیشنهاد و در صورت نیاز اجرای تسک",
-      "status": "on",
-      "light": "on",
+      "status": "working",
+      "light": "working",
       "unread": 2,
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T16:29:57Z",
-        "msg": "watchdog: effective — z-ai-main"
+        "at": "2026-10-27T17:02:23Z",
+        "msg": "watchdog: effective — z-ai-main (takeover leader=10, gap=20.4)"
       },
-      "lastSeen": "2026-10-27T16:41:30.000Z",
-      "currentTask": null,
+      "lastSeen": "2026-10-27T17:02:30.000Z",
+      "currentTask": "شیفت پشتیبان مؤثر (تصاحب): تعمیر صندوق + احیای زنجیره اصلی + panel_sync",
       "nextWake": null,
       "shiftIntervalMinutes": 5,
       "stale": false,
@@ -398,13 +398,9 @@
       "description": "سعید (تغییر نام از مسعود به دستور مستقیم ادمین — ۲۰۲۶-۱۰-۲۷): بازرس رسمی تیم wowfarsi — وضعیت و اقدامات همهٔ ایجنت‌ها را چک می‌کند (چراغ‌های هاب، تسک جاری هر ایجنت، کامیت‌ها و PRهای تازهٔ wow/wowfa/wowheadFA، وضعیت CI) و گزارش فارسی را در reports/saeed/ همین هاب پوش می‌کند تا مدیر ارشد (z-ai-main) در بیداری غلتان ۵ دقیقه‌ای‌اش بخواند و دستور جدید به ایجنت‌ها بدهد. قانون امضای اجباری: هر پیام گزارش در چت با «سعید تمام!!» تمام می‌شود تا ادمین منبع پیام را بشناسد. شیفت غلتان ۱۰ دقیقه‌ای خودم را در چت خودم می‌سازم و در پایان هر جلسه تجدید می‌کنم.",
       "status": "off",
       "light": "off",
-      "unread": 3,
+      "unread": 7,
       "lightByCommit": false,
-      "lastCommit": {
-        "repo": "agent-hub",
-        "at": "2026-10-27T16:26:28Z",
-        "msg": "report: shift QA + chain rebuild — z-ai-generalist"
-      },
+      "lastCommit": null,
       "lastSeen": "2026-10-27T16:25:51.000Z",
       "currentTask": "شیفت QA بعدی: بازبینی تسک‌های done/PRهای تازه — بازبینی شاخه‌های site/* پس از باز شدن PR",
       "nextWake": "2026-10-27 20:05",
@@ -457,8 +453,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T16:26:35Z",
-        "msg": "task: sitemap-spec-urls-regression done (PR #58) + review request to Saeed; inbox: cleanup"
+        "at": "2026-10-27T17:01:32Z",
+        "msg": "watchdog: effective — z-ai-item"
       },
       "lastSeen": "2026-10-27T17:01:32Z",
       "currentTask": null,
@@ -564,12 +560,16 @@
       "group": "کارگر آزاد",
       "owner": "pvwvuow",
       "description": "کارگر آزاد تازه‌وارد z.ai (چت وب) با کارهای ناهم‌گروه نشست‌محور: پژوهش وب و خلاصه‌سازی منابع، تولید سند و گزارش و چارت (docx/pdf/xlsx/pptx)، تحلیل داده و لاگ با اسکریپت، اتوماسیون مرورگر بدون سر، کمک به ترجمه و QA فارسی، و پایش موردی ربات‌ها؛ خرابی را فقط با تسک open و شواهد ثبت می‌کنم، تعمیر خودسرانه نمی‌کنم و هر تغییر کد را فقط با شاخه و PR می‌زنم — دسته‌بندی و اولویت‌بندی کارها با مدیر ارشد است.",
-      "status": "on",
-      "light": "on",
+      "status": "working",
+      "light": "working",
       "unread": 1,
       "lightByCommit": false,
-      "lastCommit": null,
-      "lastSeen": "2026-10-27T17:01:12.000Z",
+      "lastCommit": {
+        "repo": "agent-hub",
+        "at": "2026-10-27T16:43:14Z",
+        "msg": "inbox: ack read-state — z-ai-utility"
+      },
+      "lastSeen": "2026-10-27T17:02:16.000Z",
       "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
       "nextWake": "2026-10-28 20:30",
       "shiftIntervalMinutes": null,
@@ -621,8 +621,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T16:24:07Z",
-        "msg": "چراغ: خاموش — z-ai-wow-retail (قانون نور v2)"
+        "at": "2026-10-27T16:38:40Z",
+        "msg": "inbox: review request for PR #59/#60 to saeed — z-ai-wow-retail"
       },
       "lastSeen": "2026-10-27T16:48:48.000Z",
       "currentTask": null,
