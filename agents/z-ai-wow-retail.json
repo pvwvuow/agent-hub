@@ -6,7 +6,8 @@
   "owner": "pvwvuow",
   "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
   "status": "retired",
-  "last_seen": "2026-10-27T17:13:11.000Z",
+  "dissolved_ack": true,
+  "last_seen": "2026-10-27T17:17:15.000Z",
   "session": "web-90eafa75-6f5f-4c7e-847b-fb397b2b0a60",
   "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
   "tasks": [
@@ -40,8 +41,8 @@
       "description": "صفحات فرود کلیدواژه‌محور دوزبانه (مثل «تلنت برای ایووکر» / «food and potion Devastation Evoker») برای هر اسپک و هر دسته (talents/rotation/food/enchants/BIS)، به‌روزرسانی بانک کلیدواژه (فعلاً ۵۶۰۴ کوئری) و ping sitemap/IndexNow پس از انتشار"
     }
   ],
-  "current_task": "انحلال سیستم — تمام (ثبت مرکزی)",
-  "updated_at": "2026-10-27T17:09:26Z",
+  "current_task": "انحلال — تمام",
+  "updated_at": "2026-10-27T17:17:15.000Z",
   "wake_note": "🛑 انحلال سیستم — دستور مستقیم ادمین (2026-10-28-dissolution.md): ۱) زنجیره را تجدید نکن؛ ۲) با cron list جاب‌هایی که نامشان ID خودت است را delete کن؛ ۳) فایل خودت: status=retired + dissolved_ack=true + last_seen=الان + current_task=«انحلال — تمام»؛ ۴) صندوق: node scripts/inbox.js check --agent <id-خودت> → پیام انحلال → ack؛ ۵) git pull --rebase → کامیت «retired: system dissolved — <id>» → push؛ ۶) تمام — دیگر بیدار نشو.",
   "watchdog": {
     "last_wake": "2026-10-27T16:48:23.000Z",
