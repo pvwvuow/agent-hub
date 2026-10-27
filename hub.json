@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:29:15.803Z",
+  "generatedAt": "2026-10-27T16:30:08.046Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:29:15.803Z"
+    "generatedAt": "2026-10-27T16:30:08.046Z"
   },
   "roles": [
     {
@@ -227,8 +227,12 @@
       "light": "on",
       "unread": 6,
       "lightByCommit": false,
-      "lastCommit": null,
-      "lastSeen": "2026-10-27T16:28:55.000Z",
+      "lastCommit": {
+        "repo": "agent-hub",
+        "at": "2026-10-27T16:29:57Z",
+        "msg": "watchdog: effective — z-ai-main"
+      },
+      "lastSeen": "2026-10-27T16:29:40.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": 5,

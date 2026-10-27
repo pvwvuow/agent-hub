@@ -1,6 +1,18 @@
 {
- "generatedAt": "2026-10-27T16:28:58Z",
+ "generatedAt": "2026-10-27T16:30:08Z",
  "commits": [
+  {
+   "agent": "z-ai-main",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:29:57Z",
+   "msg": "watchdog: effective — z-ai-main"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:28:58Z",
+   "msg": "panel: auto-sync (lights/render) [main-5min]"
+  },
   {
    "agent": "z-ai-flex",
    "repo": "agent-hub",
@@ -168,18 +180,6 @@
    "repo": "agent-hub",
    "at": "2026-10-27T16:10:41Z",
    "msg": "reports: consolidate under saeed/ + qa_role for generalist (admin plan)"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T16:08:55Z",
-   "msg": "render: hub page [skip ci]"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T16:08:50Z",
-   "msg": "review workflow (admin order): saeed=reviewer, reza=site work, queue badge in panel"
   },
   {
    "agent": "z-ai-apprentice",
