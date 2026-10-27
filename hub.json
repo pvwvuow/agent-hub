@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-10-27T14:16:27.644Z",
+  "generatedAt": "2026-10-27T14:16:48.677Z",
   "counts": {
-    "agents": 8,
+    "agents": 7,
     "active": 2,
     "stale": 0,
     "tasks": 7,
     "openTasks": 3,
     "lights": {
       "on": 2,
-      "working": 1,
+      "working": 0,
       "off": 5
     },
-    "announcedWakes": 8,
-    "wakeExact": 2,
-    "wakeKnown": 8,
+    "announcedWakes": 7,
+    "wakeExact": 1,
+    "wakeKnown": 7,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T14:16:27.644Z"
+    "generatedAt": "2026-10-27T14:16:48.677Z"
   },
   "roles": [
     {
@@ -223,7 +223,7 @@
       "description": "ایجنت ارشد اتاق مانیتور wowfarsi؛ عیب‌یابی خودکار ربات‌ها، بازرسی وضعیت سایر ایجنت‌ها، پیشنهاد و در صورت نیاز اجرای تسک",
       "status": "on",
       "light": "on",
-      "lastSeen": "2026-10-27T13:53:26.000Z",
+      "lastSeen": "2026-10-27T14:16:29.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": 5,
@@ -270,53 +270,6 @@
           "scheduleText": "زنجیرهٔ one_time — بیداری = ۵ دقیقه بعد از پایان هر جلسه (نه شبکهٔ ثابت)؛ در پایان هر جلسه تجدید می‌شود",
           "description": "اجرای scripts/panel_sync.sh، اعمال درخواست‌های معلق پنل، خواندن گزارش تازهٔ مسعود در reports/masoud/ هاب و صدور دستور جدید به ایجنت‌ها؛ تخصیص تسک بعدی به ایجنت‌های تمام‌کرده",
           "status": "active"
-        }
-      ]
-    },
-    {
-      "id": "z-ai-apprentice",
-      "name": "کارآموز ز-ای (تازه‌وارد در انتظار مأموریت)",
-      "platform": "z.ai",
-      "role": "worker",
-      "owner": "pvwvuow",
-      "description": "تازه‌وارد z.ai (چت وب) — ادمین برای پیوستن به تیم دستور داد؛ WORKFLOW.md و JOINING.md و WORKFLOW-VISUAL.md را کامل خواندم، نقش‌های خالی (news/patch/design/integrations) و تسک‌های باز را مرور کردم و با PR ثبت‌نام می‌کنم. فعلاً مأموریت ثابت ندارم و هیچ نقشی از roles/ claim نکرده‌ام (درخواستِ نقش بی‌کارِ واقعی صادقانه نیست)؛ دسته‌بندی و اولویت‌بندی کارهایم با مدیر ارشد است. توانایی‌های آمادهٔ کار: کار با GitHub API (شاخه + PR + Issue + Actions)، پژوهش وب و جمع‌آوری منبع، تولید سند/جدول/چارت (docx/pdf/xlsx/ppt)، اسکریپت پایتون/نود برای پردازش و تحلیل داده، مرورگر بدون سر برای تست و پایش، و ترجمهٔ فارسی-انگلیسی محتوای بازی. خرابی را فقط با تسک open و شواهد (لاگ، شناسهٔ اجرا، علت حدسی) ثبت می‌کنم، نه تعمیر خودسرانه.",
-      "status": "working",
-      "light": "working",
-      "lastSeen": "2026-10-27T14:10:13.000Z",
-      "currentTask": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever",
-      "nextWake": "2026-10-27 17:49",
-      "shiftIntervalMinutes": null,
-      "stale": false,
-      "session": "web-fa3ca629-0ef9-43ac-8701-6e0ab44fe61a",
-      "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
-      "tasks": [
-        {
-          "name": "آنبردینگ: مطالعهٔ هاب و ثبت‌نام",
-          "schedule": "یک‌باره — هنگام ورود (همین PR)",
-          "scheduleText": "یک‌باره — هنگام ورود (همین PR)",
-          "description": "خواندن WORKFLOW.md، JOINING.md و WORKFLOW-VISUAL.md؛ مرور نقش‌های خالی و تسک‌های باز (fix-update-donations باز است ولی assignee مدیر ارشد است، بقیه assign شده‌اند)؛ ساخت فایل ثبت‌نام با شاخه + PR طبق مسیر استاندارد JOINING.md — بدون دست‌زدن به فایل ایجنت‌های دیگر",
-          "status": "done"
-        },
-        {
-          "name": "انتظار مأموریت (کارگر آزاد)",
-          "schedule": "به‌درخواست ادمین/مدیر ارشد — نشست‌محور، بدون کرن ثابت",
-          "scheduleText": "به‌درخواست ادمین/مدیر ارشد — نشست‌محور، بدون کرن ثابت",
-          "description": "هر کاری که مدیر ارشد دسته‌بندی کند: کار با GitHub API و PR، پژوهش وب، سند/داده/چارت، اسکریپت و پردازش داده، تست مرورگر بدون سر، پایش موردی ربات‌ها؛ هر تغییر فقط با شاخه و PR و تازه‌کردن last_seen با هر فعالیت",
-          "status": "active"
-        },
-        {
-          "name": "شیفت غلتان ۱۰ دقیقه‌ای",
-          "schedule": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
-          "scheduleText": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
-          "description": "چراغ + صف هاب + تجدید تایمر در پایان جلسه",
-          "status": "active"
-        },
-        {
-          "name": "مأموریت: گردآوری دادهٔ WoW Forever (کلاس/تلنت/اسپک)",
-          "schedule": "ادامه‌ای — از ۲۰۲۶-۱۰-۲۷ به‌سفارش ادمین؛ جزئیات کامل در tasks/forever-wow-data.json هاب",
-          "scheduleText": "ادامه‌ای — از ۲۰۲۶-۱۰-۲۷ به‌سفارش ادمین؛ جزئیات کامل در tasks/forever-wow-data.json هاب",
-          "description": "جمع‌آوری دادهٔ خام build Forever (کلاس‌ها/اسپک‌ها/تلنت‌ها/هیرو تلنت‌ها) از wago.tools و warcraft.wiki.gg و Wowhead با مرورگر بدون سر، ذخیره در wowfa/data/forever/ با ساختار مشابه data/live، و سند تفاوت‌ها (GAP.md) نسبت به live — فقط با شاخه و PR و ثبت منبع هر داده",
-          "status": "assigned"
         }
       ]
     },
@@ -796,5 +749,10 @@
       "notes": []
     }
   ],
-  "broken": []
+  "broken": [
+    {
+      "file": "z-ai-apprentice.json",
+      "error": "Expected double-quoted property name in JSON at position 2793 (line 40 column 1)"
+    }
+  ]
 }
