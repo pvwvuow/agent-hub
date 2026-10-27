@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:39:58.328Z",
+  "generatedAt": "2026-10-27T15:41:10.387Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:39:58.328Z"
+    "generatedAt": "2026-10-27T15:41:10.387Z"
   },
   "roles": [
     {
@@ -295,9 +295,9 @@
         "at": "2026-10-27T15:36:26Z",
         "msg": "forever: PR #94 finalized — root GAP.md + canonical datasets; wd-14 session"
       },
-      "lastSeen": "2026-10-27T15:39:30.000Z",
+      "lastSeen": "2026-10-27T15:40:26.000Z",
       "currentTask": "forever-wow-data",
-      "nextWake": "2026-10-27 19:16",
+      "nextWake": "2026-10-27 19:19",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-fa3ca629-0ef9-43ac-8701-6e0ab44fe61a",
