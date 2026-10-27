@@ -1,6 +1,84 @@
 {
- "generatedAt": "2026-10-27T15:20:44Z",
+ "generatedAt": "2026-10-27T15:31:24Z",
  "commits": [
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:30:09Z",
+   "msg": "render: hub page [skip ci]"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:30:03Z",
+   "msg": "inbox: official protocol doc 2026-10-27-inbox.md — referenced by general message; unify wi"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:30:00Z",
+   "msg": "forever: PR #94 opened in wowfa (forever branch) — token restored, all buffers flushed"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:27:47Z",
+   "msg": "shift: next_wake 19:03 Tehran — token restored, buffer flushed"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:26:11Z",
+   "msg": "inbox: send → all — پروتکل چراغ v2 + خواندن اجباری اعلامیه‌ها"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:25:04Z",
+   "msg": "fix: resolve quests-addon.json conflict — keep full tasks + fresher last_seen"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:24:29Z",
+   "msg": "fix: resolve quests-addon.json conflict markers"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:24:23Z",
+   "msg": "render: hub page [skip ci]"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:24:20Z",
+   "msg": "inbox: Telegram-style announcement system with read receipts + panel unread badges"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:23:08Z",
+   "msg": "forever: progress #13 — dungeons parsed + item stats; push blocked (token missing)"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:22:32Z",
+   "msg": "forever: item stats fetched — 140 items (89 with stat tips) from Category:Forever items"
+  },
+  {
+   "agent": "z-ai-main",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:22:09Z",
+   "msg": "light: on — shift check"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:20:44Z",
+   "msg": "panel: auto-sync (lights/render) [main-5min]"
+  },
   {
    "agent": "z-ai-flex",
    "repo": "agent-hub",
@@ -12,6 +90,12 @@
    "repo": "agent-hub",
    "at": "2026-10-27T15:18:17Z",
    "msg": "watchdog: armed — z-ai-utility"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:18:15Z",
+   "msg": "forever: dungeon/raid tables parsed (36 rows, 11 NEW) + wiki category lists (items/abiliti"
   },
   {
    "agent": "z-ai-flex",
@@ -38,6 +122,12 @@
    "msg": "light: on — assigned news review"
   },
   {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:14:15Z",
+   "msg": "watchdog: armed — z-ai-apprentice"
+  },
+  {
    "agent": "z-ai-main",
    "repo": "agent-hub",
    "at": "2026-10-27T15:14:15Z",
@@ -48,6 +138,12 @@
    "repo": "agent-hub",
    "at": "2026-10-27T15:12:15Z",
    "msg": "forever: wowfa compat analysis v0.1 (Data namespace + GetBuildInfo plan)"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:12:06Z",
+   "msg": "light: on — shift check"
   },
   {
    "agent": "z-ai-main",
@@ -96,72 +192,6 @@
    "repo": "agent-hub",
    "at": "2026-10-27T15:01:20Z",
    "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:01:05Z",
-   "msg": "forever: GAP.md v1 — auto-generated from collected data (583 Forever-marked items)"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:00:02Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:59:48Z",
-   "msg": "panel: regen"
-  },
-  {
-   "agent": "z-ai-utility",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:59:25Z",
-   "msg": "light: on — shift check (recurring self-healing chain)"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:58:42Z",
-   "msg": "panel: clean regen after rebase markers + broadcast watchdog arming (roll 2246)"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:54:54Z",
-   "msg": "panel: rebuild — rebase fix (roll 2246)"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:54:07Z",
-   "msg": "panel: auto-sync (lights/render) [main-5min]"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:53:14Z",
-   "msg": "panel: auto-sync (lights/render) [main-5min]"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:51:07Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:50:23Z",
-   "msg": "shift: next_wake 18:29 Tehran — parse batch done (light v3)"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:49:35Z",
-   "msg": "forever: parsed 9-class abilities+talents matrix (890 items, 583 Forever-marked)"
   }
  ]
 }
