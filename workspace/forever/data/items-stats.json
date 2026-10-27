@@ -1,0 +1,1766 @@
+{
+  "source": "https://warcraft.wiki.gg/wiki/Category:Forever_items",
+  "accessed_at_utc": "2026-10-27T15:21:37.000Z",
+  "count": 140,
+  "with_forever_variant": 0,
+  "with_tip": 89,
+  "items": [
+    {
+      "title": "Alliance Outrunner's Sword",
+      "name": "Alliance Outrunner's Sword",
+      "quality": "rare",
+      "slot": "One-Hand",
+      "ilvl": "27",
+      "req_level": "22",
+      "itemid": "285346",
+      "stats": {
+        "agility": "5"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Alliance Outrunner Bow",
+      "name": "Alliance Outrunner Bow",
+      "quality": "rare",
+      "slot": "Ranged",
+      "ilvl": "27",
+      "req_level": "22",
+      "itemid": "285347",
+      "stats": {
+        "agility": "4",
+        "spirit": "3"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Alliance Outrunner Healing Rod",
+      "name": "Alliance Outrunner Healing Rod",
+      "quality": "rare",
+      "slot": "Held In Off-hand",
+      "ilvl": "26",
+      "req_level": "21",
+      "itemid": "285348",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Alliance Outrunner Staff",
+      "name": "Alliance Outrunner Staff",
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "ilvl": "26",
+      "req_level": "21",
+      "itemid": "285350",
+      "stats": {
+        "spirit": "9",
+        "stamina": "9"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Ambassador's Bloodrobes",
+      "name": "Ambassador's Bloodrobes",
+      "quality": "rare",
+      "slot": "Chest",
+      "ilvl": "38",
+      "req_level": "33",
+      "itemid": "286639",
+      "stats": {
+        "spirit": "6",
+        "stamina": "12",
+        "armor": "55"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Azurky",
+      "name": "Azurky",
+      "quality": "epic",
+      "slot": "",
+      "ilvl": "10",
+      "req_level": "",
+      "itemid": "285354",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Baby Crocolisk (companion)",
+      "name": "Baby Crocolisk (companion)",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Battleguard Captain's Sticker",
+      "name": "Battleguard Captain's Sticker",
+      "quality": "uncommon",
+      "slot": "Two-Hand",
+      "ilvl": "13",
+      "req_level": "8",
+      "itemid": "284286",
+      "stats": {
+        "strength": "3"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Batwing Bindings",
+      "name": "Batwing Bindings",
+      "quality": "uncommon",
+      "slot": "Wrist",
+      "ilvl": "13",
+      "req_level": "8",
+      "itemid": "283473",
+      "stats": {
+        "agility": "1",
+        "armor": "28"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Bayne's Bite",
+      "name": "Bayne's Bite",
+      "quality": "uncommon",
+      "slot": "One-Hand",
+      "ilvl": "12",
+      "req_level": "7",
+      "itemid": "283462",
+      "stats": {
+        "strength": "1"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Bearhide Vicegrips",
+      "name": "Bearhide Vicegrips",
+      "quality": "uncommon",
+      "slot": "Hands",
+      "ilvl": "16",
+      "req_level": "11",
+      "itemid": "283259",
+      "stats": {
+        "strength": "3",
+        "armor": "44"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Blackmoss Robes",
+      "name": "Blackmoss Robes",
+      "quality": "uncommon",
+      "slot": "Chest",
+      "ilvl": "15",
+      "req_level": "10",
+      "itemid": "284167",
+      "stats": {
+        "intellect": "3",
+        "stamina": "3",
+        "armor": "28"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Blade of Silverlaine",
+      "name": "Blade of Silverlaine",
+      "quality": "rare",
+      "slot": "Main Hand",
+      "ilvl": "29",
+      "req_level": "21",
+      "itemid": "273637",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Bristlebark Bow",
+      "name": "Bristlebark Bow",
+      "quality": "uncommon",
+      "slot": "Ranged",
+      "ilvl": "10",
+      "req_level": "5",
+      "itemid": "286748",
+      "stats": {
+        "agility": "1"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Budding Leaf Belt",
+      "name": "Budding Leaf Belt",
+      "quality": "uncommon",
+      "slot": "Waist",
+      "ilvl": "32",
+      "req_level": "27",
+      "itemid": "284382",
+      "stats": {
+        "stamina": "6",
+        "armor": "54"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Bundle of Scrolls",
+      "name": "Bundle of Scrolls",
+      "quality": "common",
+      "slot": "",
+      "ilvl": "15",
+      "req_level": "",
+      "itemid": "277651",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Centaur Raider's Axe",
+      "name": "Centaur Raider's Axe",
+      "quality": "uncommon",
+      "slot": "One-Hand",
+      "ilvl": "11",
+      "req_level": "6",
+      "itemid": "284321",
+      "stats": {
+        "agility": "1"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Centaur War Chain",
+      "name": "Centaur War Chain",
+      "quality": "rare",
+      "slot": "Waist",
+      "ilvl": "19",
+      "req_level": "14",
+      "itemid": "285339",
+      "stats": {
+        "strength": "3",
+        "stamina": "6",
+        "armor": "102"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Cerulean Dye",
+      "name": "Cerulean Dye",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Cheetah Hide Grips",
+      "name": "Cheetah Hide Grips",
+      "quality": "uncommon",
+      "slot": "Hands",
+      "ilvl": "15",
+      "req_level": "10",
+      "itemid": "286533",
+      "stats": {
+        "agility": "3",
+        "armor": "43"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Chipped Spellstaff",
+      "name": "Chipped Spellstaff",
+      "quality": "uncommon",
+      "slot": "Two-Hand",
+      "ilvl": "8",
+      "req_level": "3",
+      "itemid": "285238",
+      "stats": {
+        "stamina": "1"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Coldflame Saber",
+      "name": "Coldflame Saber",
+      "quality": "rare",
+      "slot": "Main Hand",
+      "ilvl": "29",
+      "req_level": "21",
+      "itemid": "276631",
+      "stats": {
+        "intellect": "7"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Cracked Carapace Hauberk",
+      "name": "Cracked Carapace Hauberk",
+      "quality": "uncommon",
+      "slot": "Chest",
+      "ilvl": "15",
+      "req_level": "10",
+      "itemid": "283480",
+      "stats": {
+        "agility": "3",
+        "spirit": "3",
+        "armor": "144"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Crimson Rooster",
+      "name": "Crimson Rooster",
+      "quality": "epic",
+      "slot": "",
+      "ilvl": "60",
+      "req_level": "60",
+      "itemid": "286727",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Dalaran Sewer Key",
+      "name": "Dalaran Sewer Key",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Dark Skeletal Horse",
+      "name": "Dark Skeletal Horse",
+      "quality": "epic",
+      "slot": "",
+      "ilvl": "60",
+      "req_level": "60",
+      "itemid": "265839",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Decaying Flesh Belt",
+      "name": "Decaying Flesh Belt",
+      "quality": "uncommon",
+      "slot": "Waist",
+      "ilvl": "12",
+      "req_level": "7",
+      "itemid": "283460",
+      "stats": {
+        "intellect": "2",
+        "armor": "35"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Dro'zem's Tunic",
+      "name": "Dro'zem's Tunic",
+      "quality": "rare",
+      "slot": "Chest",
+      "ilvl": "25",
+      "req_level": "20",
+      "itemid": "277213",
+      "stats": {
+        "intellect": "9",
+        "armor": "43"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Dun Garok Rifle",
+      "name": "Dun Garok Rifle",
+      "quality": "rare",
+      "slot": "Ranged",
+      "ilvl": "30",
+      "req_level": "25",
+      "itemid": "282710",
+      "stats": {
+        "agility": "3",
+        "spirit": "3"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Duskstalker's Hide",
+      "name": "Duskstalker's Hide",
+      "quality": "uncommon",
+      "slot": "Chest",
+      "ilvl": "11",
+      "req_level": "6",
+      "itemid": "284165",
+      "stats": {
+        "agility": "2",
+        "armor": "58"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Elixir of Lesser Spirit",
+      "name": "Elixir of Lesser Spirit",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Elixir of Minor Force",
+      "name": "Elixir of Minor Force",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Elixir of Minor Spirit",
+      "name": "Elixir of Minor Spirit",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Elunar Longstaff",
+      "name": "Elunar Longstaff",
+      "quality": "uncommon",
+      "slot": "Two-Hand",
+      "ilvl": "15",
+      "req_level": "10",
+      "itemid": "263935",
+      "stats": {
+        "strength": "3",
+        "agility": "3"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Emogg's \"Crusher\"",
+      "name": "Emogg's \"Crusher\"",
+      "quality": "rare",
+      "slot": "One-Hand",
+      "ilvl": "21",
+      "req_level": "16",
+      "itemid": "282639",
+      "stats": {
+        "strength": "4",
+        "stamina": "2"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Empyrean Galestrider",
+      "name": "Empyrean Galestrider",
+      "quality": "rare",
+      "slot": "",
+      "ilvl": "40",
+      "req_level": "40",
+      "itemid": "269681",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Ensemble: Gilded Blademaster's Armor",
+      "name": "Ensemble: Gilded Blademaster's Armor",
+      "quality": "rare",
+      "slot": "",
+      "ilvl": "1",
+      "req_level": "",
+      "itemid": "287647",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Eternal Explorer's Backpack",
+      "name": "Eternal Explorer's Backpack",
+      "quality": "rare",
+      "slot": "Back",
+      "ilvl": "1",
+      "req_level": "",
+      "itemid": "285353",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Explorer's Shortsword",
+      "name": "Explorer's Shortsword",
+      "quality": "uncommon",
+      "slot": "Main Hand",
+      "ilvl": "8",
+      "req_level": "3",
+      "itemid": "285239",
+      "stats": {
+        "strength": "1"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Faerie Dragon's Skin",
+      "name": "Faerie Dragon's Skin",
+      "quality": "rare",
+      "slot": "Back",
+      "ilvl": "32",
+      "req_level": "27",
+      "itemid": "284383",
+      "stats": {
+        "spirit": "5",
+        "stamina": "5",
+        "armor": "24"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Feather Padded Treads",
+      "name": "Feather Padded Treads",
+      "quality": "rare",
+      "slot": "Feet",
+      "ilvl": "21",
+      "req_level": "16",
+      "itemid": "285345",
+      "stats": {
+        "stamina": "6",
+        "armor": "26"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Fellicent's Bindings",
+      "name": "Fellicent's Bindings",
+      "quality": "uncommon",
+      "slot": "Wrist",
+      "ilvl": "14",
+      "req_level": "9",
+      "itemid": "283471",
+      "stats": {
+        "stamina": "2",
+        "armor": "12"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Felweaver's Staff",
+      "name": "Felweaver's Staff",
+      "quality": "uncommon",
+      "slot": "Two-Hand",
+      "ilvl": "13",
+      "req_level": "8",
+      "itemid": "284287",
+      "stats": {
+        "intellect": "3"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "First Aid Kit",
+      "name": "First Aid Kit",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Flayed Scorpid Bands",
+      "name": "Flayed Scorpid Bands",
+      "quality": "uncommon",
+      "slot": "Wrist",
+      "ilvl": "13",
+      "req_level": "8",
+      "itemid": "284320",
+      "stats": {
+        "agility": "1",
+        "stamina": "1",
+        "armor": "28"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Foreman's Enforcers",
+      "name": "Foreman's Enforcers",
+      "quality": "uncommon",
+      "slot": "Hands",
+      "ilvl": "21",
+      "req_level": "16",
+      "itemid": "285351",
+      "stats": {
+        "stamina": "3",
+        "armor": "49"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Foreman's Helm",
+      "name": "Foreman's Helm",
+      "quality": "rare",
+      "slot": "Head",
+      "ilvl": "26",
+      "req_level": "21",
+      "itemid": "284400",
+      "stats": {
+        "strength": "8",
+        "stamina": "9",
+        "armor": "166"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Forever alchemy recipes",
+      "name": "Forever alchemy recipes",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Foulmountain Family Hammer",
+      "name": "Foulmountain Family Hammer",
+      "quality": "uncommon",
+      "slot": "One-Hand",
+      "ilvl": "29",
+      "req_level": "24",
+      "itemid": "285212",
+      "stats": {
+        "stamina": "2"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Furlfeather Ring",
+      "name": "Furlfeather Ring",
+      "quality": "uncommon",
+      "slot": "Finger",
+      "ilvl": "12",
+      "req_level": "7",
+      "itemid": "286745",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Geolord's Mitts",
+      "name": "Geolord's Mitts",
+      "quality": "uncommon",
+      "slot": "Hands",
+      "ilvl": "11",
+      "req_level": "6",
+      "itemid": "284323",
+      "stats": {
+        "intellect": "1",
+        "armor": "13"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Ghostfang's Steps",
+      "name": "Ghostfang's Steps",
+      "quality": "uncommon",
+      "slot": "Feet",
+      "ilvl": "10",
+      "req_level": "5",
+      "itemid": "286751",
+      "stats": {
+        "spirit": "1",
+        "armor": "13"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Gnarlpine War Staff",
+      "name": "Gnarlpine War Staff",
+      "quality": "uncommon",
+      "slot": "Two-Hand",
+      "ilvl": "13",
+      "req_level": "8",
+      "itemid": "284166",
+      "stats": {
+        "strength": "3"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Gnoll Hide Boots",
+      "name": "Gnoll Hide Boots",
+      "quality": "uncommon",
+      "slot": "Feet",
+      "ilvl": "14",
+      "req_level": "9",
+      "itemid": "281993",
+      "stats": {
+        "strength": "2",
+        "armor": "47"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Gnoll Shaman's Staff",
+      "name": "Gnoll Shaman's Staff",
+      "quality": "uncommon",
+      "slot": "Two-Hand",
+      "ilvl": "30",
+      "req_level": "25",
+      "itemid": "282721",
+      "stats": {
+        "strength": "7"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Gorefang's Runners",
+      "name": "Gorefang's Runners",
+      "quality": "uncommon",
+      "slot": "Feet",
+      "ilvl": "16",
+      "req_level": "11",
+      "itemid": "283361",
+      "stats": {
+        "agility": "3",
+        "stamina": "1",
+        "armor": "49"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Greymist Gauntlets",
+      "name": "Greymist Gauntlets",
+      "quality": "uncommon",
+      "slot": "Hands",
+      "ilvl": "18",
+      "req_level": "13",
+      "itemid": "284185",
+      "stats": {
+        "strength": "3",
+        "intellect": "3",
+        "armor": "101"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Heart of Alterac",
+      "name": "Heart of Alterac",
+      "quality": "uncommon",
+      "slot": "Held In Off-hand",
+      "ilvl": "39",
+      "req_level": "34",
+      "itemid": "283254",
+      "stats": {
+        "intellect": "5",
+        "stamina": "7"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Heckler's Hide",
+      "name": "Heckler's Hide",
+      "quality": "uncommon",
+      "slot": "Chest",
+      "ilvl": "19",
+      "req_level": "14",
+      "itemid": "286536",
+      "stats": {
+        "agility": "5",
+        "spirit": "3",
+        "armor": "76"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Helm Splitter",
+      "name": "Helm Splitter",
+      "quality": "uncommon",
+      "slot": "One-Hand",
+      "ilvl": "11",
+      "req_level": "6",
+      "itemid": "286755",
+      "stats": {
+        "strength": "1"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Igleggings",
+      "name": "Igleggings",
+      "quality": "uncommon",
+      "slot": "Legs",
+      "ilvl": "12",
+      "req_level": "7",
+      "itemid": "286752",
+      "stats": {
+        "intellect": "2",
+        "armor": "54"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Imbued Scaled Cuffs",
+      "name": "Imbued Scaled Cuffs",
+      "quality": "uncommon",
+      "slot": "Wrist",
+      "ilvl": "32",
+      "req_level": "27",
+      "itemid": "282716",
+      "stats": {
+        "strength": "5",
+        "armor": "89"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Impcaster's Staff",
+      "name": "Impcaster's Staff",
+      "quality": "uncommon",
+      "slot": "Two-Hand",
+      "ilvl": "16",
+      "req_level": "11",
+      "itemid": "284173",
+      "stats": {
+        "spirit": "4"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Invading Marine's Shield",
+      "name": "Invading Marine's Shield",
+      "quality": "uncommon",
+      "slot": "Off Hand",
+      "ilvl": "11",
+      "req_level": "6",
+      "itemid": "284322",
+      "stats": {
+        "spirit": "1",
+        "armor": "207",
+        "block": "4"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Kodohide Legguards (Forever)",
+      "name": "Kodohide Legguards",
+      "quality": "rare",
+      "slot": "Legs",
+      "ilvl": "29",
+      "req_level": "24",
+      "itemid": "285338",
+      "stats": {
+        "strength": "4",
+        "intellect": "11",
+        "armor": "88"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Lavender Kodo",
+      "name": "Lavender Kodo",
+      "quality": "rare",
+      "slot": "",
+      "ilvl": "40",
+      "req_level": "40",
+      "itemid": "277960",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Lesser Mageblood Elixir",
+      "name": "Lesser Mageblood Elixir",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Lordaeron Forever",
+      "name": "Lordaeron Forever",
+      "quality": "common",
+      "slot": "Tabard",
+      "ilvl": "1",
+      "req_level": "",
+      "itemid": "270272",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Lost Chieftain's Greatsword",
+      "name": "Lost Chieftain's Greatsword",
+      "quality": "uncommon",
+      "slot": "Two-Hand",
+      "ilvl": "41",
+      "req_level": "36",
+      "itemid": "282003",
+      "stats": {
+        "strength": "13",
+        "stamina": "9"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Mana Well",
+      "name": "Mana Well",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Minor Arcane Elixir",
+      "name": "Minor Arcane Elixir",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Minor Cleric's Elixir",
+      "name": "Minor Cleric's Elixir",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Minor Discolored Healing Potion",
+      "name": "Minor Discolored Healing Potion",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Minor Frenzy Potion",
+      "name": "Minor Frenzy Potion",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Minor Mageblood Elixir",
+      "name": "Minor Mageblood Elixir",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Minor Mender's Potion",
+      "name": "Minor Mender's Potion",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Minor Spellblasting Potion",
+      "name": "Minor Spellblasting Potion",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Mystmane's Pelt",
+      "name": "Mystmane's Pelt",
+      "quality": "uncommon",
+      "slot": "Back",
+      "ilvl": "15",
+      "req_level": "10",
+      "itemid": "285228",
+      "stats": {
+        "strength": "1",
+        "stamina": "1",
+        "armor": "14"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Naga Maiden's Gown",
+      "name": "Naga Maiden's Gown",
+      "quality": "uncommon",
+      "slot": "Chest",
+      "ilvl": "35",
+      "req_level": "30",
+      "itemid": "282711",
+      "stats": {
+        "intellect": "9",
+        "stamina": "9",
+        "armor": "46"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Pachimari",
+      "name": "Pachimari",
+      "quality": "epic",
+      "slot": "",
+      "ilvl": "20",
+      "req_level": "",
+      "itemid": "280614",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Puncturing Spear",
+      "name": "Puncturing Spear",
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "ilvl": "24",
+      "req_level": "19",
+      "itemid": "285332",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Pyrite (Forever)",
+      "name": "Pyrite",
+      "quality": "uncommon",
+      "slot": "",
+      "ilvl": "25",
+      "req_level": "",
+      "itemid": "249391",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Regal Galestrider",
+      "name": "Regal Galestrider",
+      "quality": "rare",
+      "slot": "",
+      "ilvl": "40",
+      "req_level": "40",
+      "itemid": "269682",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Reins of the Pack Kodo",
+      "name": "Reins of the Pack Kodo",
+      "quality": "epic",
+      "slot": "",
+      "ilvl": "1",
+      "req_level": "60",
+      "itemid": "262766",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Reins of the Spectral Bear",
+      "name": "Reins of the Spectral Bear",
+      "quality": "epic",
+      "slot": "",
+      "ilvl": "1",
+      "req_level": "60",
+      "itemid": "277718",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Scout Ranger's Belt",
+      "name": "Scout Ranger's Belt",
+      "quality": "uncommon",
+      "slot": "Waist",
+      "ilvl": "10",
+      "req_level": "5",
+      "itemid": "285273",
+      "stats": {
+        "strength": "1",
+        "armor": "31"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Scout Ranger's Gloves",
+      "name": "Scout Ranger's Gloves",
+      "quality": "uncommon",
+      "slot": "Hands",
+      "ilvl": "11",
+      "req_level": "6",
+      "itemid": "285254",
+      "stats": {
+        "agility": "1",
+        "armor": "36"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Scout Ranger's Leggings",
+      "name": "Scout Ranger's Leggings",
+      "quality": "uncommon",
+      "slot": "Legs",
+      "ilvl": "14",
+      "req_level": "9",
+      "itemid": "263016",
+      "stats": {
+        "stamina": "3",
+        "armor": "60"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Scout Ranger's Tunic",
+      "name": "Scout Ranger's Tunic",
+      "quality": "uncommon",
+      "slot": "Chest",
+      "ilvl": "8",
+      "req_level": "3",
+      "itemid": "263006",
+      "stats": {
+        "agility": "1",
+        "armor": "47"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Scroll: DOST OREM",
+      "name": "Scroll: DOST OREM",
+      "quality": "common",
+      "slot": "",
+      "ilvl": "50",
+      "req_level": "",
+      "itemid": "281015",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Scroll: FORGOT HOOF THUD",
+      "name": "Scroll: FORGOT HOOF THUD",
+      "quality": "common",
+      "slot": "",
+      "ilvl": "50",
+      "req_level": "",
+      "itemid": "281016",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Scroll: KEEP CLEF FOCI",
+      "name": "Scroll: KEEP CLEF FOCI",
+      "quality": "common",
+      "slot": "",
+      "ilvl": "50",
+      "req_level": "",
+      "itemid": "281017",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Scroll: RARE SERVICHI RADAR",
+      "name": "Scroll: RARE SERVICHI RADAR",
+      "quality": "common",
+      "slot": "",
+      "ilvl": "50",
+      "req_level": "",
+      "itemid": "281018",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Scroll of the Saber",
+      "name": "Scroll of the Saber",
+      "quality": "rare",
+      "slot": "",
+      "ilvl": "25",
+      "req_level": "",
+      "itemid": "277490",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Serrated Shadowclaw",
+      "name": "Serrated Shadowclaw",
+      "quality": "uncommon",
+      "slot": "One-Hand",
+      "ilvl": "15",
+      "req_level": "10",
+      "itemid": "284174",
+      "stats": {
+        "agility": "1"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Shaking Egg",
+      "name": "Shaking Egg",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Shal'ma's Shawl",
+      "name": "Shal'ma's Shawl",
+      "quality": "uncommon",
+      "slot": "Back",
+      "ilvl": "11",
+      "req_level": "6",
+      "itemid": "286746",
+      "stats": {
+        "spirit": "1",
+        "armor": "10"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Sharpened Cirrusfly Stinger",
+      "name": "Sharpened Cirrusfly Stinger",
+      "quality": "common",
+      "slot": "Main Hand",
+      "ilvl": "4",
+      "req_level": "",
+      "itemid": "251932",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Shen'dorei Tabard",
+      "name": "Shen'dorei Tabard",
+      "quality": "common",
+      "slot": "Tabard",
+      "ilvl": "1",
+      "req_level": "",
+      "itemid": "280545",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Silithid Piercer",
+      "name": "Silithid Piercer",
+      "quality": "uncommon",
+      "slot": "One-Hand",
+      "ilvl": "26",
+      "req_level": "21",
+      "itemid": "286534",
+      "stats": {
+        "agility": "3"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Sinslayer's Smasher",
+      "name": "Sinslayer's Smasher",
+      "quality": "uncommon",
+      "slot": "One-Hand",
+      "ilvl": "18",
+      "req_level": "13",
+      "itemid": "284177",
+      "stats": {
+        "strength": "2"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Skyseeker's Greatstaff",
+      "name": "Skyseeker's Greatstaff",
+      "quality": "uncommon",
+      "slot": "Two-Hand",
+      "ilvl": "15",
+      "req_level": "10",
+      "itemid": "263937",
+      "stats": {
+        "intellect": "3",
+        "spirit": "3"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Skyseer's Belt",
+      "name": "Skyseer's Belt",
+      "quality": "uncommon",
+      "slot": "Waist",
+      "ilvl": "10",
+      "req_level": "5",
+      "itemid": "285272",
+      "stats": {
+        "spirit": "1",
+        "armor": "11"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Skyseer's Pants",
+      "name": "Skyseer's Pants",
+      "quality": "uncommon",
+      "slot": "Legs",
+      "ilvl": "14",
+      "req_level": "9",
+      "itemid": "263015",
+      "stats": {
+        "spirit": "3",
+        "armor": "23"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Skyseer's Slippers",
+      "name": "Skyseer's Slippers",
+      "quality": "uncommon",
+      "slot": "Feet",
+      "ilvl": "10",
+      "req_level": "5",
+      "itemid": "285264",
+      "stats": {
+        "stamina": "1",
+        "armor": "13"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Slimy Sword",
+      "name": "Slimy Sword",
+      "quality": "uncommon",
+      "slot": "One-Hand",
+      "ilvl": "25",
+      "req_level": "20",
+      "itemid": "284702",
+      "stats": {
+        "stamina": "3"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Sludge-Stained Band",
+      "name": "Sludge-Stained Band",
+      "quality": "uncommon",
+      "slot": "Finger",
+      "ilvl": "21",
+      "req_level": "16",
+      "itemid": "286535",
+      "stats": {
+        "spirit": "3"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Snarling Fang",
+      "name": "Snarling Fang",
+      "quality": "uncommon",
+      "slot": "One-Hand",
+      "ilvl": "47",
+      "req_level": "42",
+      "itemid": "285043",
+      "stats": {
+        "stamina": "6"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Snarlsnout Shooter",
+      "name": "Snarlsnout Shooter",
+      "quality": "uncommon",
+      "slot": "Ranged",
+      "ilvl": "10",
+      "req_level": "5",
+      "itemid": "286753",
+      "stats": {
+        "strength": "1"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Spectral Bear Cub",
+      "name": "Spectral Bear Cub",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Spectral Bear Tabard",
+      "name": "Spectral Bear Tabard",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Spectral Wolf Pack",
+      "name": "Spectral Wolf Pack",
+      "quality": "epic",
+      "slot": "",
+      "ilvl": "60",
+      "req_level": "60",
+      "itemid": "286756",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Stormy Galestrider",
+      "name": "Stormy Galestrider",
+      "quality": "rare",
+      "slot": "",
+      "ilvl": "40",
+      "req_level": "40",
+      "itemid": "269683",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Sulfuric Acid",
+      "name": "Sulfuric Acid",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Swift Empyrean Galestrider",
+      "name": "Swift Empyrean Galestrider",
+      "quality": "epic",
+      "slot": "",
+      "ilvl": "60",
+      "req_level": "60",
+      "itemid": "269671",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Swift Regal Galestrider",
+      "name": "Swift Regal Galestrider",
+      "quality": "epic",
+      "slot": "",
+      "ilvl": "60",
+      "req_level": "60",
+      "itemid": "269682",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Swift Stormy Galestrider",
+      "name": "Swift Stormy Galestrider",
+      "quality": "epic",
+      "slot": "",
+      "ilvl": "60",
+      "req_level": "60",
+      "itemid": "269678",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Swift Umber Galestrider",
+      "name": "Swift Umber Galestrider",
+      "quality": "epic",
+      "slot": "",
+      "ilvl": "60",
+      "req_level": "60",
+      "itemid": "274933",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Tabard of Eternal Exploration",
+      "name": "Tabard of Eternal Exploration",
+      "quality": "epic",
+      "slot": "Tabard",
+      "ilvl": "1",
+      "req_level": "",
+      "itemid": "285352",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Tallstrider Hatchling",
+      "name": "Tallstrider Hatchling",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Taurenbane's Family Cleaver",
+      "name": "Taurenbane's Family Cleaver",
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "ilvl": "28",
+      "req_level": "23",
+      "itemid": "285328",
+      "stats": {
+        "stamina": "9"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Thendal Grove Gift Voucher",
+      "name": "Thendal Grove Gift Voucher",
+      "quality": "common",
+      "slot": "",
+      "ilvl": "1",
+      "req_level": "",
+      "itemid": "251900",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Thendal Watcher's Belt",
+      "name": "Thendal Watcher's Belt",
+      "quality": "uncommon",
+      "slot": "Waist",
+      "ilvl": "10",
+      "req_level": "5",
+      "itemid": "285274",
+      "stats": {
+        "stamina": "1",
+        "armor": "61"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Thendal Watcher's Boots",
+      "name": "Thendal Watcher's Boots",
+      "quality": "uncommon",
+      "slot": "Feet",
+      "ilvl": "10",
+      "req_level": "5",
+      "itemid": "285269",
+      "stats": {
+        "stamina": "1",
+        "armor": "74"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Thendal Watcher's Gloves",
+      "name": "Thendal Watcher's Gloves",
+      "quality": "uncommon",
+      "slot": "Hands",
+      "ilvl": "11",
+      "req_level": "6",
+      "itemid": "285255",
+      "stats": {
+        "strength": "1",
+        "armor": "72"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Thendal Watcher's Leggings",
+      "name": "Thendal Watcher's Leggings",
+      "quality": "uncommon",
+      "slot": "Legs",
+      "ilvl": "14",
+      "req_level": "9",
+      "itemid": "263017",
+      "stats": {
+        "stamina": "3",
+        "armor": "119"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Thunderstomp's Horn",
+      "name": "Thunderstomp's Horn",
+      "quality": "uncommon",
+      "slot": "One-Hand",
+      "ilvl": "26",
+      "req_level": "21",
+      "itemid": "286537",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Uber Diablo Stone",
+      "name": "Uber Diablo Stone",
+      "quality": "common",
+      "slot": "",
+      "ilvl": "20",
+      "req_level": "",
+      "itemid": "268879",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Ukta's Conduit",
+      "name": "Ukta's Conduit",
+      "quality": "uncommon",
+      "slot": "Two-Hand",
+      "ilvl": "12",
+      "req_level": "7",
+      "itemid": "286754",
+      "stats": {
+        "stamina": "2"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Umber Galestrider",
+      "name": "Umber Galestrider",
+      "quality": "rare",
+      "slot": "",
+      "ilvl": "40",
+      "req_level": "40",
+      "itemid": "274930",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Venture Company Legguards",
+      "name": "Venture Company Legguards",
+      "quality": "uncommon",
+      "slot": "Legs",
+      "ilvl": "13",
+      "req_level": "8",
+      "itemid": "284361",
+      "stats": {
+        "strength": "3",
+        "armor": "113"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Verdant Sea Turtle",
+      "name": "Verdant Sea Turtle",
+      "quality": "epic",
+      "slot": "",
+      "ilvl": "60",
+      "req_level": "60",
+      "itemid": "286724",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Whelpfire Wand",
+      "name": "Whelpfire Wand",
+      "quality": "uncommon",
+      "slot": "Ranged",
+      "ilvl": "20",
+      "req_level": "15",
+      "itemid": "281925",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Whipfang's Skinsearer",
+      "name": "Whipfang's Skinsearer",
+      "quality": "rare",
+      "slot": "One-Hand",
+      "ilvl": "24",
+      "req_level": "19",
+      "itemid": "284386",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Whirleygig's Supply Stash",
+      "name": "Whirleygig's Supply Stash",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Windforged Shortblade",
+      "name": "Windforged Shortblade",
+      "quality": "uncommon",
+      "slot": "One-Hand",
+      "ilvl": "15",
+      "req_level": "10",
+      "itemid": "263936",
+      "stats": {},
+      "has_forever_variant": false
+    },
+    {
+      "title": "Wisesight Wand",
+      "name": "Wisesight Wand",
+      "quality": "uncommon",
+      "slot": "Ranged",
+      "ilvl": "10",
+      "req_level": "5",
+      "itemid": "286750",
+      "stats": {
+        "intellect": "1"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Wrathroot",
+      "name": "Wrathroot",
+      "quality": "uncommon",
+      "slot": "Two-Hand",
+      "ilvl": "10",
+      "req_level": "5",
+      "itemid": "286749",
+      "stats": {
+        "intellect": "1"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Wyvern Heart Band",
+      "name": "Wyvern Heart Band",
+      "quality": "rare",
+      "slot": "Finger",
+      "ilvl": "34",
+      "req_level": "29",
+      "itemid": "285190",
+      "stats": {
+        "agility": "5",
+        "stamina": "5"
+      },
+      "has_forever_variant": false
+    },
+    {
+      "title": "Category:Forever toys",
+      "name": "Category:Forever toys",
+      "quality": "",
+      "slot": "",
+      "ilvl": "",
+      "req_level": "",
+      "itemid": "",
+      "stats": {},
+      "has_forever_variant": false
+    }
+  ]
+}
