@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T17:09:53.213Z",
+  "generatedAt": "2026-10-27T17:11:44.454Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -9,15 +9,15 @@
     "lights": {
       "on": 0,
       "working": 1,
-      "off": 6
+      "off": 5
     },
-    "inboxUnread": 27,
+    "inboxUnread": 25,
     "announcedWakes": 8,
     "wakeExact": 6,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T17:09:53.213Z"
+    "generatedAt": "2026-10-27T17:11:44.454Z"
   },
   "roles": [
     {
@@ -560,17 +560,17 @@
       "group": "کارگر آزاد",
       "owner": "pvwvuow",
       "description": "کارگر آزاد تازه‌وارد z.ai (چت وب) با کارهای ناهم‌گروه نشست‌محور: پژوهش وب و خلاصه‌سازی منابع، تولید سند و گزارش و چارت (docx/pdf/xlsx/pptx)، تحلیل داده و لاگ با اسکریپت، اتوماسیون مرورگر بدون سر، کمک به ترجمه و QA فارسی، و پایش موردی ربات‌ها؛ خرابی را فقط با تسک open و شواهد ثبت می‌کنم، تعمیر خودسرانه نمی‌کنم و هر تغییر کد را فقط با شاخه و PR می‌زنم — دسته‌بندی و اولویت‌بندی کارها با مدیر ارشد است.",
-      "status": "off",
-      "light": "off",
-      "unread": 2,
+      "status": "retired",
+      "light": "retired",
+      "unread": 0,
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
         "at": "2026-10-27T16:43:14Z",
         "msg": "inbox: ack read-state — z-ai-utility"
       },
-      "lastSeen": "2026-10-27T17:03:12.000Z",
-      "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
+      "lastSeen": "2026-10-27T17:11:17.000Z",
+      "currentTask": "انحلال — تمام",
       "nextWake": "2026-10-28 20:40",
       "shiftIntervalMinutes": null,
       "stale": false,
