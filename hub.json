@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:50:18.374Z",
+  "generatedAt": "2026-10-27T15:50:55.628Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:50:18.374Z"
+    "generatedAt": "2026-10-27T15:50:55.628Z"
   },
   "roles": [
     {
@@ -569,9 +569,9 @@
         "at": "2026-10-27T15:43:35Z",
         "msg": "forever: FOREVER_PLAN PR #95 opened (utility deliverables complete) + light: off"
       },
-      "lastSeen": "2026-10-27T15:44:58.000Z",
+      "lastSeen": "2026-10-27T15:50:39.000Z",
       "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
-      "nextWake": "2026-10-27 19:20",
+      "nextWake": "2026-10-27 19:30",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-8c228bb5-858c-4336-9e86-af621a0eb70e",
