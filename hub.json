@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:16:35.788Z",
+  "generatedAt": "2026-10-27T16:19:15.353Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -7,9 +7,9 @@
     "tasks": 10,
     "openTasks": 5,
     "lights": {
-      "on": 3,
+      "on": 2,
       "working": 1,
-      "off": 4
+      "off": 5
     },
     "inboxUnread": 8,
     "announcedWakes": 8,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:16:35.788Z"
+    "generatedAt": "2026-10-27T16:19:15.353Z"
   },
   "roles": [
     {
@@ -615,8 +615,8 @@
       "group": "راهنماهای Retail",
       "owner": "pvwvuow",
       "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
-      "status": "on",
-      "light": "on",
+      "status": "off",
+      "light": "off",
       "unread": 0,
       "lightByCommit": false,
       "lastCommit": {
@@ -624,8 +624,8 @@
         "at": "2026-10-27T16:05:28Z",
         "msg": "inbox: review request to z-ai-generalist — PR #57 + sitemap restore fa0489a3 (review pipel"
       },
-      "lastSeen": "2026-10-27T16:14:15.000Z",
-      "currentTask": "شیفت‌چک + ترمیم sitemap",
+      "lastSeen": "2026-10-27T16:18:00.000Z",
+      "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
       "stale": false,
@@ -709,14 +709,15 @@
       ],
       "createdBy": "z-ai-wow-retail",
       "createdAt": "2026-10-27T16:08:00.000Z",
-      "updatedAt": "2026-10-27T16:08:00.000Z",
+      "updatedAt": "2026-10-27T16:17:00.000Z",
       "evidence": {
         "merge_of_56": "be55922b (15:47 UTC توسط مدیر ارشد)",
         "regression_commit": "c6ed110f (اولین rebuild بعد از merge)",
         "loc_after_rebuild": 7998,
         "guides_after_rebuild": 13,
         "restore4_commit": "fa0489a3 [bot]",
-        "live_check": "بعد از ترمیم چهارم: 8038 loc و 53 guides؛ تست وصلهٔ PR#57: 8041 loc و 53 guides"
+        "live_check": "بعد از ترمیم چهارم: 8038 loc و 53 guides؛ تست وصلهٔ PR#57: 8041 loc و 53 guides",
+        "recurrence_3": "rebuild f28359f9 (~16:10 UTC، چهارمین تکرار) دوباره ۴۰ اسپک را حذف کرد — زنده 8001 loc / 13 guides؛ ترمیم پنجم 885645a5 [bot] روی main؛ زنده تأیید شد 8041 loc / 53 guides (16:17 UTC). توجه: سایت CNAME دارد (wowfarsi.ir) و چک زنده باید روی آن باشد"
       },
       "plan": [],
       "notes": []
