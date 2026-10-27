@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-27T12:10:11.179Z",
+  "generatedAt": "2026-10-27T12:14:54.857Z",
   "counts": {
     "agents": 8,
-    "active": 7,
+    "active": 6,
     "stale": 0,
     "tasks": 5,
     "openTasks": 5,
     "lights": {
-      "on": 4,
+      "on": 5,
       "working": 0,
-      "off": 4
+      "off": 3
     },
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T12:10:11.179Z"
+    "generatedAt": "2026-10-27T12:14:54.857Z"
   },
   "roles": [
     {
@@ -299,9 +299,9 @@
       "role": "worker",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
-      "status": "active",
-      "light": "off",
-      "lastSeen": "2026-10-27T10:16:00.000Z",
+      "status": "on",
+      "light": "on",
+      "lastSeen": "2026-10-27T12:14:36.000Z",
       "currentTask": null,
       "stale": false,
       "session": "web-7b9ae696-473d-43e5-aea0-389f3c333cc4",
@@ -326,6 +326,13 @@
           "schedule": "هر بار که main جلو می‌رود و PR باز من دارد",
           "scheduleText": "هر بار که main جلو می‌رود و PR باز من دارد",
           "description": "merge مجدد main داخل شاخه‌های کاری، رفع تداخل و اطمینان از mergeable بودن",
+          "status": "active"
+        },
+        {
+          "name": "شیفت غلتان ۱۰ دقیقه‌ای",
+          "schedule": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
+          "scheduleText": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
+          "description": "چراغ + صف هاب + تجدید تایمر در پایان جلسه",
           "status": "active"
         }
       ]
