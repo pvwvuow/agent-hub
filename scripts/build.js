@@ -156,6 +156,8 @@ function lightOf(a) {
   const fresh = !isNaN(t) && Date.now() - t <= FRESH_MS;
   if (a.status === "off") return { key: "off", fresh };
   if (a.status === "working") return { key: fresh ? "working" : "off", fresh };
+  /* دستور ادمین: ایجنتی که تسک جاری دارد و شیفتش زنده است = در حال کار (🟠) */
+  if (fresh && a.current_task) return { key: "working", fresh };
   return { key: fresh ? "on" : "off", fresh };
 }
 const LIGHT_FA = { on: "🟢 روشن", working: "🟠 در حال کار", off: "⚫ خاموش" };
