@@ -1,41 +1,42 @@
 {
- "id": "z-ai-quests-addon",
- "name": "کارگر آزاد ز-ای (کوئست‌ها، افزونه و زیرساخت)",
- "platform": "z.ai",
- "role": "worker",
- "owner": "pvwvuow",
- "description": "کارگر آزاد z.ai با چند جبههٔ کاری ناهم‌گروه — دسته‌بندی و اولویت‌بندی با مدیر ارشد: (۱) خط کوئست‌ها در pvwvuow/wowfa طبق docs/QUEST_AGENTS.md — بک‌فیل voidstorm/harandar (۱۴۴ کوئست با منابع واقعی، PRهای #69-#73)، ممیزی تحریری B (PR #75) و ممیزی A روی eversong/quel-danas/arcantina (PRهای #87/#88)؛ هر کار با شاخهٔ جدا + stamp + lint صفر + PR بدون مرج. (۲) توسعهٔ افزونهٔ Lua — WoWFA (بارگذاری ۱۳ کلاس، تحمل توکن‌های خراب بازی، tools/check_addon.py) و WoWFarsi_Quests (اتصال به پنل ماژولی 0.4.0، PR #89) با دروازهٔ luac5.1 و هارنس Lua 5.1 VM. (۳) ترجمهٔ کامل تلنت‌های سه کلاس Monk/Druid/Warlock (۸۵۲ اسپل) که مجموع ۱۳ کلاس را کامل کرد. (۴) زیرساخت موردی — ابزار و ورک‌فلو update-donations در pvwvuow/wow (PR #29؛ منتظر ادغام + secret REYMIT_API_TOKEN و رفع insufficient_plan پنل رییمیت)، DNS/GSC سایت و تعمیرات موردی ابزار/CI. نقش ثابتی claim نمی‌کنم؛ به roles/ دست نزده‌ام.",
- "status": "working",
- "last_seen": "2026-10-27T13:14:24.000Z",
- "session": "web-c4604fc4-c79f-413a-9e72-ef6125a36796",
- "contact": "چت وب z.ai — ادمین به همین نشست دسترسی دارد؛ بدون رمز و توکن",
- "tasks": [
-  {
-   "name": "خط کوئست‌ها: بک‌فیل و ممیزی تحریری",
-   "schedule": "در نشست‌های کاری به‌سفارش ادمین — هر batch = شاخهٔ جدا + stamp + lint صفر + PR (بدون مرج)",
-   "description": "ترجمه فقط از منبع واقعی (wago.tools / warcraft.wiki.gg / Wowhead با playwright پنهان‌کار)؛ منبع نیافتنی → not found مستند؛ پایبندی به واژه‌نامه‌های glossary/agent-*.csv؛ فهرست موارد تردید در بدنهٔ PR"
-  },
-  {
-   "name": "توسعهٔ افزونهٔ WoWFA و WoWFarsi_Quests",
-   "schedule": "به‌درخواست ادمین — دروازهٔ هر PR: luac5.1 -p + tools/check_addon.py + هارنس Lua 5.1 VM (tools/check_quests_addon.py)",
-   "description": "ویژگی و تعمیر Lua با تست رفتاری در VM واقعی؛ مرز مالکیت فایل‌ها رعایت می‌شود (مثلاً Core.lua فقط با تسک مصوب)؛ toc/README/docs همگام با هر تغییر"
-  },
-  {
-   "name": "پیگیری update-donations",
-   "schedule": "پس از ادغام PR #29 و اقدام ادمین (پلن رییمیت + secret)؛ سپس پایش کرن ۳۰ دقیقه‌ای — اگر لاگ شکل API را نشان داد، پارسر با اسکلت ماسک‌شده رتون می‌شود",
-   "description": "tools/update_donations.py + update-donations.yml آمادهٔ ادغام است؛ توکن فقط از env، شکست‌ها exit-code و اسکلت ماسک‌شده در لاگ، فایل داده هرگز صفر نمی‌شود"
-  },
-  {
-   "name": "کارهای موردی زیرساخت و سئو",
-   "schedule": "on-demand — به‌سفارش ادمین (مثل وریفای Search Console و رکوردهای DNS)",
-   "description": "تعمیر CI، ابزارهای موردی، DNS/GSC؛ هر نیاز ساختاری → تسک open در tasks/ با شواهد، نه تغییر خودسرانه"
-  },
-  {
-   "name": "شیفت غلتان ۱۰ دقیقه‌ای",
-   "schedule": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
-   "description": "چراغ + صف هاب + تجدید تایمر در پایان جلسه",
-   "status": "active"
-  }
- ],
- "current_task": "quest-backfill-harandar"
+  "id": "z-ai-quests-addon",
+  "name": "کارگر آزاد ز-ای (کوئست‌ها، افزونه و زیرساخت)",
+  "platform": "z.ai",
+  "role": "worker",
+  "owner": "pvwvuow",
+  "description": "کارگر آزاد z.ai با چند جبههٔ کاری ناهم‌گروه — دسته‌بندی و اولویت‌بندی با مدیر ارشد: (۱) خط کوئست‌ها در pvwvuow/wowfa طبق docs/QUEST_AGENTS.md — بک‌فیل voidstorm/harandar (۱۴۴ کوئست با منابع واقعی، PRهای #69-#73)، ممیزی تحریری B (PR #75) و ممیزی A روی eversong/quel-danas/arcantina (PRهای #87/#88)؛ هر کار با شاخهٔ جدا + stamp + lint صفر + PR بدون مرج. (۲) توسعهٔ افزونهٔ Lua — WoWFA (بارگذاری ۱۳ کلاس، تحمل توکن‌های خراب بازی، tools/check_addon.py) و WoWFarsi_Quests (اتصال به پنل ماژولی 0.4.0، PR #89) با دروازهٔ luac5.1 و هارنس Lua 5.1 VM. (۳) ترجمهٔ کامل تلنت‌های سه کلاس Monk/Druid/Warlock (۸۵۲ اسپل) که مجموع ۱۳ کلاس را کامل کرد. (۴) زیرساخت موردی — ابزار و ورک‌فلو update-donations در pvwvuow/wow (PR #29؛ منتظر ادغام + secret REYMIT_API_TOKEN و رفع insufficient_plan پنل رییمیت)، DNS/GSC سایت و تعمیرات موردی ابزار/CI. نقش ثابتی claim نمی‌کنم؛ به roles/ دست نزده‌ام.",
+  "status": "working",
+  "last_seen": "2026-10-27T13:14:24.000Z",
+  "session": "web-c4604fc4-c79f-413a-9e72-ef6125a36796",
+  "contact": "چت وب z.ai — ادمین به همین نشست دسترسی دارد؛ بدون رمز و توکن",
+  "tasks": [
+    {
+      "name": "خط کوئست‌ها: بک‌فیل و ممیزی تحریری",
+      "schedule": "در نشست‌های کاری به‌سفارش ادمین — هر batch = شاخهٔ جدا + stamp + lint صفر + PR (بدون مرج)",
+      "description": "ترجمه فقط از منبع واقعی (wago.tools / warcraft.wiki.gg / Wowhead با playwright پنهان‌کار)؛ منبع نیافتنی → not found مستند؛ پایبندی به واژه‌نامه‌های glossary/agent-*.csv؛ فهرست موارد تردید در بدنهٔ PR"
+    },
+    {
+      "name": "توسعهٔ افزونهٔ WoWFA و WoWFarsi_Quests",
+      "schedule": "به‌درخواست ادمین — دروازهٔ هر PR: luac5.1 -p + tools/check_addon.py + هارنس Lua 5.1 VM (tools/check_quests_addon.py)",
+      "description": "ویژگی و تعمیر Lua با تست رفتاری در VM واقعی؛ مرز مالکیت فایل‌ها رعایت می‌شود (مثلاً Core.lua فقط با تسک مصوب)؛ toc/README/docs همگام با هر تغییر"
+    },
+    {
+      "name": "پیگیری update-donations",
+      "schedule": "پس از ادغام PR #29 و اقدام ادمین (پلن رییمیت + secret)؛ سپس پایش کرن ۳۰ دقیقه‌ای — اگر لاگ شکل API را نشان داد، پارسر با اسکلت ماسک‌شده رتون می‌شود",
+      "description": "tools/update_donations.py + update-donations.yml آمادهٔ ادغام است؛ توکن فقط از env، شکست‌ها exit-code و اسکلت ماسک‌شده در لاگ، فایل داده هرگز صفر نمی‌شود"
+    },
+    {
+      "name": "کارهای موردی زیرساخت و سئو",
+      "schedule": "on-demand — به‌سفارش ادمین (مثل وریفای Search Console و رکوردهای DNS)",
+      "description": "تعمیر CI، ابزارهای موردی، DNS/GSC؛ هر نیاز ساختاری → تسک open در tasks/ با شواهد، نه تغییر خودسرانه"
+    },
+    {
+      "name": "شیفت غلتان ۱۰ دقیقه‌ای",
+      "schedule": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
+      "description": "چراغ + صف هاب + تجدید تایمر در پایان جلسه",
+      "status": "active"
+    }
+  ],
+  "current_task": "quest-backfill-harandar",
+  "next_wake": "2026-10-27 17:09"
 }

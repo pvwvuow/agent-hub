@@ -32,5 +32,6 @@
       "status": "active"
     }
   ],
-  "current_task": null
+  "current_task": null,
+  "next_wake": "2026-10-27 17:09"
 }

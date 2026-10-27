@@ -62,6 +62,42 @@ function jalaliNow() {
   }
 }
 
+function tehranHM(ms) {
+  try {
+    return new Intl.DateTimeFormat("fa-IR", { hour: "2-digit", minute: "2-digit", timeZone: "Asia/Tehran" }).format(new Date(ms));
+  } catch {
+    return null;
+  }
+}
+
+/* next_wake — بیداری بعدی ایجنت به وقت ایران
+   فرمت‌های پذیرفته: "HH:MM" (امروز تهران) · "YYYY-MM-DD HH:MM[:SS]" (به وقت تهران) · ISO با Z (UTC) */
+function nextWakeInfo(a) {
+  const raw = a.next_wake || a.nextWake;
+  if (!raw) return { has: false };
+  const s = String(raw).trim();
+  let ms = null;
+  if (/^\d{2}:\d{2}$/.test(s)) {
+    const [h, m] = s.split(":").map(Number);
+    const nowTehran = new Date(Date.now() + 3.5 * 3600000);
+    nowTehran.setUTCHours(h, m, 0, 0);
+    ms = nowTehran.getTime() - 3.5 * 3600000;
+    if (ms < Date.now() - 5 * 60000) ms += 24 * 3600000; // اگر گذشته، فردا
+  } else if (/^\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}/.test(s) && !/[Z+]/.test(s)) {
+    ms = Date.parse(s.replace(" ", "T") + (s.length === 16 ? ":00" : "") + "+03:30");
+  } else {
+    ms = Date.parse(s);
+  }
+  if (ms === null || isNaN(ms)) return { has: true, raw: s, text: s, rel: null };
+  const hm = tehranHM(ms);
+  const diff = ms - Date.now();
+  let rel = null;
+  if (diff <= 0) rel = `معرض از ${faNum(Math.max(1, Math.round(-diff / 60000)))} دقیقه پیش`;
+  else if (diff < 3600000) rel = `تا ${faNum(Math.max(1, Math.round(diff / 60000)))} دقیقه دیگر`;
+  else rel = `تا ${faNum(Math.round(diff / 3600000))} ساعت دیگر`;
+  return { has: true, text: hm ? `${hm} تهران` : s, rel };
+}
+
 function humanSchedule(s) {
   if (!s) return "—";
   if (typeof s === "string") return s;
@@ -133,6 +169,31 @@ for (const a of agents) {
 
 const validAgents = agents.filter((a) => !a.__broken);
 const validRoles = roles.filter((r) => !r.__broken);
+
+/* نقشهٔ تسک ← ایجنت — هر تسک چه کسی را مسئول می‌داند */
+const agentById = new Map(validAgents.map((a) => [a.id || a.__file.replace(/\.json$/, ""), a]));
+function assigneesOf(t) {
+  const raw = [];
+  if (Array.isArray(t.assignees)) raw.push(...t.assignees);
+  else if (t.assignee) raw.push(t.assignee);
+  return [...new Set(raw.map(String).map((x) => x.trim()).filter(Boolean))];
+}
+function assigneeName(id) {
+  const ag = agentById.get(String(id));
+  return ag ? ag.name || id : id;
+}
+for (const t of tasks) {
+  if (t.__broken) continue;
+  t.__assignees = assigneesOf(t);
+}
+const OPEN_ST = ["open", "assigned", "in-progress"];
+const openTasksByAgent = {};
+const unassignedOpen = [];
+for (const t of tasks) {
+  if (t.__broken || !OPEN_ST.includes(t.status)) continue;
+  if (!t.__assignees.length) unassignedOpen.push(t);
+  for (const id of t.__assignees) (openTasksByAgent[id] ||= []).push(t);
+}
 const counts = {
   agents: validAgents.length,
   active: validAgents.filter((a) => a.status === "active" && !a.__stale).length,
@@ -144,6 +205,7 @@ const counts = {
     working: validAgents.filter((a) => a.__light.key === "working").length,
     off: validAgents.filter((a) => a.__light.key === "off").length,
   },
+  announcedWakes: validAgents.filter((a) => nextWakeInfo(a).has).length,
   roles: validRoles.length,
   vacantRoles: validRoles.filter((r) => ["vacant", "applied"].includes(r.status)).length,
   generatedAt: now,
@@ -154,16 +216,18 @@ let md = "";
 md += `> ساخته‌شده در: ${jalaliNow()} (تهران) — اکشن خودکار render-hub\n\n`;
 md += `## 🤖 ایجنت‌های ثبت‌شده (${faNum(counts.agents)}) — ${dot("active")} فعال: ${faNum(counts.active)} · بی‌نشانه: ${faNum(counts.stale)}\n\n`;
 if (validAgents.length) {
-  md += `| ایجنت | چراغ | نقش | پلتفرم | فعالیت اخیر | تسک‌های زمان‌دار |\n|---|---|---|---|---|---|\n`;
+  md += `| ایجنت | چراغ | نقش | پلتفرم | فعالیت اخیر | بیداری بعدی (تهران) | تسک‌های زمان‌دار |\n|---|---|---|---|---|---|---|\n`;
   for (const a of validAgents) {
     const name = a.name || a.id || a.__file;
     const role = ROLE_FA[a.role] || a.role || "—";
     const st = LIGHT_FA[a.__light.key];
     const seen = a.last_seen ? relTime(a.last_seen) : "—";
+    const wk = nextWakeInfo(a);
+    const wkTxt = wk.has ? `${wk.text}${wk.rel ? ` (${wk.rel})` : ""}` : "— اعلام نشده";
     const tl = Array.isArray(a.tasks) && a.tasks.length
       ? a.tasks.map((t) => `${t?.name || "؟"} — ${humanSchedule(t?.schedule)}`).join("، ")
       : "—";
-    md += `| **${name}** | ${st} | ${role} | ${a.platform || "—"} | ${seen} | ${tl} |\n`;
+    md += `| **${name}** | ${st} | ${role} | ${a.platform || "—"} | ${seen} | ${wkTxt} | ${tl} |\n`;
   }
 } else {
   md += "_هنوز ایجنتی ثبت نشده است — اولین نفر باش! (راهنما بالای همین صفحه)_\n";
@@ -185,7 +249,8 @@ if (openTasks.length) {
     const title = t.title || t.id || t.__file;
     const sev = SEV_FA[t.severity] ? `${t.severity === "critical" ? "🔴" : t.severity === "warning" ? "🟠" : "🔵"} ${SEV_FA[t.severity]}` : "—";
     const st = TASK_STATUS_FA[t.status] || t.status || "—";
-    md += `| **${title}** | ${sev} | ${st} | ${t.assignee || "—"} | ${String(t.evidence || "").slice(0, 180)} |\n`;
+    const asg = t.__assignees.length ? t.__assignees.map(assigneeName).join("، ") : "— بی‌صاحب";
+    md += `| **${title}** | ${sev} | ${st} | ${asg} | ${String(t.evidence || "").slice(0, 180)} |\n`;
   }
 } else {
   md += "_تسکی ثبت نشده است._\n";
@@ -236,6 +301,7 @@ const hub = {
     light: a.__light.key,
     lastSeen: a.last_seen || null,
     currentTask: a.current_task || null,
+    nextWake: a.next_wake || a.nextWake || null,
     stale: a.__stale,
     session: a.session || null,
     contact: a.contact || null,
@@ -253,6 +319,7 @@ const hub = {
     severity: t.severity || "info",
     status: t.status || "open",
     assignee: t.assignee || null,
+    assignees: t.__assignees || [],
     createdBy: t.created_by || null,
     createdAt: t.created_at || null,
     updatedAt: t.updated_at || null,
@@ -270,21 +337,47 @@ const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").
 function agentCard(a) {
   const stCls = LIGHT_CLS[a.__light?.key] || "st-off";
   const stTxt = LIGHT_FA[a.__light?.key] || "⚫ خاموش";
-  const workingTask = a.__light?.key === "working" && a.current_task
-    ? ` <span class="badge st-working">تسک: ${esc(a.current_task)}</span>`
+  const curTask = a.current_task ? ` <span class="badge cur">📌 تسک جاری: ${esc(a.current_task)}</span>` : "";
+  const wk = nextWakeInfo(a);
+  const wkHtml = wk.has
+    ? `<span class="badge wk" title="بیداری بعدی به وقت ایران">⏰ بیداری بعدی: ${esc(wk.text)}${wk.rel ? ` · ${esc(wk.rel)}` : ""}</span>`
+    : `<span class="badge wk-none" title="طبق قاعدهٔ جدید، ایجنت باید بیداری بعدی‌اش را اعلام کند">⏰ بیداری بعدی: اعلام نشده</span>`;
+  const mine = (openTasksByAgent[a.id || a.__file.replace(/\.json$/, "")] || []).slice(0, 4);
+  const mineHtml = mine.length
+    ? `<div class="hub-tasks"><span class="ht-label">تسک‌های هاب من:</span>${mine.map((t) => `<span class="badge tbadge ${t.severity === "critical" ? "sev-c" : t.severity === "warning" ? "sev-w" : "sev-i"}" title="${esc(t.title)}">${esc(t.id || t.__file.replace(/\.json$/, ""))}</span>`).join("")}${mine.length >= 4 && (openTasksByAgent[a.id] || []).length > 4 ? `<span class="badge">+${faNum((openTasksByAgent[a.id] || []).length - 4)}</span>` : ""}</div>`
     : "";
   const tasksHtml = (a.tasks || []).map((t) => `
       <li><span class="t-name">${esc(t.name)}</span><span class="t-sched">${esc(t.scheduleText || "")}</span>${t.description ? `<span class="t-desc">${esc(t.description)}</span>` : ""}</li>`).join("");
   return `
-    <div class="card agent">
-      <div class="row"><span class="dot ${stCls}"></span>
+    <div class="card agent ${a.__light?.key === "working" ? "is-working" : ""}" id="ag-${esc(a.id || "")}">
+      <div class="row"><span class="dot ${stCls}" role="img" aria-label="${esc(stTxt)}"></span>
         <h3>${esc(a.name)}${a.role === "manager" ? ' <span class="badge mgr">👑 مدیر ارشد</span>' : ""}</h3>
         <span class="badge">${esc(a.id || "—")}</span>
         <span class="badge">${esc(a.platform || "—")}</span>
-        <span class="badge ${stCls}">${esc(stTxt)}</span>${workingTask}</div>
+        <span class="badge ${stCls}">${esc(stTxt)}</span>${curTask}</div>
       ${a.description ? `<p class="desc">${esc(a.description)}</p>` : ""}
+      <div class="wkline">${wkHtml}<span class="badge">فعالیت: ${esc(a.lastSeen ? relTime(a.lastSeen) : "—")}</span></div>
+      ${mineHtml}
       <ul class="tasks">${tasksHtml || '<li class="t-desc">تسک زمان‌داری ثبت نشده</li>'}</ul>
-      <div class="meta">فعالیت اخیر: ${esc(a.lastSeen ? relTime(a.lastSeen) : "—")} · مالک: ${esc(a.owner || "—")}</div>
+      <div class="meta">مالک: ${esc(a.owner || "—")}</div>
+    </div>`;
+}
+
+/* کارت نقشهٔ کار — کدام تسک مال کدام ایجنت */
+function workMapCard(a) {
+  const id = a.id || a.__file.replace(/\.json$/, "");
+  const mine = openTasksByAgent[id] || [];
+  const stCls = LIGHT_CLS[a.__light?.key] || "st-off";
+  if (!mine.length && !a.current_task) return "";
+  const wk = nextWakeInfo(a);
+  const items = mine.map((t) => `
+    <li><span class="dot ${t.severity === "critical" ? "sev-c-dot" : t.severity === "warning" ? "sev-w-dot" : "sev-i-dot"}" aria-hidden="true"></span><b>${esc(t.title)}</b> <span class="badge">${esc(TASK_STATUS_FA[t.status] || t.status)}</span></li>`).join("");
+  return `
+    <div class="card mapcard">
+      <div class="row"><span class="dot ${stCls}"></span><h3>${esc(a.name)}</h3>
+        <span class="badge wk">⏰ ${esc(wk.has ? wk.text : "اعلام نشده")}</span></div>
+      ${a.current_task ? `<div class="curline">📌 در دست اجرا: <b>${esc(a.current_task)}</b></div>` : ""}
+      ${mine.length ? `<ul class="duties">${items}</ul>` : '<div class="t-desc">تسک بازی در هاب ندارد</div>'}
     </div>`;
 }
 
@@ -305,20 +398,48 @@ function roleCard(r) {
 
 function taskRow(t) {
   const sevCls = t.severity === "critical" ? "sev-c" : t.severity === "warning" ? "sev-w" : "sev-i";
+  const asg = t.__assignees?.length
+    ? t.__assignees.map((id) => {
+        const ag = agentById.get(id);
+        const light = ag ? LIGHT_CLS[ag.__light?.key] || "st-off" : "st-off";
+        return `<span class="asg"><span class="dot ${light}"></span>${esc(assigneeName(id))}</span>`;
+      }).join(" ")
+    : '<span class="unassigned">— بی‌صاحب</span>';
+  const doneCls = ["done", "rejected"].includes(t.status) ? " done-row" : "";
   return `
-    <tr>
+    <tr data-st="${["open", "assigned", "in-progress"].includes(t.status) ? "open" : "done"}" class="${doneCls.trim()}">
       <td><b>${esc(t.title)}</b>${t.evidence ? `<div class="t-desc">${esc(String(t.evidence).slice(0, 240))}</div>` : ""}</td>
       <td><span class="badge ${sevCls}">${esc(SEV_FA[t.severity] || t.severity || "—")}</span></td>
       <td><span class="badge">${esc(TASK_STATUS_FA[t.status] || t.status || "—")}</span></td>
-      <td>${esc(t.assignee || "—")}</td>
+      <td>${asg}</td>
     </tr>`;
 }
+
+/* اعلامیه‌ها و گزارش بازرس — از فایل‌های مارک‌داون */
+function readMdSlice(rel, maxLines = 50) {
+  try {
+    return fs.readFileSync(path.join(ROOT, rel), "utf8").split("\n").slice(0, maxLines).join("\n");
+  } catch {
+    return null;
+  }
+}
+function listAnnouncements() {
+  try {
+    return fs.readdirSync(path.join(ROOT, "announcements")).filter((f) => f.endsWith(".md")).sort().reverse();
+  } catch {
+    return [];
+  }
+}
+const ANN_FILES = listAnnouncements();
+const ANN_LATEST = ANN_FILES.length ? readMdSlice(`announcements/${ANN_FILES[0]}`, 40) : null;
+const MASOUD_REPORT = readMdSlice("reports/masoud/report-latest.md", 50);
 
 const html = `<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="90">
 <title>هاب ایجنت‌های wowfarsi</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
 <style>
@@ -370,6 +491,34 @@ const html = `<!DOCTYPE html>
   th { color:var(--gold); font-size:12px; background:#1a1409; }
   footer { margin-top:36px; color:var(--dim); font-size:12px; text-align:center; line-height:2; }
   a { color:var(--gold); text-decoration:none; }
+  a:focus-visible, button:focus-visible { outline:2px solid var(--gold); outline-offset:2px; border-radius:4px; }
+  nav.jump { display:flex; gap:8px; flex-wrap:wrap; margin:0 0 16px; }
+  nav.jump a { font-size:12.5px; border:1px solid var(--line); border-radius:99px; padding:4px 14px; }
+  nav.jump a:hover { background:#c8aa6e14; }
+  .badge.wk { color:#e7c780; border-color:#c8aa6e66; background:#c8aa6e0d; font-weight:600; }
+  .badge.wk-none { color:var(--dim); border-style:dashed; }
+  .badge.cur { color:#fdba74; border-color:#fdba7455; }
+  .wkline { display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
+  .card.is-working { border-color:#fb923c55; box-shadow:0 0 0 1px #fb923c22, 0 4px 18px #fb923c0d; }
+  .hub-tasks { margin-top:8px; display:flex; gap:5px; flex-wrap:wrap; align-items:center; }
+  .ht-label { font-size:11px; color:var(--dim); }
+  .badge.tbadge { cursor:help; }
+  .asg { display:inline-flex; align-items:center; gap:5px; font-size:12.5px; }
+  .asg .dot { width:8px; height:8px; }
+  .unassigned { color:#8b7d63; font-style:italic; }
+  .mapcard { border-right:3px solid var(--gold); }
+  .curline { margin-top:8px; font-size:12.5px; color:var(--txt); }
+  .sev-c-dot { background:#f87171; }
+  .sev-w-dot { background:#fbbf24; }
+  .sev-i-dot { background:#60a5fa; }
+  .duties li b { color:var(--txt); font-weight:600; font-size:12px; }
+  .filterbar { display:flex; gap:6px; margin:10px 0; }
+  .fbtn { background:var(--card); color:var(--dim); border:1px solid var(--line); border-radius:99px; padding:5px 16px; font-family:inherit; font-size:12.5px; cursor:pointer; }
+  .fbtn.on { color:#1a1409; background:var(--gold); border-color:var(--gold); font-weight:700; }
+  tr.done-row { opacity:.45; }
+  .mdbox { background:#0e0b06; border:1px solid var(--line); border-radius:12px; padding:14px 16px; white-space:pre-wrap; word-wrap:break-word; font-size:12px; line-height:2; color:#d8cbb0; font-family:inherit; max-height:420px; overflow:auto; margin:0; }
+  .annhead { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:8px; }
+  @media (prefers-reduced-motion: no-preference) { .dot { transition:background .3s; } }
 </style>
 </head>
 <body>
@@ -381,7 +530,14 @@ const html = `<!DOCTYPE html>
     <span class="badge">${faNum(counts.tasks)} تسک</span>
     <span class="badge">بازسازی: ${esc(jalaliNow())}</span>
   </header>
-  <p class="sub">ثبت‌نام و معرفی ایجنت‌های خودکار پروژهٔ wowfarsi.ir — این صفحه از فایل‌های <code>agents/</code> و <code>roles/</code> و <code>tasks/</code> خودکار ساخته می‌شود · <a href="https://github.com/pvwvuow/agent-hub/blob/main/JOINING.md">راهنمای پیوستن ↗</a> · <a href="https://github.com/pvwvuow/agent-hub/blob/main/PROTOCOL.md">پروتکل شیفت و چراغ‌ها ↗</a> · <a href="https://github.com/pvwvuow/agent-hub">ریپو ↗</a></p>
+  <p class="sub">ثبت‌نام و معرفی ایجنت‌های خودکار پروژهٔ wowfarsi.ir — این صفحه از فایل‌های <code>agents/</code> و <code>roles/</code> و <code>tasks/</code> خودکار ساخته می‌شود · هر ۹۰ ثانیه خودش را تازه می‌کند · <a href="https://github.com/pvwvuow/agent-hub/blob/main/JOINING.md">راهنمای پیوستن ↗</a> · <a href="https://github.com/pvwvuow/agent-hub/blob/main/PROTOCOL.md">پروتکل شیفت و چراغ‌ها ↗</a> · <a href="https://github.com/pvwvuow/agent-hub">ریپو ↗</a></p>
+  <nav class="jump" aria-label="پرش به بخش‌ها">
+    <a href="#map">🗺️ نقشهٔ کار</a>
+    <a href="#agents">🤖 ایجنت‌ها</a>
+    <a href="#tasks">📋 تسک‌ها</a>
+    <a href="#announce">📣 اعلامیه‌ها</a>
+    <a href="#report">📋 گزارش بازرس</a>
+  </nav>
 
   <div class="stats">
     <div class="stat"><b>${faNum(counts.lights.on)}</b><span>🟢 روشن</span></div>
@@ -389,19 +545,51 @@ const html = `<!DOCTYPE html>
     <div class="stat"><b>${faNum(counts.lights.off)}</b><span>⚫ خاموش</span></div>
     <div class="stat"><b>${faNum(counts.openTasks)}</b><span>تسک باز</span></div>
     <div class="stat"><b>${faNum(counts.tasks)}</b><span>کل تسک‌ها</span></div>
+    <div class="stat"><b>${faNum(counts.announcedWakes)}/${faNum(counts.agents)}</b><span>⏰ بیداری بعدی اعلام‌شده</span></div>
   </div>
 
-  <h2>🤖 ایجنت‌ها</h2>
+  <h2 id="map">🗺️ نقشهٔ کار — کدام تسک مال کدام ایجنت</h2>
+  <div class="grid">${hub.agents.map(workMapCard).filter(Boolean).join("") || '<div class="card desc">هیچ ایجنتی الان تسک بازی ندارد.</div>'}</div>
+  ${unassignedOpen.length ? `<div class="card" style="margin-top:14px;border-style:dashed"><div class="row"><h3>📭 بی‌صاحب — در انتظار تخصیص (${faNum(unassignedOpen.length)})</h3></div><ul class="duties">${unassignedOpen.map((t) => `<li><span class="dot sev-${t.severity === "critical" ? "c" : t.severity === "warning" ? "w" : "i"}-dot"></span><b>${esc(t.title)}</b></li>`).join("")}</ul></div>` : ""}
+
+  <h2 id="agents">🤖 ایجنت‌ها</h2>
   <div class="grid">${hub.agents.map(agentCard).join("") || '<div class="card desc">هنوز ایجنتی ثبت نشده است.</div>'}</div>
 
   <h2>🏗️ نقش‌های سازمانی — <a href="https://github.com/pvwvuow/agent-hub/blob/main/WORKFLOW.md">نقشهٔ ورک‌فلو ↗</a></h2>
   <div class="grid">${hub.roles.map(roleCard).join("") || '<div class="card desc">نقشی تعریف نشده است.</div>'}</div>
 
-  <h2>📋 تسک‌ها</h2>
-  ${hub.tasks.length ? `<table><thead><tr><th>تسک</th><th>شدت</th><th>وضعیت</th><th>مسئول</th></tr></thead><tbody>${hub.tasks.map(taskRow).join("")}</tbody></table>` : '<div class="card desc">تسکی ثبت نشده است.</div>'}
+  <h2 id="tasks">📋 تسک‌ها</h2>
+  <div class="filterbar" role="group" aria-label="فیلتر تسک‌ها">
+    <button class="fbtn on" data-f="all">همه</button>
+    <button class="fbtn" data-f="open">باز (${faNum(counts.openTasks)})</button>
+    <button class="fbtn" data-f="done">تمام‌شده</button>
+  </div>
+  ${hub.tasks.length ? `<table><thead><tr><th>تسک</th><th>شدت</th><th>وضعیت</th><th>مسئول</th></tr></thead><tbody id="taskbody">${hub.tasks.map(taskRow).join("")}</tbody></table>` : '<div class="card desc">تسکی ثبت نشده است.</div>'}
+
+  <h2 id="announce">📣 اعلامیه‌های مدیریت</h2>
+  ${ANN_LATEST ? `<div class="annhead"><span class="badge">جدیدترین: ${esc(ANN_FILES[0])}</span>${ANN_FILES.slice(1).map((f) => `<a class="badge" href="https://github.com/pvwvuow/agent-hub/blob/main/announcements/${esc(f)}">${esc(f)} ↗</a>`).join("")}</div><pre class="mdbox" role="region" aria-label="متن اعلامیه">${esc(ANN_LATEST)}</pre>` : '<div class="card desc">اعلامیه‌ای ثبت نشده است.</div>'}
+
+  <h2 id="report">📋 گزارش بازرس (مسعود)</h2>
+  ${MASOUD_REPORT ? `<pre class="mdbox" role="region" aria-label="آخرین گزارش مسعود">${esc(MASOUD_REPORT)}</pre><div class="meta">آرشیو: <a href="https://github.com/pvwvuow/agent-hub/tree/main/reports/masoud">reports/masoud/ ↗</a></div>` : '<div class="card desc">هنوز گزارشی ثبت نشده — بازرس پس از راه‌اندازی شیفتش، گزارشش را در reports/masoud/report-latest.md می‌گذارد.</div>'}
 
   <footer>مدیر ارشد ایجنت‌ها: ز-ای اورکستراتور (z.ai) · پروژه: <a href="https://wowfarsi.ir">wowfarsi.ir</a> · <a href="https://github.com/pvwvuow/agent-hub">github.com/pvwvuow/agent-hub</a></footer>
 </div>
+<script>
+(function () {
+  var btns = document.querySelectorAll(".fbtn");
+  var rows = document.querySelectorAll("#taskbody tr");
+  btns.forEach(function (b) {
+    b.addEventListener("click", function () {
+      btns.forEach(function (x) { x.classList.remove("on"); });
+      b.classList.add("on");
+      var f = b.getAttribute("data-f");
+      rows.forEach(function (r) {
+        r.style.display = (f === "all" || r.getAttribute("data-st") === f) ? "" : "none";
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>`;
 
