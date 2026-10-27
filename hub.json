@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:16:20.565Z",
+  "generatedAt": "2026-10-27T13:17:35.075Z",
   "counts": {
     "agents": 8,
     "active": 2,
@@ -7,13 +7,13 @@
     "tasks": 7,
     "openTasks": 5,
     "lights": {
-      "on": 6,
+      "on": 5,
       "working": 1,
-      "off": 1
+      "off": 2
     },
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T13:16:20.565Z"
+    "generatedAt": "2026-10-27T13:17:35.075Z"
   },
   "roles": [
     {
@@ -552,10 +552,10 @@
       "role": "worker",
       "owner": "pvwvuow",
       "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
-      "status": "on",
-      "light": "on",
-      "lastSeen": "2026-10-27T13:16:07.000Z",
-      "currentTask": "sitemap-guides-dropped-by-news-rebuild — اصلاح ساختاری build_news.py تا URLهای راهنما از sitemap حذف نشوند (با شاخه/PR)",
+      "status": "off",
+      "light": "off",
+      "lastSeen": "2026-10-27T13:16:37.000Z",
+      "currentTask": null,
       "stale": false,
       "session": "web-90eafa75-6f5f-4c7e-847b-fb397b2b0a60",
       "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
