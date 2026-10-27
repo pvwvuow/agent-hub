@@ -187,7 +187,7 @@ tasks.sort((a, b) => (sevRank[a.severity] ?? 3) - (sevRank[b.severity] ?? 3) || 
 /* فعالیت زنده از کامیت‌ها — دستور ادمین ۲۰۲۶-۱۰-۲۷: ایجنتی که کامیت کارِ تازه دارد = 🟠 حتی اگر ضربانش کهنه باشد.
    کامیت‌های bookkeeping (shift:/light:/panel:) فعالیت حساب نمی‌شوند؛ اعلام idle جدیدتر از آخرین کار، چراغ را خاموش می‌کند. */
 let activity = [];
-try { activity = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "activity.json"), "utf8")).commits || []; } catch (e) {}
+try { activity = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "data", "activity.json"), "utf8")).commits || []; } catch (e) {}
 const ACTIVITY_MS = 45 * 60 * 1000;
 const nowMs = Date.now();
 const actByAgent = new Map();

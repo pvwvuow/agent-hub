@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:28:00.254Z",
+  "generatedAt": "2026-10-27T14:28:32.160Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -7,16 +7,16 @@
     "tasks": 7,
     "openTasks": 3,
     "lights": {
-      "on": 2,
-      "working": 2,
-      "off": 4
+      "on": 1,
+      "working": 4,
+      "off": 3
     },
     "announcedWakes": 8,
     "wakeExact": 3,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T14:28:00.254Z"
+    "generatedAt": "2026-10-27T14:28:32.160Z"
   },
   "roles": [
     {
@@ -222,9 +222,13 @@
       "owner": "pvwvuow",
       "description": "ایجنت ارشد اتاق مانیتور wowfarsi؛ عیب‌یابی خودکار ربات‌ها، بازرسی وضعیت سایر ایجنت‌ها، پیشنهاد و در صورت نیاز اجرای تسک",
       "status": "on",
-      "light": "on",
-      "lightByCommit": false,
-      "lastCommit": null,
+      "light": "working",
+      "lightByCommit": true,
+      "lastCommit": {
+        "repo": "agent-hub",
+        "at": "2026-10-27T14:24:58Z",
+        "msg": "panel: auto-sync (lights/render) [main-5min]"
+      },
       "lastSeen": "2026-10-27T14:16:29.000Z",
       "currentTask": null,
       "nextWake": null,
@@ -285,10 +289,14 @@
       "status": "working",
       "light": "working",
       "lightByCommit": false,
-      "lastCommit": null,
-      "lastSeen": "2026-10-27T14:20:46.000Z",
+      "lastCommit": {
+        "repo": "agent-hub",
+        "at": "2026-10-27T14:26:33Z",
+        "msg": "shift: next_wake 18:06 Tehran — section done, more queued (light v3)"
+      },
+      "lastSeen": "2026-10-27T14:26:30.000Z",
       "currentTask": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever",
-      "nextWake": "2026-10-27 17:49",
+      "nextWake": "2026-10-27 18:06",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-fa3ca629-0ef9-43ac-8701-6e0ab44fe61a",
@@ -332,9 +340,13 @@
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
       "status": "off",
-      "light": "off",
-      "lightByCommit": false,
-      "lastCommit": null,
+      "light": "working",
+      "lightByCommit": true,
+      "lastCommit": {
+        "repo": "agent-hub",
+        "at": "2026-10-27T14:21:54Z",
+        "msg": "light: off — queue empty for z-ai-flex"
+      },
       "lastSeen": "2026-10-27T14:21:54.000Z",
       "currentTask": null,
       "nextWake": null,
@@ -432,7 +444,11 @@
       "status": "off",
       "light": "off",
       "lightByCommit": false,
-      "lastCommit": null,
+      "lastCommit": {
+        "repo": "agent-hub",
+        "at": "2026-10-27T14:24:46Z",
+        "msg": "shift: idle — light off, next_wake 18:04 Tehran"
+      },
       "lastSeen": "2026-10-27T14:23:46Z",
       "currentTask": null,
       "nextWake": "2026-10-27 18:04",
@@ -537,7 +553,11 @@
       "status": "working",
       "light": "working",
       "lightByCommit": false,
-      "lastCommit": null,
+      "lastCommit": {
+        "repo": "agent-hub",
+        "at": "2026-10-27T14:15:18Z",
+        "msg": "working: forever-wow-data — workspace setup (light on + next_wake 17:50)"
+      },
       "lastSeen": "2026-10-27T14:21:11Z",
       "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
       "nextWake": "2026-10-27 17:50",
@@ -586,7 +606,11 @@
       "status": "off",
       "light": "off",
       "lightByCommit": false,
-      "lastCommit": null,
+      "lastCommit": {
+        "repo": "agent-hub",
+        "at": "2026-10-27T14:16:08Z",
+        "msg": "shift: idle — light off, next_wake 17:56 Tehran"
+      },
       "lastSeen": "2026-10-27T14:16:08.000Z",
       "currentTask": null,
       "nextWake": null,
