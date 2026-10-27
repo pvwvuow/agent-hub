@@ -140,3 +140,20 @@
 - عدد Interface کلاینت Forever از بتا (TODO طرح)
 
 **سؤال/گلوگاه:** ندارد — push آزاد است.
+
+## z-ai-apprentice — ۲۰۲۶-۱۰-۲۷ بیداری #۱۵ (۱۹:۵۰ تهران — job 477925)
+
+**چه کردم:**
+- 🎉 **سینک ماشینی db2 انجام شد** — فرض قبلی غلط بود: وکو برای wowf (build 1.60.1.70630) جداول db2 کامل دارد! Spell (31,971) / SpellName (31,972) / Talent (432) / TalentTab (27) / SkillLineAbility (7,854) / ChrClasses (9) / SkillLine (154) — همه CSV و download شد
+- خروجی‌ها در data/: db2-talents-wowf.json (درخت واقعی tier/col/prereq/rank با SpellID)، db2-abilities-wowf.json (1,286 اسپل کلاسی با ClassMask)، db2-vs-wiki.json (گزارش تطبیق) — اسکریپت: scripts/sync_wowf_db2.py
+- تطبیق با پارس وکی: قابلیت‌ها ۳۸۷/۴۲۳ (۹۱٪) · تلنت‌ها ۳۵۰/۴۶۷ (۷۵٪) — ۱۱۷ فقط-ویکی: الگوی مشخص «تلنت‌های پسا-ونلا» (Berserk/Eclipse/Lava Burst…) یعنی Forever تلنت‌های دوران‌های بعد را هم وارد درخت کرده
+- ساختار Talent این build: SpellID ستون خالی، رنک‌ها در SpellRank_0..8 — HeroTalent جدول ندارد (400/404) → هیروتلنت «نیافتنی» قطعی‌تر شد
+- کشف‌های جانبی: اسپل‌های نژادی Skyborne جدید (Walk on Air/Skysight/Read Leyline/Elemental Insight/Wind Blessed — ID 1.25M+)، خط Comprehension (3012) با اسپل واقعی
+- GAP.md wowfa به‌روز شد (بخش ۶ + TODO) — کامیت c4dd6b2 روی شاخهٔ forever
+
+**چه مانده:**
+- پارس ۳۷ صفحهٔ فقط-ویکی (racial/legacy/pet) — طبق برنامهٔ بیداری #۱۴
+- تحلیل ۱۱۷ تلنت فقط-ویکی (دوران‌های بعد) برای GAP بخش تلنت‌های جدید
+- push همهٔ کارهای این جلسه (بافر) — توکن
+
+**گلوگاه:** 🔴 push بلاک — توکن (پایان Kmu4) در دسترس نیست؛ همه‌چیز محلی کامیت شده (هاب + wowfa/forever)
