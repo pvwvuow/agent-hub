@@ -5,8 +5,8 @@
  "role": "worker",
  "owner": "pvwvuow",
  "description": "کارگر آزاد z.ai با چند جبههٔ کاری ناهم‌گروه — دسته‌بندی و اولویت‌بندی با مدیر ارشد: (۱) خط کوئست‌ها در pvwvuow/wowfa طبق docs/QUEST_AGENTS.md — بک‌فیل voidstorm/harandar (۱۴۴ کوئست با منابع واقعی، PRهای #69-#73)، ممیزی تحریری B (PR #75) و ممیزی A روی eversong/quel-danas/arcantina (PRهای #87/#88)؛ هر کار با شاخهٔ جدا + stamp + lint صفر + PR بدون مرج. (۲) توسعهٔ افزونهٔ Lua — WoWFA (بارگذاری ۱۳ کلاس، تحمل توکن‌های خراب بازی، tools/check_addon.py) و WoWFarsi_Quests (اتصال به پنل ماژولی 0.4.0، PR #89) با دروازهٔ luac5.1 و هارنس Lua 5.1 VM. (۳) ترجمهٔ کامل تلنت‌های سه کلاس Monk/Druid/Warlock (۸۵۲ اسپل) که مجموع ۱۳ کلاس را کامل کرد. (۴) زیرساخت موردی — ابزار و ورک‌فلو update-donations در pvwvuow/wow (PR #29؛ منتظر ادغام + secret REYMIT_API_TOKEN و رفع insufficient_plan پنل رییمیت)، DNS/GSC سایت و تعمیرات موردی ابزار/CI. نقش ثابتی claim نمی‌کنم؛ به roles/ دست نزده‌ام.",
- "status": "on",
- "last_seen": "2026-10-27T15:47:15.000Z",
+ "status": "off",
+ "last_seen": "2026-10-27T15:48:08.000Z",
  "session": "web-c4604fc4-c79f-413a-9e72-ef6125a36796",
  "contact": "چت وب z.ai — ادمین به همین نشست دسترسی دارد؛ بدون رمز و توکن",
  "tasks": [
@@ -39,11 +39,11 @@
  ],
  "current_task": null,
  "wake_note": "📬 اول صندوق را چک کن: node scripts/inbox.js check --agent z-ai-quests-addon — اگر UNREAD بود بخوان و ack کن؛ ALL-READ رد شو. 📢 قبل از هر کاری announcements/2026-10-27-light-policy-v2.md را بخوان (چراغ v2: پایان جلسه = خاموش حتی با تسک نیمه‌کاره؛ بدون سقف زمانی کار). 🛡️ بیدارباش‌های پشتیبان مسلح شدند (۳ جاب fixed_rate ۱۰/۱۲/۱۴ دقیقه، priority=10) — در پایان هر بیداری عادی زنجیرهٔ اصلی فقط watchdog={last_wake: الان, leader: 10} را تازه کن؛ جاب پشتیبانی تکراری نساز. ادمین اسم این ایجنت را از ۲۰۲۶-۱۰-۲۷ «محسن» گذاشته — در پنل و گزارش‌ها همین نام.",
- "updated_at": "2026-10-27T15:47:15.000Z",
+ "updated_at": "2026-10-27T15:48:08.000Z",
  "watchdog": {
   "last_wake": "2026-10-27T15:47:15.000Z",
   "leader": 10
  },
  "group": "کوئست و افزونه",
- "next_wake": "2026-10-27 23:45"
+ "next_wake": "2026-10-27 23:57"
 }
