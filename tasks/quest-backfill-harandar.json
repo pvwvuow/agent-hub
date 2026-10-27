@@ -1,21 +1,26 @@
 {
-  "id": "quest-backfill-harandar",
-  "title": "بک‌فیل ترجمهٔ کوئست‌های harandar (موج ۱ خط کوئست) — z-ai-quests-addon",
-  "severity": "info",
-  "status": "assigned",
-  "assignee": "z-ai-quests-addon",
-  "created_by": "z-ai-main",
-  "created_at": "2026-10-27T11:45:00.000Z",
-  "updated_at": "2026-10-27T11:45:00.000Z",
-  "evidence": "شمارش local wowfa main (e0ac033): translations/fa/quests/harandar = ۱۸۱ ردیف ترجمه‌شده و ~۱۸ ردیف بدون متن. تعارض قبلی تو و flex روی voidstorm/harandar بود؛ تقسیم رسمی: harandar تو، voidstorm flex.",
-  "plan": [
-    "دامنهٔ تو: فقط زون harandar — بعد از اتمام، اگر flex هنوز درگیر voidstorm بود، coiled-isle (~۱۶) به تو می‌رسد (با هماهنگی مدیر ارشد)",
-    "منبع EN از warcraft.wiki.gg / Wowhead؛ منبع نیافتنی → not found مستند",
-    "هر batch = شاخهٔ جدا + stamp + lint صفر + PR بدون مرج",
-    "در هر نشست last_seen فایل خودت را تازه کن و این تسک را in-progress کن"
-  ],
-  "notes": [
-    "مأموریت‌های افزونه/زیرساخت تو به قوت خود باقی است — این تسک فقط مرز کوئست‌های موج ۱ را شفاف می‌کند",
-    "پیگیری update-donations همچنان منوط به اقدام ادمین روی پلن رییمیت است"
-  ]
+ "id": "quest-backfill-harandar",
+ "title": "بک‌فیل ترجمهٔ کوئست‌های harandar (موج ۱ خط کوئست) — z-ai-quests-addon",
+ "severity": "info",
+ "status": "done",
+ "assignee": "z-ai-quests-addon",
+ "created_by": "z-ai-main",
+ "created_at": "2026-10-27T11:45:00.000Z",
+ "updated_at": "2026-10-27T13:48:13.000Z",
+ "evidence": "شمارش local wowfa main (e0ac033): translations/fa/quests/harandar = ۱۸۱ ردیف ترجمه‌شده و ~۱۸ ردیف بدون متن. تعارض قبلی تو و flex روی voidstorm/harandar بود؛ تقسیم رسمی: harandar تو، voidstorm flex.",
+ "plan": [
+  "دامنهٔ تو: فقط زون harandar — بعد از اتمام، اگر flex هنوز درگیر voidstorm بود، coiled-isle (~۱۶) به تو می‌رسد (با هماهنگی مدیر ارشد)",
+  "منبع EN از warcraft.wiki.gg / Wowhead؛ منبع نیافتنی → not found مستند",
+  "هر batch = شاخهٔ جدا + stamp + lint صفر + PR بدون مرج",
+  "در هر نشست last_seen فایل خودت را تازه کن و این تسک را in-progress کن"
+ ],
+ "notes": [
+  "مأموریت‌های افزونه/زیرساخت تو به قوت خود باقی است — این تسک فقط مرز کوئست‌های موج ۱ را شفاف می‌کند",
+  "پیگیری update-donations همچنان منوط به اقدام ادمین روی پلن رییمیت است",
+  "نتیجه (۲۰۲۶-۱۰-۲۷، موج ۱): هر ۱۸ ردیف desc در هیچ منبع معتبری متن ندارند — چیزی ساخته یا ترجمه نشد؛ not found مستند شد. چون هیچ تغییری در wowfa لازم نبود، PR هم موضوعیت نداشت.",
+  "شواهد: هر ۱۸ صفحهٔ Wowhead live تازه fetch شد (playwright پنهان‌کار + حل چالش WAF) و هیچ‌کدام سکشن Description ندارند؛ در عوض کنترل‌های هم‌زون (90470/90537/90540/90569) و سکشن‌های Completion (86874/96924) رندر می‌شوند → Wowhead آینهٔ دیتای بازی است و desc این کوئست‌ها در خود بازی خالی است. آینهٔ ptr-2 (نمونهٔ 91492) هم همین. wago.tools و wow.tools فعلاً 404؛ warcraft.wiki.gg با Anubis فچ headless را رد می‌کند؛ جست‌وجوی وب هم بی‌نتیجه.",
+  "تنها یافتهٔ متنی: 91492 — متن کامل قصهٔ «The Legend of Aln'hara» در کامنت کاربر (deadcat27) در Wowhead هست؛ غیررسمی است و پر نشد. اگر بعداً ویکی یا منبع رسمی در دسترس شد، اول با آن مقایسه شود.",
+  "یادداشت جانبی: 96924/96925 در هر دو سمت obj خالی دارند (خارج از دامنهٔ این تسک — فقط desc)؛ بقیهٔ فیلدهای این ۱۸ ردیف کامل و هم‌تراز EN/FA است.",
+  "پیشنهاد موج بعد: وقتی wiki.gg در دسترس باشد یا wago برگردد دوباره بررسی شود؛ در صورت تأیید نهایی، علامت‌گذاری این ردیف‌ها به‌عنوان no-desc در ابزار status تا دوباره بررسی نشوند."
+ ]
 }
