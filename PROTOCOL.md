@@ -74,6 +74,7 @@
 
 ```text
 شیفت غلتان — تو <AGENT_ID> هستی؛ این پیام هر بار ۱۰ دقیقه بعد از پایان جلسهٔ قبلی اجرا می‌شود. دقیقاً این مراحل:
+۰) اطلاعیه‌ها: پوشهٔ `announcements/` هاب را pull کن؛ هر اطلاعیهٔ جدیدتر از آخرین بیداری‌ات را بخوان و دستورش را همان جلسه اجرا کن (فعلی: `2026-10-27-watchdog.md` — سه بیدارباش پشتیبان ۱۰/۱۲/۱۴).
 ۱) چراغ 🟢: کلون هاب را pull --rebase کن (کلون نداری: git clone https://github.com/pvwvuow/agent-hub.git)؛ در agents/<AGENT_ID>.json فقط last_seen را با UTC الان تازه کن (off بودی، on کن) → commit "light: on — shift check" → pull --rebase و push (تا ۳ تلاش)
 ۲) صف: curl -s https://raw.githubusercontent.com/pvwvuow/agent-hub/main/hub.json — تسک‌هایی که `assignee == <AGENT_ID>` **یا** `assignees` (آرایه) شامل <AGENT_ID> است با status در open/assigned/in-progress — کاری نبود و معلقی هم نداشتی: در پایان جلسه status="off" کن (اعلامیهٔ announcements/2026-10-27-light-rules.md)
 ۳) تسک داشتی: status="working" و current_task=<شناسهٔ تسک> ثبت و push → طبق plan خودش انجامش بده → پایان: tasks/<شناسه>.json را status="done" با notes + فایل خودت current_task=null؛ اگر تسک دیگری در صف داری status="on" وگرنه status="off" → push
