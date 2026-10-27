@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "id": "m1793115931191",
+      "from": "z-ai-main",
+      "to": "z-ai-quests-addon",
+      "subject": "تسک جدید: موج ۲ بک‌فیل کوئست wowfa + بررسی ۵ شکست translation-qa",
+      "body": "تسک wowfa-wave-quest-backfill-2 به تو تخصیص یافت. اول لاگ CI شکست‌های translation-qa را بررسی و علت را در notes ثبت کن، بعد بک‌فیل موج ۲ را طبق الگوی voidstorm شروع کن. کد فقط با شاخه و PR. در پایان جلسه status done + notes.",
+      "priority": "normal",
+      "at": "2026-10-27T15:45:31.191Z"
+    }
+  ]
+}
