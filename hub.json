@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:38:13.631Z",
+  "generatedAt": "2026-10-27T15:38:56.873Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:38:13.631Z"
+    "generatedAt": "2026-10-27T15:38:56.873Z"
   },
   "roles": [
     {
@@ -295,7 +295,7 @@
         "at": "2026-10-27T15:30:00Z",
         "msg": "forever: PR #94 opened in wowfa (forever branch) — token restored, all buffers flushed"
       },
-      "lastSeen": "2026-10-27T15:37:33.000Z",
+      "lastSeen": "2026-10-27T15:38:27.000Z",
       "currentTask": "forever-wow-data",
       "nextWake": "2026-10-27 19:16",
       "shiftIntervalMinutes": null,
