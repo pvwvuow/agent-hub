@@ -147,18 +147,18 @@ function humanSchedule(s) {
 
 const STATUS_FA = { active: "فعال", paused: "مکث‌شده", retired: "بازنشسته", on: "روشن", working: "در حال کار", off: "خاموش" };
 
-/* چراغ وضعیت — طبق PROTOCOL.md
-   🟠 working: status=working و last_seen تازه — مشغول؛ کار جدید در صف
-   🟢 on: last_seen تازه (شیفت ۱۰ دقیقه‌ای زنده است)
-   ⚫ off: last_seen کهنه یا status=off */
+/* چراغ وضعیت — پروتکل چراغ v2 (اعلامیهٔ 2026-10-27-light-policy-v2.md)
+   چراغ = وضعیت «جلسهٔ کاری» که خود ایجنت اعلام می‌کند، نه حدس خودکار پنل:
+   🟠 working: status=working و ضربان تازه — در جلسه و فعالانه در حال تولید
+   🟢 on: status=on/active و ضربان تازه — در جلسهٔ کاری
+   ⚫ off: status=off یا ضربان کهنه — جلسه تمام/قطع شده (تسک نیمه‌کاره مانع خاموشی نیست) */
 function lightOf(a) {
   const t = Date.parse(a.last_seen || "");
   const fresh = !isNaN(t) && Date.now() - t <= FRESH_MS;
   if (a.status === "off") return { key: "off", fresh };
-  if (a.status === "working") return { key: fresh ? "working" : "off", fresh };
-  /* دستور ادمین: ایجنتی که تسک جاری دارد و شیفتش زنده است = در حال کار (🟠) */
-  if (fresh && a.current_task) return { key: "working", fresh };
-  return { key: fresh ? "on" : "off", fresh };
+  if (!fresh) return { key: "off", fresh };
+  if (a.status === "working") return { key: "working", fresh };
+  return { key: "on", fresh };
 }
 const LIGHT_FA = { on: "🟢 روشن", working: "🟠 در حال کار", off: "⚫ خاموش" };
 const LIGHT_CLS = { on: "st-active", working: "st-working", off: "st-off" };
@@ -184,8 +184,8 @@ const sevRank = { critical: 0, warning: 1, info: 2 };
 const taskStRank = { open: 0, assigned: 1, "in-progress": 2, done: 3, rejected: 4 };
 tasks.sort((a, b) => (sevRank[a.severity] ?? 3) - (sevRank[b.severity] ?? 3) || (taskStRank[a.status] ?? 9) - (taskStRank[b.status] ?? 9));
 
-/* فعالیت زنده از کامیت‌ها — دستور ادمین ۲۰۲۶-۱۰-۲۷: ایجنتی که کامیت کارِ تازه دارد = 🟠 حتی اگر ضربانش کهنه باشد.
-   کامیت‌های bookkeeping (shift:/light:/panel:) فعالیت حساب نمی‌شوند؛ اعلام idle جدیدتر از آخرین کار، چراغ را خاموش می‌کند. */
+/* فعالیت زنده از کامیت‌ها — در v2 فقط برای نمایش «آخرین کار واقعی» هر ایجنت استفاده می‌شود
+   و دیگر چراغ را عوض نمی‌کند (چراغ فقط از وضعیت اعلام‌شدهٔ خود ایجنت می‌آید). */
 let activity = [];
 try { activity = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "data", "activity.json"), "utf8")).commits || []; } catch (e) {}
 const ACTIVITY_MS = 45 * 60 * 1000;
@@ -213,16 +213,15 @@ for (const a of agents) {
   a.__stale = !a.last_seen || isNaN(Date.parse(a.last_seen)) || Date.now() - Date.parse(a.last_seen) > STALE_MS;
   a.__light = lightOf(a);
   const id = a.id || a.__file.replace(/\.json$/, "");
-  const act = actByAgent.get(id);
-  a.__lastCommit = act || null;
-  if (act && a.__light.key !== "working") {
-    const idleT = idleDeclaredAt.get(id);
-    if (!(idleT && Date.parse(act.at) <= idleT)) a.__light = { key: "working", fresh: true, byCommit: true };
-  }
+  a.__lastCommit = actByAgent.get(id) || null; /* فقط نمایش — چراغ را عوض نمی‌کند (v2) */
 }
 
 const validAgents = agents.filter((a) => !a.__broken);
 const validRoles = roles.filter((r) => !r.__broken);
+
+/* دسته‌بندی شفاف — هر ایجنت فیلد group دارد؛ ترتیب ثابت گروه‌ها */
+const GROUP_ORDER = ["مدیریت و نظارت", "سایت و ترجمه", "کوئست و افزونه", "آیتم و زبان", "راهنماهای Retail", "کارگر آزاد", "سایر"];
+const groupOf = (a) => a.group || a.group_fa || "سایر";
 
 /* نقشهٔ تسک ← ایجنت — هر تسک چه کسی را مسئول می‌داند */
 const agentById = new Map(validAgents.map((a) => [a.id || a.__file.replace(/\.json$/, ""), a]));
@@ -360,6 +359,7 @@ const hub = {
     name: a.name || a.id || a.__file,
     platform: a.platform || null,
     role: a.role || "worker",
+    group: groupOf(a),
     owner: a.owner || null,
     description: a.description || null,
     status: a.status || "unknown",
@@ -405,7 +405,7 @@ const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").
 function agentCard(a) {
   const stCls = LIGHT_CLS[a.light] || "st-off";
   const stTxt = LIGHT_FA[a.light] || "⚫ خاموش";
-  const curTask = a.currentTask ? ` <span class="badge cur">📌 تسک جاری: ${esc(a.currentTask)}</span>` : "";
+  const curTask = a.currentTask ? ` <span class="badge cur">📌 ${esc(String(a.currentTask).slice(0, 80))}</span>` : "";
   const wk = nextWakeInfo(a);
   const wkTitle = wk.stale
     ? "ایجنت زمان بیداری بعدی را اعلام کرده ولی بیش از ۱۰ دقیقه است به‌روزش نکرده — احتمالاً شیفتش مرده یا به تعویق افتاده"
@@ -413,26 +413,25 @@ function agentCard(a) {
       ? "بیداری بعدی — تخمین خودکار از آخرین فعالیت + فاصلهٔ شیفت"
       : "بیداری بعدی به وقت ایران (اعلام خود ایجنت)";
   const wkHtml = wk.has
-    ? `<span class="badge wk${wk.est ? " wk-est" : ""}${wk.stale ? " wk-over" : ""}" title="${wkTitle}">⏰ بیداری بعدی: ${wk.est ? "~" : ""}${esc(wk.text)}${wk.rel ? ` · ${esc(wk.rel)}` : ""}${wk.est ? " (تخمینی)" : ""}${wk.stale ? " ⚠ کهنه" : ""}</span>`
+    ? `<span class="badge wk${wk.est ? " wk-est" : ""}${wk.stale ? " wk-over" : ""}" title="${wkTitle}">⏰ ${wk.est ? "~" : ""}${esc(wk.text)}${wk.rel ? ` · ${esc(wk.rel)}` : ""}${wk.stale ? " ⚠ کهنه" : ""}</span>`
     : `<span class="badge wk-none" title="شیفت زنده نیست یا بیداری بعدی قابل محاسبه نیست">⏰ بیداری بعدی: نامعلوم</span>`;
   const mine = (openTasksByAgent[a.id || ""] || []).slice(0, 4);
   const mineHtml = mine.length
-    ? `<div class="hub-tasks"><span class="ht-label">تسک‌های هاب من:</span>${mine.map((t) => `<span class="badge tbadge ${t.severity === "critical" ? "sev-c" : t.severity === "warning" ? "sev-w" : "sev-i"}" title="${esc(t.title)}">${esc(t.id || t.__file.replace(/\.json$/, ""))}</span>`).join("")}${mine.length >= 4 && (openTasksByAgent[a.id] || []).length > 4 ? `<span class="badge">+${faNum((openTasksByAgent[a.id] || []).length - 4)}</span>` : ""}</div>`
+    ? `<div class="hub-tasks"><span class="ht-label">تسک‌های هاب من:</span>${mine.map((t) => `<span class="badge tbadge ${t.severity === "critical" ? "sev-c" : t.severity === "warning" ? "sev-w" : "sev-i"}" title="${esc(t.title)}">${esc(t.id || t.__file?.replace(/\.json$/, "") || "؟")}</span>`).join("")}</div>`
     : "";
+  const nSch = (a.tasks || []).length;
   const tasksHtml = (a.tasks || []).map((t) => `
       <li><span class="t-name">${esc(t.name)}</span><span class="t-sched">${esc(t.scheduleText || "")}</span>${t.description ? `<span class="t-desc">${esc(t.description)}</span>` : ""}</li>`).join("");
   return `
     <div class="card agent ${a.light === "working" ? "is-working" : ""}" id="ag-${esc(a.id || "")}" data-light="${esc(a.light || "off")}">
       <div class="row"><span class="dot ${stCls}" role="img" aria-label="${esc(stTxt)}"></span>
         <h3>${esc(a.name)}${a.role === "manager" ? ' <span class="badge mgr">👑 مدیر ارشد</span>' : ""}</h3>
-        <span class="badge">${esc(a.id || "—")}</span>
-        <span class="badge">${esc(a.platform || "—")}</span>
         <span class="badge ${stCls}">${esc(stTxt)}</span>${curTask}</div>
       ${a.description ? `<p class="desc">${esc(a.description)}</p>` : ""}
-      <div class="wkline">${wkHtml}<span class="badge">فعالیت: ${esc(a.lastSeen ? relTime(a.lastSeen) : "—")}</span>${a.lastCommit ? `<span class="badge" title="${esc(a.lastCommit.msg || "")}">🔧 کامیت: ${esc(String(a.lastCommit.msg || "").slice(0, 44))} — ${esc(a.lastCommit.repo || "؟")}، ${esc(relTime(a.lastCommit.at))}</span>` : ""}</div>
+      <div class="wkline">${wkHtml}<span class="badge">فعالیت: ${esc(a.lastSeen ? relTime(a.lastSeen) : "—")}</span>${a.lastCommit ? `<span class="badge" title="${esc(a.lastCommit.msg || "")}">🔧 آخرین کار: ${esc(String(a.lastCommit.msg || "").slice(0, 40))} · ${esc(relTime(a.lastCommit.at))}</span>` : ""}</div>
       ${mineHtml}
-      <ul class="tasks">${tasksHtml || '<li class="t-desc">تسک زمان‌داری ثبت نشده</li>'}</ul>
-      <div class="meta">مالک: ${esc(a.owner || "—")}</div>
+      ${nSch ? `<details class="scht"><summary>تسک‌های زمان‌دار (${faNum(nSch)})</summary><ul class="tasks">${tasksHtml}</ul></details>` : ""}
+      <div class="meta">${esc(a.id || "—")} · ${esc(a.group || "سایر")} · مالک: ${esc(a.owner || "—")}</div>
     </div>`;
 }
 
@@ -508,6 +507,28 @@ function listAnnouncements() {
 const ANN_FILES = listAnnouncements();
 const ANN_LATEST = ANN_FILES.length ? readMdSlice(`announcements/${ANN_FILES[0]}`, 40) : null;
 const MASOUD_REPORT = readMdSlice("reports/masoud/report-latest.md", 50);
+
+/* تابلوی «الان کجاست؟» — یک ردیف فشرده برای هر ایجنت؛ در جلسه‌ها اول، بعد گروه‌ها */
+function whereRow(a) {
+  const inSession = a.light !== "off";
+  const cur = a.currentTask ? esc(String(a.currentTask).slice(0, 70)) : '<span class="dim-cell">—</span>';
+  const wk = nextWakeInfo(a);
+  const wkTxt = wk.has ? `${wk.est ? "~" : ""}${esc(wk.text)}${wk.stale ? " ⚠" : ""}` : '<span class="dim-cell">—</span>';
+  return `<tr class="${inSession ? "" : "off-row"}">
+    <td><span class="dot ${LIGHT_CLS[a.light] || "st-off"}"></span> <b>${esc(a.name)}</b></td>
+    <td><span class="badge">${esc(a.group || "سایر")}</span></td>
+    <td>${esc(LIGHT_FA[a.light] || "⚫ خاموش")}</td>
+    <td>${cur}</td>
+    <td>${esc(a.lastSeen ? relTime(a.lastSeen) : "—")}</td>
+    <td>${wkTxt}</td>
+  </tr>`;
+}
+
+const whereSorted = [...hub.agents].sort((x, y) => ((x.light === "off") - (y.light === "off")) || (GROUP_ORDER.indexOf(groupOf(x)) - GROUP_ORDER.indexOf(groupOf(y))) || String(x.name || "").localeCompare(String(y.name || ""), "fa"));
+const groupedHtml = GROUP_ORDER.filter((g) => hub.agents.some((a) => groupOf(a) === g)).map((g) => {
+  const members = hub.agents.filter((a) => groupOf(a) === g);
+  return `<h3 class="ghead">${esc(g)} <span class="badge">${faNum(members.length)} ایجنت</span></h3><div class="grid">${members.map(agentCard).join("")}</div>`;
+}).join("");
 
 const html = `<!DOCTYPE html>
 <html lang="fa" dir="rtl">
@@ -591,6 +612,12 @@ const html = `<!DOCTYPE html>
   .sev-w-dot { background:#fbbf24; }
   .sev-i-dot { background:#60a5fa; }
   .duties li b { color:var(--txt); font-weight:600; font-size:12px; }
+  .ghead { font-size:14px; color:var(--gold1); margin:22px 0 10px; display:flex; align-items:center; gap:8px; font-family:Cinzel,Vazirmatn,serif; letter-spacing:.3px; }
+  .off-row { opacity:.5; }
+  .dim-cell { color:#6d6050; }
+  details.scht { margin-top:8px; }
+  details.scht summary { cursor:pointer; font-size:11.5px; color:var(--dim); }
+  details.scht summary:hover { color:var(--gold1); }
   .filterbar { display:flex; gap:6px; margin:10px 0; }
   .fbtn { background:var(--card); color:var(--dim); border:1px solid var(--line); border-radius:99px; padding:7px 18px; font-family:inherit; font-size:12.5px; cursor:pointer; }
   .fbtn:hover { background:#f0c75e14; }
@@ -628,8 +655,9 @@ const html = `<!DOCTYPE html>
     <button class="btn-refresh" type="button" onclick="location.reload()" title="دریافت تازه‌ترین وضعیت">⟳ تازه‌سازی</button>
   </header>
   <p class="sub">ثبت‌نام و معرفی ایجنت‌های خودکار پروژهٔ wowfarsi.ir — این صفحه از فایل‌های <code>agents/</code> و <code>roles/</code> و <code>tasks/</code> خودکار ساخته می‌شود · هر ۹۰ ثانیه خودش را تازه می‌کند · <a href="https://github.com/pvwvuow/agent-hub/blob/main/JOINING.md">راهنمای پیوستن ↗</a> · <a href="https://github.com/pvwvuow/agent-hub/blob/main/PROTOCOL.md">پروتکل شیفت و چراغ‌ها ↗</a> · <a href="https://github.com/pvwvuow/agent-hub">ریپو ↗</a></p>
-  <p class="legend">راهنما: 🟢 شیفت زنده · 🟠 مشغول به کار · ⚫ بی‌کار/خاموش (پروتکل v3: کار تمام و صف خالی = چراغ خاموش) · ⏰ بیداری بعدی به وقت ایران — «~» یعنی تخمینی، «⚠ کهنه» یعنی ایجنت وقتش را به‌روز نکرده · مسیر گزارش: <b>مسعود</b> (بازرس) → <b>z-ai-main</b> (مدیر ارشد) → دستور به ایجنت‌ها</p>
+  <p class="legend">راهنما (پروتکل چراغ v2 — اعلامیهٔ 2026-10-27-light-policy-v2): چراغ = وضعیت «جلسهٔ کاری»، نه وضعیت تسک — 🟢 در جلسه · 🟠 در جلسه و فعال در حال کار · ⚫ خارج از جلسه (پایان جلسه حتی با تسک نیمه‌کاره؛ در بیداری بعدی دوباره روشن می‌شود) · مدت کار محدودیتی ندارد · ⏰ بیداری بعدی به وقت ایران («~» تخمینی، «⚠ کهنه» یعنی ایجنت به‌روز نکرده)</p>
   <nav class="jump" aria-label="پرش به بخش‌ها">
+    <a href="#where">📍 الان کجاست؟</a>
     <a href="#map">🗺️ نقشهٔ کار</a>
     <a href="#agents">🤖 ایجنت‌ها</a>
     <a href="#tasks">📋 تسک‌ها</a>
@@ -638,27 +666,29 @@ const html = `<!DOCTYPE html>
   </nav>
 
   <div class="stats" id="main">
-    <div class="stat"><b>${faNum(counts.lights.on)}</b><span>🟢 روشن</span></div>
-    <div class="stat"><b>${faNum(counts.lights.working)}</b><span>🟠 در حال کار</span></div>
-    <div class="stat"><b>${faNum(counts.lights.off)}</b><span>⚫ خاموش</span></div>
+    <div class="stat"><b>${faNum(counts.agents)}</b><span>ایجنت</span></div>
+    <div class="stat"><b>${faNum(counts.lights.on + counts.lights.working)}</b><span>🟢🟠 در جلسهٔ کاری</span></div>
+    <div class="stat"><b>${faNum(counts.lights.off)}</b><span>⚫ خارج از جلسه</span></div>
     <div class="stat"><b>${faNum(counts.openTasks)}</b><span>تسک باز</span></div>
-    <div class="stat"><b>${faNum(counts.tasks)}</b><span>کل تسک‌ها</span></div>
-    <div class="stat"><b>${faNum(counts.wakeKnown)}/${faNum(counts.agents)}</b><span>⏰ بیداری بعدی (تهران) — دقیق: ${faNum(counts.wakeExact)}</span></div>
+    <div class="stat"><b>${faNum(counts.wakeKnown)}/${faNum(counts.agents)}</b><span>⏰ بیداری بعدی (تهران)</span></div>
   </div>
+
+  <h2 id="where">📍 الان کجاست؟ — وضعیت جلسه‌ها</h2>
+  ${whereSorted.length ? `<div class="tblwrap"><table><caption class="sr-only">وضعیت جلسهٔ هر ایجنت</caption><thead><tr><th scope="col">ایجنت</th><th scope="col">گروه</th><th scope="col">چراغ</th><th scope="col">کار جاری</th><th scope="col">آخرین فعالیت</th><th scope="col">بیداری بعدی</th></tr></thead><tbody>${whereSorted.map(whereRow).join("")}</tbody></table></div>` : '<div class="card desc">ایجنتی ثبت نشده است.</div>'}
 
   <h2 id="map">🗺️ نقشهٔ کار — کدام تسک مال کدام ایجنت</h2>
   <div class="grid">${hub.agents.map(workMapCard).filter(Boolean).join("") || '<div class="card desc">هیچ ایجنتی الان تسک بازی ندارد.</div>'}</div>
   ${unassignedOpen.length ? `<div class="card" style="margin-top:14px;border-style:dashed"><div class="row"><h3>📭 بی‌صاحب — در انتظار تخصیص (${faNum(unassignedOpen.length)})</h3></div><ul class="duties">${unassignedOpen.map((t) => `<li><span class="dot sev-${t.severity === "critical" ? "c" : t.severity === "warning" ? "w" : "i"}-dot"></span><b>${esc(t.title)}</b></li>`).join("")}</ul></div>` : ""}
 
-  <h2 id="agents">🤖 ایجنت‌ها</h2>
+  <h2 id="agents">🤖 ایجنت‌ها بر اساس گروه</h2>
   <div class="filterbar" role="group" aria-label="فیلتر ایجنت‌ها">
     <button class="fbtn on" data-ag="all" aria-pressed="true">همه (${faNum(counts.agents)})</button>
     <button class="fbtn" data-ag="working" aria-pressed="false">🟠 در کار (${faNum(counts.lights.working)})</button>
     <button class="fbtn" data-ag="on" aria-pressed="false">🟢 روشن (${faNum(counts.lights.on)})</button>
-    <button class="fbtn" data-ag="off" aria-pressed="false">⚫ خاموش (${faNum(counts.lights.off)})</button>
+    <button class="fbtn" data-ag="off" aria-pressed="false">⚫ خارج از جلسه (${faNum(counts.lights.off)})</button>
     <input id="agsearch" type="search" placeholder="جستجو: نام ایجنت، تسک، هر متنی…" aria-label="جستجو در کارت ایجنت‌ها">
   </div>
-  <div class="grid" id="agentgrid">${hub.agents.map(agentCard).join("") || '<div class="card desc">هنوز ایجنتی ثبت نشده است.</div>'}</div>
+  ${groupedHtml || '<div class="card desc">هنوز ایجنتی ثبت نشده است.</div>'}
 
   <h2>🏗️ نقش‌های سازمانی — <a href="https://github.com/pvwvuow/agent-hub/blob/main/WORKFLOW.md">نقشهٔ ورک‌فلو ↗</a></h2>
   <div class="grid">${hub.roles.map(roleCard).join("") || '<div class="card desc">نقشی تعریف نشده است.</div>'}</div>
