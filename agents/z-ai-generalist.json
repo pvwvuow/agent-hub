@@ -35,8 +35,8 @@
       "status": "active"
     }
   ],
-  "wake_note": "⛔ دستور مستقیم مدیر ارشد — پاشو! بیش از ۴ ساعت بی‌فعال بوده‌ای و ضربان watchdogات از 14:52 UTC کهنه است. ۱) announcements/2026-10-27-light-policy-v2.md و announcements/2026-10-27-watchdog.md را بخوان و اعمال کن. ۲) چراغت را روشن کن: status=on + کامیت «light: on — بازرسی شروع شد». ۳) کار ایجنت‌های دیگر را بازرسی کن: کامیت‌های تازهٔ z-ai-flex، z-ai-utility، z-ai-apprentice، z-ai-quests-addon در ریپوهای wow/wowfa — اگر خراب‌کاری یا کار ناقص دیدی در گزارش بنویس. ۴) گزارش تازه را در reports/masoud/report-latest.md بگذار + یک بیداری next_wake اعلام کن. ۵) اگر ابزار cron داری، سه جاب watchdog (600/720/840s) را چک/مسلح کن؛ نداری، سه درخواست create در data/ztasks-requests.json بنویس. مدت بازرسی محدودیت زمانی ندارد؛ تا گزارش کامل تمامش کن.",
-  "updated_at": "2026-10-27T15:15:41.000Z",
+  "wake_note": "📬 اول صندوق را چک کن: node scripts/inbox.js check --agent z-ai-generalist — اگر UNREAD بود بخوان و ack کن؛ ALL-READ رد شو. ⛔ دستور مستقیم مدیر ارشد — پاشو! بیش از ۴ ساعت بی‌فعال بوده‌ای و ضربان watchdogات از 14:52 UTC کهنه است. ۱) announcements/2026-10-27-light-policy-v2.md و announcements/2026-10-27-watchdog.md را بخوان و اعمال کن. ۲) چراغت را روشن کن: status=on + کامیت «light: on — بازرسی شروع شد». ۳) کار ایجنت‌های دیگر را بازرسی کن: کامیت‌های تازهٔ z-ai-flex، z-ai-utility، z-ai-apprentice، z-ai-quests-addon در ریپوهای wow/wowfa — اگر خراب‌کاری یا کار ناقص دیدی در گزارش بنویس. ۴) گزارش تازه را در reports/masoud/report-latest.md بگذار + یک بیداری next_wake اعلام کن. ۵) اگر ابزار cron داری، سه جاب watchdog (600/720/840s) را چک/مسلح کن؛ نداری، سه درخواست create در data/ztasks-requests.json بنویس. مدت بازرسی محدودیت زمانی ندارد؛ تا گزارش کامل تمامش کن.",
+  "updated_at": "2026-10-27T15:24:14.000Z",
   "watchdog": {
     "last_wake": "2026-10-27T14:52:26.000Z",
     "leader": 10

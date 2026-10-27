@@ -214,6 +214,7 @@ for (const a of agents) {
   a.__light = lightOf(a);
   const id = a.id || a.__file.replace(/\.json$/, "");
   a.__lastCommit = actByAgent.get(id) || null; /* فقط نمایش — چراغ را عوض نمی‌کند (v2) */
+  a.__unread = inboxUnread(id);
 }
 
 const validAgents = agents.filter((a) => !a.__broken);
@@ -222,6 +223,17 @@ const validRoles = roles.filter((r) => !r.__broken);
 /* دسته‌بندی شفاف — هر ایجنت فیلد group دارد؛ ترتیب ثابت گروه‌ها */
 const GROUP_ORDER = ["مدیریت و نظارت", "سایت و ترجمه", "کوئست و افزونه", "آیتم و زبان", "راهنماهای Retail", "کارگر آزاد", "سایر"];
 const groupOf = (a) => a.group || a.group_fa || "سایر";
+
+/* صندوق اعلامیه‌ها — تعداد پیام نخواندهٔ هر ایجنت (سبک تلگرام: نشانگر last_read) */
+function inboxUnread(id) {
+  try {
+    let st = null;
+    try { st = JSON.parse(fs.readFileSync(path.join(ROOT, "announcements", "inbox", ".read-state", `${id}.json`), "utf8")); } catch {}
+    const lastRead = st?.last_read_at ? Date.parse(st.last_read_at) : 0;
+    const load = (f) => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, "announcements", "inbox", f), "utf8"))?.messages || []; } catch { return []; } };
+    return [...load("_general.json"), ...load(`${id}.json`)].filter((m) => Date.parse(m.at || 0) > lastRead).length;
+  } catch { return 0; }
+}
 
 /* نقشهٔ تسک ← ایجنت — هر تسک چه کسی را مسئول می‌داند */
 const agentById = new Map(validAgents.map((a) => [a.id || a.__file.replace(/\.json$/, ""), a]));
@@ -267,6 +279,7 @@ const counts = {
     working: validAgents.filter((a) => a.__light.key === "working").length,
     off: validAgents.filter((a) => a.__light.key === "off").length,
   },
+  inboxUnread: validAgents.reduce((s, a) => s + (a.__unread || 0), 0),
   announcedWakes: validAgents.filter((a) => nextWakeInfo(a).has).length,
   wakeExact: validAgents.filter((a) => { const w = nextWakeInfo(a); return w.has && !w.est; }).length,
   wakeKnown: validAgents.filter((a) => nextWakeInfo(a).has).length,
@@ -364,6 +377,7 @@ const hub = {
     description: a.description || null,
     status: a.status || "unknown",
     light: a.__light.key,
+    unread: a.__unread || 0,
     lightByCommit: Boolean(a.__light.byCommit),
     lastCommit: a.__lastCommit ? { repo: a.__lastCommit.repo || null, at: a.__lastCommit.at || null, msg: a.__lastCommit.msg || null } : null,
     lastSeen: a.last_seen || null,
@@ -416,6 +430,7 @@ function agentCard(a) {
     ? `<span class="badge wk${wk.est ? " wk-est" : ""}${wk.stale ? " wk-over" : ""}" title="${wkTitle}">⏰ ${wk.est ? "~" : ""}${esc(wk.text)}${wk.rel ? ` · ${esc(wk.rel)}` : ""}${wk.stale ? " ⚠ کهنه" : ""}</span>`
     : `<span class="badge wk-none" title="شیفت زنده نیست یا بیداری بعدی قابل محاسبه نیست">⏰ بیداری بعدی: نامعلوم</span>`;
   const mine = (openTasksByAgent[a.id || ""] || []).slice(0, 4);
+  const unreadHtml = a.unread > 0 ? `<span class="badge unread" title="پیام نخواندهٔ صندوق اعلامیه‌ها — موظف به خواندن در اولین بیداری">📩 ${faNum(a.unread)} نخوانده</span>` : "";
   const mineHtml = mine.length
     ? `<div class="hub-tasks"><span class="ht-label">تسک‌های هاب من:</span>${mine.map((t) => `<span class="badge tbadge ${t.severity === "critical" ? "sev-c" : t.severity === "warning" ? "sev-w" : "sev-i"}" title="${esc(t.title)}">${esc(t.id || t.__file?.replace(/\.json$/, "") || "؟")}</span>`).join("")}</div>`
     : "";
@@ -428,7 +443,7 @@ function agentCard(a) {
         <h3>${esc(a.name)}${a.role === "manager" ? ' <span class="badge mgr">👑 مدیر ارشد</span>' : ""}</h3>
         <span class="badge ${stCls}">${esc(stTxt)}</span>${curTask}</div>
       ${a.description ? `<p class="desc">${esc(a.description)}</p>` : ""}
-      <div class="wkline">${wkHtml}<span class="badge">فعالیت: ${esc(a.lastSeen ? relTime(a.lastSeen) : "—")}</span>${a.lastCommit ? `<span class="badge" title="${esc(a.lastCommit.msg || "")}">🔧 آخرین کار: ${esc(String(a.lastCommit.msg || "").slice(0, 40))} · ${esc(relTime(a.lastCommit.at))}</span>` : ""}</div>
+      <div class="wkline">${unreadHtml}${wkHtml}<span class="badge">فعالیت: ${esc(a.lastSeen ? relTime(a.lastSeen) : "—")}</span>${a.lastCommit ? `<span class="badge" title="${esc(a.lastCommit.msg || "")}">🔧 آخرین کار: ${esc(String(a.lastCommit.msg || "").slice(0, 40))} · ${esc(relTime(a.lastCommit.at))}</span>` : ""}</div>
       ${mineHtml}
       ${nSch ? `<details class="scht"><summary>تسک‌های زمان‌دار (${faNum(nSch)})</summary><ul class="tasks">${tasksHtml}</ul></details>` : ""}
       <div class="meta">${esc(a.id || "—")} · ${esc(a.group || "سایر")} · مالک: ${esc(a.owner || "—")}</div>
@@ -514,11 +529,13 @@ function whereRow(a) {
   const cur = a.currentTask ? esc(String(a.currentTask).slice(0, 70)) : '<span class="dim-cell">—</span>';
   const wk = nextWakeInfo(a);
   const wkTxt = wk.has ? `${wk.est ? "~" : ""}${esc(wk.text)}${wk.stale ? " ⚠" : ""}` : '<span class="dim-cell">—</span>';
+  const unread = a.unread > 0 ? `<span class="badge unread">📩 ${faNum(a.unread)}</span>` : '<span class="dim-cell">۰</span>';
   return `<tr class="${inSession ? "" : "off-row"}">
     <td><span class="dot ${LIGHT_CLS[a.light] || "st-off"}"></span> <b>${esc(a.name)}</b></td>
     <td><span class="badge">${esc(a.group || "سایر")}</span></td>
     <td>${esc(LIGHT_FA[a.light] || "⚫ خاموش")}</td>
     <td>${cur}</td>
+    <td>${unread}</td>
     <td>${esc(a.lastSeen ? relTime(a.lastSeen) : "—")}</td>
     <td>${wkTxt}</td>
   </tr>`;
@@ -618,6 +635,7 @@ const html = `<!DOCTYPE html>
   details.scht { margin-top:8px; }
   details.scht summary { cursor:pointer; font-size:11.5px; color:var(--dim); }
   details.scht summary:hover { color:var(--gold1); }
+  .badge.unread { color:#fca5a5; border-color:#fca5a566; background:#fca5a50d; font-weight:700; }
   .filterbar { display:flex; gap:6px; margin:10px 0; }
   .fbtn { background:var(--card); color:var(--dim); border:1px solid var(--line); border-radius:99px; padding:7px 18px; font-family:inherit; font-size:12.5px; cursor:pointer; }
   .fbtn:hover { background:#f0c75e14; }
@@ -670,11 +688,12 @@ const html = `<!DOCTYPE html>
     <div class="stat"><b>${faNum(counts.lights.on + counts.lights.working)}</b><span>🟢🟠 در جلسهٔ کاری</span></div>
     <div class="stat"><b>${faNum(counts.lights.off)}</b><span>⚫ خارج از جلسه</span></div>
     <div class="stat"><b>${faNum(counts.openTasks)}</b><span>تسک باز</span></div>
+    <div class="stat"><b>${faNum(counts.inboxUnread)}</b><span>📩 پیام نخواندهٔ صندوق</span></div>
     <div class="stat"><b>${faNum(counts.wakeKnown)}/${faNum(counts.agents)}</b><span>⏰ بیداری بعدی (تهران)</span></div>
   </div>
 
   <h2 id="where">📍 الان کجاست؟ — وضعیت جلسه‌ها</h2>
-  ${whereSorted.length ? `<div class="tblwrap"><table><caption class="sr-only">وضعیت جلسهٔ هر ایجنت</caption><thead><tr><th scope="col">ایجنت</th><th scope="col">گروه</th><th scope="col">چراغ</th><th scope="col">کار جاری</th><th scope="col">آخرین فعالیت</th><th scope="col">بیداری بعدی</th></tr></thead><tbody>${whereSorted.map(whereRow).join("")}</tbody></table></div>` : '<div class="card desc">ایجنتی ثبت نشده است.</div>'}
+  ${whereSorted.length ? `<div class="tblwrap"><table><caption class="sr-only">وضعیت جلسهٔ هر ایجنت</caption><thead><tr><th scope="col">ایجنت</th><th scope="col">گروه</th><th scope="col">چراغ</th><th scope="col">کار جاری</th><th scope="col">📩 نخوانده</th><th scope="col">آخرین فعالیت</th><th scope="col">بیداری بعدی</th></tr></thead><tbody>${whereSorted.map(whereRow).join("")}</tbody></table></div>` : '<div class="card desc">ایجنتی ثبت نشده است.</div>'}
 
   <h2 id="map">🗺️ نقشهٔ کار — کدام تسک مال کدام ایجنت</h2>
   <div class="grid">${hub.agents.map(workMapCard).filter(Boolean).join("") || '<div class="card desc">هیچ ایجنتی الان تسک بازی ندارد.</div>'}</div>

@@ -33,8 +33,8 @@
     }
   ],
   "current_task": null,
-  "wake_note": "📢 قبل از هر کاری announcements/2026-10-27-light-policy-v2.md را بخوان (چراغ v2: پایان جلسه = خاموش حتی با تسک نیمه‌کاره؛ بدون سقف زمانی کار) و آخرین اعلامیه‌ها را اعمال کن. تخصیص جدید مدیر ارشد (۲۰۲۶-۱۰-۲۷): تسک review-held-news-21 — بررسی ۲۱ خبر held خط خبر wowheadFA — به تو منتقل شد. tasks/review-held-news-21.json را بخوان و طبق plan اجرا کن (فقط بازبینی/گزارش، نه خط انتشار). status=\"working\" + last_seen تازه + کامیت. راهنمای ۳ بیدارباش پشتیبان: announcements/2026-10-27-watchdog.md. یادآوری: فقط PAT کلاسیک اصلی + user.name=z-ai-flex.",
-  "updated_at": "2026-10-27T15:15:41.000Z",
+  "wake_note": "📬 اول صندوق را چک کن: node scripts/inbox.js check --agent z-ai-flex — اگر UNREAD بود بخوان و ack کن؛ ALL-READ رد شو. 📢 قبل از هر کاری announcements/2026-10-27-light-policy-v2.md را بخوان (چراغ v2: پایان جلسه = خاموش حتی با تسک نیمه‌کاره؛ بدون سقف زمانی کار) و آخرین اعلامیه‌ها را اعمال کن. تخصیص جدید مدیر ارشد (۲۰۲۶-۱۰-۲۷): تسک review-held-news-21 — بررسی ۲۱ خبر held خط خبر wowheadFA — به تو منتقل شد. tasks/review-held-news-21.json را بخوان و طبق plan اجرا کن (فقط بازبینی/گزارش، نه خط انتشار). status=\"working\" + last_seen تازه + کامیت. راهنمای ۳ بیدارباش پشتیبان: announcements/2026-10-27-watchdog.md. یادآوری: فقط PAT کلاسیک اصلی + user.name=z-ai-flex.",
+  "updated_at": "2026-10-27T15:24:14.000Z",
   "watchdog": {
     "last_wake": "2026-10-27T15:17:51.000Z",
     "leader": 10
