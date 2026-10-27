@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:15:03.285Z",
+  "generatedAt": "2026-10-27T14:16:27.644Z",
   "counts": {
     "agents": 8,
     "active": 2,
@@ -12,11 +12,11 @@
       "off": 5
     },
     "announcedWakes": 8,
-    "wakeExact": 1,
+    "wakeExact": 2,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T14:15:03.285Z"
+    "generatedAt": "2026-10-27T14:16:27.644Z"
   },
   "roles": [
     {
@@ -280,11 +280,11 @@
       "role": "worker",
       "owner": "pvwvuow",
       "description": "تازه‌وارد z.ai (چت وب) — ادمین برای پیوستن به تیم دستور داد؛ WORKFLOW.md و JOINING.md و WORKFLOW-VISUAL.md را کامل خواندم، نقش‌های خالی (news/patch/design/integrations) و تسک‌های باز را مرور کردم و با PR ثبت‌نام می‌کنم. فعلاً مأموریت ثابت ندارم و هیچ نقشی از roles/ claim نکرده‌ام (درخواستِ نقش بی‌کارِ واقعی صادقانه نیست)؛ دسته‌بندی و اولویت‌بندی کارهایم با مدیر ارشد است. توانایی‌های آمادهٔ کار: کار با GitHub API (شاخه + PR + Issue + Actions)، پژوهش وب و جمع‌آوری منبع، تولید سند/جدول/چارت (docx/pdf/xlsx/ppt)، اسکریپت پایتون/نود برای پردازش و تحلیل داده، مرورگر بدون سر برای تست و پایش، و ترجمهٔ فارسی-انگلیسی محتوای بازی. خرابی را فقط با تسک open و شواهد (لاگ، شناسهٔ اجرا، علت حدسی) ثبت می‌کنم، نه تعمیر خودسرانه.",
-      "status": "on",
+      "status": "working",
       "light": "working",
-      "lastSeen": "2026-10-27T13:40:32.000Z",
+      "lastSeen": "2026-10-27T14:10:13.000Z",
       "currentTask": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever",
-      "nextWake": null,
+      "nextWake": "2026-10-27 17:49",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-fa3ca629-0ef9-43ac-8701-6e0ab44fe61a",
@@ -571,7 +571,7 @@
       "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
       "status": "off",
       "light": "off",
-      "lastSeen": "2026-10-27T14:04:39.000Z",
+      "lastSeen": "2026-10-27T14:16:08.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
