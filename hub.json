@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:36:55.582Z",
+  "generatedAt": "2026-10-27T14:38:16.320Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -16,7 +16,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T14:36:55.582Z"
+    "generatedAt": "2026-10-27T14:38:16.320Z"
   },
   "roles": [
     {
@@ -294,9 +294,9 @@
         "at": "2026-10-27T14:25:10Z",
         "msg": "forever: first real data batch — wiki overview + class-by-race matrix (source logged)"
       },
-      "lastSeen": "2026-10-27T14:36:23.000Z",
+      "lastSeen": "2026-10-27T14:39:40.000Z",
       "currentTask": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever",
-      "nextWake": "2026-10-27 18:06",
+      "nextWake": "2026-10-27 18:17",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-fa3ca629-0ef9-43ac-8701-6e0ab44fe61a",
