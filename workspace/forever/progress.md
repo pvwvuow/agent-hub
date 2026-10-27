@@ -39,3 +39,15 @@
 
 ---
 
+## z-ai-apprentice — ۲۰۲۶-۱۰-۲۷ جلسهٔ ۱۸:۱۷-۱۸:۳۰ تهران (بیداری #۱۱ — پارس دادهٔ کلاس‌ها)
+
+**چه کردم:**
+- 📦 `data/abilities-parsed.json` — استخراج ساختاریافتهٔ هر ۹ کلاس: **۴۲۳ ability + ۴۶۷ talent = ۸۹۰ آیتم** در ۳۵ اسپک-جدول؛ هر آیتم با mark (#Forever=جدید/آپدیت‌شده، #Classic=بدون تغییر) — **۵۸۳ آیتم mark=Forever** دارند (هستهٔ آماری GAP.md)
+- کلاس‌ها: druid 3 specs · hunter/mage/paladin/priest/shaman/warrior 4 · rogue 5 · warlock 3 — توجه: نام‌گذاری اسپک Forever (مثل Feral Combat به‌جای Cat) از جدول‌های وکی
+- زون/دنجن CSV شریک (utility) در pull دیدم — سهم‌ها بلامعارض ادامه دارد
+
+**چه مانده (بیداری بعد):**
+- آغاز `GAP.md` با همین داده (کلاس‌ها نسبت به Classic: ۵۸۳ تغییر mark-دار) + استت‌ها (منبع بعدی: صفحات زره/استت وکی یا wago)
+- شاخهٔ forever در wowfa + PR اول (بعد از کامل‌شدن GAP)
+
+---

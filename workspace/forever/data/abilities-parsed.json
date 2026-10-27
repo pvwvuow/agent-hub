@@ -1,0 +1,6060 @@
+{
+  "source": "https://warcraft.wiki.gg/wiki/<Class>_abilities_(Forever) pages (via api.php action=parse)",
+  "accessed_at_utc": "2026-10-27T14:49:19Z",
+  "note": "دادهٔ ساختاریافتهٔ abilities/talents هر ۹ کلاس Forever؛ mark Forever=جدید/آپدیت‌شده در Forever، Classic=بدون تغییر نسبت به Classic",
+  "classes": {
+    "druid": {
+      "page": "Druid abilities (Forever)",
+      "specs": {
+        "Balance": {
+          "abilities": [
+            {
+              "name": "Wrath",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Moonfire",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Thorns",
+              "level": "6",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Entangling Roots",
+              "level": "8",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Teleport: Moonglade",
+              "level": "10",
+              "source": "Moonglade (quest)",
+              "mark": "Classic"
+            },
+            {
+              "name": "Nature's Grasp",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Faerie Fire",
+              "level": "18",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Hibernate",
+              "level": "18",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Omen of Clarity",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Starfire",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Soothe Animal",
+              "level": "22",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Hurricane",
+              "level": "40",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Barkskin",
+              "level": "44",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Improved Wrath",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Genesis",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Moonglow (druid talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Moonfire",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Nature's Majesty",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Nature's Reach",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Improved Entangling Roots",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Nature's Splendor (druid talent)",
+              "ranks": "1",
+              "requirement": "Nature's Majesty",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Insect Swarm",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Vengeance (druid talent)",
+              "ranks": "5",
+              "requirement": "Improved Moonfire",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Improved Starfire",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Overgrowth (Forever)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Nature's Grace (Classic)",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Eclipse",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Moonfury",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Moonkin Form",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            }
+          ]
+        },
+        "Feral Combat": {
+          "abilities": [
+            {
+              "name": "Bear Form",
+              "level": "10",
+              "source": "Body and Heart",
+              "mark": "Forever"
+            },
+            {
+              "name": "Demoralizing Roar",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Growl",
+              "level": "10",
+              "source": "Body and Heart",
+              "mark": "Classic"
+            },
+            {
+              "name": "Maul",
+              "level": "10",
+              "source": "Body and Heart",
+              "mark": "Forever"
+            },
+            {
+              "name": "Enrage (druid ability)",
+              "level": "12",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Bash (druid ability)",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Aquatic Form",
+              "level": "16",
+              "source": "Aquatic Form (quest)",
+              "mark": "Classic"
+            },
+            {
+              "name": "Swipe (Bear Form)",
+              "level": "16",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Cat Form",
+              "level": "20",
+              "source": "To Darnassus (Forever)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Claw (druid ability)",
+              "level": "20",
+              "source": "To Darnassus (Forever)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Prowl",
+              "level": "20",
+              "source": "To Darnassus (Forever)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Rip",
+              "level": "20",
+              "source": "To Darnassus (Forever)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Shred",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Rake",
+              "level": "24",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Dash (druid ability)",
+              "level": "26",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Challenging Roar",
+              "level": "28",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Cower",
+              "level": "28",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Travel Form",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Ferocious Bite",
+              "level": "32",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Ravage (Classic)",
+              "level": "32",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Track Humanoids (druid ability)",
+              "level": "32",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Frenzied Regeneration",
+              "level": "36",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Pounce",
+              "level": "36",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Dire Bear Form",
+              "level": "40",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Feline Grace",
+              "level": "40",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Lacerate",
+              "level": "42",
+              "source": "Trainer",
+              "mark": null
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Ferocity (druid talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Heart of the Wild",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Feral Swiftness",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Feral Instinct",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Brutal Impact",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Thick Hide (druid talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Shredding Attacks",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Savage Fury (Classic)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Feral Charge",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Sharpened Claws (druid talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Shifting Power",
+              "ranks": "1",
+              "requirement": "Shredding Attacks",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Primal Bite",
+              "ranks": "1",
+              "requirement": "Savage Fury",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Predatory Strikes",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Blood Frenzy (Classic)",
+              "ranks": "2",
+              "requirement": "Sharpened Claws",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Improved Shifting Power",
+              "ranks": "2",
+              "requirement": "Shifting Power",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Leader of the Pack",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Natural Instinct",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Natural Reaction",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Rend and Tear (Wrath Classic)",
+              "ranks": "5",
+              "requirement": "Predatory Strikes",
+              "mark": null
+            },
+            {
+              "tier": "7",
+              "name": "Berserk",
+              "ranks": "1",
+              "requirement": "Leader of the Pack",
+              "mark": "Forever"
+            }
+          ]
+        },
+        "Restoration": {
+          "abilities": [
+            {
+              "name": "Healing Touch",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Mark of the Wild",
+              "level": "1",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Rejuvenation",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Regrowth",
+              "level": "12",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Revive",
+              "level": "12",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Cure Poison",
+              "level": "14",
+              "source": "Power over Poison",
+              "mark": null
+            },
+            {
+              "name": "Rebirth",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Remove Curse (druid ability)",
+              "level": "24",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Abolish Poison",
+              "level": "26",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Tranquility",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Innervate",
+              "level": "40",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Gift of the Wild (Classic)",
+              "level": "50",
+              "source": "Book: Gift of the Wild",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Nature's Focus (druid talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Furor",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Naturalist",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Subtlety (druid talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Natural Shapeshifter",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Reflection (druid talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Gift of Nature",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Gift of the Earthmother",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Tranquil Spirit (druid talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Improved Rejuvenation",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Swiftmend",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Nature's Swiftness",
+              "ranks": "1",
+              "requirement": "Naturalist",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Living Spirit",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Improved Tranquility",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Improved Regrowth (Classic)",
+              "ranks": "5",
+              "requirement": "Improved Rejuvenation",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Wild Growth",
+              "ranks": "1",
+              "requirement": "Living Spirit",
+              "mark": "Forever"
+            }
+          ]
+        }
+      }
+    },
+    "hunter": {
+      "page": "Hunter abilities (Forever)",
+      "specs": {
+        "Beast Mastery": {
+          "abilities": [
+            {
+              "name": "Aspect of the Monkey",
+              "level": "4",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Aspect of the Hawk",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Call Pet",
+              "level": "10",
+              "source": "Taming the Beast",
+              "mark": "Classic"
+            },
+            {
+              "name": "Dismiss Pet",
+              "level": "10",
+              "source": "Taming the Beast",
+              "mark": "Classic"
+            },
+            {
+              "name": "Feed Pet",
+              "level": "10",
+              "source": "Taming the Beast",
+              "mark": "Classic"
+            },
+            {
+              "name": "Revive Pet",
+              "level": "10",
+              "source": "Taming the Beast",
+              "mark": "Classic"
+            },
+            {
+              "name": "Tame Beast",
+              "level": "10",
+              "source": "Taming the Beast",
+              "mark": "Classic"
+            },
+            {
+              "name": "Mend Pet",
+              "level": "12",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Eagle Eye",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Scare Beast",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Eyes of the Beast",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Aspect of the Cheetah",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Beast Lore",
+              "level": "24",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Aspect of the Beast (Classic)",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Aspect of the Pack",
+              "level": "40",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Aspect of the Wild (Classic)",
+              "level": "46",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Tranquilizing Shot",
+              "level": "60",
+              "source": "Tome of Tranquilizing Shot",
+              "mark": "Classic"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Deadly Aspects",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "1",
+              "name": "Endurance Training (hunter talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Focused Fire (hunter talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Improved Aspect of the Monkey",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Pathfinding (Classic)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Revive Pet",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Bestial Swiftness",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Unleashed Fury",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Improved Mend Pet",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Ferocity (Classic)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Summon Hawk",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Spirit Bond (hunter talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Intimidation",
+              "ranks": "1",
+              "requirement": "Bestial Swiftness",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Bestial Discipline",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Frenzy (hunter talent)",
+              "ranks": "5",
+              "requirement": "Ferocity",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Bestial Wrath",
+              "ranks": "1",
+              "requirement": "Intimidation",
+              "mark": "Classic"
+            }
+          ]
+        },
+        "Marksmanship": {
+          "abilities": [
+            {
+              "name": "Auto Shot",
+              "level": "1",
+              "source": "Default",
+              "mark": "Classic"
+            },
+            {
+              "name": "Serpent Sting",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Arcane Shot",
+              "level": "6",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Hunter's Mark",
+              "level": "6",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Concussive Shot",
+              "level": "8",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Distracting Shot",
+              "level": "12",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Multi-Shot",
+              "level": "18",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Aimed Shot",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Scorpid Sting",
+              "level": "22",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Rapid Fire (Classic)",
+              "level": "26",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Flare",
+              "level": "32",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Viper Sting",
+              "level": "36",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Volley",
+              "level": "40",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Hawk Eye (hunter talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Improved Concussive Shot",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Lethal Attacks",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Improved Stings",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Efficiency (hunter talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Careful Aim",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Rapid Killing",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Improved Arcane Shot",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Lone Wolf (Forever)",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Trueshot Aura",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Mortal Shots",
+              "ranks": "5",
+              "requirement": "Careful Aim",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Rapid Recuperation",
+              "ranks": "2",
+              "requirement": "Rapid Killing",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Barrage",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Scatter Shot",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Classic"
+            },
+            {
+              "tier": "6",
+              "name": "Ranged Weapon Specialization",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "7",
+              "name": "Sniper Shot",
+              "ranks": "1",
+              "requirement": "Trueshot Aura",
+              "mark": null
+            }
+          ]
+        },
+        "Survival": {
+          "abilities": [
+            {
+              "name": "Raptor Strike",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Track Beasts",
+              "level": "1",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Track Humanoids (hunter ability)",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Wing Clip",
+              "level": "12",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Immolation Trap",
+              "level": "16",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Mongoose Bite (Classic)",
+              "level": "16",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Track Undead",
+              "level": "18",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Disengage",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Freezing Trap",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Track Hidden",
+              "level": "24",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Track Elementals",
+              "level": "26",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Frost Trap",
+              "level": "28",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Feign Death",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Track Demons",
+              "level": "32",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Explosive Trap",
+              "level": "34",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Track Giants",
+              "level": "40",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Track Dragonkin",
+              "level": "50",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Improved Tracking",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "1",
+              "name": "Deflection (hunter talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Entrapment",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Savage Strikes",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Survivalist",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Wing Clip",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Clever Traps",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Surefooted (hunter talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Deterrence",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Survival Tactics (hunter talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Predator's Edge",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Counterattack",
+              "ranks": "1",
+              "requirement": "Deterrence",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Resourcefulness (hunter talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Expose Prey",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Survivalist's Discipline",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Strider Kick",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Lightning Reflexes (hunter talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Lacerating Strikes",
+              "ranks": "1",
+              "requirement": "Expose Prey",
+              "mark": null
+            }
+          ]
+        },
+        "General": {
+          "abilities": [
+            {
+              "name": "Parry",
+              "level": "8",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Dual wield",
+              "level": "20",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Mail armor",
+              "level": "40",
+              "source": "Trainer",
+              "mark": null
+            }
+          ],
+          "talents": []
+        }
+      }
+    },
+    "mage": {
+      "page": "Mage abilities (Forever)",
+      "specs": {
+        "Arcane": {
+          "abilities": [
+            {
+              "name": "Arcane Intellect",
+              "level": "1",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Conjure Water",
+              "level": "4",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Comprehend Scroll",
+              "level": "6",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Conjure Food",
+              "level": "6",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Arcane Missiles",
+              "level": "8",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Polymorph",
+              "level": "8",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Dampen Magic",
+              "level": "12",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Slow Fall (ability)",
+              "level": "12",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Arcane Explosion",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Amplify Magic",
+              "level": "18",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Remove Lesser Curse",
+              "level": "18",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Blink",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Evocation",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Mana Shield (Classic)",
+              "level": "20",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Counterspell",
+              "level": "24",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Conjure Mana Agate",
+              "level": "28",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Mage Armor",
+              "level": "34",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Conjure Mana Jade",
+              "level": "38",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Conjure Mana Citrine",
+              "level": "48",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Arcane Brilliance",
+              "level": "56",
+              "source": "Tome of Arcane Brilliance",
+              "mark": "Forever"
+            },
+            {
+              "name": "Conjure Mana Ruby",
+              "level": "58",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Polymorph: Pig",
+              "level": "60",
+              "source": "Fragmented Magic",
+              "mark": null
+            },
+            {
+              "name": "Polymorph: Turtle",
+              "level": "60",
+              "source": "Tome of Polymorph: Turtle",
+              "mark": null
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Wand Specialization (mage talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Arcane Focus",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Improved Channeling",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "1",
+              "name": "Missile Barrage",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Arcane Subtlety",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Magic Absorption",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Arcane Concentration",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Arcane Resilience",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Arcane Geometry",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Arcane Impact",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Arcane Blast",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Arcane Shielding",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Improved Counterspell",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Arcane Meditation",
+              "ranks": "3",
+              "requirement": "Arcane Concentration",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Arcane Wrath",
+              "ranks": "1",
+              "requirement": "Arcane Blast",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Presence of Mind",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Classic"
+            },
+            {
+              "tier": "5",
+              "name": "Arcane Mind (Classic)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Arcane Instability",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Arcane Power (Classic)",
+              "ranks": "1",
+              "requirement": "Presence of Mind",
+              "mark": "Forever"
+            }
+          ]
+        },
+        "Fire": {
+          "abilities": [
+            {
+              "name": "Fireball",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Fire Blast",
+              "level": "6",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Flamestrike",
+              "level": "16",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Fire Ward",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Scorch",
+              "level": "22",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Frostfire Bolt",
+              "level": "40",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Improved Fire Blast",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Incineration",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "1",
+              "name": "Improved Fireball",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Ignite (Classic)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Flame Throwing",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Impact (mage talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Burning Soul (mage ability)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Improved Flamestrike (Classic)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Pyroblast",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Improved Scorch",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Improved Fire Ward",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Heating Up (Forever)",
+              "ranks": "1",
+              "requirement": "Pyroblast",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Master of Elements",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Critical Mass",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Blast Wave",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Fire Power (mage talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Combustion",
+              "ranks": "1",
+              "requirement": "Critical Mass",
+              "mark": "Forever"
+            }
+          ]
+        },
+        "Frost": {
+          "abilities": [
+            {
+              "name": "Frost Armor",
+              "level": "1",
+              "source": "Default",
+              "mark": null
+            },
+            {
+              "name": "Frostbolt",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Frost Nova",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Blizzard",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Frost Ward",
+              "level": "22",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Frost Blast",
+              "level": "24",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Cone of Cold",
+              "level": "26",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Ice Armor",
+              "level": "30",
+              "source": "Trainer",
+              "mark": null
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Frost Warding",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Improved Frostbolt",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Elemental Precision",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Ice Shards",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Permafrost (mage talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Frost Nova (Classic)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Frostbite",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Piercing Ice",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Frost Channeling",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Ice Lance",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Improved Blizzard",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Arctic Reach",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Ice Block",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Shatter",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Improved Cone of Cold",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Cold Snap",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Fingers of Frost",
+              "ranks": "2",
+              "requirement": "Ice Lance",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Winter's Chill",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Ice Barrier",
+              "ranks": "1",
+              "requirement": "Cold Snap",
+              "mark": "Forever"
+            }
+          ]
+        },
+        "Teleport/Portal": {
+          "abilities": [
+            {
+              "name": "Teleport: Ironforge",
+              "level": "20",
+              "source": "Milstaff Stormeye",
+              "mark": "Classic"
+            },
+            {
+              "name": "Teleport: Orgrimmar",
+              "level": "20",
+              "source": "Thuul",
+              "mark": "Classic"
+            },
+            {
+              "name": "Teleport: Stormwind",
+              "level": "20",
+              "source": "Larimaine Purdue",
+              "mark": "Classic"
+            },
+            {
+              "name": "Teleport: Undercity",
+              "level": "20",
+              "source": "Lexington Mortaim",
+              "mark": "Classic"
+            },
+            {
+              "name": "Teleport: Darnassus",
+              "level": "30",
+              "source": "Elissa Dumas",
+              "mark": "Classic"
+            },
+            {
+              "name": "Teleport: Thunder Bluff",
+              "level": "30",
+              "source": "Birgitte Cranston",
+              "mark": "Classic"
+            },
+            {
+              "name": "Portal: Ironforge",
+              "level": "40",
+              "source": "Milstaff Stormeye",
+              "mark": "Classic"
+            },
+            {
+              "name": "Portal: Orgrimmar",
+              "level": "40",
+              "source": "Thuul",
+              "mark": "Classic"
+            },
+            {
+              "name": "Portal: Stormwind",
+              "level": "40",
+              "source": "Larimaine Purdue",
+              "mark": "Classic"
+            },
+            {
+              "name": "Portal: Undercity",
+              "level": "40",
+              "source": "Lexington Mortaim",
+              "mark": "Classic"
+            },
+            {
+              "name": "Portal: Darnassus",
+              "level": "50",
+              "source": "Elissa Dumas",
+              "mark": "Classic"
+            },
+            {
+              "name": "Portal: Thunder Bluff",
+              "level": "50",
+              "source": "Birgitte Cranston",
+              "mark": "Classic"
+            },
+            {
+              "name": "Teleport: Dalaran (Forever)",
+              "level": "50",
+              "source": "{{Alliance}} ???",
+              "mark": null
+            }
+          ],
+          "talents": []
+        }
+      }
+    },
+    "paladin": {
+      "page": "Paladin abilities (Forever)",
+      "specs": {
+        "Holy": {
+          "abilities": [
+            {
+              "name": "Holy Light (Classic)",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Seal of Righteousness",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Purify (paladin ability)",
+              "level": "8",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Lay on Hands",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Redemption",
+              "level": "12",
+              "source": "The Tome of Divinity",
+              "mark": "Classic"
+            },
+            {
+              "name": "Blessing of Wisdom",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Consecration",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Exorcism (paladin ability)",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Flash of Light",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Sense Undead",
+              "level": "20",
+              "source": "The Tome of Valor",
+              "mark": "Classic"
+            },
+            {
+              "name": "Turn Undead",
+              "level": "24",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Seal of Light",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Seal of Wisdom",
+              "level": "38",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Blessing of Light",
+              "level": "40",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Summon Warhorse",
+              "level": "40",
+              "source": "The Tome of Nobility (2)",
+              "mark": null
+            },
+            {
+              "name": "Cleanse",
+              "level": "42",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Hammer of Wrath",
+              "level": "44",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Holy Wrath",
+              "level": "50",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Greater Blessing of Wisdom",
+              "level": "54",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Greater Blessing of Light",
+              "level": "60",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Summon Charger",
+              "level": "60",
+              "source": "Judgment and Redemption",
+              "mark": null
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Divine Strength",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Divine Intellect",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Healing Light",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Spiritual Focus (paladin talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Seals",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Unyielding Faith",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Voice of Truth",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Reverence (paladin talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Purifying Power",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Infusion of Light",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Illumination",
+              "ranks": "5",
+              "requirement": "Reverence",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Divine Favor",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Divine Precision",
+              "ranks": "3",
+              "requirement": "Holy Shock",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Holy Shock",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Consecrated Ground (Forever)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Holy Power (paladin talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Light's Vigil",
+              "ranks": "1",
+              "requirement": "Holy Shock",
+              "mark": null
+            }
+          ]
+        },
+        "Protection": {
+          "abilities": [
+            {
+              "name": "Devotion Aura",
+              "level": "1",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Divine Protection",
+              "level": "6",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Hammer of Justice",
+              "level": "8",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Blessing of Protection",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Seal of Fury",
+              "level": "10",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Righteous Fury (paladin ability)",
+              "level": "16",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Blessing of Freedom",
+              "level": "18",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Blessing of Kings",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Concentration Aura",
+              "level": "22",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Seal of Justice",
+              "level": "22",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Revoke",
+              "level": "26",
+              "source": "Learned with Salvation",
+              "mark": null
+            },
+            {
+              "name": "Salvation (paladin ability)",
+              "level": "26",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Shadow Resistance Aura",
+              "level": "28",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Divine Intervention",
+              "level": "30",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Frost Resistance Aura",
+              "level": "32",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Divine Shield",
+              "level": "34",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Fire Resistance Aura",
+              "level": "36",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Blessing of Sacrifice",
+              "level": "46",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Greater Blessing of Kings",
+              "level": "60",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Mass Salvation",
+              "level": "60",
+              "source": "Trainer",
+              "mark": null
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Toughness (paladin talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Redoubt (Classic)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Precision (paladin talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Guardian's Favor",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Anticipation (paladin talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Improved Seal of Fury",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Improved Righteous Fury",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Shield Specialization (paladin talent)",
+              "ranks": "3",
+              "requirement": "Redoubt",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Sacred Duty",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Swift Judgment",
+              "ranks": "1",
+              "requirement": "Improved Seal of Fury",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "One-Handed Weapon Specialization (paladin talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Improved Hammer of Justice",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Templar's Bulwark",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Reckoning (paladin talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Iron Creed",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "7",
+              "name": "Holy Shield",
+              "ranks": "1",
+              "requirement": "Templar's Bulwark",
+              "mark": "Forever"
+            }
+          ]
+        },
+        "Retribution": {
+          "abilities": [
+            {
+              "name": "Blessing of Might",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Judgment",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Holy Strike",
+              "level": "6",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Seal of the Crusader",
+              "level": "6",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Retribution Aura",
+              "level": "16",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Greater Blessing of Might",
+              "level": "52",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Deflection (paladin talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Benediction (paladin talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Judgement",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Holy Conduit",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Conviction",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Vindication",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Sanctified Judgment",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Seal of Command",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Pursuit of Justice (paladin talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Eye for an Eye",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Sacred Arbiter",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Two-Handed Weapon Specialization (paladin talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Vengeance (paladin talent)",
+              "ranks": "3",
+              "requirement": "Sanctified Judgment",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Repentance",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Champion of the Light (paladin talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Instrument of Law",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "7",
+              "name": "Twist of Light",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            }
+          ]
+        },
+        "General": {
+          "abilities": [
+            {
+              "name": "Parry",
+              "level": "8",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Plate armor",
+              "level": "40",
+              "source": "Trainer",
+              "mark": null
+            }
+          ],
+          "talents": []
+        }
+      }
+    },
+    "priest": {
+      "page": "Priest abilities (Forever)",
+      "specs": {
+        "Discipline": {
+          "abilities": [
+            {
+              "name": "Power Word: Fortitude",
+              "level": "1",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Power Word: Shield",
+              "level": "6",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Confounding Flash",
+              "level": "10",
+              "source": "Confounding Flash (quest)",
+              "mark": null
+            },
+            {
+              "name": "Starshards",
+              "level": "10",
+              "source": "Returning Home",
+              "mark": "Forever"
+            },
+            {
+              "name": "Inner Fire",
+              "level": "12",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Dispel Magic",
+              "level": "18",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Contingency Plan (priest ability)",
+              "level": "20",
+              "source": "Contingency Plan (quest)",
+              "mark": null
+            },
+            {
+              "name": "Elune's Grace (priest ability)",
+              "level": "20",
+              "source": "Elune's Grace (quest)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Feedback (priest ability)",
+              "level": "20",
+              "source": "Arcane Feedback (quest)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Shackle Undead",
+              "level": "20",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Mana Burn",
+              "level": "24",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Divine Spirit",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Levitate",
+              "level": "34",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Prayer of Fortitude",
+              "level": "48",
+              "source": "Codex: Prayer of Fortitude",
+              "mark": "Forever"
+            },
+            {
+              "name": "Prayer of Spirit",
+              "level": "60",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Power in Light",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "1",
+              "name": "Wand Specialization (priest talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Twin Disciplines",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Silent Resolve",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Holy Precision",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Mental Strength",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Martyrdom",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Mental Agility (Classic)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Inner Focus",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Improved Power Word: Shield",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Meditation",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Improved Inner Fire",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Soul Warding",
+              "ranks": "1",
+              "requirement": "Improved Power Word: Shield",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Improved Mana Burn",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Penance",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Renewed Hope",
+              "ranks": "5",
+              "requirement": "Soul Warding",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Divine Aegis",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Power Infusion",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            }
+          ]
+        },
+        "Holy": {
+          "abilities": [
+            {
+              "name": "Lesser Heal",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Smite",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Renew",
+              "level": "8",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Desperate Prayer",
+              "level": "10",
+              "source": "Desperate Prayer (quest)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Divine Grace",
+              "level": "10",
+              "source": "Divine Grace (quest)",
+              "mark": null
+            },
+            {
+              "name": "Resurrection",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Cure Disease",
+              "level": "14",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Heal",
+              "level": "16",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Fear Ward",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Flash Heal",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Holy Fire",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Prayer of Healing",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Abolish Disease",
+              "level": "32",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Shadow Word: Death",
+              "level": "32",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Greater Heal (Classic)",
+              "level": "40",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Twilight Focus",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "1",
+              "name": "Improved Renew",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Holy Specialization",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Spell Warding",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Divine Fury",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Holy Nova",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Blessed Recovery",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Inspiration",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Holy Reach",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Improved Healing",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Searing Light (Classic)",
+              "ranks": "2",
+              "requirement": "Divine Fury",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Binding Heal",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Litany of Light",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Spirit of Redemption",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Spiritual Guidance",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Spiritual Healing (priest talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Prayer of Mending",
+              "ranks": "1",
+              "requirement": "Spirit of Redemption",
+              "mark": "Forever"
+            }
+          ]
+        },
+        "Shadow Magic": {
+          "abilities": [
+            {
+              "name": "Shadow Word: Pain",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Fade",
+              "level": "8",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Hex of Weakness",
+              "level": "10",
+              "source": "Hex of Weakness (quest)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Mind Blast",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Touch of Weakness",
+              "level": "10",
+              "source": "Touch of Weakness (quest)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Psychic Scream",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Dark Sacrifice",
+              "level": "20",
+              "source": "Dark Sacrifice (quest)",
+              "mark": null
+            },
+            {
+              "name": "Devouring Plague",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Mind Soothe",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Shadowguard (priest ability)",
+              "level": "20",
+              "source": "Shadowguard (quest)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Mind Vision",
+              "level": "22",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Mind Control",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Shadow Protection",
+              "level": "30",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Prayer of Shadow Protection",
+              "level": "56",
+              "source": "Codex: Prayer of Shadow Protection",
+              "mark": "Forever"
+            }
+          ],
+          "talents": []
+        },
+        "Shadow": {
+          "abilities": [],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Shadow Focus (priest talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Blackout (priest talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Spirit Tap",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Mind Blast",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Shadow Word: Pain",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Shadow Reach",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Improved Psychic Scream",
+              "ranks": "2",
+              "requirement": "Blackout",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Mind Flay",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Improved Mind Flay",
+              "ranks": "2",
+              "requirement": "Mind Flay",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Dark Inspiration",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Vampiric Embrace",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Shadow Weaving",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Silence",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Devouring Contagion",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Early Demise",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Darkness (priest talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Shadowform",
+              "ranks": "1",
+              "requirement": "Vampiric Embrace",
+              "mark": "Forever"
+            }
+          ]
+        }
+      }
+    },
+    "rogue": {
+      "page": "Rogue abilities (Forever)",
+      "specs": {
+        "Assassination": {
+          "abilities": [
+            {
+              "name": "Eviscerate",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Slice and Dice",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Expose Armor",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Garrote",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Ambush",
+              "level": "18",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Rupture",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Cheap Shot",
+              "level": "26",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Kidney Shot",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Classic"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Improved Gouge",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Remorseless Attacks",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Malice (rogue talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Ruthlessness",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Murder (rogue talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Slice and Dice",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Relentless Strikes",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Classic"
+            },
+            {
+              "tier": "3",
+              "name": "Improved Expose Armor",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Lethality",
+              "ranks": "5",
+              "requirement": "Malice",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Vile Poisons",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Cold Blood",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Improved Poisons",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Vigor",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Mutilate",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Improved Kidney Shot",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Seal Fate",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Venom",
+              "ranks": "1",
+              "requirement": "Mutilate",
+              "mark": null
+            }
+          ]
+        },
+        "Combat": {
+          "abilities": [
+            {
+              "name": "Sinister Strike",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Backstab",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Gouge",
+              "level": "6",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Evasion",
+              "level": "8",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Sprint",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Kick",
+              "level": "12",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Feint",
+              "level": "16",
+              "source": "Trainer",
+              "mark": "Classic"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Improved Eviscerate",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Improved Sinister Strike",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Lightning Reflexes (rogue talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Puncturing Wounds",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Deflection (rogue talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Precision (rogue talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Endurance (rogue talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Riposte (Classic)",
+              "ranks": "1",
+              "requirement": "Deflection",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Improved Sprint (Classic)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Improved Kick",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Flawless Execution",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Dual Wield Specialization (rogue talent)",
+              "ranks": "5",
+              "requirement": "Precision",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Blade Flurry",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Hack and Slash (Forever)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Weapon Expertise",
+              "ranks": "2",
+              "requirement": "Blade Flurry",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Aggression (rogue talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Adrenaline Rush",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Classic"
+            }
+          ]
+        },
+        "Subtlety": {
+          "abilities": [
+            {
+              "name": "Stealth",
+              "level": "1",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Pick Pocket",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Sap",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Distract",
+              "level": "22",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Vanish",
+              "level": "22",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Detect Traps",
+              "level": "24",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Disarm Trap",
+              "level": "30",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Blind",
+              "level": "34",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Safe Fall",
+              "level": "40",
+              "source": "Trainer",
+              "mark": "Classic"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Camouflage (rogue talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Master of Deception",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Opportunity (Classic)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Setup",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Elusiveness (rogue talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Dirty Tricks",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Improved Ambush (Classic)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Initiative (rogue talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Ghostly Strike",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Improved Distract",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Heightened Senses (rogue talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Premeditation",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Serrated Blades",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Dirty Deeds (rogue talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Preparation",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Classic"
+            },
+            {
+              "tier": "5",
+              "name": "Hemorrhage",
+              "ranks": "1",
+              "requirement": "Serrated Blades",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Quietus (rogue talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Cutthroat (rogue talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "7",
+              "name": "Thousand Cuts (rogue talent)",
+              "ranks": "1",
+              "requirement": "Preparation",
+              "mark": null
+            }
+          ]
+        },
+        "General": {
+          "abilities": [
+            {
+              "name": "Dual Wield",
+              "level": "10",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Parry",
+              "level": "12",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Pick Lock",
+              "level": "16",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Poisons (rogue ability)",
+              "level": "20",
+              "source": "Klaven's Tower (quest)",
+              "mark": null
+            }
+          ],
+          "talents": []
+        },
+        "Poisons": {
+          "abilities": [
+            {
+              "name": "Crippling Poison (item)",
+              "level": "20",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Instant Poison (item)",
+              "level": "20",
+              "source": "Klaven's Tower (quest)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Mind-numbing Poison (item)",
+              "level": "24",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Instant Poison II",
+              "level": "28",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Deadly Poison (item)",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Wound Poison (item)",
+              "level": "32",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Blinding Powder",
+              "level": "34",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Instant Poison III",
+              "level": "36",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Deadly Poison II",
+              "level": "38",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Mind-numbing Poison II",
+              "level": "38",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Wound Poison II",
+              "level": "40",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Instant Poison IV",
+              "level": "44",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Deadly Poison III",
+              "level": "46",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Wound Poison III",
+              "level": "48",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Crippling Poison II",
+              "level": "50",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Instant Poison V",
+              "level": "52",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Mind-numbing Poison III",
+              "level": "52",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Deadly Poison IV",
+              "level": "54",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Wound Poison IV",
+              "level": "56",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Deadly Poison V",
+              "level": "60",
+              "source": "Handbook of Deadly Poison V",
+              "mark": "Forever"
+            },
+            {
+              "name": "Instant Poison VI",
+              "level": "60",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": []
+        }
+      }
+    },
+    "shaman": {
+      "page": "Shaman abilities (Forever)",
+      "specs": {
+        "Elemental Combat": {
+          "abilities": [
+            {
+              "name": "Lightning Bolt",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Earth Shock",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Earthbind Totem",
+              "level": "6",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Stoneclaw Totem",
+              "level": "8",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Flame Shock",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Searing Totem",
+              "level": "10",
+              "source": "Call of Fire (5)",
+              "mark": null
+            },
+            {
+              "name": "Fire Nova",
+              "level": "12",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Purge",
+              "level": "12",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Call of the Elements",
+              "level": "20",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Frost Shock",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Totemic Recall",
+              "level": "20",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Magma Totem",
+              "level": "26",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Call of the Ancestors (shaman ability)",
+              "level": "30",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Chain Lightning",
+              "level": "32",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Call of the Spirits",
+              "level": "40",
+              "source": "Trainer",
+              "mark": null
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Convection (shaman talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Concussion",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Elemental Devastation",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Reverberation (shaman talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Elemental Alacrity",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Call of Flame (shaman talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Elemental Focus",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Elemental Warding",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Trial by Fire",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Eye of the Storm (Classic)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Earthbound",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Elemental Reach",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Lava Burst",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Lightning Overload",
+              "ranks": "2",
+              "requirement": "Elemental Alacrity",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Elemental Fury",
+              "ranks": "5",
+              "requirement": "Lightning Overload",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Elemental Mastery",
+              "ranks": "1",
+              "requirement": "Lava Burst",
+              "mark": "Forever"
+            }
+          ]
+        },
+        "Enhancement": {
+          "abilities": [
+            {
+              "name": "Rockbiter Weapon",
+              "level": "1",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Stoneskin Totem",
+              "level": "4",
+              "source": "Call of Earth",
+              "mark": "Forever"
+            },
+            {
+              "name": "Lightning Shield",
+              "level": "8",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Flametongue Weapon",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Strength of Earth Totem",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Frostbrand Weapon",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Ghost Wolf",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Totemic Projection",
+              "level": "22",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Water Breathing",
+              "level": "22",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Frost Resistance Totem",
+              "level": "24",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Far Sight",
+              "level": "26",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Fire Resistance Totem",
+              "level": "28",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Flametongue Totem",
+              "level": "28",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Water Walking",
+              "level": "28",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Astral Recall",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Grounding Totem",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Nature Resistance Totem",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Windfury Weapon",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Windfury Totem",
+              "level": "32",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Sentry Totem",
+              "level": "34",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Windwall Totem",
+              "level": "36",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Grace of Air Totem",
+              "level": "42",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Earth's Grasp",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Thundering Strikes",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Ancestral Knowledge",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Guardian Totems",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Mental Dexterity",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Improved Ghost Wolf",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Lightning Shield",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Elemental Weapons (Classic)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Shamanistic Focus",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Anticipation (shaman talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Toughness (shaman talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Flurry (shaman talent)",
+              "ranks": "5",
+              "requirement": "Mental Dexterity",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Stormstrike",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Spirit Weapons",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Mental Quickness",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Improved Stormstrike",
+              "ranks": "2",
+              "requirement": "Stormstrike",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Maelstrom Weapon",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Rage of the Farseer",
+              "ranks": "1",
+              "requirement": "Mental Quickness",
+              "mark": null
+            }
+          ]
+        },
+        "Restoration": {
+          "abilities": [
+            {
+              "name": "Healing Wave (Classic)",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Ancestral Spirit",
+              "level": "12",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Cure Poison (shaman ability)",
+              "level": "16",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Tremor Totem",
+              "level": "18",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Healing Stream Totem",
+              "level": "20",
+              "source": "Call of Water",
+              "mark": "Forever"
+            },
+            {
+              "name": "Lesser Healing Wave",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Cure Disease (shaman ability)",
+              "level": "22",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Poison Cleansing Totem",
+              "level": "22",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Mana Spring Totem",
+              "level": "26",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Reincarnation",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Disease Cleansing Totem",
+              "level": "38",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Chain Heal",
+              "level": "40",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Improved Healing Wave",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Tidal Focus",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Mindfulness",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Natural Grace",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Totemic Focus (Classic)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Reincarnation",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Ancestral Healing",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Healing Focus (shaman talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Water Shield",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Tidal Mastery",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Restorative Totems",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Mana Tide Totem",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Healing Way",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Nature's Swiftness (shaman talent)",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Classic"
+            },
+            {
+              "tier": "6",
+              "name": "Purification (Classic)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Riptide",
+              "ranks": "1",
+              "requirement": "Healing Way",
+              "mark": "Forever"
+            }
+          ]
+        },
+        "General": {
+          "abilities": [
+            {
+              "name": "Mail armor",
+              "level": "40",
+              "source": "Trainer",
+              "mark": null
+            }
+          ],
+          "talents": []
+        }
+      }
+    },
+    "warlock": {
+      "page": "Warlock abilities (Forever)",
+      "specs": {
+        "Affliction": {
+          "abilities": [
+            {
+              "name": "Corruption",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Curse of Weakness",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Life Tap",
+              "level": "6",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Bane of Agony",
+              "level": "8",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Fear",
+              "level": "8",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Drain Soul",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Curse of Recklessness",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Drain Life",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Curse of the Elements",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Drain Mana",
+              "level": "24",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Curse of Tongues",
+              "level": "26",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Howl of Terror",
+              "level": "40",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Death Coil (warlock ability)",
+              "level": "42",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Bane of Doom",
+              "level": "60",
+              "source": "Trainer",
+              "mark": null
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Improved Life Tap",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Suppression (warlock talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Improved Corruption",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Grim Reach",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Soul Harvest",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Improved Drains",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Improved Bane of Agony",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Fel Concentration",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Amplify Curse",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Pandemic (warlock talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Malevolence (warlock talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Nightfall (warlock talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Curse of Exhaustion",
+              "ranks": "1",
+              "requirement": "Amplify Curse",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Siphon Life",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Soul Siphon",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Shadow Mastery",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Wrack",
+              "ranks": "1",
+              "requirement": "Siphon Life",
+              "mark": null
+            }
+          ]
+        },
+        "Demonology": {
+          "abilities": [
+            {
+              "name": "Demon Skin (Classic)",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Summon Imp",
+              "level": "1",
+              "source": "Class quest",
+              "mark": "Forever"
+            },
+            {
+              "name": "Create Healthstone",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Summon Voidwalker",
+              "level": "10",
+              "source": "The Binding (Voidwalker)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Health Funnel",
+              "level": "12",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Unending Breath",
+              "level": "16",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Create Soulstone",
+              "level": "18",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Demon Armor",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Ritual of Summoning",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Summon Incubus",
+              "level": "20",
+              "source": "The Binding (Incubus)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Summon Succubus",
+              "level": "20",
+              "source": "The Binding (Succubus)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Eye of Kilrogg (warlock ability)",
+              "level": "22",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Sense Demons",
+              "level": "24",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Detect Invisibility",
+              "level": "26",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Banish",
+              "level": "28",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Create Firestone",
+              "level": "28",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Subjugate Demon",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Summon Felhunter",
+              "level": "30",
+              "source": "The Binding (Felhunter)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Shadow Ward",
+              "level": "32",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Create Spellstone",
+              "level": "36",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Summon Felsteed",
+              "level": "40",
+              "source": "Summon Felsteed (2)",
+              "mark": null
+            },
+            {
+              "name": "Inferno (Classic)",
+              "level": "50",
+              "source": "Kroshius' Infernal Core (quest)",
+              "mark": null
+            },
+            {
+              "name": "Ritual of Doom",
+              "level": "60",
+              "source": "Suppression (quest)",
+              "mark": "Classic"
+            },
+            {
+              "name": "Summon Dreadsteed",
+              "level": "60",
+              "source": "Dreadsteed of Xoroth (quest)",
+              "mark": null
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Improved Health Funnel",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Improved Imp",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Demonic Embrace",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Unholy Power",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Demonic Aegis",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Improved Voidwalker",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Fel Vitality",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Demonic Energies",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Improved Sayaad",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Demonic Sacrifice",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Master Summoner (Classic)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Decimation (warlock talent)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Fel Domination",
+              "ranks": "1",
+              "requirement": "Master Summoner",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Demonic Brand",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Improved Felhunter",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Soul Link",
+              "ranks": "1",
+              "requirement": "Demonic Sacrifice",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Demonic Knowledge (BC Classic)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Master Demonologist",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Demonic Pact",
+              "ranks": "1",
+              "requirement": "Soul Link",
+              "mark": null
+            }
+          ]
+        },
+        "Destruction": {
+          "abilities": [
+            {
+              "name": "Immolate",
+              "level": "1",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Shadow Bolt",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Searing Pain",
+              "level": "18",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Rain of Fire",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Hellfire",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Soul Fire",
+              "level": "48",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Destructive Reach",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Improved Shadow Bolt (Classic)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Bane",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Molten Skin",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Cataclysm (Classic)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Aftermath",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Ruin",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Shadowburn",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Intensity (warlock talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Agonizing Flames (warlock talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Conflagrate",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Pyroclasm (warlock talent)",
+              "ranks": "2",
+              "requirement": "Intensity",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Bane of Havoc (warlock talent)",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Fire and Brimstone",
+              "ranks": "3",
+              "requirement": "Conflagrate",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Shadow and Flame",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "7",
+              "name": "Incinerate",
+              "ranks": "1",
+              "requirement": "Bane of Havoc",
+              "mark": "Forever"
+            }
+          ]
+        }
+      }
+    },
+    "warrior": {
+      "page": "Warrior abilities (Forever)",
+      "specs": {
+        "Arms": {
+          "abilities": [
+            {
+              "name": "Battle Stance",
+              "level": "1",
+              "source": "Default",
+              "mark": "Forever"
+            },
+            {
+              "name": "Heroic Strike",
+              "level": "1",
+              "source": "Default",
+              "mark": "Classic"
+            },
+            {
+              "name": "Charge",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Rend",
+              "level": "4",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Thunder Clap",
+              "level": "6",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Hamstring",
+              "level": "8",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Overpower",
+              "level": "12",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Tactical Mastery",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Mocking Blow",
+              "level": "16",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Retaliation (warrior ability)",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Victory Rush",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Improved Heroic Strike",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Deflection (warrior talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Improved Rend",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Charge",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Tactical Mastery",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Improved Overpower (Classic)",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Anger Management (Classic)",
+              "ranks": "1",
+              "requirement": "Improved Tactical Mastery",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Deep Wounds",
+              "ranks": "3",
+              "requirement": "Improved Rend",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Spearing Strike",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Two-Handed Weapon Specialization (Classic)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Impale (Classic)",
+              "ranks": "2",
+              "requirement": "Deep Wounds",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Bloodthrill",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "5",
+              "name": "Sweeping Strikes",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Classic"
+            },
+            {
+              "tier": "5",
+              "name": "Weaponmaster (warrior talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Improved Slam",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Improved Hamstring",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "7",
+              "name": "Mortal Strike",
+              "ranks": "1",
+              "requirement": "Sweeping Strikes",
+              "mark": "Classic"
+            }
+          ]
+        },
+        "Fury": {
+          "abilities": [
+            {
+              "name": "Battle Shout",
+              "level": "1",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Demoralizing Shout",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Cleave",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Slam",
+              "level": "20",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Intimidating Shout",
+              "level": "22",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Execute",
+              "level": "24",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Challenging Shout",
+              "level": "26",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Berserker Rage",
+              "level": "30",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Berserker Stance",
+              "level": "30",
+              "source": "The Affray",
+              "mark": "Forever"
+            },
+            {
+              "name": "Intercept (Classic)",
+              "level": "30",
+              "source": "The Affray",
+              "mark": null
+            },
+            {
+              "name": "Whirlwind",
+              "level": "36",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Pummel",
+              "level": "38",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Recklessness (Classic)",
+              "level": "50",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Booming Voice (Classic)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Cruelty (Classic)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Lingering Rage",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "2",
+              "name": "Unbridled Wrath",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Furious Precision",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Piercing Howl",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Blood Craze",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Boundless Rage",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Dual Wield Specialization (Classic)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Raging Blows",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Enrage (warrior ability)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Improved Execute",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Improved Berserker Rage",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Death Wish",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Improved Intercept",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Flurry (warrior talent)",
+              "ranks": "5",
+              "requirement": "Death Wish",
+              "mark": "Forever"
+            },
+            {
+              "tier": "6",
+              "name": "Gore Drinker",
+              "ranks": "2",
+              "requirement": "Enrage",
+              "mark": null
+            },
+            {
+              "tier": "7",
+              "name": "Bloodthirst",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            }
+          ]
+        },
+        "Protection": {
+          "abilities": [
+            {
+              "name": "Bloodrage",
+              "level": "10",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Defensive Stance",
+              "level": "10",
+              "source": "Bartleby's Mug (quest)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Sunder Armor",
+              "level": "10",
+              "source": "Bartleby's Mug (quest)",
+              "mark": null
+            },
+            {
+              "name": "Taunt (warrior ability)",
+              "level": "10",
+              "source": "Bartleby's Mug (quest)",
+              "mark": "Forever"
+            },
+            {
+              "name": "Shield Bash (Classic)",
+              "level": "12",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Revenge",
+              "level": "14",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Shield Block",
+              "level": "16",
+              "source": "Trainer",
+              "mark": "Forever"
+            },
+            {
+              "name": "Disarm",
+              "level": "18",
+              "source": "Trainer",
+              "mark": "Classic"
+            },
+            {
+              "name": "Shield Wall",
+              "level": "28",
+              "source": "Trainer",
+              "mark": "Forever"
+            }
+          ],
+          "talents": [
+            {
+              "tier": "1",
+              "name": "Improved Bloodrage",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Shield Specialization (Classic)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "1",
+              "name": "Iron Will",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Anticipation (warrior talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Revenge",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "2",
+              "name": "Improved Thunder Clap",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Last Stand",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Master of Defense",
+              "ranks": "2",
+              "requirement": "Shield Specialization",
+              "mark": null
+            },
+            {
+              "tier": "3",
+              "name": "Improved Disarm",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "3",
+              "name": "Defiance (warrior talent)",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Improved Sunder Armor",
+              "ranks": "3",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "4",
+              "name": "Vanguard (warrior talent)",
+              "ranks": "1",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "4",
+              "name": "Improved Shield Bash",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Improved Shield Wall",
+              "ranks": "2",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Concussion Blow",
+              "ranks": "1",
+              "requirement": "",
+              "mark": "Forever"
+            },
+            {
+              "tier": "5",
+              "name": "Focused Rage",
+              "ranks": "3",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "6",
+              "name": "Bastion (warrior talent)",
+              "ranks": "5",
+              "requirement": "",
+              "mark": null
+            },
+            {
+              "tier": "7",
+              "name": "Shield Slam",
+              "ranks": "1",
+              "requirement": "Concussion Blow",
+              "mark": "Forever"
+            }
+          ]
+        },
+        "General": {
+          "abilities": [
+            {
+              "name": "Parry",
+              "level": "6",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Dual Wield",
+              "level": "20",
+              "source": "Trainer",
+              "mark": null
+            },
+            {
+              "name": "Plate armor",
+              "level": "40",
+              "source": "Trainer",
+              "mark": null
+            }
+          ],
+          "talents": []
+        }
+      }
+    }
+  }
+}
