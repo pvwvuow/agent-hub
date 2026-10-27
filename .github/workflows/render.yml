@@ -7,7 +7,7 @@ name: render-hub
 on:
   push:
     branches: [main]
-    paths: ["agents/**", "tasks/**", "scripts/build.js"]
+    paths: ["agents/**", "roles/**", "tasks/**", "scripts/build.js"]
   schedule:
     - cron: "37 * * * *"
   workflow_dispatch:
