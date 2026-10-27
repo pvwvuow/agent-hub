@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-27T11:22:55.823Z",
+  "generatedAt": "2026-10-27T11:34:58.343Z",
   "counts": {
     "agents": 6,
     "active": 6,
     "stale": 0,
-    "tasks": 2,
-    "openTasks": 2,
+    "tasks": 5,
+    "openTasks": 5,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T11:22:55.823Z"
+    "generatedAt": "2026-10-27T11:34:58.343Z"
   },
   "roles": [
     {
@@ -487,6 +487,68 @@
       "notes": [
         "این مأموریت آنبردینگ است: دامنه‌اش فقط بازبینی/گزارش است، نه تغییر خط انتشار — مرز امن برای شناختن پروژه",
         "هم‌پوشانی با qa-agent وجود دارد؛ توسعهٔ بعدی الگوی اسکنر به بخش خبر با هماهنگی مدیر ارشد انجام می‌شود (طبق note نقش qa)"
+      ]
+    },
+    {
+      "id": "item-lang-wave1",
+      "title": "موج ۱ گیت آیتم‌ها: اجرای کامل itemlangscanner و رفع یافته‌ها — z-ai-item",
+      "severity": "info",
+      "status": "assigned",
+      "assignee": "z-ai-item",
+      "createdBy": "z-ai-main",
+      "createdAt": "2026-10-27T11:45:00.000Z",
+      "updatedAt": "2026-10-27T11:45:00.000Z",
+      "evidence": "تسک‌های فعلی تو رویدادمحور هستند (بعد از sync آیتم)؛ برای شتاب‌گیری موج، یک اجرای کامل فعال از scanner لازم است تا وضعیت فعلی MISSING/ENGLISH/TRUNC/CHARS مشخص و رفع batch اول انجام شود.",
+      "plan": [
+        "اجرای کامل tools/itemlangscanner.py check روی tip/store/db/tm از ریپوی wow و ثبت آمادهٔ تفکیکی کدها",
+        "رفع موج اول: ترجمهٔ fa ناقص‌ها با tools/fa_tm.json و سبک مصوب (اسم اسپل/استت انگلیسی، ساختار خط‌ها دست‌نخورده)",
+        "موارد موجه → tools/itemlang_ok.json با توضیح؛ تعمیر خودسرانهٔ دادهٔ مشکوک → تسک جدید نه تغییر بی‌نام‌ونشان",
+        "خروجی: PR با شاخهٔ جدا + نتیجهٔ scanner صفر یا مستندشده + تازه‌کردن last_seen"
+      ],
+      "notes": [
+        "این موج مستقل از sync‌های بعدی است؛ sync‌های آینده هم به قوت خود روی همان تسک‌های event-driven تو جریان دارند"
+      ]
+    },
+    {
+      "id": "quest-backfill-harandar",
+      "title": "بک‌فیل ترجمهٔ کوئست‌های harandar (موج ۱ خط کوئست) — z-ai-quests-addon",
+      "severity": "info",
+      "status": "assigned",
+      "assignee": "z-ai-quests-addon",
+      "createdBy": "z-ai-main",
+      "createdAt": "2026-10-27T11:45:00.000Z",
+      "updatedAt": "2026-10-27T11:45:00.000Z",
+      "evidence": "شمارش local wowfa main (e0ac033): translations/fa/quests/harandar = ۱۸۱ ردیف ترجمه‌شده و ~۱۸ ردیف بدون متن. تعارض قبلی تو و flex روی voidstorm/harandar بود؛ تقسیم رسمی: harandar تو، voidstorm flex.",
+      "plan": [
+        "دامنهٔ تو: فقط زون harandar — بعد از اتمام، اگر flex هنوز درگیر voidstorm بود، coiled-isle (~۱۶) به تو می‌رسد (با هماهنگی مدیر ارشد)",
+        "منبع EN از warcraft.wiki.gg / Wowhead؛ منبع نیافتنی → not found مستند",
+        "هر batch = شاخهٔ جدا + stamp + lint صفر + PR بدون مرج",
+        "در هر نشست last_seen فایل خودت را تازه کن و این تسک را in-progress کن"
+      ],
+      "notes": [
+        "مأموریت‌های افزونه/زیرساخت تو به قوت خود باقی است — این تسک فقط مرز کوئست‌های موج ۱ را شفاف می‌کند",
+        "پیگیری update-donations همچنان منوط به اقدام ادمین روی پلن رییمیت است"
+      ]
+    },
+    {
+      "id": "quest-backfill-voidstorm",
+      "title": "بک‌فیل ترجمهٔ کوئست‌های voidstorm (موج ۱ خط کوئست) — z-ai-flex",
+      "severity": "info",
+      "status": "assigned",
+      "assignee": "z-ai-flex",
+      "createdBy": "z-ai-main",
+      "createdAt": "2026-10-27T11:45:00.000Z",
+      "updatedAt": "2026-10-27T11:45:00.000Z",
+      "evidence": "شمارش local wowfa main (e0ac033): translations/fa/quests/voidstorm = ۲۵۸ ردیف ترجمه‌شده و ~۴۹ ردیف بدون متن. هیچ PR بازی در wowfa باز نیست — میدان خالی است. تعارض قبلی دو ایجنت روی همان زون‌ها با این تقسیم رسمی حل شد.",
+      "plan": [
+        "دامنهٔ تو: فقط زون voidstorm — زون‌های دیگر مالک دارند (harandar → quests-addon، بقیه → موج ۲)",
+        "منبع EN هر کوئست را از warcraft.wiki.gg / Wowhead بیاور؛ پایبندی به glossary/agent-*.csv و سبک مصوب",
+        "منبع نیافتنی → not found مستند، نه ترجمهٔ ساختگی",
+        "هر batch = شاخهٔ جدا + stamp + lint صفر + PR (بدون مرج — مرج با ادمین/مدیر ارشد)",
+        "در هر نشست last_seen فایل خودت را تازه کن و این تسک را in-progress کن"
+      ],
+      "notes": [
+        "موج ۲ (eversong ~۳۷، zulaman ~۲۱، coiled-isle ~۱۶، متفرقه ~۱۰) پس از فرود موج ۱ به اتمام‌رسیده‌تر واگذار می‌شود"
       ]
     }
   ],
