@@ -403,9 +403,9 @@ fs.writeFileSync(path.join(ROOT, "hub.json"), JSON.stringify(hub, null, 2), "utf
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 function agentCard(a) {
-  const stCls = LIGHT_CLS[a.__light?.key] || "st-off";
-  const stTxt = LIGHT_FA[a.__light?.key] || "⚫ خاموش";
-  const curTask = a.current_task ? ` <span class="badge cur">📌 تسک جاری: ${esc(a.current_task)}</span>` : "";
+  const stCls = LIGHT_CLS[a.light] || "st-off";
+  const stTxt = LIGHT_FA[a.light] || "⚫ خاموش";
+  const curTask = a.currentTask ? ` <span class="badge cur">📌 تسک جاری: ${esc(a.currentTask)}</span>` : "";
   const wk = nextWakeInfo(a);
   const wkTitle = wk.stale
     ? "ایجنت زمان بیداری بعدی را اعلام کرده ولی بیش از ۱۰ دقیقه است به‌روزش نکرده — احتمالاً شیفتش مرده یا به تعویق افتاده"
@@ -415,21 +415,21 @@ function agentCard(a) {
   const wkHtml = wk.has
     ? `<span class="badge wk${wk.est ? " wk-est" : ""}${wk.stale ? " wk-over" : ""}" title="${wkTitle}">⏰ بیداری بعدی: ${wk.est ? "~" : ""}${esc(wk.text)}${wk.rel ? ` · ${esc(wk.rel)}` : ""}${wk.est ? " (تخمینی)" : ""}${wk.stale ? " ⚠ کهنه" : ""}</span>`
     : `<span class="badge wk-none" title="شیفت زنده نیست یا بیداری بعدی قابل محاسبه نیست">⏰ بیداری بعدی: نامعلوم</span>`;
-  const mine = (openTasksByAgent[a.id || a.__file.replace(/\.json$/, "")] || []).slice(0, 4);
+  const mine = (openTasksByAgent[a.id || ""] || []).slice(0, 4);
   const mineHtml = mine.length
     ? `<div class="hub-tasks"><span class="ht-label">تسک‌های هاب من:</span>${mine.map((t) => `<span class="badge tbadge ${t.severity === "critical" ? "sev-c" : t.severity === "warning" ? "sev-w" : "sev-i"}" title="${esc(t.title)}">${esc(t.id || t.__file.replace(/\.json$/, ""))}</span>`).join("")}${mine.length >= 4 && (openTasksByAgent[a.id] || []).length > 4 ? `<span class="badge">+${faNum((openTasksByAgent[a.id] || []).length - 4)}</span>` : ""}</div>`
     : "";
   const tasksHtml = (a.tasks || []).map((t) => `
       <li><span class="t-name">${esc(t.name)}</span><span class="t-sched">${esc(t.scheduleText || "")}</span>${t.description ? `<span class="t-desc">${esc(t.description)}</span>` : ""}</li>`).join("");
   return `
-    <div class="card agent ${a.__light?.key === "working" ? "is-working" : ""}" id="ag-${esc(a.id || "")}" data-light="${esc(a.__light?.key || "off")}">
+    <div class="card agent ${a.light === "working" ? "is-working" : ""}" id="ag-${esc(a.id || "")}" data-light="${esc(a.light || "off")}">
       <div class="row"><span class="dot ${stCls}" role="img" aria-label="${esc(stTxt)}"></span>
         <h3>${esc(a.name)}${a.role === "manager" ? ' <span class="badge mgr">👑 مدیر ارشد</span>' : ""}</h3>
         <span class="badge">${esc(a.id || "—")}</span>
         <span class="badge">${esc(a.platform || "—")}</span>
         <span class="badge ${stCls}">${esc(stTxt)}</span>${curTask}</div>
       ${a.description ? `<p class="desc">${esc(a.description)}</p>` : ""}
-      <div class="wkline">${wkHtml}<span class="badge">فعالیت: ${esc(a.last_seen ? relTime(a.last_seen) : "—")}</span>${a.__lastCommit ? `<span class="badge" title="${esc(a.__lastCommit.msg || "")}">🔧 کامیت: ${esc(String(a.__lastCommit.msg || "").slice(0, 44))} — ${esc(a.__lastCommit.repo || "؟")}، ${esc(relTime(a.__lastCommit.at))}</span>` : ""}</div>
+      <div class="wkline">${wkHtml}<span class="badge">فعالیت: ${esc(a.lastSeen ? relTime(a.lastSeen) : "—")}</span>${a.lastCommit ? `<span class="badge" title="${esc(a.lastCommit.msg || "")}">🔧 کامیت: ${esc(String(a.lastCommit.msg || "").slice(0, 44))} — ${esc(a.lastCommit.repo || "؟")}، ${esc(relTime(a.lastCommit.at))}</span>` : ""}</div>
       ${mineHtml}
       <ul class="tasks">${tasksHtml || '<li class="t-desc">تسک زمان‌داری ثبت نشده</li>'}</ul>
       <div class="meta">مالک: ${esc(a.owner || "—")}</div>
@@ -438,10 +438,10 @@ function agentCard(a) {
 
 /* کارت نقشهٔ کار — کدام تسک مال کدام ایجنت */
 function workMapCard(a) {
-  const id = a.id || a.__file.replace(/\.json$/, "");
+  const id = a.id || "";
   const mine = openTasksByAgent[id] || [];
-  const stCls = LIGHT_CLS[a.__light?.key] || "st-off";
-  if (!mine.length && !a.current_task) return "";
+  const stCls = LIGHT_CLS[a.light] || "st-off";
+  if (!mine.length && !a.currentTask) return "";
   const wk = nextWakeInfo(a);
   const items = mine.map((t) => `
     <li><span class="dot ${t.severity === "critical" ? "sev-c-dot" : t.severity === "warning" ? "sev-w-dot" : "sev-i-dot"}" aria-hidden="true"></span><b>${esc(t.title)}</b> <span class="badge">${esc(TASK_STATUS_FA[t.status] || t.status)}</span></li>`).join("");
@@ -449,7 +449,7 @@ function workMapCard(a) {
     <div class="card mapcard">
       <div class="row"><span class="dot ${stCls}"></span><h3>${esc(a.name)}</h3>
         <span class="badge wk${wk.has && wk.est ? " wk-est" : ""}${wk.stale ? " wk-over" : ""}" title="بیداری بعدی به وقت ایران${wk.stale ? " — کهنه! ایجنت به‌روز نکرده" : ""}">⏰ ${wk.has ? `${wk.est ? "~" : ""}${esc(wk.text)}${wk.est ? " (تخمینی)" : ""}${wk.stale ? " ⚠ کهنه" : ""}` : "نامعلوم"}</span></div>
-      ${a.current_task ? `<div class="curline">📌 در دست اجرا: <b>${esc(a.current_task)}</b></div>` : ""}
+      ${a.currentTask ? `<div class="curline">📌 در دست اجرا: <b>${esc(a.currentTask)}</b></div>` : ""}
       ${mine.length ? `<ul class="duties">${items}</ul>` : '<div class="t-desc">تسک بازی در هاب ندارد</div>'}
     </div>`;
 }
