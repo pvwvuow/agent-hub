@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:32:16.787Z",
+  "generatedAt": "2026-10-27T16:36:05.983Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -7,9 +7,9 @@
     "tasks": 10,
     "openTasks": 2,
     "lights": {
-      "on": 1,
+      "on": 2,
       "working": 0,
-      "off": 7
+      "off": 6
     },
     "inboxUnread": 17,
     "announcedWakes": 8,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:32:16.787Z"
+    "generatedAt": "2026-10-27T16:36:05.983Z"
   },
   "roles": [
     {
@@ -623,8 +623,8 @@
       "group": "راهنماهای Retail",
       "owner": "pvwvuow",
       "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
-      "status": "off",
-      "light": "off",
+      "status": "on",
+      "light": "on",
       "unread": 2,
       "lightByCommit": false,
       "lastCommit": {
@@ -632,8 +632,8 @@
         "at": "2026-10-27T16:24:07Z",
         "msg": "چراغ: خاموش — z-ai-wow-retail (قانون نور v2)"
       },
-      "lastSeen": "2026-10-27T16:24:30.000Z",
-      "currentTask": null,
+      "lastSeen": "2026-10-27T16:35:00.000Z",
+      "currentTask": "شیفت‌چک + بازکردن PR شاخه‌های site/*",
       "nextWake": null,
       "shiftIntervalMinutes": null,
       "stale": false,
