@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:20:59.849Z",
+  "generatedAt": "2026-10-27T15:22:24.769Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -16,7 +16,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:20:59.849Z"
+    "generatedAt": "2026-10-27T15:22:24.769Z"
   },
   "roles": [
     {
@@ -496,7 +496,7 @@
       "light": "on",
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T15:11:42.000Z",
+      "lastSeen": "2026-10-27T15:22:05.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
