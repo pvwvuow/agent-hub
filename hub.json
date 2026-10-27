@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:30:03.729Z",
+  "generatedAt": "2026-10-27T15:30:09.319Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:30:03.729Z"
+    "generatedAt": "2026-10-27T15:30:09.319Z"
   },
   "roles": [
     {
@@ -295,9 +295,9 @@
         "at": "2026-10-27T15:01:05Z",
         "msg": "forever: GAP.md v1 — auto-generated from collected data (583 Forever-marked items)"
       },
-      "lastSeen": "2026-10-27T15:03:20.000Z",
-      "currentTask": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever",
-      "nextWake": "2026-10-27 18:41",
+      "lastSeen": "2026-10-27T15:30:00.000Z",
+      "currentTask": "forever-wow-data",
+      "nextWake": "2026-10-27 19:03",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-fa3ca629-0ef9-43ac-8701-6e0ab44fe61a",
