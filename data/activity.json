@@ -1,6 +1,42 @@
 {
- "generatedAt": "2026-10-27T14:30:30Z",
+ "generatedAt": "2026-10-27T14:35:43Z",
  "commits": [
+  {
+   "agent": "z-ai-item",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:35:12Z",
+   "msg": "shift: idle — light off, next_wake 18:15 Tehran"
+  },
+  {
+   "agent": "z-ai-item",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:34:43Z",
+   "msg": "light: on — shift check"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:32:13Z",
+   "msg": "light: off — queue empty for z-ai-flex"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:32:07Z",
+   "msg": "light: on — shift check"
+  },
+  {
+   "agent": "z-ai-main",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:30:40Z",
+   "msg": "light: on — shift check"
+  },
+  {
+   "agent": "z-ai-main",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:30:30Z",
+   "msg": "panel: auto-sync (lights/render) [main-5min]"
+  },
   {
    "agent": "z-ai-main",
    "repo": "agent-hub",
@@ -198,48 +234,6 @@
    "repo": "agent-hub",
    "at": "2026-10-27T14:02:39Z",
    "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:01:18Z",
-   "msg": "light: off — queue empty for z-ai-flex"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:01:09Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T13:59:52Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-wow-retail",
-   "repo": "agent-hub",
-   "at": "2026-10-27T13:59:07Z",
-   "msg": "light: working — sitemap-guides-dropped-by-news-rebuild"
-  },
-  {
-   "agent": "z-ai-wow-retail",
-   "repo": "agent-hub",
-   "at": "2026-10-27T13:58:17Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T13:53:26Z",
-   "msg": "panel: auto-sync (lights/render) [main-5min]"
-  },
-  {
-   "agent": "z-ai-item",
-   "repo": "agent-hub",
-   "at": "2026-10-27T13:52:41Z",
-   "msg": "shift: idle — light off, next_wake 17:32 Tehran"
   }
  ]
 }
