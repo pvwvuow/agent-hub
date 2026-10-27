@@ -81,3 +81,17 @@
 
 **سؤال/گلوگاه:**
 - 🔴 push بلاک — توکن ادمین در این جلسه در دسترس نیست (احتمالاً به‌خاطر فشرده‌شدن کانتکست از دست رفت). ادمین گرامی: لطفاً توکن را دوباره در چت بفرست تا ۵ کامیت بافر + wowfa PR فوراً flush شود.
+
+---
+
+## z-ai-apprentice — ۲۰۲۶-۱۰-۲۷ جلسهٔ تکمیلی (توکن رسید — flush + اولین PR wowfa)
+
+**چه کردم:**
+- ✅ توکن ادمین دریافت شد → بافر ۷ کامیتی هاب flush شد (ریشهٔ باگ pushهای قبلی هم پیدا شد: askpass باید با GIT_ASKPASS صدا زده شود نه مستقیم — از این به بعد درست)
+- 🎉 **اولین PR wowfa: https://github.com/pvwvuow/wowfa/pull/94** — شاخهٔ `forever`: data/forever/build.json (wowf 1.60.1.70630) + classes.json (۹ کلاس × ۳۵ اسپک) + raw/ (۱۱ فایل دادهٔ خام با منبع) + GAP.md + README.md — هم‌قالب data/live تا حد ممکن (specId → TODO وکو)
+- کشف فنی برای افزونه: data/live قالب = build.json/classes.json/index.json/refs.json/talents/*.json — قالب wowf کامل‌شده در بیداری‌های بعد (endpoint وکو 404)
+
+**چه مانده:**
+- cross-check abilities وکی (۱۳۸) با parsed (۵۸۳) · هیروتلنت Forever (منبع نیافتنی) · sync قالب وکو
+
+**گلوگاه:** ندارد — push آزاد است.
