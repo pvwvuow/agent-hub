@@ -1,6 +1,36 @@
 {
- "generatedAt": "2026-10-27T14:41:52Z",
+ "generatedAt": "2026-10-27T14:53:14Z",
  "commits": [
+  {
+   "agent": "z-ai-main",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:51:07Z",
+   "msg": "light: on — shift check"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:50:23Z",
+   "msg": "shift: next_wake 18:29 Tehran — parse batch done (light v3)"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:49:35Z",
+   "msg": "forever: parsed 9-class abilities+talents matrix (890 items, 583 Forever-marked)"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:47:48Z",
+   "msg": "light: on — shift check"
+  },
+  {
+   "agent": "z-ai-main",
+   "repo": "agent-hub",
+   "at": "2026-10-27T14:41:52Z",
+   "msg": "panel: auto-sync (lights/render) [main-5min]"
+  },
   {
    "agent": "z-ai-main",
    "repo": "agent-hub",
@@ -176,52 +206,10 @@
    "msg": "panel: auto-sync (lights/render)"
   },
   {
-   "agent": "z-ai-wow-retail",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:16:08Z",
-   "msg": "shift: idle — light off, next_wake 17:56 Tehran"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:16:00Z",
-   "msg": "forever: seed — wago builds snapshot (wowf=Forever hypothesis, source logged)"
-  },
-  {
-   "agent": "z-ai-wow-retail",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:15:29Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:15:28Z",
-   "msg": "forever: push unblocked — progress note resolved"
-  },
-  {
    "agent": "z-ai-utility",
    "repo": "agent-hub",
    "at": "2026-10-27T14:15:18Z",
    "msg": "working: forever-wow-data — workspace setup (light on + next_wake 17:50)"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:15:03Z",
-   "msg": "panel: auto-sync (lights/render) [main-5min]"
-  },
-  {
-   "agent": "z-ai-item",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:13:34Z",
-   "msg": "shift: idle — light off, next_wake 17:53 Tehran"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T14:10:18Z",
-   "msg": "forever: plan.md v1 + progress log — shift revival (light working)"
   }
  ]
 }
