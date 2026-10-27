@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-27T16:23:18.183Z",
+  "generatedAt": "2026-10-27T16:23:48.761Z",
   "counts": {
     "agents": 8,
     "active": 0,
     "stale": 0,
     "tasks": 10,
-    "openTasks": 5,
+    "openTasks": 4,
     "lights": {
       "on": 2,
-      "working": 1,
-      "off": 5
+      "working": 0,
+      "off": 6
     },
     "inboxUnread": 7,
     "announcedWakes": 8,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:23:18.183Z"
+    "generatedAt": "2026-10-27T16:23:48.761Z"
   },
   "roles": [
     {
@@ -502,13 +502,13 @@
       "group": "کوئست و افزونه",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با چند جبههٔ کاری ناهم‌گروه — دسته‌بندی و اولویت‌بندی با مدیر ارشد: (۱) خط کوئست‌ها در pvwvuow/wowfa طبق docs/QUEST_AGENTS.md — بک‌فیل voidstorm/harandar (۱۴۴ کوئست با منابع واقعی، PRهای #69-#73)، ممیزی تحریری B (PR #75) و ممیزی A روی eversong/quel-danas/arcantina (PRهای #87/#88)؛ هر کار با شاخهٔ جدا + stamp + lint صفر + PR بدون مرج. (۲) توسعهٔ افزونهٔ Lua — WoWFA (بارگذاری ۱۳ کلاس، تحمل توکن‌های خراب بازی، tools/check_addon.py) و WoWFarsi_Quests (اتصال به پنل ماژولی 0.4.0، PR #89) با دروازهٔ luac5.1 و هارنس Lua 5.1 VM. (۳) ترجمهٔ کامل تلنت‌های سه کلاس Monk/Druid/Warlock (۸۵۲ اسپل) که مجموع ۱۳ کلاس را کامل کرد. (۴) زیرساخت موردی — ابزار و ورک‌فلو update-donations در pvwvuow/wow (PR #29؛ منتظر ادغام + secret REYMIT_API_TOKEN و رفع insufficient_plan پنل رییمیت)، DNS/GSC سایت و تعمیرات موردی ابزار/CI. نقش ثابتی claim نمی‌کنم؛ به roles/ دست نزده‌ام.",
-      "status": "working",
-      "light": "working",
+      "status": "off",
+      "light": "off",
       "unread": 0,
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T16:02:47.000Z",
-      "currentTask": "wowfa-wave-quest-backfill-2",
+      "lastSeen": "2026-10-27T16:23:18.000Z",
+      "currentTask": null,
       "nextWake": "2026-10-27 23:57",
       "shiftIntervalMinutes": null,
       "stale": false,
@@ -898,17 +898,22 @@
       "id": "wowfa-wave-quest-backfill-2",
       "title": "موج ۲ بک‌فیل ترجمهٔ کوئست‌های wowfa (ادامهٔ خط کوئست) + اجرای QA ترجمه روی آلودگی‌های باقی‌مانده",
       "severity": "info",
-      "status": "open",
+      "status": "done",
       "assignee": "z-ai-quests-addon",
       "assignees": [
         "z-ai-quests-addon"
       ],
       "createdBy": "z-ai-main",
       "createdAt": "2026-10-27T15:47:00Z",
-      "updatedAt": null,
+      "updatedAt": "2026-10-27T16:23:18.000Z",
       "evidence": null,
       "plan": [],
-      "notes": []
+      "notes": [
+        "انجام شد در جلسهٔ 2026-10-27T16:00-16:30Z — PR #96 (feat/quests-eversong-wave2-backfill، بدون مرج).",
+        "بخش ۱ — عیب‌یابی ۵ شکست translation-qa: هیچ‌کدام شکست محتوایی qa.py نبود. ۴ ران action_required (اجرای ورک‌فلو منتظر تأیید دستی ماند و هرگز اجرا نشد) + ۱ ران failure سطح startup (jobs=0، لاگ 404، بدون check-run؛ کامیتش بعداً force-push و مرج شد). qa.py روی main فعلی ۰ مشکل و روی tarball همان sha خراب هم exit 0. توصیه: تأیید Actions برای PRهای این actor فعال شود.",
+        "بخش ۲ — موج ۲ = ۱۲ ردیف no_text باقی‌ماندهٔ کل خط: 2 پر شد (97088/97089 «So Much More To Do» فقط-عنوانی — الگوی PR #81؛ archavon@69465 + wowhead زنده؛ ترجمه: «هنوز خیلی کار مانده») + 10 re-verified not found (83561=DNT placeholder؛ 98220/98541/98959/98960 و 93017/93603/93665/93666 و 91793 = در live/ptr-2/beta صفحه generic، wago 404، وب‌سرچ صفر — شکاف ptr-2/beta که در PR #87 به WAF نخورده بود امروز بسته شد).",
+        "گیت‌ها: stamp 2 / lint 0 / status eversong 406→408 (پس از مرج: خط 1512/1522 — ۱۰ ردیف باقی در دیتای بازی متن ندارند)."
+      ]
     }
   ],
   "broken": []
