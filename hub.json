@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T17:36:38.268Z",
+  "generatedAt": "2026-10-27T20:12:07.725Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T17:36:38.268Z"
+    "generatedAt": "2026-10-27T20:12:07.725Z"
   },
   "roles": [
     {
@@ -227,11 +227,7 @@
       "light": "retired",
       "unread": 1,
       "lightByCommit": false,
-      "lastCommit": {
-        "repo": "agent-hub",
-        "at": "2026-10-27T17:02:23Z",
-        "msg": "watchdog: effective — z-ai-main (takeover leader=10, gap=20.4)"
-      },
+      "lastCommit": null,
       "lastSeen": "2026-10-27T17:09:26Z",
       "currentTask": "انحلال سیستم: بازرسی کامل + merge PR #61 + بستن #59/#60 + ابلاغ انحلال — مأموریت تمام",
       "nextWake": null,
@@ -447,11 +443,7 @@
       "light": "retired",
       "unread": 0,
       "lightByCommit": false,
-      "lastCommit": {
-        "repo": "agent-hub",
-        "at": "2026-10-27T17:01:32Z",
-        "msg": "watchdog: effective — z-ai-item"
-      },
+      "lastCommit": null,
       "lastSeen": "2026-10-27T17:29:47Z",
       "currentTask": "انحلال — تمام",
       "nextWake": "2026-10-27 20:43",
