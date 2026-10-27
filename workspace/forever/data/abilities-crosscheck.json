@@ -1,0 +1,690 @@
+{
+  "source": "https://warcraft.wiki.gg/wiki/Category:Forever_abilities",
+  "accessed_at_utc": "2026-10-27T15:39:14.000Z",
+  "method": "individual category pages (128) vs class-table parse (890 items)",
+  "counts": {
+    "wiki_single_pages": 128,
+    "matched_in_parse": 91,
+    "wiki_only_not_in_parse": 37,
+    "parse_forever_marked_total": 583
+  },
+  "matched": [
+    {
+      "wiki_page": "Agonizing Flames (warlock talent)",
+      "in_parse": [
+        "warlock/Destruction/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Arcane Geometry",
+      "in_parse": [
+        "mage/Arcane/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Arcane Wrath",
+      "in_parse": [
+        "mage/Arcane/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Bastion (warrior talent)",
+      "in_parse": [
+        "warrior/Protection/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Bloodthrill",
+      "in_parse": [
+        "warrior/Arms/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Boundless Rage",
+      "in_parse": [
+        "warrior/Fury/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Champion of the Light (paladin talent)",
+      "in_parse": [
+        "paladin/Retribution/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Comprehend Scroll",
+      "in_parse": [
+        "mage/Arcane/abilitie"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Confounding Flash",
+      "in_parse": [
+        "priest/Discipline/abilitie"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Consecrated Ground (Forever)",
+      "in_parse": [
+        "paladin/Holy/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Contingency Plan (priest ability)",
+      "in_parse": [
+        "priest/Discipline/abilitie"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Cutthroat (rogue talent)",
+      "in_parse": [
+        "rogue/Subtlety/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Dark Inspiration",
+      "in_parse": [
+        "priest/Shadow/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Dark Sacrifice",
+      "in_parse": [
+        "priest/Shadow Magic/abilitie"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Deadly Aspects",
+      "in_parse": [
+        "hunter/Beast Mastery/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Demonic Brand",
+      "in_parse": [
+        "warlock/Demonology/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Demonic Energies",
+      "in_parse": [
+        "warlock/Demonology/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Demonic Pact",
+      "in_parse": [
+        "warlock/Demonology/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Devouring Contagion",
+      "in_parse": [
+        "priest/Shadow/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Divine Grace",
+      "in_parse": [
+        "priest/Holy/abilitie"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Divine Precision",
+      "in_parse": [
+        "paladin/Holy/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Early Demise",
+      "in_parse": [
+        "priest/Shadow/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Earthbound",
+      "in_parse": [
+        "shaman/Elemental Combat/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Elemental Alacrity",
+      "in_parse": [
+        "shaman/Elemental Combat/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Expose Prey",
+      "in_parse": [
+        "hunter/Survival/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Flawless Execution",
+      "in_parse": [
+        "rogue/Combat/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Frost Blast",
+      "in_parse": [
+        "mage/Frost/abilitie"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Furious Precision",
+      "in_parse": [
+        "warrior/Fury/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Gift of the Earthmother",
+      "in_parse": [
+        "druid/Restoration/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Gore Drinker",
+      "in_parse": [
+        "warrior/Fury/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Hack and Slash (Forever)",
+      "in_parse": [
+        "rogue/Combat/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Heating Up (Forever)",
+      "in_parse": [
+        "mage/Fire/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Holy Conduit",
+      "in_parse": [
+        "paladin/Retribution/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Holy Precision",
+      "in_parse": [
+        "priest/Discipline/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Holy Strike",
+      "in_parse": [
+        "paladin/Retribution/abilitie"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Improved Bane of Agony",
+      "in_parse": [
+        "warlock/Affliction/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Improved Channeling",
+      "in_parse": [
+        "mage/Arcane/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Improved Distract",
+      "in_parse": [
+        "rogue/Subtlety/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Improved Drains",
+      "in_parse": [
+        "warlock/Affliction/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Improved Mind Flay",
+      "in_parse": [
+        "priest/Shadow/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Improved Seal of Fury",
+      "in_parse": [
+        "paladin/Protection/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Improved Seals",
+      "in_parse": [
+        "paladin/Holy/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Improved Shifting Power",
+      "in_parse": [
+        "druid/Feral Combat/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Improved Tactical Mastery",
+      "in_parse": [
+        "warrior/Arms/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Instrument of Law",
+      "in_parse": [
+        "paladin/Retribution/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Iron Creed",
+      "in_parse": [
+        "paladin/Protection/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Lacerating Strikes",
+      "in_parse": [
+        "hunter/Survival/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Lethal Attacks",
+      "in_parse": [
+        "hunter/Marksmanship/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Light's Vigil",
+      "in_parse": [
+        "paladin/Holy/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Lingering Rage",
+      "in_parse": [
+        "warrior/Fury/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Litany of Light",
+      "in_parse": [
+        "priest/Holy/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Lone Wolf (Forever)",
+      "in_parse": [
+        "hunter/Marksmanship/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Malevolence (warlock talent)",
+      "in_parse": [
+        "warlock/Affliction/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Mass Salvation",
+      "in_parse": [
+        "paladin/Protection/abilitie"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Master of Defense",
+      "in_parse": [
+        "warrior/Protection/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Mindfulness",
+      "in_parse": [
+        "shaman/Restoration/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Natural Grace",
+      "in_parse": [
+        "shaman/Restoration/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Natural Instinct",
+      "in_parse": [
+        "druid/Feral Combat/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Overgrowth (Forever)",
+      "in_parse": [
+        "druid/Balance/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Power in Light",
+      "in_parse": [
+        "priest/Discipline/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Predator's Edge",
+      "in_parse": [
+        "hunter/Survival/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Primal Bite",
+      "in_parse": [
+        "druid/Feral Combat/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Quietus (rogue talent)",
+      "in_parse": [
+        "rogue/Subtlety/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Rage of the Farseer",
+      "in_parse": [
+        "shaman/Enhancement/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Raging Blows",
+      "in_parse": [
+        "warrior/Fury/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Reverence (paladin talent)",
+      "in_parse": [
+        "paladin/Holy/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Revoke",
+      "in_parse": [
+        "paladin/Protection/abilitie"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Sacred Arbiter",
+      "in_parse": [
+        "paladin/Retribution/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Salvation (paladin ability)",
+      "in_parse": [
+        "paladin/Protection/abilitie"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Sanctified Judgment",
+      "in_parse": [
+        "paladin/Retribution/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Seal of Fury",
+      "in_parse": [
+        "paladin/Protection/abilitie"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Shadow and Flame",
+      "in_parse": [
+        "warlock/Destruction/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Shifting Power",
+      "in_parse": [
+        "druid/Feral Combat/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Sniper Shot",
+      "in_parse": [
+        "hunter/Marksmanship/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Soul Harvest",
+      "in_parse": [
+        "warlock/Affliction/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Spearing Strike",
+      "in_parse": [
+        "warrior/Arms/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Strider Kick",
+      "in_parse": [
+        "hunter/Survival/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Summon Hawk",
+      "in_parse": [
+        "hunter/Beast Mastery/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Survivalist's Discipline",
+      "in_parse": [
+        "hunter/Survival/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Swift Judgment",
+      "in_parse": [
+        "paladin/Protection/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Teleport: Dalaran (Forever)",
+      "in_parse": [
+        "mage/Teleport/Portal/abilitie"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Templar's Bulwark",
+      "in_parse": [
+        "paladin/Protection/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Thousand Cuts (rogue talent)",
+      "in_parse": [
+        "rogue/Subtlety/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Trial by Fire",
+      "in_parse": [
+        "shaman/Elemental Combat/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Twilight Focus",
+      "in_parse": [
+        "priest/Holy/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Twist of Light",
+      "in_parse": [
+        "paladin/Retribution/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Vanguard (warrior talent)",
+      "in_parse": [
+        "warrior/Protection/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Venom",
+      "in_parse": [
+        "rogue/Assassination/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Voice of Truth",
+      "in_parse": [
+        "paladin/Holy/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Weaponmaster (warrior talent)",
+      "in_parse": [
+        "warrior/Arms/talent"
+      ],
+      "forever_marked": false
+    },
+    {
+      "wiki_page": "Wrack",
+      "in_parse": [
+        "warlock/Affliction/talent"
+      ],
+      "forever_marked": false
+    }
+  ],
+  "wiki_only": [
+    "Bartering (legacy talent)",
+    "Big Game Hunter (racial)",
+    "Bountiful Harvest (legacy talent)",
+    "Dedicated Study",
+    "Diplomat (legacy talent)",
+    "Dismember",
+    "Elemental Insight",
+    "Elune's Light (racial)",
+    "Eureka!",
+    "Field Guide (legacy talent)",
+    "Field Medicine",
+    "For Great Honor (legacy talent)",
+    "Frequent Flier",
+    "Gourmand (legacy talent)",
+    "High Alert",
+    "Luremaster",
+    "Master Chef",
+    "Mine!",
+    "Performance Bonus",
+    "Permanence",
+    "Pinch (pet ability)",
+    "Plainsrunning",
+    "Rapid Regeneration",
+    "Read Ley Line",
+    "Reagent Economy",
+    "Reinforce (legacy talent)",
+    "Ruthless (human racial)",
+    "Shatter Curse",
+    "Skysight",
+    "Study",
+    "Talented (legacy talent)",
+    "The Quick and the Dead (legacy talent)",
+    "Thrill of Adventure",
+    "Walk on Air",
+    "Well Rested",
+    "Wind Blessed",
+    "Working Overtime (legacy talent)"
+  ],
+  "note": "wiki_only شامل صفحاتی است که در پارس جدول کلاس‌ها نیامده‌اند: پسوندهای (racial)/(legacy talent)/(Pet abilities) و abilityهای proc/tier-set — کاندیدهای تکمیل پارس؛ خطای پارس نیستند لزوماً"
+}
