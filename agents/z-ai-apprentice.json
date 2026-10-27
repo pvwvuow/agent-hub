@@ -27,6 +27,13 @@
       "schedule": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
       "description": "چراغ + صف هاب + تجدید تایمر در پایان جلسه",
       "status": "active"
+    },
+    {
+      "name": "مأموریت: گردآوری دادهٔ WoW Forever (کلاس/تلنت/اسپک)",
+      "schedule": "ادامه‌ای — از ۲۰۲۶-۱۰-۲۷ به‌سفارش ادمین؛ جزئیات کامل در tasks/forever-wow-data.json هاب",
+      "description": "جمع‌آوری دادهٔ خام build Forever (کلاس‌ها/اسپک‌ها/تلنت‌ها/هیرو تلنت‌ها) از wago.tools و warcraft.wiki.gg و Wowhead با مرورگر بدون سر، ذخیره در wowfa/data/forever/ با ساختار مشابه data/live، و سند تفاوت‌ها (GAP.md) نسبت به live — فقط با شاخه و PR و ثبت منبع هر داده",
+      "status": "assigned"
     }
-  ]
+  ],
+  "current_task": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever"
 }

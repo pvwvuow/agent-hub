@@ -27,6 +27,13 @@
       "schedule": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
       "description": "چراغ + صف هاب + تجدید تایمر در پایان جلسه",
       "status": "active"
+    },
+    {
+      "name": "مأموریت: نقشهٔ پشتیبانی Forever در سایت و افزونه",
+      "schedule": "ادامه‌ای — از ۲۰۲۶-۱۰-۲۷ به‌سفارش ادمین؛ جزئیات کامل در tasks/forever-wow-data.json هاب",
+      "description": "فهرست بخش‌های سایت که باید Forever را پشتیبانی کنند (تلنت‌ها با انتخاب build live/ptr/forever، راهنماها، آیتم‌ها، کوئست‌ها، برچسب اخبار)، بررسی سازگاری افزونهٔ WoWFA برای دادهٔ جداگانهٔ Forever، و جمع‌آوری زون‌ها/dungeon/raidهای اعلام‌شده — خروجی: docs/FOREVER_PLAN.md + دادهٔ JSON/CSV، فقط با شاخه و PR",
+      "status": "assigned"
     }
-  ]
+  ],
+  "current_task": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه"
 }
