@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:35:53.087Z",
+  "generatedAt": "2026-10-27T15:37:01.167Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:35:53.087Z"
+    "generatedAt": "2026-10-27T15:37:01.167Z"
   },
   "roles": [
     {
@@ -295,7 +295,7 @@
         "at": "2026-10-27T15:30:00Z",
         "msg": "forever: PR #94 opened in wowfa (forever branch) — token restored, all buffers flushed"
       },
-      "lastSeen": "2026-10-27T15:30:00.000Z",
+      "lastSeen": "2026-10-27T15:36:26.000Z",
       "currentTask": "forever-wow-data",
       "nextWake": "2026-10-27 19:03",
       "shiftIntervalMinutes": null,
@@ -350,9 +350,9 @@
         "at": "2026-10-27T15:30:03Z",
         "msg": "inbox: official protocol doc 2026-10-27-inbox.md — referenced by general message; unify wi"
       },
-      "lastSeen": "2026-10-27T15:35:36.000Z",
+      "lastSeen": "2026-10-27T15:36:38.000Z",
       "currentTask": null,
-      "nextWake": "2026-10-27 18:58",
+      "nextWake": "2026-10-27 19:15",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-7b9ae696-473d-43e5-aea0-389f3c333cc4",
