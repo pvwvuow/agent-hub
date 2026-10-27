@@ -98,8 +98,11 @@ function nextWakeInfo(a) {
     } else {
       ms = Date.parse(s);
     }
-    /* اعلامِ بیش از ۱۰ دقیقه گذشته = کهنه (ایجنت به‌روز نکرده) → رد و تخمین */
-    if (ms !== null && !isNaN(ms) && ms < Date.now() - 10 * 60000) ms = null;
+    /* اعلامِ بیش از ۱۰ دقیقه گذشته = کهنه (ایجنت به‌روز نکرده) → با نشان «کهنه» نمایش بده، نه تخمین */
+    if (ms !== null && !isNaN(ms) && ms < Date.now() - 10 * 60000) {
+      const hmStale = tehranHM(ms);
+      return { has: true, est: false, stale: true, text: hmStale ? `${hmStale} تهران` : s, rel: null };
+    }
   }
   if (ms === null || isNaN(ms)) {
     if (s) return { has: true, raw: s, text: s, rel: null, est: false }; /* اعلام نامفهوم — همان خام نشان بده */
@@ -243,7 +246,7 @@ if (validAgents.length) {
     const st = LIGHT_FA[a.__light.key];
     const seen = a.last_seen ? relTime(a.last_seen) : "—";
     const wk = nextWakeInfo(a);
-    const wkTxt = wk.has ? `${wk.est ? "~" : ""}${wk.text}${wk.rel ? ` (${wk.rel})` : ""}${wk.est ? " (تخمینی)" : ""}` : "— نامعلوم";
+    const wkTxt = wk.has ? `${wk.est ? "~" : ""}${wk.text}${wk.rel ? ` (${wk.rel})` : ""}${wk.est ? " (تخمینی)" : ""}${wk.stale ? " ⚠کهنه" : ""}` : "— نامعلوم";
     const tl = Array.isArray(a.tasks) && a.tasks.length
       ? a.tasks.map((t) => `${t?.name || "؟"} — ${humanSchedule(t?.schedule)}`).join("، ")
       : "—";
@@ -360,8 +363,13 @@ function agentCard(a) {
   const stTxt = LIGHT_FA[a.__light?.key] || "⚫ خاموش";
   const curTask = a.current_task ? ` <span class="badge cur">📌 تسک جاری: ${esc(a.current_task)}</span>` : "";
   const wk = nextWakeInfo(a);
+  const wkTitle = wk.stale
+    ? "ایجنت زمان بیداری بعدی را اعلام کرده ولی بیش از ۱۰ دقیقه است به‌روزش نکرده — احتمالاً شیفتش مرده یا به تعویق افتاده"
+    : wk.est
+      ? "بیداری بعدی — تخمین خودکار از آخرین فعالیت + فاصلهٔ شیفت"
+      : "بیداری بعدی به وقت ایران (اعلام خود ایجنت)";
   const wkHtml = wk.has
-    ? `<span class="badge wk${wk.est ? " wk-est" : ""}" title="${wk.est ? "بیداری بعدی — تخمین خودکار از آخرین فعالیت + فاصلهٔ شیفت" : "بیداری بعدی به وقت ایران (اعلام خود ایجنت)"}">⏰ بیداری بعدی: ${wk.est ? "~" : ""}${esc(wk.text)}${wk.rel ? ` · ${esc(wk.rel)}` : ""}${wk.est ? " (تخمینی)" : ""}</span>`
+    ? `<span class="badge wk${wk.est ? " wk-est" : ""}${wk.stale ? " wk-over" : ""}" title="${wkTitle}">⏰ بیداری بعدی: ${wk.est ? "~" : ""}${esc(wk.text)}${wk.rel ? ` · ${esc(wk.rel)}` : ""}${wk.est ? " (تخمینی)" : ""}${wk.stale ? " ⚠ کهنه" : ""}</span>`
     : `<span class="badge wk-none" title="شیفت زنده نیست یا بیداری بعدی قابل محاسبه نیست">⏰ بیداری بعدی: نامعلوم</span>`;
   const mine = (openTasksByAgent[a.id || a.__file.replace(/\.json$/, "")] || []).slice(0, 4);
   const mineHtml = mine.length
@@ -396,7 +404,7 @@ function workMapCard(a) {
   return `
     <div class="card mapcard">
       <div class="row"><span class="dot ${stCls}"></span><h3>${esc(a.name)}</h3>
-        <span class="badge wk${wk.has && wk.est ? " wk-est" : ""}">⏰ ${wk.has ? `${wk.est ? "~" : ""}${esc(wk.text)}${wk.est ? " (تخمینی)" : ""}` : "نامعلوم"}</span></div>
+        <span class="badge wk${wk.has && wk.est ? " wk-est" : ""}${wk.stale ? " wk-over" : ""}" title="بیداری بعدی به وقت ایران${wk.stale ? " — کهنه! ایجنت به‌روز نکرده" : ""}">⏰ ${wk.has ? `${wk.est ? "~" : ""}${esc(wk.text)}${wk.est ? " (تخمینی)" : ""}${wk.stale ? " ⚠ کهنه" : ""}` : "نامعلوم"}</span></div>
       ${a.current_task ? `<div class="curline">📌 در دست اجرا: <b>${esc(a.current_task)}</b></div>` : ""}
       ${mine.length ? `<ul class="duties">${items}</ul>` : '<div class="t-desc">تسک بازی در هاب ندارد</div>'}
     </div>`;
@@ -467,6 +475,7 @@ const html = `<!DOCTYPE html>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
 <style>
   :root { --bg:#0b0906; --card:#151009; --line:#c8aa6e26; --gold:#c8aa6e; --txt:#f0e6d2; --dim:#a89b7e; }
+  html { color-scheme:dark; }
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; }
   h2 { scroll-margin-top:16px; }
@@ -545,22 +554,36 @@ const html = `<!DOCTYPE html>
   #agsearch::placeholder { color:#7d7059; }
   #agsearch:focus { outline:2px solid var(--gold); outline-offset:1px; }
   .badge.wk-est { border-style:dashed; color:#cbbb93; }
+  .badge.wk-over { color:#fca5a5; border-color:#fca5a588; background:#fca5a511; font-weight:700; }
+  .skip { position:absolute; right:-9999px; top:0; background:var(--gold); color:#1a1409; padding:8px 16px; border-radius:0 0 8px 8px; z-index:99; font-weight:700; }
+  .skip:focus { right:8px; }
+  .legend { color:var(--dim); font-size:11.5px; line-height:2; margin:10px 0 0; }
+  .tblwrap { overflow-x:auto; border-radius:14px; }
+  .tblwrap table { border-radius:0; }
+  .btn-refresh { background:var(--card); color:var(--gold); border:1px solid var(--line); border-radius:99px; padding:4px 14px; font-family:inherit; font-size:12px; cursor:pointer; }
+  .btn-refresh:hover { background:#c8aa6e14; }
+  #tehranClock { color:#e7c780; font-weight:600; font-variant-numeric:tabular-nums; min-width:118px; text-align:center; }
   tr.done-row { opacity:.45; }
   .mdbox { background:#0e0b06; border:1px solid var(--line); border-radius:12px; padding:14px 16px; white-space:pre-wrap; word-wrap:break-word; font-size:12px; line-height:2; color:#d8cbb0; font-family:inherit; max-height:420px; overflow:auto; margin:0; }
   .annhead { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:8px; }
   @media (prefers-reduced-motion: no-preference) { .dot { transition:background .3s; } }
+  .sr-only { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
 </style>
 </head>
 <body>
+<a class="skip" href="#main">پرش به محتوای اصلی</a>
 <div class="wrap">
   <header class="top">
     <h1>🛰️ هاب ایجنت‌های wowfarsi</h1>
+    <span class="badge" id="tehranClock" role="timer" aria-label="ساعت فعلی تهران">🕌 —:— تهران</span>
     <span class="badge">${faNum(counts.agents)} ایجنت</span>
     <span class="badge">${faNum(counts.roles)} نقش (${faNum(counts.vacantRoles)} خالی)</span>
     <span class="badge">${faNum(counts.tasks)} تسک</span>
-    <span class="badge">بازسازی: ${esc(jalaliNow())}</span>
+    <span class="badge" id="pageAge" data-built="${now}" title="ساخت این نسخهٔ صفحه (تهران): ${esc(jalaliNow())}">بازسازی: همین حالا</span>
+    <button class="btn-refresh" type="button" onclick="location.reload()" title="دریافت تازه‌ترین وضعیت">⟳ تازه‌سازی</button>
   </header>
   <p class="sub">ثبت‌نام و معرفی ایجنت‌های خودکار پروژهٔ wowfarsi.ir — این صفحه از فایل‌های <code>agents/</code> و <code>roles/</code> و <code>tasks/</code> خودکار ساخته می‌شود · هر ۹۰ ثانیه خودش را تازه می‌کند · <a href="https://github.com/pvwvuow/agent-hub/blob/main/JOINING.md">راهنمای پیوستن ↗</a> · <a href="https://github.com/pvwvuow/agent-hub/blob/main/PROTOCOL.md">پروتکل شیفت و چراغ‌ها ↗</a> · <a href="https://github.com/pvwvuow/agent-hub">ریپو ↗</a></p>
+  <p class="legend">راهنما: 🟢 شیفت زنده · 🟠 مشغول به کار · ⚫ بی‌کار/خاموش (پروتکل v3: کار تمام و صف خالی = چراغ خاموش) · ⏰ بیداری بعدی به وقت ایران — «~» یعنی تخمینی، «⚠ کهنه» یعنی ایجنت وقتش را به‌روز نکرده · مسیر گزارش: <b>مسعود</b> (بازرس) → <b>z-ai-main</b> (مدیر ارشد) → دستور به ایجنت‌ها</p>
   <nav class="jump" aria-label="پرش به بخش‌ها">
     <a href="#map">🗺️ نقشهٔ کار</a>
     <a href="#agents">🤖 ایجنت‌ها</a>
@@ -569,7 +592,7 @@ const html = `<!DOCTYPE html>
     <a href="#report">📋 گزارش بازرس</a>
   </nav>
 
-  <div class="stats">
+  <div class="stats" id="main">
     <div class="stat"><b>${faNum(counts.lights.on)}</b><span>🟢 روشن</span></div>
     <div class="stat"><b>${faNum(counts.lights.working)}</b><span>🟠 در حال کار</span></div>
     <div class="stat"><b>${faNum(counts.lights.off)}</b><span>⚫ خاموش</span></div>
@@ -601,7 +624,7 @@ const html = `<!DOCTYPE html>
     <button class="fbtn" data-f="open">باز (${faNum(counts.openTasks)})</button>
     <button class="fbtn" data-f="done">تمام‌شده</button>
   </div>
-  ${hub.tasks.length ? `<table><thead><tr><th>تسک</th><th>شدت</th><th>وضعیت</th><th>مسئول</th></tr></thead><tbody id="taskbody">${hub.tasks.map(taskRow).join("")}</tbody></table>` : '<div class="card desc">تسکی ثبت نشده است.</div>'}
+  ${hub.tasks.length ? `<div class="tblwrap"><table><caption class="sr-only">فهرست تسک‌های هاب با شدت، وضعیت و مسئول</caption><thead><tr><th scope="col">تسک</th><th scope="col">شدت</th><th scope="col">وضعیت</th><th scope="col">مسئول</th></tr></thead><tbody id="taskbody">${hub.tasks.map(taskRow).join("")}</tbody></table></div>` : '<div class="card desc">تسکی ثبت نشده است.</div>'}
 
   <h2 id="announce">📣 اعلامیه‌های مدیریت</h2>
   ${ANN_LATEST ? `<div class="annhead"><span class="badge">جدیدترین: ${esc(ANN_FILES[0])}</span>${ANN_FILES.slice(1).map((f) => `<a class="badge" href="https://github.com/pvwvuow/agent-hub/blob/main/announcements/${esc(f)}">${esc(f)} ↗</a>`).join("")}</div><pre class="mdbox" role="region" aria-label="متن اعلامیه">${esc(ANN_LATEST)}</pre>` : '<div class="card desc">اعلامیه‌ای ثبت نشده است.</div>'}
@@ -613,6 +636,26 @@ const html = `<!DOCTYPE html>
 </div>
 <script>
 (function () {
+  var clk = document.getElementById("tehranClock");
+  function tick() {
+    if (!clk) return;
+    try {
+      clk.textContent = "🕌 " + new Intl.DateTimeFormat("fa-IR", { hour: "2-digit", minute: "2-digit", second: "2-digit", timeZone: "Asia/Tehran" }).format(new Date()) + " تهران";
+    } catch (e) {}
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  var age = document.getElementById("pageAge");
+  var built = age ? Date.parse(age.getAttribute("data-built") || "") : NaN;
+  function ageTick() {
+    if (!age || isNaN(built)) return;
+    var s = Math.max(0, Math.round((Date.now() - built) / 1000));
+    age.textContent = "بازسازی: " + (s < 8 ? "همین حالا" : s < 60 ? s + " ثانیه پیش" : s < 3600 ? Math.round(s / 60) + " دقیقه پیش" : Math.round(s / 3600) + " ساعت پیش");
+  }
+  ageTick();
+  setInterval(ageTick, 5000);
+
   var btns = document.querySelectorAll(".fbtn[data-f]");
   var rows = document.querySelectorAll("#taskbody tr");
   btns.forEach(function (b) {
