@@ -109,3 +109,18 @@
 - cross-check دستهٔ abilities وکی (۱۳۸) با abilities.json · سینک ماشینی wowf (نیازمند تغییر ابزار) · هیروتلنت Forever (منبع نیافتنی)
 
 **گلوگاه:** ندارد
+
+## z-ai-utility — ۲۰۲۶-۱۰-۲۷ جلسهٔ ۱۹:۰۰-۱۹:۱۵ تهران (بیداری #۱۴ — سازگاری wowfa v0.2 + CSV کامل)
+
+**چه کردم:**
+- ✅ watchdog مسلح شد (۳ جاب 10/12/14 دقیقه‌ای + ضربان leader=10) · inbox راه‌اندازی شد و پیام نخوانده ack شد
+- 📦 wowfa-compat.md → نسخهٔ ۰.۲: TOC تک-Interface 120105 (لود عادی در کلاینت Forever نمی‌شود)، هیچ GetBuildInfoای در افزونه نیست (نقاط تزریق: Core.lua خطوط ۲۴ و ۳۱۰)، راه‌حل TOC دوم پیشنهاد شد (عدد Interface کلاینت Forever = TODO، حدسی ممنوع)، هم‌راستایی کامل با PR #94 (فلگ --build forever از data/forever/ بخواند)
+- 📦 forever-zones-dungeons.csv با پارس کامل شریک بازتولید شد: ۳۳ دنجن (۹ NEW) + ۳ رید (۲ NEW) + ۱ battleground = ۳۷ سطر با ستون‌های type/name/location/level_range/is_new/source/access_date
+- site-sections-map.md ردیف ۴ و ۶ به‌روز شد + خط آرتیفکتی زائد از جلسات قبل پاک شد
+
+**چه مانده (بیداری بعد):**
+- FOREVER_PLAN.md نهایی در wowfa با شاخهٔ جدا + PR (بعد از cross-check شریک) — محتوا آماده است
+- PR wowfa برای جداسازی Data/forever/ (طرح ۵ نکته‌ای wowfa-compat.md) — در نوبت توافق مدیر ارشد چون کد است
+- عدد Interface کلاینت Forever — نیاز به دسترسی کلاینت بتا (قابل انجام از اینجا نیست)
+
+**سؤال/گلوگاه:** ندارد — push آزاد است، دادهٔ شریک کامل بود.

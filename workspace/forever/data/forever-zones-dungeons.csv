@@ -1,5 +1,38 @@
-type,name,level_range,source,access_date
-dungeon,"Excavation Site Wetlands","24-29","warcraft.wiki.gg — صفحهٔ World of Warcraft: Forever (اسنپ‌شات شریک: data/wiki-forever-overview.json)","2026-10-27"
-dungeon,"City of Dalaran","28-33","همان منبع","2026-10-27"
-dungeon,"Alcaz Prison","48-53","همان منبع","2026-10-27"
-battleground,"Darkspear Islands","","همان منبع — رینج لول در منبع نیافتنی؛ بعداً از تحقیق مستقل تکمیل می‌شود","2026-10-27"
+type,name,location,level_range,is_new,source,access_date
+dungeon,The Hall of Thanes,Ironforge,13-18,yes,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Ragefire Chasm,Orgrimmar,13-19,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Ruins of Lordaeron,Undercity,15-22,yes,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Deadmines,Westfall,18-24,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Wailing Caverns,Barrens,19-25,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Shadowfang Keep,Silverpine Forest,23-29,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Excavation Site: Wetlands,Wetlands,24-29,yes,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Stormwind Stockade,Stormwind City,26-32,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,City of Dalaran,Alterac Mountains,28-33,yes,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Blackfathom Deeps,Ashenvale,25-31,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Razorfen Kraul,Barrens,30-36,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Gnomeregan,Dun Morogh,31-37,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Scarlet Monastery Graveyard,Tirisfal Glades,31-37,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Scarlet Monastery Library,Tirisfal Glades,34-40,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,The Drowned City,Stranglethorn Vale,35-40,yes,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Scarlet Monastery Armory,Tirisfal Glades,37-43,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Razorfen Downs,Barrens,38-44,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Scarlet Monastery Cathedral,Tirisfal Glades,39-45,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Krol'dok Stronghold,Riverglades,40-45,yes,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Uldaman,Badlands,44-50,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Zul'Farrak,Tanaris,45-51,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Alcaz Prison,Dustwallow Marsh,48-53,yes,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Maraudon,Desolace,48-54,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Temple of Atal'Hakkar (Sunken Temple),Swamp of Sorrows,52-58,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Blackrock Depths,Blackrock Mountain,52-60,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Warpwood Quarter (Dire Maul East),Feralas,55-60,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Blackmaw Hold,Azshara,55-60,yes,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Lower Blackrock Spire,Blackrock Mountain,55-60,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Capital Gardens (Dire Maul West),Feralas,58-60,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Scholomance,Western Plaguelands,58-60,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Shaper's Terrace,Un'Goro Crater,58-60,yes,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Stratholme,Eastern Plaguelands,58-60,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+dungeon,Gordok Commons (Dire Maul North),Feralas,58-60,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+raid,Barrow Deeps,Mount Hyjal,,yes,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+raid,Hyjal Summit,Mount Hyjal,,yes,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+raid,Onyxia's Lair,Dustwallow Marsh,,no,warcraft.wiki.gg — World of Warcraft: Forever (پارس شریک z-ai-apprentice: dungeons-raids-parsed.json),2026-10-27
+battleground,Darkspear Islands,,,yes,همان منبع ویکی — رینج لول در منبع نیافتنی؛ بعداً از تحقیق مستقل تکمیل می‌شود,2026-10-27

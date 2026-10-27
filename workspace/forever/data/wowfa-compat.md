@@ -1,4 +1,6 @@
-# تحلیل سازگاری WoWFA برای دادهٔ Forever (سهم z-ai-utility) — نسخهٔ ۰.۱
+# تحلیل سازگاری WoWFA برای دادهٔ Forever (سهم z-ai-utility) — نسخهٔ ۰.۲
+
+> v0.2 (۱۹:۱۰ تهران): یافته‌های TOC و بارگذاری اضافه شد — سؤال باز بخش ۵ نسخهٔ ۰.۱ بسته شد.
 
 > بخش ۶ نقشهٔ بخش‌های سایت · تحلیل از کلون `pvwvuow/wowfa` (دسترسی: ۲۰۲۶-۱۰-۲۷، HEAD آن ساعت)
 > دادهٔ مرجع build Forever: 1.60.1.70630 (خط Classic+، ۹ کلاس) — منبع: اسنپ‌شات ویکی شریک
@@ -21,7 +23,16 @@
 2. **انتخاب build در رانتایم:** در Core هنگام بارگذاری با `GetBuildInfo()` (یا کلید TOC/interface کلاینت) بین `WoWFA_Data` (live/retail) و `WoWFA_Data_Forever` سوئیچ شود — بدون شکستن رفتار فعلی.
 3. **پایپ‌لاین:** `tools/export_addon.py` فلگ `--build forever` بگیرد و از `data/forever/` (خروجی سهم apprentice در ساختار `data/live`-مانند) به `Data/forever/` اکسپورت کند + تگ build درست در هدر.
 4. **فایل‌های کلاس:** فقط ۹ کلاس کلاسیک در forever؛ فایل‌های evoker/dh از دستهٔ forever حذف.
-5. سؤال باز برای مدیر ارشد: آیا TOC فعلی در کلاینت Classic اصلاً لود می‌شود (Interface version)؟ بررسی TOC در تیک بعد (فایل .toc را در clone پیدا و ثبت می‌کنم).
+5. ~~سؤال باز: آیا TOC فعلی در کلاینت Classic لود می‌شود؟~~ → **پاسخ (v0.2، پایین):** نه به‌صورت عادی — TOC تک‌Interface است.
+
+## یافته‌های v0.2 — TOC و مسیر بارگذاری (مشاهدهٔ مستقیم کلون)
+
+6. `addon/WoWFA/WoWFA.toc` → `## Interface: 120105` (فقط Retail 12.1.5). در کلاینت Forever (خط Classic+ 1.x، build 1.60.1.70630) این عدد نمی‌خواند → افزونه «out of date» می‌شود و فقط با تیک دستی Load out of date AddOns لود می‌شود (رفتار استاندارد کلاینت‌های 1.x-era).
+7. **هیچ `GetBuildInfo`ای در کل افزونه نیست** (grep کل addon/) → شناسایی build در رانتایم صفر است؛ نکتهٔ ۲ طرح بالا (سوئیچ با GetBuildInfo در Core) تأیید می‌شود که باید از صفر اضافه شود.
+8. بارگذاری داده: `Core.lua` خط ۲۴ `WoWFA_Data = WoWFA_Data or {}` و خط ۳۱۰ lookup مستقیم `WoWFA_Data[spellId]` — نقطهٔ تزریق namespace exactly همین‌هاست؛ تغییری در Modules/Panel لازم ندارد.
+9. **راه‌حل TOC:** TOC دوم (مثل `WoWFA_Forever.toc` با Interface عدد کلاینت Forever + لود `Data/forever/`) — عدد دقیق Interface کلاینت Forever از اینجا قابل تأیید نیست (نیاز به کلاینت بتا یا مستند server-side)؛ حدسی ممنوع، در PR به‌عنوان TODO علامت می‌خورد.
+10. **پرچم عمیق‌تر برای مدیر ارشد:** کد افزونه (Core/Modules/Panel) با APIهای Retail 12.x نوشته شده؛ اجرای کامل روی کلاینت 1.x-era جدا از مسئلهٔ داده است و تست کلاینت می‌خواهد — خارج از سهم دادهٔ من، فقط ثبت شد.
+11. **هم‌راستایی با PR #94 شریک:** دادهٔ خام Forever الان در `wowfa/data/forever/` است (build.json، classes.json — ۹ کلاس × ۳۵ اسپک، raw/)؛ پس فلگ پیشنهادی پایپ‌لاین باید `--build forever` باشد که از `data/forever/` بخواند و به `Data/forever/` بریزد — هم‌ساختار با جریان فعلی live/ptr.
 
 ## منابع
 
