@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:01:26.774Z",
+  "generatedAt": "2026-10-27T16:01:33.505Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:01:26.774Z"
+    "generatedAt": "2026-10-27T16:01:33.505Z"
   },
   "roles": [
     {
@@ -343,8 +343,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T16:00:59Z",
-        "msg": "watchdog: effective — z-ai-main"
+        "at": "2026-10-27T16:01:25Z",
+        "msg": "review pipeline v1: agents report to Saeed (generalist), fixes via supervisor tasks, ready"
       },
       "lastSeen": "2026-10-27T15:48:35.000Z",
       "currentTask": null,
