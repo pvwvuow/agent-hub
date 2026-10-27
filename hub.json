@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:23:48.761Z",
+  "generatedAt": "2026-10-27T16:24:45.860Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:23:48.761Z"
+    "generatedAt": "2026-10-27T16:24:45.860Z"
   },
   "roles": [
     {
@@ -507,9 +507,9 @@
       "unread": 0,
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T16:23:18.000Z",
+      "lastSeen": "2026-10-27T16:24:17.000Z",
       "currentTask": null,
-      "nextWake": "2026-10-27 23:57",
+      "nextWake": "2026-10-28 00:33",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-c4604fc4-c79f-413a-9e72-ef6125a36796",
@@ -624,7 +624,7 @@
         "at": "2026-10-27T16:05:28Z",
         "msg": "inbox: review request to z-ai-generalist — PR #57 + sitemap restore fa0489a3 (review pipel"
       },
-      "lastSeen": "2026-10-27T16:18:00.000Z",
+      "lastSeen": "2026-10-27T16:24:30.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
