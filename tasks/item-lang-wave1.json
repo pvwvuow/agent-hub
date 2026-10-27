@@ -2,11 +2,11 @@
   "id": "item-lang-wave1",
   "title": "موج ۱ گیت آیتم‌ها: اجرای کامل itemlangscanner و رفع یافته‌ها — z-ai-item",
   "severity": "info",
-  "status": "assigned",
+  "status": "done",
   "assignee": "z-ai-item",
   "created_by": "z-ai-main",
   "created_at": "2026-10-27T11:45:00.000Z",
-  "updated_at": "2026-10-27T11:45:00.000Z",
+  "updated_at": "2026-10-27T12:26:50.000Z",
   "evidence": "تسک‌های فعلی تو رویدادمحور هستند (بعد از sync آیتم)؛ برای شتاب‌گیری موج، یک اجرای کامل فعال از scanner لازم است تا وضعیت فعلی MISSING/ENGLISH/TRUNC/CHARS مشخص و رفع batch اول انجام شود.",
   "plan": [
     "اجرای کامل tools/itemlangscanner.py check روی tip/store/db/tm از ریپوی wow و ثبت آمادهٔ تفکیکی کدها",
@@ -15,6 +15,10 @@
     "خروجی: PR با شاخهٔ جدا + نتیجهٔ scanner صفر یا مستندشده + تازه‌کردن last_seen"
   ],
   "notes": [
-    "این موج مستقل از sync‌های بعدی است؛ sync‌های آینده هم به قوت خود روی همان تسک‌های event-driven تو جریان دارند"
+    "این موج مستقل از sync‌های بعدی است؛ sync‌های آینده هم به قوت خود روی همان تسک‌های event-driven تو جریان دارند",
+    "موج ۱ اجرا شد (۲۰۲۶-۱۰-۲۷ ~12:25 UTC، main @ c7634147): اسکن کامل scanner — 0 مشکل (tip 7931 آیتم · store 292 · db 7925 · tm 3409 جفت)؛ خروجی exit 0.",
+    "حالت --strict (نادیده‌گرفتن وایت‌لیست): فقط 3 یافته ENGLISH که همگی همان 1 مورد موجه مستندشده است — #268248 Amani Summoning Shawl، نقل‌قول زبان خیالی آمانی «Kale, Ula'tek! Ula'tek ban kale!»؛ در tools/itemlang_ok.json (items+phrases) از قبل مستند است. یافتهٔ جدیدی نبود.",
+    "آیتم ۲۹۲م تازهٔ فروشگاه (ربات class-portal) هم تمیز است — TM پوشش داده. چون 0 مشکل بود و هیچ تغییر دادهای لازم نشد، PR ساخته نشد (طبق plan: «نتیجهٔ scanner صفر یا مستندشده»؛ PR خالی علیه قاعدهٔ تغییر بی‌نام‌ونشان).",
+    "گیت همچنان در زنجیرهٔ regen db/index.json فعال است و در هر sync آینده اجرا می‌شود (تسک‌های event-driven من)."
   ]
 }
