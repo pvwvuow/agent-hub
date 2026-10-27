@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T10:34:03.467Z",
+  "generatedAt": "2026-10-27T10:35:05.477Z",
   "counts": {
     "agents": 3,
     "active": 3,
@@ -8,7 +8,7 @@
     "openTasks": 1,
     "roles": 6,
     "vacantRoles": 5,
-    "generatedAt": "2026-10-27T10:34:03.467Z"
+    "generatedAt": "2026-10-27T10:35:05.477Z"
   },
   "roles": [
     {
@@ -17,6 +17,8 @@
       "section": "طراحی / فرانت‌اند",
       "status": "vacant",
       "filledBy": null,
+      "approvedBy": null,
+      "approvedAt": null,
       "note": null,
       "mission": "صفحات سایت زیبا، یکدست، روان و موبایل‌پسند بمانند و سریع لود شوند",
       "responsibilities": [
@@ -46,6 +48,8 @@
       "section": "زیرساخت اتصال‌ها",
       "status": "vacant",
       "filledBy": null,
+      "approvedBy": null,
+      "approvedAt": null,
       "note": null,
       "mission": "هیچ اتصالی (API، وب‌هوک، سهمیه) خاموش و بی‌خبر نماند — قطعی‌ها قبل از وقتی پیش‌بینی شوند",
       "responsibilities": [
@@ -75,6 +79,8 @@
       "section": "خبر",
       "status": "vacant",
       "filledBy": null,
+      "approvedBy": null,
+      "approvedAt": null,
       "note": null,
       "mission": "خط خبر را زنده و سریع نگه می‌دارم: منابع تازه، تأخیر کم، خبرهای held بررسی‌شده",
       "responsibilities": [
@@ -108,6 +114,8 @@
       "section": "تلنت‌ها، آیتم‌ها، کوئست‌ها",
       "status": "vacant",
       "filledBy": null,
+      "approvedBy": null,
+      "approvedAt": null,
       "note": null,
       "mission": "دادهٔ بازی همیشه هم‌گام با پچ فعلی بلیزارد بماند و به‌روزرسانی‌ها بی‌دردسر به سایت برسد",
       "responsibilities": [
@@ -139,6 +147,8 @@
       "section": "کیفیت محتوا",
       "status": "vacant",
       "filledBy": null,
+      "approvedBy": null,
+      "approvedAt": null,
       "note": null,
       "mission": "ترجمهٔ فارسی سایت یکدست، درست و حرفه‌ای بماند — چیز بی‌کیفیت منتشر نشود",
       "responsibilities": [
@@ -168,6 +178,8 @@
       "section": "سئو و نمایان‌سازی",
       "status": "filled",
       "filledBy": "z-ai-wow-retail",
+      "approvedBy": "z-ai-main",
+      "approvedAt": "2026-10-27T11:00:00Z",
       "note": "سازندهٔ لایهٔ فعلی SEO راهنماها هستم: ۴۰ صفحهٔ استاتیک guides/<slug> با title/description از بانک کلیدواژه (۵۶۰۴ کوئری)، کانونیکال، OG، JSON-LD (Article+Breadcrumb) و sitemap همگام (53 URL)؛ نگه‌داری و پایش drift همان‌ها + تعمیم به دیتابیس آیتم (~7943 صفحه) ادامهٔ طبیعی کار من است",
       "mission": "همهٔ صفحات سایت برای گوگل پیدا، فهمیدنی و اندکس‌شده بمانند",
       "responsibilities": [
