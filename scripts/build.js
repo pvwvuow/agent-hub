@@ -203,6 +203,15 @@ function assigneeName(id) {
   const ag = agentById.get(String(id));
   return ag ? ag.name || id : id;
 }
+
+const evidenceText = (t) => {
+  const e = t.evidence;
+  if (e == null) return "";
+  if (typeof e === "string") return e;
+  if (Array.isArray(e)) return e.map(String).join(" · ");
+  if (typeof e === "object") return Object.entries(e).map(([k, v]) => `${k}: ${typeof v === "object" ? JSON.stringify(v) : v}`).join(" · ");
+  return String(e);
+};
 for (const t of tasks) {
   if (t.__broken) continue;
   t.__assignees = assigneesOf(t);
@@ -273,7 +282,7 @@ if (openTasks.length) {
     const sev = SEV_FA[t.severity] ? `${t.severity === "critical" ? "🔴" : t.severity === "warning" ? "🟠" : "🔵"} ${SEV_FA[t.severity]}` : "—";
     const st = TASK_STATUS_FA[t.status] || t.status || "—";
     const asg = t.__assignees.length ? t.__assignees.map(assigneeName).join("، ") : "— بی‌صاحب";
-    md += `| **${title}** | ${sev} | ${st} | ${asg} | ${String(t.evidence || "").slice(0, 180)} |\n`;
+    md += `| **${title}** | ${sev} | ${st} | ${asg} | ${evidenceText(t).slice(0, 180)} |\n`;
   }
 } else {
   md += "_تسکی ثبت نشده است._\n";
@@ -439,7 +448,7 @@ function taskRow(t) {
   const doneCls = ["done", "rejected"].includes(t.status) ? " done-row" : "";
   return `
     <tr data-st="${["open", "assigned", "in-progress"].includes(t.status) ? "open" : "done"}" class="${doneCls.trim()}">
-      <td><b>${esc(t.title)}</b>${t.evidence ? `<div class="t-desc">${esc(String(t.evidence).slice(0, 240))}</div>` : ""}</td>
+      <td><b>${esc(t.title)}</b>${t.evidence ? `<div class="t-desc">${esc(evidenceText(t).slice(0, 240))}</div>` : ""}</td>
       <td><span class="badge ${sevCls}">${esc(SEV_FA[t.severity] || t.severity || "—")}</span></td>
       <td><span class="badge">${esc(TASK_STATUS_FA[t.status] || t.status || "—")}</span></td>
       <td>${asg}</td>
