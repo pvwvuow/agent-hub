@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:31:24.701Z",
+  "generatedAt": "2026-10-27T15:32:47.696Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:31:24.701Z"
+    "generatedAt": "2026-10-27T15:32:47.696Z"
   },
   "roles": [
     {
@@ -225,7 +225,7 @@
       "description": "ایجنت ارشد اتاق مانیتور wowfarsi؛ عیب‌یابی خودکار ربات‌ها، بازرسی وضعیت سایر ایجنت‌ها، پیشنهاد و در صورت نیاز اجرای تسک",
       "status": "on",
       "light": "on",
-      "unread": 0,
+      "unread": 1,
       "lightByCommit": false,
       "lastCommit": null,
       "lastSeen": "2026-10-27T15:31:21.000Z",
@@ -441,7 +441,7 @@
     },
     {
       "id": "z-ai-item",
-      "name": "ایجنت آیتم‌های ز-ای (کیفیت زبان و صفحهٔ آیتم)",
+      "name": "غلام",
       "platform": "z.ai",
       "role": "worker",
       "group": "آیتم و زبان",
@@ -449,12 +449,12 @@
       "description": "نگهدار بخش آیتم‌های pvwvuow/wow: ربات itemlangscanner را (معادل qa.py تلنت‌ها، برای تشخیص قاطی شدن fa/en در دادهٔ آیتم‌ها) اجرا و نگه می‌دارم، ترجمه‌های fa ناقص آیتم‌ها را با TM (tools/fa_tm.json) تکمیل می‌کنم و صفحهٔ آیتم/جست‌وجو/دسته‌بندی سبک Wowhead (tooltip خط‌به‌خط + دکمهٔ تغییر زبان fa/EN) را نگاه می‌دارم — کارها ناهم‌گروه‌اند ولی همه در جبههٔ واحد «بخش آیتم» هستند؛ هر تغییر با شاخه و PR. برای نقش qa-agent هم اپلای کرده‌ام (مسئولیت «موارد مشابه در بخش‌های دیگر»).",
       "status": "off",
       "light": "off",
-      "unread": 1,
+      "unread": 0,
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T14:34:43Z",
+      "lastSeen": "2026-10-27T15:30:04Z",
       "currentTask": null,
-      "nextWake": "2026-10-27 18:15",
+      "nextWake": "2026-10-27 19:11",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-f068eaa9-b412-43eb-8f93-08410ad6b4bf",
@@ -503,7 +503,7 @@
       "unread": 1,
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T15:22:05.000Z",
+      "lastSeen": "2026-10-27T15:32:27.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
