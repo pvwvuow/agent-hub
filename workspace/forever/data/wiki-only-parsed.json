@@ -1,0 +1,453 @@
+{
+ "meta": {
+  "source": "warcraft.wiki.gg api.php?action=parse (per page, redirects=1)",
+  "fetched_at": "2026-10-27T16:13:47Z",
+  "count": 37,
+  "note": "صفحات خارج از جدول کلاس‌ها: racial/legacy talent/pet/proc — از crosscheck وکی — keys normalized: spec/class/race"
+ },
+ "pages": [
+  {
+   "page": "Bartering (legacy talent)",
+   "infobox": {
+    "spec": "Professions",
+    "type": "legacy"
+   },
+   "summary": [
+    "Bartering is a [[Legacy Tree|legacy talent]] in the Professions tree."
+   ],
+   "wt_len": 428
+  },
+  {
+   "page": "Big Game Hunter (racial)",
+   "infobox": {
+    "race": "Dwarf",
+    "type": "racial"
+   },
+   "summary": [
+    "Big Game Hunter is a [[racial trait]] for  [[dwarf (playable)|dwarf]] characters."
+   ],
+   "wt_len": 452
+  },
+  {
+   "page": "Bountiful Harvest (legacy talent)",
+   "infobox": {
+    "spec": "Professions",
+    "type": "legacy"
+   },
+   "summary": [
+    "Bountiful Harvest is a [[Legacy Tree|legacy talent]] in the Professions tree."
+   ],
+   "wt_len": 483
+  },
+  {
+   "page": "Dedicated Study",
+   "infobox": {
+    "spec": "Professions",
+    "type": "legacy",
+    "school": "Physical",
+    "cooldown": "23 hours"
+   },
+   "summary": [
+    "Dedicated Study is a [[Legacy Tree|legacy talent]] in the Professions tree."
+   ],
+   "wt_len": 676
+  },
+  {
+   "page": "Diplomat (legacy talent)",
+   "infobox": {
+    "spec": "Resourcefulness",
+    "type": "legacy"
+   },
+   "summary": [
+    "Diplomat is a [[Legacy Tree|legacy talent]] in the Resourcefulness tree."
+   ],
+   "wt_len": 424
+  },
+  {
+   "page": "Dismember",
+   "infobox": {
+    "level": "12",
+    "school": "Physical",
+    "range": "Melee",
+    "cost": "35 Focus",
+    "cooldown": "15 seconds"
+   },
+   "summary": [
+    "Dismember is a pet ability learned by [[Crocolisk (pet family)|Crocolisks]]."
+   ],
+   "wt_len": 660
+  },
+  {
+   "page": "Elemental Insight",
+   "infobox": {
+    "race": "Skyborne",
+    "type": "racial"
+   },
+   "summary": [
+    "Elemental Insight is a passive [[racial ability]] for [[Skyborne (playable)|Skyborne]].",
+    "[[Category:Racial traits]]"
+   ],
+   "wt_len": 463
+  },
+  {
+   "page": "Elune's Light (racial)",
+   "infobox": {
+    "race": "Night elf",
+    "type": "racial",
+    "school": "Physical",
+    "cooldown": "3 minutes"
+   },
+   "summary": [
+    "Elune's Light is an active [[racial ability]] for  [[night elf (playable)|night elf]] characters."
+   ],
+   "wt_len": 644
+  },
+  {
+   "page": "Eureka!",
+   "infobox": {
+    "race": "Gnome",
+    "type": "racial",
+    "school": "Nature",
+    "cooldown": "2 minutes"
+   },
+   "summary": [
+    "Eureka! is an active [[racial ability]] for  [[gnome (playable)|gnome]] characters."
+   ],
+   "wt_len": 761
+  },
+  {
+   "page": "Field Guide (legacy talent)",
+   "infobox": {
+    "spec": "Adventure",
+    "type": "legacy"
+   },
+   "summary": [
+    "Field Guide is a [[Legacy Tree|legacy talent]] in the Adventure tree."
+   ],
+   "wt_len": 447
+  },
+  {
+   "page": "Field Medicine",
+   "infobox": {
+    "spec": "Adventure",
+    "type": "legacy"
+   },
+   "summary": [
+    "Field Medicine is a [[Legacy Tree|legacy talent]] in the Adventure tree."
+   ],
+   "wt_len": 485
+  },
+  {
+   "page": "For Great Honor (legacy talent)",
+   "infobox": {
+    "spec": "Resourcefulness",
+    "type": "legacy"
+   },
+   "summary": [
+    "For Great Honor is a [[Legacy Tree|legacy talent]] in the Resourcefulness tree."
+   ],
+   "wt_len": 462
+  },
+  {
+   "page": "Frequent Flier",
+   "infobox": {
+    "spec": "Adventure",
+    "type": "legacy"
+   },
+   "summary": [
+    "Frequent Flier is a [[Legacy Tree|legacy talent]] in the Adventure tree."
+   ],
+   "wt_len": 487
+  },
+  {
+   "page": "Gourmand (legacy talent)",
+   "infobox": {
+    "spec": "Resourcefulness",
+    "type": "legacy"
+   },
+   "summary": [
+    "Gourmand is a [[Legacy Tree|legacy talent]] in the Resourcefulness tree."
+   ],
+   "wt_len": 462
+  },
+  {
+   "page": "High Alert",
+   "infobox": {
+    "spec": "Adventure",
+    "type": "legacy"
+   },
+   "summary": [
+    "High Alert is a [[Legacy Tree|legacy talent]] in the Adventure tree."
+   ],
+   "wt_len": 486
+  },
+  {
+   "page": "Luremaster",
+   "infobox": {
+    "spec": "Professions",
+    "type": "legacy"
+   },
+   "summary": [
+    "Luremaster is a [[Legacy Tree|legacy talent]] in the Professions tree."
+   ],
+   "wt_len": 423
+  },
+  {
+   "page": "Master Chef",
+   "infobox": {
+    "spec": "Professions",
+    "type": "legacy"
+   },
+   "summary": [
+    "Master Chef is a [[Legacy Tree|legacy talent]] in the Professions tree."
+   ],
+   "wt_len": 432
+  },
+  {
+   "page": "Mine!",
+   "infobox": {
+    "level": "10",
+    "school": "Physical",
+    "range": "Melee",
+    "cost": "20 Focus",
+    "cooldown": "1.5 minutes"
+   },
+   "summary": [
+    "Mine! is a pet ability learned by [[Bird of Prey|Birds of Prey]]."
+   ],
+   "wt_len": 593
+  },
+  {
+   "page": "Performance Bonus",
+   "infobox": {
+    "spec": "Professions",
+    "type": "legacy"
+   },
+   "summary": [
+    "Performance Bonus is a [[Legacy Tree|legacy talent]] in the Professions tree."
+   ],
+   "wt_len": 573
+  },
+  {
+   "page": "Permanence",
+   "infobox": {
+    "spec": "Resourcefulness",
+    "type": "legacy"
+   },
+   "summary": [
+    "Permanence is a [[Legacy Tree|legacy talent]] in the Resourcefulness tree."
+   ],
+   "wt_len": 588
+  },
+  {
+   "page": "Pinch (pet ability)",
+   "infobox": {
+    "level": "12",
+    "school": "Physical",
+    "range": "Melee",
+    "cost": "50 Focus",
+    "cooldown": "30 seconds"
+   },
+   "summary": [
+    "Pinch is a pet ability learned by [[Crab (pet family)|Crabs]]."
+   ],
+   "wt_len": 629
+  },
+  {
+   "page": "Plainsrunning",
+   "infobox": {
+    "race": "Tauren",
+    "type": "racial"
+   },
+   "summary": [
+    "Plainsrunning is a [[tauren (playable)|tauren]] racial trait that increases speed over time while moving.",
+    "Reasons for its removal likely included the following issues:",
+    "The idea of a racial mount speed ability was revisited more successfully in  with the [[Worgen (playable)|worgen]] racial [[Running Wild]]. Plainsrunning itself was later reworked as a tauren racial trait in ."
+   ],
+   "wt_len": 2419
+  },
+  {
+   "page": "Rapid Regeneration",
+   "infobox": {
+    "race": "Troll",
+    "type": "racial",
+    "school": "Physical",
+    "cooldown": "3 minutes"
+   },
+   "summary": [
+    "Rapid Regeneration is an active [[racial ability]] for  [[troll (playable)|troll]] characters.",
+    "[[Category:Jungle trolls]]"
+   ],
+   "wt_len": 614
+  },
+  {
+   "page": "Read Ley Line",
+   "infobox": {
+    "race": "Skyborne",
+    "type": "racial",
+    "school": "Arcane",
+    "cooldown": "2 minutes"
+   },
+   "summary": [
+    "[[File:Ley Line (object).png|thumb|Ley Line.]]",
+    "Read Ley Line is an active [[racial ability]] for [[Alliance]] [[Skyborne (playable)|Skyborne]], granting increased health and mana regeneration for a time. If used near a [[Ley Line (object)|Ley Line]], the duration will be increased. When near a Ley Line, the following buff will be active:",
+    "The Horde equivalent is [[Skysight]]."
+   ],
+   "wt_len": 1136
+  },
+  {
+   "page": "Reagent Economy",
+   "infobox": {
+    "spec": "Resourcefulness",
+    "type": "legacy"
+   },
+   "summary": [
+    "Reagent Economy is a [[Legacy Tree|legacy talent]] in the Resourcefulness tree."
+   ],
+   "wt_len": 539
+  },
+  {
+   "page": "Reinforce (legacy talent)",
+   "infobox": {
+    "spec": "Resourcefulness",
+    "type": "legacy"
+   },
+   "summary": [
+    "Reinforce is a [[Legacy Tree|legacy talent]] in the Resourcefulness tree."
+   ],
+   "wt_len": 440
+  },
+  {
+   "page": "Ruthless (human racial)",
+   "infobox": {
+    "race": "Human",
+    "type": "racial"
+   },
+   "summary": [
+    "Ruthless is a [[racial trait]] for  [[human (playable)|human]] characters.",
+    "It reuses the ID of the  racial [[Sword Specialization (human racial)]]."
+   ],
+   "wt_len": 551
+  },
+  {
+   "page": "Shatter Curse",
+   "infobox": {
+    "race": "Orc",
+    "type": "racial",
+    "school": "Physical",
+    "cooldown": "3 minutes"
+   },
+   "summary": [
+    "Shatter Curse is an active [[racial ability]] for  [[orc (playable)|orc]] characters."
+   ],
+   "wt_len": 556
+  },
+  {
+   "page": "Skysight",
+   "infobox": {
+    "race": "Skyborne",
+    "type": "racial",
+    "school": "Nature",
+    "cooldown": "2 minutes"
+   },
+   "summary": [
+    "Skysight is an active [[racial ability]] for [[Horde]] [[Skyborne (playable)|Skyborne]]. The Alliance equivalent is [[Read Ley Line]]."
+   ],
+   "wt_len": 827
+  },
+  {
+   "page": "Study",
+   "infobox": {
+    "level": "6",
+    "school": "Physical",
+    "cooldown": "1 hour"
+   },
+   "summary": [
+    "Study is taught to [[mage]]s who return a [[library book]] to [[Garion Wendell]] inside the [[Mage Tower]] of [[Stormwind City]], or [[Owen Thadd]] in the [[Magic Quarter]] of [[Undercity]].",
+    "Using the ability creates a [[Bundle of Scrolls]], containing a decrypted [[Comprehend Scroll]] scroll."
+   ],
+   "wt_len": 719
+  },
+  {
+   "page": "Talented (legacy talent)",
+   "infobox": {
+    "spec": "Adventure",
+    "type": "legacy"
+   },
+   "summary": [
+    "Talented is a [[Legacy Tree|legacy talent]] in the Adventure tree."
+   ],
+   "wt_len": 574
+  },
+  {
+   "page": "The Quick and the Dead (legacy talent)",
+   "infobox": {
+    "spec": "Resourcefulness",
+    "type": "legacy"
+   },
+   "summary": [
+    "The Quick and the Dead is a [[Legacy Tree|legacy talent]] in the Resourcefulness tree."
+   ],
+   "wt_len": 873
+  },
+  {
+   "page": "Thrill of Adventure",
+   "infobox": {
+    "spec": "Adventure",
+    "type": "legacy"
+   },
+   "summary": [
+    "Thrill of Adventure is a [[Legacy Tree|legacy talent]] in the Adventure tree."
+   ],
+   "wt_len": 541
+  },
+  {
+   "page": "Walk on Air",
+   "infobox": {
+    "race": "Skyborne",
+    "type": "racial",
+    "school": "Nature",
+    "cooldown": "1.5 minutes"
+   },
+   "summary": [
+    "Walk on Air is an active [[racial ability]] for [[Skyborne (playable)|Skyborne]].",
+    "[[Category:Racial traits]]",
+    "[[Category:Player slow fall abilities]]"
+   ],
+   "wt_len": 616
+  },
+  {
+   "page": "Well Rested",
+   "infobox": {
+    "spec": "Adventure",
+    "type": "legacy"
+   },
+   "summary": [
+    "Well Rested is a [[Legacy Tree|legacy talent]] in the Adventure tree."
+   ],
+   "wt_len": 456
+  },
+  {
+   "page": "Wind Blessed",
+   "infobox": {
+    "race": "Skyborne",
+    "type": "racial"
+   },
+   "summary": [
+    "Wind Blessed is a passive [[racial ability]] for [[Skyborne (playable)|Skyborne]]."
+   ],
+   "wt_len": 419
+  },
+  {
+   "page": "Working Overtime (legacy talent)",
+   "infobox": {
+    "spec": "Professions",
+    "type": "legacy"
+   },
+   "summary": [
+    "Working Overtime is a [[Legacy Tree|legacy talent]] in the Professions tree."
+   ],
+   "wt_len": 523
+  }
+ ]
+}

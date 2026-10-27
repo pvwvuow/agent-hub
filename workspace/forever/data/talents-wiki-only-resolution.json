@@ -1,0 +1,479 @@
+{
+ "meta": {
+  "note": "۱۱۷ تلنت فقط-ویکی نهایی: ۱۰۸ نام اسپل در SpellName وکو هست (ولی ردیف Talent ندارند یا اسم رنک فرق دارد)؛ ۱۰ هیچ ردی در db2 ندارند",
+  "in_spellname_count": 107,
+  "nowhere_in_db2_count": 10
+ },
+ "in_spellname": [
+  {
+   "class": "druid",
+   "name": "berserk"
+  },
+  {
+   "class": "druid",
+   "name": "eclipse"
+  },
+  {
+   "class": "druid",
+   "name": "feral charge"
+  },
+  {
+   "class": "druid",
+   "name": "genesis"
+  },
+  {
+   "class": "druid",
+   "name": "gift of the earthmother"
+  },
+  {
+   "class": "druid",
+   "name": "improved shifting power"
+  },
+  {
+   "class": "druid",
+   "name": "living spirit"
+  },
+  {
+   "class": "druid",
+   "name": "natural instinct"
+  },
+  {
+   "class": "druid",
+   "name": "natural reaction"
+  },
+  {
+   "class": "druid",
+   "name": "natures majesty"
+  },
+  {
+   "class": "druid",
+   "name": "natures splendor"
+  },
+  {
+   "class": "druid",
+   "name": "primal bite"
+  },
+  {
+   "class": "druid",
+   "name": "shifting power"
+  },
+  {
+   "class": "druid",
+   "name": "wild growth"
+  },
+  {
+   "class": "hunter",
+   "name": "careful aim"
+  },
+  {
+   "class": "hunter",
+   "name": "expose prey"
+  },
+  {
+   "class": "hunter",
+   "name": "focused fire"
+  },
+  {
+   "class": "hunter",
+   "name": "improved stings"
+  },
+  {
+   "class": "hunter",
+   "name": "lacerating strikes"
+  },
+  {
+   "class": "hunter",
+   "name": "predators edge"
+  },
+  {
+   "class": "hunter",
+   "name": "rapid killing"
+  },
+  {
+   "class": "hunter",
+   "name": "rapid recuperation"
+  },
+  {
+   "class": "hunter",
+   "name": "resourcefulness"
+  },
+  {
+   "class": "hunter",
+   "name": "sniper shot"
+  },
+  {
+   "class": "hunter",
+   "name": "strider kick"
+  },
+  {
+   "class": "hunter",
+   "name": "summon hawk"
+  },
+  {
+   "class": "hunter",
+   "name": "survivalists discipline"
+  },
+  {
+   "class": "mage",
+   "name": "arcane blast"
+  },
+  {
+   "class": "mage",
+   "name": "arcane wrath"
+  },
+  {
+   "class": "mage",
+   "name": "fingers of frost"
+  },
+  {
+   "class": "mage",
+   "name": "ice lance"
+  },
+  {
+   "class": "mage",
+   "name": "missile barrage"
+  },
+  {
+   "class": "paladin",
+   "name": "champion of the light"
+  },
+  {
+   "class": "paladin",
+   "name": "divine precision"
+  },
+  {
+   "class": "paladin",
+   "name": "holy conduit"
+  },
+  {
+   "class": "paladin",
+   "name": "improved seal of fury"
+  },
+  {
+   "class": "paladin",
+   "name": "infusion of light"
+  },
+  {
+   "class": "paladin",
+   "name": "instrument of law"
+  },
+  {
+   "class": "paladin",
+   "name": "iron creed"
+  },
+  {
+   "class": "paladin",
+   "name": "lights vigil"
+  },
+  {
+   "class": "paladin",
+   "name": "purifying power"
+  },
+  {
+   "class": "paladin",
+   "name": "reverence"
+  },
+  {
+   "class": "paladin",
+   "name": "sacred arbiter"
+  },
+  {
+   "class": "paladin",
+   "name": "sacred duty"
+  },
+  {
+   "class": "paladin",
+   "name": "templars bulwark"
+  },
+  {
+   "class": "paladin",
+   "name": "twist of light"
+  },
+  {
+   "class": "paladin",
+   "name": "voice of truth"
+  },
+  {
+   "class": "priest",
+   "name": "binding heal"
+  },
+  {
+   "class": "priest",
+   "name": "dark inspiration"
+  },
+  {
+   "class": "priest",
+   "name": "devouring contagion"
+  },
+  {
+   "class": "priest",
+   "name": "divine aegis"
+  },
+  {
+   "class": "priest",
+   "name": "early demise"
+  },
+  {
+   "class": "priest",
+   "name": "holy precision"
+  },
+  {
+   "class": "priest",
+   "name": "improved mind flay"
+  },
+  {
+   "class": "priest",
+   "name": "litany of light"
+  },
+  {
+   "class": "priest",
+   "name": "penance"
+  },
+  {
+   "class": "priest",
+   "name": "power in light"
+  },
+  {
+   "class": "priest",
+   "name": "prayer of mending"
+  },
+  {
+   "class": "priest",
+   "name": "renewed hope"
+  },
+  {
+   "class": "priest",
+   "name": "soul warding"
+  },
+  {
+   "class": "priest",
+   "name": "twin disciplines"
+  },
+  {
+   "class": "rogue",
+   "name": "cutthroat"
+  },
+  {
+   "class": "rogue",
+   "name": "dirty tricks"
+  },
+  {
+   "class": "rogue",
+   "name": "flawless execution"
+  },
+  {
+   "class": "rogue",
+   "name": "improved distract"
+  },
+  {
+   "class": "rogue",
+   "name": "mutilate"
+  },
+  {
+   "class": "rogue",
+   "name": "puncturing wounds"
+  },
+  {
+   "class": "rogue",
+   "name": "quietus"
+  },
+  {
+   "class": "rogue",
+   "name": "thousand cuts"
+  },
+  {
+   "class": "rogue",
+   "name": "venom"
+  },
+  {
+   "class": "shaman",
+   "name": "earthbound"
+  },
+  {
+   "class": "shaman",
+   "name": "improved stormstrike"
+  },
+  {
+   "class": "shaman",
+   "name": "lava burst"
+  },
+  {
+   "class": "shaman",
+   "name": "lightning overload"
+  },
+  {
+   "class": "shaman",
+   "name": "maelstrom weapon"
+  },
+  {
+   "class": "shaman",
+   "name": "mental dexterity"
+  },
+  {
+   "class": "shaman",
+   "name": "mental quickness"
+  },
+  {
+   "class": "shaman",
+   "name": "mindfulness"
+  },
+  {
+   "class": "shaman",
+   "name": "rage of the farseer"
+  },
+  {
+   "class": "shaman",
+   "name": "riptide"
+  },
+  {
+   "class": "shaman",
+   "name": "shamanistic focus"
+  },
+  {
+   "class": "shaman",
+   "name": "water shield"
+  },
+  {
+   "class": "warlock",
+   "name": "bane of havoc"
+  },
+  {
+   "class": "warlock",
+   "name": "decimation"
+  },
+  {
+   "class": "warlock",
+   "name": "demonic aegis"
+  },
+  {
+   "class": "warlock",
+   "name": "demonic brand"
+  },
+  {
+   "class": "warlock",
+   "name": "demonic energies"
+  },
+  {
+   "class": "warlock",
+   "name": "demonic pact"
+  },
+  {
+   "class": "warlock",
+   "name": "fire and brimstone"
+  },
+  {
+   "class": "warlock",
+   "name": "improved drains"
+  },
+  {
+   "class": "warlock",
+   "name": "improved felhunter"
+  },
+  {
+   "class": "warlock",
+   "name": "incinerate"
+  },
+  {
+   "class": "warlock",
+   "name": "malevolence"
+  },
+  {
+   "class": "warlock",
+   "name": "molten skin"
+  },
+  {
+   "class": "warlock",
+   "name": "pandemic"
+  },
+  {
+   "class": "warlock",
+   "name": "shadow and flame"
+  },
+  {
+   "class": "warlock",
+   "name": "soul harvest"
+  },
+  {
+   "class": "warlock",
+   "name": "wrack"
+  },
+  {
+   "class": "warrior",
+   "name": "bloodthrill"
+  },
+  {
+   "class": "warrior",
+   "name": "focused rage"
+  },
+  {
+   "class": "warrior",
+   "name": "furious precision"
+  },
+  {
+   "class": "warrior",
+   "name": "gore drinker"
+  },
+  {
+   "class": "warrior",
+   "name": "lingering rage"
+  },
+  {
+   "class": "warrior",
+   "name": "master of defense"
+  },
+  {
+   "class": "warrior",
+   "name": "raging blows"
+  },
+  {
+   "class": "warrior",
+   "name": "spearing strike"
+  },
+  {
+   "class": "warrior",
+   "name": "vanguard"
+  }
+ ],
+ "nowhere_in_db2": [
+  {
+   "class": "druid",
+   "name": "overgrowth forever"
+  },
+  {
+   "class": "druid",
+   "name": "rend and tear wrath"
+  },
+  {
+   "class": "hunter",
+   "name": "lone wolf forever"
+  },
+  {
+   "class": "mage",
+   "name": "heating up forever"
+  },
+  {
+   "class": "paladin",
+   "name": "consecrated ground forever"
+  },
+  {
+   "class": "paladin",
+   "name": "sanctified judgment"
+  },
+  {
+   "class": "paladin",
+   "name": "swift judgment"
+  },
+  {
+   "class": "rogue",
+   "name": "hack and slash forever"
+  },
+  {
+   "class": "warlock",
+   "name": "demonic knowledge bc"
+  },
+  {
+   "class": "warrior",
+   "name": "boundless rage"
+  }
+ ]
+}

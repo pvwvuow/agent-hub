@@ -11,23 +11,19 @@
    "matched": 32,
    "wiki_only": [
     "berserk",
-    "blood frenzy classic",
     "eclipse",
     "feral charge",
     "genesis",
     "gift of the earthmother",
-    "improved regrowth classic",
     "improved shifting power",
     "living spirit",
     "natural instinct",
     "natural reaction",
-    "natures grace classic",
     "natures majesty",
     "natures splendor",
     "overgrowth forever",
     "primal bite",
-    "rend and tear wrath classic",
-    "savage fury classic",
+    "rend and tear wrath",
     "shifting power",
     "wild growth"
    ],
@@ -45,7 +41,8 @@
     "omen of clarity",
     "overgrowth",
     "savage fury"
-   ]
+   ],
+   "matched_all_ranks": 36
   },
   "hunter": {
    "wiki_count": 50,
@@ -54,12 +51,10 @@
    "wiki_only": [
     "careful aim",
     "expose prey",
-    "ferocity classic",
     "focused fire",
     "improved stings",
     "lacerating strikes",
     "lone wolf forever",
-    "pathfinding classic",
     "predators edge",
     "rapid killing",
     "rapid recuperation",
@@ -80,7 +75,8 @@
     "killer instinct",
     "pathfinding",
     "thick hide"
-   ]
+   ],
+   "matched_all_ranks": 36
   },
   "mage": {
    "wiki_count": 55,
@@ -88,15 +84,10 @@
    "matched": 44,
    "wiki_only": [
     "arcane blast",
-    "arcane mind classic",
-    "arcane power classic",
     "arcane wrath",
     "fingers of frost",
     "heating up forever",
     "ice lance",
-    "ignite classic",
-    "improved flamestrike classic",
-    "improved frost nova classic",
     "missile barrage"
    ],
    "db2_only": [
@@ -105,7 +96,8 @@
     "ignite",
     "improved flamestrike",
     "improved frost nova"
-   ]
+   ],
+   "matched_all_ranks": 49
   },
   "paladin": {
    "wiki_count": 50,
@@ -122,7 +114,6 @@
     "iron creed",
     "lights vigil",
     "purifying power",
-    "redoubt classic",
     "reverence",
     "sacred arbiter",
     "sacred duty",
@@ -144,7 +135,8 @@
     "lasting judgement",
     "redoubt",
     "sanctity aura"
-   ]
+   ],
+   "matched_all_ranks": 32
   },
   "priest": {
    "wiki_count": 52,
@@ -159,12 +151,10 @@
     "holy precision",
     "improved mind flay",
     "litany of light",
-    "mental agility classic",
     "penance",
     "power in light",
     "prayer of mending",
     "renewed hope",
-    "searing light classic",
     "soul warding",
     "twin disciplines"
    ],
@@ -179,7 +169,8 @@
     "searing light",
     "shadow affinity",
     "unbreakable will"
-   ]
+   ],
+   "matched_all_ranks": 38
   },
   "rogue": {
    "wiki_count": 53,
@@ -190,14 +181,10 @@
     "dirty tricks",
     "flawless execution",
     "hack and slash forever",
-    "improved ambush classic",
     "improved distract",
-    "improved sprint classic",
     "mutilate",
-    "opportunity classic",
     "puncturing wounds",
     "quietus",
-    "riposte classic",
     "thousand cuts",
     "venom"
    ],
@@ -211,7 +198,8 @@
     "opportunity",
     "riposte",
     "sleight of hand"
-   ]
+   ],
+   "matched_all_ranks": 43
   },
   "shaman": {
    "wiki_count": 50,
@@ -219,8 +207,6 @@
    "matched": 34,
    "wiki_only": [
     "earthbound",
-    "elemental weapons classic",
-    "eye of the storm classic",
     "improved stormstrike",
     "lava burst",
     "lightning overload",
@@ -228,11 +214,9 @@
     "mental dexterity",
     "mental quickness",
     "mindfulness",
-    "purification classic",
     "rage of the farseer",
     "riptide",
     "shamanistic focus",
-    "totemic focus classic",
     "water shield"
    ],
    "db2_only": [
@@ -247,7 +231,8 @@
     "totemic mastery",
     "twohanded axes and maces",
     "weapon mastery"
-   ]
+   ],
+   "matched_all_ranks": 38
   },
   "warlock": {
    "wiki_count": 52,
@@ -255,23 +240,19 @@
    "matched": 31,
    "wiki_only": [
     "bane of havoc",
-    "cataclysm classic",
     "decimation",
     "demonic aegis",
     "demonic brand",
     "demonic energies",
-    "demonic knowledge bc classic",
+    "demonic knowledge bc",
     "demonic pact",
     "fire and brimstone",
     "improved drains",
     "improved felhunter",
-    "improved shadow bolt classic",
     "incinerate",
     "malevolence",
-    "master summoner classic",
     "molten skin",
     "pandemic",
-    "pyroclasm",
     "shadow and flame",
     "soul harvest",
     "wrack"
@@ -292,32 +273,23 @@
     "improved spellstone",
     "improved subjugate demon",
     "master summoner"
-   ]
+   ],
+   "matched_all_ranks": 35
   },
   "warrior": {
    "wiki_count": 53,
    "db2_count": 47,
    "matched": 33,
    "wiki_only": [
-    "anger management classic",
     "bloodthrill",
-    "booming voice classic",
     "boundless rage",
-    "cruelty classic",
-    "defiance",
-    "dual wield specialization classic",
     "focused rage",
     "furious precision",
     "gore drinker",
-    "impale classic",
-    "improved overpower classic",
-    "iron will",
     "lingering rage",
     "master of defense",
     "raging blows",
-    "shield specialization classic",
     "spearing strike",
-    "twohanded weapon specialization classic",
     "vanguard"
    ],
    "db2_only": [
@@ -335,7 +307,8 @@
     "shield specialization",
     "toughness",
     "twohanded weapon specialization"
-   ]
+   ],
+   "matched_all_ranks": 43
   }
  },
  "abilities": {
