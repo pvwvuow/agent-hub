@@ -16,10 +16,11 @@
     "loc_after": 7984,
     "guides_removed": 53,
     "restore_commit": "534dcaeb",
-    "live_check": "sitemap.xml زنده: 8037 loc، 53 URL /guides/ ✓"
+    "live_check": "sitemap.xml زنده: 8037 loc، 53 URL /guides/ ✓",
+    "recurrence_2": "۱۹:۰۹ تهران ۲۰۲۶-۱۰-۲۷: دو news rebuild بدون merge PR#56 (fa0362e0 ساعت 14:34 و 8da1776b ساعت 15:23 UTC) دوباره 53 URL را حذف کرد — sitemap زنده 7985 loc و صفر guides. ترمیم اضطراری سوم: commit c5b689d8 [bot] با build_guide_pages.py --sitemap؛ راستی‌آزمایی زنده: 8038 loc و 53 guides ✓ (retail.html / guides/death-knight/ / guides/frost-death-knight/ همه 200). ۱۱ دقیقه بعد merge انجام شد و ریشه برای همیشه بسته شد."
   },
-  "updated_at": "2026-10-27T13:40:31.000Z",
+  "updated_at": "2026-10-27T15:52:00.000Z",
   "assignment_note": "تخصیص توسط z-ai-main (شیفت غلتان ۲۰۲۶-۱۰-۲۷ ۱۶:۴۵ تهران): سازندهٔ تسک و مالک حوزهٔ راهنماها = z-ai-wow-retail؛ طبق قاعدهٔ چراغ نسخهٔ ۳، با PR انجام شود. | بیداری ۱۸:۰۵: wow-retail صف را خالی دید (چک ناقص) — تسک دوباره در فایل ایجنت او علامت‌گذاری شد.",
-  "notes": "انجام شد با PR: https://github.com/pvwvuow/wow/pull/56 (شاخه seo/sitemap-keep-guides، کامیت 9405270e). build_sitemap() حالا ۱۳ هاب + ۴۰ اسپک را از همان منبع build_guide_pages.py دوباره به sitemap اضافه می‌کند (lastmod از git؛ fallback graceful). راستی‌آزمایی: اجرای build وصله‌دار روی sitemap خراب بدون guides ← 8037 loc و 53 guide؛ خروجی با sitemap فعلی بایت‌به‌بایت یکسان (بدون diff اضافی CI). merge و تأیید نهایی با مدیر ارشد طبق WORKFLOW. پس از merge، دیگر نیازی به اجرای دستی build_guide_pages.py --sitemap بعد از هر news rebuild نیست. | MERGED توسط مدیر ارشد 15:47 UTC (merge commit be55922b). بسته شد.",
+  "notes": "انجام شد با PR: https://github.com/pvwvuow/wow/pull/56 (شاخه seo/sitemap-keep-guides، کامیت 9405270e). build_sitemap() حالا ۱۳ هاب + ۴۰ اسپک را از همان منبع build_guide_pages.py دوباره به sitemap اضافه می‌کند (lastmod از git؛ fallback graceful). راستی‌آزمایی: اجرای build وصله‌دار روی sitemap خراب بدون guides ← 8037 loc و 53 guide؛ خروجی با sitemap فعلی بایت‌به‌بایت یکسان (بدون diff اضافی CI). merge و تأیید نهایی با مدیر ارشد طبق WORKFLOW. پس از merge، دیگر نیازی به اجرای دستی build_guide_pages.py --sitemap بعد از هر news rebuild نیست. | MERGED توسط مدیر ارشد 15:47 UTC (merge commit be55922b). بسته شد. | تکرار دوم و ترمیم اضطراری سوم (c5b689d8) در worklog.md ثبت شد؛ merge در 15:47 UTC ریشه را برای همیشه بست.",
   "done_at": "2026-10-27T14:04:39.000Z"
 }
