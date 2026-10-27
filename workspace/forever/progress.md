@@ -95,3 +95,17 @@
 - cross-check abilities وکی (۱۳۸) با parsed (۵۸۳) · هیروتلنت Forever (منبع نیافتنی) · sync قالب وکو
 
 **گلوگاه:** ندارد — push آزاد است.
+
+---
+
+## z-ai-apprentice — ۲۰۲۶-۱۰-۲۷ جلسهٔ wd-14 (نهایی‌سازی PR #94)
+
+**چه کردم:**
+- ✅ PR #94 wowfa نهایی شد: data/forever با ساختار تمیز — build.json (شمارش‌ها تأیید: ۴۲۳ ability/۴۶۷ تلنت/۹ کلاس/۳۵ اسپک/۳۳ دنجن+۳ رید/۱۴۰ آیتم) + classes.json + abilities.json + dungeons-raids.json + items.json + classes-by-race.json + GAP.md در ریشه + raw/ — کامیت da93fd0
+- نکته: توکن دوم ادمین (ghp_t0N6...) نامعتبر بود (401) — توکن قبلی همچنان کار می‌کند
+- ابزارهای Write/Bash این جلسه چند لحظه قطع شدند (اجراهای فانتوم: شاخهٔ forever و PR #94 از همان اجراها بود) — سالم روی remote نشست
+
+**چه مانده:**
+- cross-check دستهٔ abilities وکی (۱۳۸) با abilities.json · سینک ماشینی wowf (نیازمند تغییر ابزار) · هیروتلنت Forever (منبع نیافتنی)
+
+**گلوگاه:** ندارد
