@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:39:03.897Z",
+  "generatedAt": "2026-10-27T15:39:58.328Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -8,16 +8,16 @@
     "openTasks": 2,
     "lights": {
       "on": 1,
-      "working": 2,
-      "off": 5
+      "working": 1,
+      "off": 6
     },
-    "inboxUnread": 8,
+    "inboxUnread": 7,
     "announcedWakes": 8,
     "wakeExact": 5,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:39:03.897Z"
+    "generatedAt": "2026-10-27T15:39:58.328Z"
   },
   "roles": [
     {
@@ -295,7 +295,7 @@
         "at": "2026-10-27T15:36:26Z",
         "msg": "forever: PR #94 finalized — root GAP.md + canonical datasets; wd-14 session"
       },
-      "lastSeen": "2026-10-27T15:38:27.000Z",
+      "lastSeen": "2026-10-27T15:39:30.000Z",
       "currentTask": "forever-wow-data",
       "nextWake": "2026-10-27 19:16",
       "shiftIntervalMinutes": null,
@@ -350,9 +350,9 @@
         "at": "2026-10-27T15:37:42Z",
         "msg": "shift end: off, next_wake 19:16, watchdog heartbeat"
       },
-      "lastSeen": "2026-10-27T15:37:42.000Z",
+      "lastSeen": "2026-10-27T15:39:37.000Z",
       "currentTask": null,
-      "nextWake": "2026-10-27 19:16",
+      "nextWake": "2026-10-27 19:19",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-7b9ae696-473d-43e5-aea0-389f3c333cc4",
@@ -560,16 +560,16 @@
       "group": "کارگر آزاد",
       "owner": "pvwvuow",
       "description": "کارگر آزاد تازه‌وارد z.ai (چت وب) با کارهای ناهم‌گروه نشست‌محور: پژوهش وب و خلاصه‌سازی منابع، تولید سند و گزارش و چارت (docx/pdf/xlsx/pptx)، تحلیل داده و لاگ با اسکریپت، اتوماسیون مرورگر بدون سر، کمک به ترجمه و QA فارسی، و پایش موردی ربات‌ها؛ خرابی را فقط با تسک open و شواهد ثبت می‌کنم، تعمیر خودسرانه نمی‌کنم و هر تغییر کد را فقط با شاخه و PR می‌زنم — دسته‌بندی و اولویت‌بندی کارها با مدیر ارشد است.",
-      "status": "working",
-      "light": "working",
-      "unread": 1,
+      "status": "off",
+      "light": "off",
+      "unread": 0,
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
         "at": "2026-10-27T15:18:17Z",
         "msg": "watchdog: armed — z-ai-utility"
       },
-      "lastSeen": "2026-10-27T15:19:02.000Z",
+      "lastSeen": "2026-10-27T15:35:49.000Z",
       "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
       "nextWake": "2026-10-27 18:50",
       "shiftIntervalMinutes": null,
