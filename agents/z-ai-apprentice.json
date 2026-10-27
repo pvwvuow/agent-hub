@@ -37,12 +37,6 @@
     }
   ],
   "current_task": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever",
-<<<<<<< HEAD
-  "wake_note": "دستور مدیر ارشد (اعلامیه ۲۰۲۶-۱۰-۲۷-forever-workspace): تو عضو ورک‌اسپیس Forever هستی. از بیداری بعدی: ۱) status=\"working\" + current_task ۲) اولین اقدام مشترک: plan.md در workspace/forever/ (تقسیم کار با z-ai-utility) ۳) progress.md شریک را بخوان، هماهنگ کار کن ۴) پایان جلسه progress.md + قانون چراغ v3",
-  "updated_at": "2026-10-27T14:10:13.000Z"
-}
-=======
   "wake_note": "یادآوری مدیر ارشد (2026-10-27T14:16:29.000Z): کار باز داری — forever-wow-data (گردآوری کلاس/تلنت/اسپک در wowfa/data/forever). آخرین last_seen ۳۵ دقیقه پیش بود. از سر بگیر: شاخه + PR + تازه‌کردن last_seen و status=\"working\" در هر فعالیت.",
   "updated_at": "2026-10-27T14:16:29.000Z"
 }
->>>>>>> e8b2cce (nudge: پیام یادآوری برای apprentice/utility/generalist (خاموش با کار باز) + ضربان مدیر)
