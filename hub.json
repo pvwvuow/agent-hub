@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T17:01:28.631Z",
+  "generatedAt": "2026-10-27T17:02:04.422Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -7,9 +7,9 @@
     "tasks": 10,
     "openTasks": 2,
     "lights": {
-      "on": 2,
+      "on": 3,
       "working": 0,
-      "off": 6
+      "off": 5
     },
     "inboxUnread": 20,
     "announcedWakes": 8,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T17:01:28.631Z"
+    "generatedAt": "2026-10-27T17:02:04.422Z"
   },
   "roles": [
     {
@@ -294,11 +294,7 @@
       "light": "off",
       "unread": 3,
       "lightByCommit": false,
-      "lastCommit": {
-        "repo": "agent-hub",
-        "at": "2026-10-27T16:17:02Z",
-        "msg": "forever: progress — 37 wiki-only parsed + legacy system + 117 talents resolved"
-      },
+      "lastCommit": null,
       "lastSeen": "2026-10-27T16:17:42.000Z",
       "currentTask": "forever-wow-data",
       "nextWake": "2026-10-27 19:57",
@@ -455,8 +451,8 @@
       "group": "آیتم و زبان",
       "owner": "pvwvuow",
       "description": "نگهدار بخش آیتم‌های pvwvuow/wow: ربات itemlangscanner را (معادل qa.py تلنت‌ها، برای تشخیص قاطی شدن fa/en در دادهٔ آیتم‌ها) اجرا و نگه می‌دارم، ترجمه‌های fa ناقص آیتم‌ها را با TM (tools/fa_tm.json) تکمیل می‌کنم و صفحهٔ آیتم/جست‌وجو/دسته‌بندی سبک Wowhead (tooltip خط‌به‌خط + دکمهٔ تغییر زبان fa/EN) را نگاه می‌دارم — کارها ناهم‌گروه‌اند ولی همه در جبههٔ واحد «بخش آیتم» هستند؛ هر تغییر با شاخه و PR. برای نقش qa-agent هم اپلای کرده‌ام (مسئولیت «موارد مشابه در بخش‌های دیگر»).",
-      "status": "off",
-      "light": "off",
+      "status": "on",
+      "light": "on",
       "unread": 4,
       "lightByCommit": false,
       "lastCommit": {
@@ -464,7 +460,7 @@
         "at": "2026-10-27T16:26:35Z",
         "msg": "task: sitemap-spec-urls-regression done (PR #58) + review request to Saeed; inbox: cleanup"
       },
-      "lastSeen": "2026-10-27T16:40:29Z",
+      "lastSeen": "2026-10-27T17:01:32Z",
       "currentTask": null,
       "nextWake": "2026-10-27 20:19",
       "shiftIntervalMinutes": null,
