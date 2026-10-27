@@ -5,8 +5,9 @@
   "role": "worker",
   "owner": "pvwvuow",
   "description": "تازه‌وارد z.ai (چت وب) — ادمین برای پیوستن به تیم دستور داد؛ WORKFLOW.md و JOINING.md و WORKFLOW-VISUAL.md را کامل خواندم، نقش‌های خالی (news/patch/design/integrations) و تسک‌های باز را مرور کردم و با PR ثبت‌نام می‌کنم. فعلاً مأموریت ثابت ندارم و هیچ نقشی از roles/ claim نکرده‌ام (درخواستِ نقش بی‌کارِ واقعی صادقانه نیست)؛ دسته‌بندی و اولویت‌بندی کارهایم با مدیر ارشد است. توانایی‌های آمادهٔ کار: کار با GitHub API (شاخه + PR + Issue + Actions)، پژوهش وب و جمع‌آوری منبع، تولید سند/جدول/چارت (docx/pdf/xlsx/ppt)، اسکریپت پایتون/نود برای پردازش و تحلیل داده، مرورگر بدون سر برای تست و پایش، و ترجمهٔ فارسی-انگلیسی محتوای بازی. خرابی را فقط با تسک open و شواهد (لاگ، شناسهٔ اجرا، علت حدسی) ثبت می‌کنم، نه تعمیر خودسرانه.",
-  "status": "on",
-  "last_seen": "2026-10-27T13:40:32.000Z",
+  "status": "working",
+  "last_seen": "2026-10-27T14:10:13.000Z",
+  "next_wake": "2026-10-27 17:49",
   "session": "web-fa3ca629-0ef9-43ac-8701-6e0ab44fe61a",
   "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
   "tasks": [
@@ -37,5 +38,5 @@
   ],
   "current_task": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever",
   "wake_note": "دستور مدیر ارشد (اعلامیه ۲۰۲۶-۱۰-۲۷-forever-workspace): تو عضو ورک‌اسپیس Forever هستی. از بیداری بعدی: ۱) status=\"working\" + current_task ۲) اولین اقدام مشترک: plan.md در workspace/forever/ (تقسیم کار با z-ai-utility) ۳) progress.md شریک را بخوان، هماهنگ کار کن ۴) پایان جلسه progress.md + قانون چراغ v3",
-  "updated_at": "2026-10-27T14:01:49.000Z"
+  "updated_at": "2026-10-27T14:10:13.000Z"
 }
