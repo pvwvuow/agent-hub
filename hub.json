@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:18:20.070Z",
+  "generatedAt": "2026-10-27T15:19:26.747Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -16,7 +16,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:18:20.070Z"
+    "generatedAt": "2026-10-27T15:19:26.747Z"
   },
   "roles": [
     {
@@ -553,7 +553,7 @@
         "at": "2026-10-27T15:12:15Z",
         "msg": "forever: wowfa compat analysis v0.1 (Data namespace + GetBuildInfo plan)"
       },
-      "lastSeen": "2026-10-27T15:10:42Z",
+      "lastSeen": "2026-10-27T15:19:02.000Z",
       "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
       "nextWake": "2026-10-27 18:50",
       "shiftIntervalMinutes": null,
