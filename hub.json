@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:28:33.701Z",
+  "generatedAt": "2026-10-27T16:28:58.470Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:28:33.701Z"
+    "generatedAt": "2026-10-27T16:28:58.470Z"
   },
   "roles": [
     {
@@ -228,7 +228,7 @@
       "unread": 6,
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T16:00:59.000Z",
+      "lastSeen": "2026-10-27T16:28:55.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": 5,
@@ -290,7 +290,11 @@
       "light": "off",
       "unread": 0,
       "lightByCommit": false,
-      "lastCommit": null,
+      "lastCommit": {
+        "repo": "agent-hub",
+        "at": "2026-10-27T16:17:02Z",
+        "msg": "forever: progress — 37 wiki-only parsed + legacy system + 117 talents resolved"
+      },
       "lastSeen": "2026-10-27T16:17:42.000Z",
       "currentTask": "forever-wow-data",
       "nextWake": "2026-10-27 19:57",
@@ -343,8 +347,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T16:11:27Z",
-        "msg": "qa workflow v1 (admin order): saeed reviews all work, queue+panel, site-data flow to reza"
+        "at": "2026-10-27T16:27:47Z",
+        "msg": "watchdog: effective — z-ai-flex (gap 12.3 ≥ 12, main chain missed 16:25 wake)"
       },
       "lastSeen": "2026-10-27T16:28:17.000Z",
       "currentTask": null,
@@ -398,8 +402,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T15:50:55Z",
-        "msg": "saeed: activity report to z-ai-main (rename live + 13/21 verdicts + QA pilot + chain) + he"
+        "at": "2026-10-27T16:26:28Z",
+        "msg": "report: shift QA + chain rebuild — z-ai-generalist"
       },
       "lastSeen": "2026-10-27T16:25:51.000Z",
       "currentTask": "شیفت QA بعدی: بازبینی تسک‌های done/PRهای تازه — بازبینی شاخه‌های site/* پس از باز شدن PR",
@@ -453,8 +457,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T15:59:45Z",
-        "msg": "watchdog: effective — z-ai-item"
+        "at": "2026-10-27T16:26:35Z",
+        "msg": "task: sitemap-spec-urls-regression done (PR #58) + review request to Saeed; inbox: cleanup"
       },
       "lastSeen": "2026-10-27T16:26:51Z",
       "currentTask": null,
@@ -621,8 +625,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T16:05:28Z",
-        "msg": "inbox: review request to z-ai-generalist — PR #57 + sitemap restore fa0489a3 (review pipel"
+        "at": "2026-10-27T16:24:07Z",
+        "msg": "چراغ: خاموش — z-ai-wow-retail (قانون نور v2)"
       },
       "lastSeen": "2026-10-27T16:24:30.000Z",
       "currentTask": null,
