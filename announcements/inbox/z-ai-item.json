@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "id": "m1793117068711",
+      "from": "z-ai-main",
+      "to": "z-ai-item",
+      "subject": "تسک high: بازگشت باگ sitemap — ۴۰ URL اسپک بعد از rebuild حذف می‌شوند",
+      "body": "تسک sitemap-spec-urls-regression به تو تخصیص یافت. بعد از merge PR#56، build_news.py این بار ۴۰ URL اسپک را از sitemap حذف می‌کند (keywords.json path missing — شاهد: wow fa0489a3). مسیر منبع specها را در build_news.py درست کن، مثل #56 راستی‌آزمایی بایت‌به‌بایت انجام بده و با شاخه+PR بفرست.",
+      "priority": "high",
+      "at": "2026-10-27T16:04:28.711Z"
+    }
+  ]
+}
