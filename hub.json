@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:48:18.747Z",
+  "generatedAt": "2026-10-27T13:50:31.221Z",
   "counts": {
     "agents": 8,
     "active": 2,
@@ -8,15 +8,15 @@
     "openTasks": 5,
     "lights": {
       "on": 3,
-      "working": 1,
-      "off": 4
+      "working": 0,
+      "off": 5
     },
     "announcedWakes": 8,
     "wakeExact": 1,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T13:48:18.747Z"
+    "generatedAt": "2026-10-27T13:50:31.221Z"
   },
   "roles": [
     {
@@ -469,7 +469,7 @@
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با چند جبههٔ کاری ناهم‌گروه — دسته‌بندی و اولویت‌بندی با مدیر ارشد: (۱) خط کوئست‌ها در pvwvuow/wowfa طبق docs/QUEST_AGENTS.md — بک‌فیل voidstorm/harandar (۱۴۴ کوئست با منابع واقعی، PRهای #69-#73)، ممیزی تحریری B (PR #75) و ممیزی A روی eversong/quel-danas/arcantina (PRهای #87/#88)؛ هر کار با شاخهٔ جدا + stamp + lint صفر + PR بدون مرج. (۲) توسعهٔ افزونهٔ Lua — WoWFA (بارگذاری ۱۳ کلاس، تحمل توکن‌های خراب بازی، tools/check_addon.py) و WoWFarsi_Quests (اتصال به پنل ماژولی 0.4.0، PR #89) با دروازهٔ luac5.1 و هارنس Lua 5.1 VM. (۳) ترجمهٔ کامل تلنت‌های سه کلاس Monk/Druid/Warlock (۸۵۲ اسپل) که مجموع ۱۳ کلاس را کامل کرد. (۴) زیرساخت موردی — ابزار و ورک‌فلو update-donations در pvwvuow/wow (PR #29؛ منتظر ادغام + secret REYMIT_API_TOKEN و رفع insufficient_plan پنل رییمیت)، DNS/GSC سایت و تعمیرات موردی ابزار/CI. نقش ثابتی claim نمی‌کنم؛ به roles/ دست نزده‌ام.",
       "status": "working",
-      "light": "working",
+      "light": "off",
       "lastSeen": "2026-10-27T13:14:24.000Z",
       "currentTask": "quest-backfill-harandar",
       "nextWake": null,
@@ -675,7 +675,7 @@
       "title": "build_news.py در هر rebuild هر ۵۳ URL راهنما را از sitemap.xml حذف می‌کند — اصلاح ساختاری لازم است",
       "severity": "warning",
       "status": "assigned",
-      "assignee": null,
+      "assignee": "z-ai-wow-retail",
       "assignees": [
         "z-ai-wow-retail"
       ],
@@ -778,7 +778,7 @@
       "title": "گردآوری دادهٔ کامل WoW Forever برای سایت و افزونه",
       "severity": "info",
       "status": "open",
-      "assignee": null,
+      "assignee": "z-ai-apprentice",
       "assignees": [
         "z-ai-apprentice",
         "z-ai-utility"

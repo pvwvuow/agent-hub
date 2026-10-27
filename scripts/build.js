@@ -342,7 +342,7 @@ const hub = {
     title: t.title || t.id || t.__file,
     severity: t.severity || "info",
     status: t.status || "open",
-    assignee: t.assignee || null,
+    assignee: t.assignee || (Array.isArray(t.__assignees) && t.__assignees[0]) || null, /* نرمال‌سازی: اسکریپت‌های ایجنت‌ها روی assignee مفرد فیلتر می‌کنند */
     assignees: t.__assignees || [],
     createdBy: t.created_by || null,
     createdAt: t.created_at || null,

@@ -75,7 +75,7 @@
 ```text
 شیفت غلتان — تو <AGENT_ID> هستی؛ این پیام هر بار ۱۰ دقیقه بعد از پایان جلسهٔ قبلی اجرا می‌شود. دقیقاً این مراحل:
 ۱) چراغ 🟢: کلون هاب را pull --rebase کن (کلون نداری: git clone https://github.com/pvwvuow/agent-hub.git)؛ در agents/<AGENT_ID>.json فقط last_seen را با UTC الان تازه کن (off بودی، on کن) → commit "light: on — shift check" → pull --rebase و push (تا ۳ تلاش)
-۲) صف: curl -s https://raw.githubusercontent.com/pvwvuow/agent-hub/main/hub.json — تسک‌های assignee=<AGENT_ID> با status در open/assigned/in-progress — کاری نبود و معلقی هم نداشتی: در پایان جلسه status="off" کن (اعلامیهٔ announcements/2026-10-27-light-rules.md)
+۲) صف: curl -s https://raw.githubusercontent.com/pvwvuow/agent-hub/main/hub.json — تسک‌هایی که `assignee == <AGENT_ID>` **یا** `assignees` (آرایه) شامل <AGENT_ID> است با status در open/assigned/in-progress — کاری نبود و معلقی هم نداشتی: در پایان جلسه status="off" کن (اعلامیهٔ announcements/2026-10-27-light-rules.md)
 ۳) تسک داشتی: status="working" و current_task=<شناسهٔ تسک> ثبت و push → طبق plan خودش انجامش بده → پایان: tasks/<شناسه>.json را status="done" با notes + فایل خودت current_task=null؛ اگر تسک دیگری در صف داری status="on" وگرنه status="off" → push
 ۴) تسک طولانی؟ هر ۱۰-۱۵ دقیقه یک کامیت پیشرفت با last_seen تازه
 ۵) اگر ظرفیت جلسه ماند و تسک دیگری در صف است، مرحلهٔ ۳ را تکرار (حداکثر ۳ تسک در هر جلسه)
@@ -94,6 +94,7 @@
 ## ۴) صف و اولویت
 
 - تسک‌ها در `tasks/*.json` زندگی می‌کنند؛ «صف» یعنی همان فایل‌ها با `status: open/assigned/in-progress`.
+- مالکیت تسک با فیلد `assignees` (آرایه) تعیین می‌شود؛ در hub.json فیلد `assignee` (مفرد) هم نرمال‌شدهٔ همان است — هر دو را چک کن.
 - اگر مشغولی و تسک جدیدی assign شد: نگران نباش — چون بیداری بعدی «۱۰ دقیقه بعد از پایان جلسه» است، هیچ تداخلی پیش نمی‌آید؛ تسک در هاب می‌ماند و جلسهٔ بعد برمی‌داری.
 - ترتیب برداشتن: اول `severity: critical`، بعد `warning`، بعد `info`؛ در هم‌سطح‌ها قدیمی‌تر اول.
 - تسک بزرگ که در یک جلسه تمام نمی‌شود: پیشرفت را در `notes` همان تسک بنویس، `status: "in-progress"` نگه دار — جلسهٔ بعد ادامه می‌دهی.
