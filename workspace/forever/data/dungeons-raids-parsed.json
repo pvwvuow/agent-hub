@@ -1,0 +1,313 @@
+{
+  "source": "https://warcraft.wiki.gg/wiki/World_of_Warcraft:_Forever (via api.php action=parse)",
+  "page": "World of Warcraft: Forever",
+  "accessed_at_utc": "2026-10-27T15:16:28.000Z",
+  "tables": [
+    {
+      "caption": "Forever dungeons (10-39)",
+      "count": 18,
+      "items": [
+        {
+          "dungeon": "The Hall of Thanes",
+          "abbr": "HoT",
+          "location": "Ironforge",
+          "level": "13-18",
+          "new": "NEW",
+          "is_new": true
+        },
+        {
+          "dungeon": "Ragefire Chasm",
+          "abbr": "RFC",
+          "location": "Orgrimmar",
+          "level": "13-19",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Ruins of Lordaeron",
+          "abbr": "RoL",
+          "location": "Undercity",
+          "level": "15-22",
+          "new": "NEW",
+          "is_new": true
+        },
+        {
+          "dungeon": "Deadmines",
+          "abbr": "DM/VC",
+          "location": "Westfall",
+          "level": "18-24",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Wailing Caverns",
+          "abbr": "WC",
+          "location": "Barrens",
+          "level": "19-25",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Shadowfang Keep",
+          "abbr": "SFK",
+          "location": "Silverpine Forest",
+          "level": "23-29",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Excavation Site: Wetlands",
+          "abbr": "ESW",
+          "location": "Wetlands",
+          "level": "24-29",
+          "new": "NEW",
+          "is_new": true
+        },
+        {
+          "dungeon": "Stormwind Stockade",
+          "abbr": "Stock",
+          "location": "Stormwind City",
+          "level": "26-32",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "City of Dalaran",
+          "abbr": "Dal",
+          "location": "Alterac Mountains",
+          "level": "28-33",
+          "new": "NEW",
+          "is_new": true
+        },
+        {
+          "dungeon": "Blackfathom Deeps",
+          "abbr": "BFD",
+          "location": "Ashenvale",
+          "level": "25-31",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Razorfen Kraul",
+          "abbr": "RFK",
+          "location": "Barrens",
+          "level": "30-36",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Gnomeregan",
+          "abbr": "Gnomer",
+          "location": "Dun Morogh",
+          "level": "31-37",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Scarlet Monastery Graveyard",
+          "abbr": "SM GY",
+          "location": "Tirisfal Glades",
+          "level": "31-37",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Scarlet Monastery Library",
+          "abbr": "SM Lib",
+          "location": "Tirisfal Glades",
+          "level": "34-40",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "The Drowned City",
+          "abbr": "DC",
+          "location": "Stranglethorn Vale",
+          "level": "35-40",
+          "new": "NEW",
+          "is_new": true
+        },
+        {
+          "dungeon": "Scarlet Monastery Armory",
+          "abbr": "SM Arm",
+          "location": "Tirisfal Glades",
+          "level": "37-43",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Razorfen Downs",
+          "abbr": "RFD",
+          "location": "Barrens",
+          "level": "38-44",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Scarlet Monastery Cathedral",
+          "abbr": "SM Cath",
+          "location": "Tirisfal Glades",
+          "level": "39-45",
+          "new": "Old",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "caption": "Forever dungeons (40-60)",
+      "count": 15,
+      "items": [
+        {
+          "dungeon": "Krol'dok Stronghold",
+          "abbr": "KS",
+          "location": "Riverglades",
+          "level": "40-45",
+          "new": "NEW",
+          "is_new": true
+        },
+        {
+          "dungeon": "Uldaman",
+          "abbr": "Uld",
+          "location": "Badlands",
+          "level": "44-50",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Zul'Farrak",
+          "abbr": "ZF",
+          "location": "Tanaris",
+          "level": "45-51",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Alcaz Prison",
+          "abbr": "AP",
+          "location": "Dustwallow Marsh",
+          "level": "48-53",
+          "new": "NEW",
+          "is_new": true
+        },
+        {
+          "dungeon": "Maraudon",
+          "abbr": "Mara",
+          "location": "Desolace",
+          "level": "48-54",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Temple of Atal'Hakkar (Sunken Temple)",
+          "abbr": "ST",
+          "location": "Swamp of Sorrows",
+          "level": "52-58",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Blackrock Depths",
+          "abbr": "BRD",
+          "location": "Blackrock Mountain",
+          "level": "52-60",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Warpwood Quarter (Dire Maul East)",
+          "abbr": "DME",
+          "location": "Feralas",
+          "level": "55-60",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Blackmaw Hold",
+          "abbr": "BMH",
+          "location": "Azshara",
+          "level": "55-60",
+          "new": "NEW",
+          "is_new": true
+        },
+        {
+          "dungeon": "Lower Blackrock Spire",
+          "abbr": "LBRS",
+          "location": "Blackrock Mountain",
+          "level": "55-60",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Capital Gardens (Dire Maul West)",
+          "abbr": "DMW",
+          "location": "Feralas",
+          "level": "58-60",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Scholomance",
+          "abbr": "Scholo",
+          "location": "Western Plaguelands",
+          "level": "58-60",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Shaper's Terrace",
+          "abbr": "ShT",
+          "location": "Un'Goro Crater",
+          "level": "58-60",
+          "new": "NEW",
+          "is_new": true
+        },
+        {
+          "dungeon": "Stratholme",
+          "abbr": "Strat",
+          "location": "Eastern Plaguelands",
+          "level": "58-60",
+          "new": "Old",
+          "is_new": false
+        },
+        {
+          "dungeon": "Gordok Commons (Dire Maul North)",
+          "abbr": "DMN",
+          "location": "Feralas",
+          "level": "58-60",
+          "new": "Old",
+          "is_new": false
+        }
+      ]
+    },
+    {
+      "caption": "Forever raids",
+      "count": 3,
+      "items": [
+        {
+          "raid": "Barrow Deeps",
+          "abbr": "BD",
+          "location": "Mount Hyjal",
+          "limit": "10",
+          "new": "NEW",
+          "is_new": true
+        },
+        {
+          "raid": "Hyjal Summit",
+          "abbr": "HS",
+          "location": "Mount Hyjal",
+          "limit": "20",
+          "new": "NEW",
+          "is_new": true
+        },
+        {
+          "raid": "Onyxia's Lair",
+          "abbr": "Ony",
+          "location": "Dustwallow Marsh",
+          "limit": "40",
+          "new": "Old",
+          "is_new": false
+        }
+      ]
+    }
+  ]
+}
