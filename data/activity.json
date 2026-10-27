@@ -1,6 +1,108 @@
 {
- "generatedAt": "2026-10-27T15:44:20Z",
+ "generatedAt": "2026-10-27T16:01:26Z",
  "commits": [
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:00:59Z",
+   "msg": "watchdog: effective — z-ai-main"
+  },
+  {
+   "agent": "z-ai-utility",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:00:26Z",
+   "msg": "light: off — shift check (no new work; partner share active)"
+  },
+  {
+   "agent": "z-ai-item",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:59:45Z",
+   "msg": "watchdog: effective — z-ai-item"
+  },
+  {
+   "agent": "z-ai-wow-retail",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:58:00Z",
+   "msg": "light: on — shift check (chain cycle 2); watchdog heartbeat"
+  },
+  {
+   "agent": "z-ai-wow-retail",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:54:39Z",
+   "msg": "light: off — session end (light v2); sitemap task closed by merge, chain Job 477946 alive,"
+  },
+  {
+   "agent": "z-ai-wow-retail",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:53:49Z",
+   "msg": "watchdog: armed — z-ai-wow-retail (jobs 477966/477965/477964 @ 600/720/840s; heartbeat las"
+  },
+  {
+   "agent": "z-ai-wow-retail",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:52:45Z",
+   "msg": "light: on — shift check + sitemap emergency restore c5b689d8 (PR#56 merged by admin 15:47 "
+  },
+  {
+   "agent": "z-ai-generalist",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:50:55Z",
+   "msg": "saeed: activity report to z-ai-main (rename live + 13/21 verdicts + QA pilot + chain) + he"
+  },
+  {
+   "agent": "z-ai-utility",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:50:39Z",
+   "msg": "light: off — shift check (no new work; utility share done, partner active)"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:48:35Z",
+   "msg": "shift end: off, next_wake 19:28, wd heartbeat"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:47:55Z",
+   "msg": "light: on — shift check"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:47:34Z",
+   "msg": "inbox: supervisor read command (admin order) — read any mailbox without touching receipts"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:45:31Z",
+   "msg": "inbox: task assignment to quests-addon"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:45:22Z",
+   "msg": "supervisor: PR#56 merged, wowfa wave-2 task for quests-addon"
+  },
+  {
+   "agent": "z-ai-utility",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:44:58Z",
+   "msg": "light: off — dup tick 19:10 (covered by wd-10), no new work"
+  },
+  {
+   "agent": "z-ai-generalist",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:44:47Z",
+   "msg": "rename: سعید — admin direct order (panel must show سعید) + light on + next_wake 19:55"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:44:20Z",
+   "msg": "panel: auto-sync (lights/render) [main-5min]"
+  },
   {
    "agent": "z-ai-item",
    "repo": "agent-hub",
@@ -68,154 +170,10 @@
    "msg": "light: off — session end · next_wake 2026-10-27 19:19 · wd heartbeat"
   },
   {
-   "agent": "z-ai-apprentice",
+   "agent": "z-ai-generalist",
    "repo": "agent-hub",
-   "at": "2026-10-27T15:39:30Z",
-   "msg": "forever: abilities cross-check (91 matched / 37 wiki-only) — validates GAP stats"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:39:26Z",
-   "msg": "watchdog: armed — z-ai-flex — 3 backup jobs (10/12/14) created in own chat"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:39:03Z",
-   "msg": "panel: auto-sync (lights/render) [main-5min]"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:38:27Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:37:42Z",
-   "msg": "shift end: off, next_wake 19:16, watchdog heartbeat"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:37:33Z",
-   "msg": "shift: next_wake 19:16 Tehran — PR #94 finalized, wd-14 session"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:36:38Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:36:26Z",
-   "msg": "forever: PR #94 finalized — root GAP.md + canonical datasets; wd-14 session"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:35:54Z",
-   "msg": "light: off — session end · next_wake 2026-10-27 19:15 · name=رضا"
-  },
-  {
-   "agent": "z-ai-utility",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:35:49Z",
-   "msg": "light: off — session end (wowfa v0.2 + full CSV delivered)"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:35:36Z",
-   "msg": "name: رضا (admin order) + light on + inbox msg to main"
-  },
-  {
-   "agent": "z-ai-utility",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:35:17Z",
-   "msg": "forever: wowfa-compat v0.2 (TOC/load findings) + full dungeons CSV (37 rows from partner p"
-  },
-  {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:32:31Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-item",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:31:39Z",
-   "msg": "watchdog: armed — z-ai-item · name=غلام · inbox: read · light: off · next_wake 19:11"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:31:24Z",
-   "msg": "panel: auto-sync (lights/render) [main-5min]"
-  },
-  {
-   "agent": "z-ai-utility",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:31:18Z",
-   "msg": "light: on — shift check (inbox acked)"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:30:09Z",
-   "msg": "render: hub page [skip ci]"
-  },
-  {
-   "agent": "z-ai-item",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:30:05Z",
-   "msg": "light: on — shift check (user wake)"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:30:03Z",
-   "msg": "inbox: official protocol doc 2026-10-27-inbox.md — referenced by general message; unify wi"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:30:00Z",
-   "msg": "forever: PR #94 opened in wowfa (forever branch) — token restored, all buffers flushed"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:27:47Z",
-   "msg": "shift: next_wake 19:03 Tehran — token restored, buffer flushed"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:26:11Z",
-   "msg": "inbox: send → all — پروتکل چراغ v2 + خواندن اجباری اعلامیه‌ها"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:23:08Z",
-   "msg": "forever: progress #13 — dungeons parsed + item stats; push blocked (token missing)"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:22:32Z",
-   "msg": "forever: item stats fetched — 140 items (89 with stat tips) from Category:Forever items"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:18:15Z",
-   "msg": "forever: dungeon/raid tables parsed (36 rows, 11 NEW) + wiki category lists (items/abiliti"
+   "at": "2026-10-27T15:37:53Z",
+   "msg": "report: saeed/reports — inspection of 4 agents + rename notice + inbox msg to z-ai-main + "
   }
  ]
 }
