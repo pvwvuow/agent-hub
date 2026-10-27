@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:58:57.694Z",
+  "generatedAt": "2026-10-27T14:59:40.384Z",
   "counts": {
     "agents": 7,
     "active": 1,
@@ -16,7 +16,7 @@
     "wakeKnown": 7,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T14:58:57.694Z"
+    "generatedAt": "2026-10-27T14:59:40.384Z"
   },
   "roles": [
     {
@@ -494,9 +494,9 @@
         "at": "2026-10-27T14:40:38Z",
         "msg": "forever: plan v2 (utility section) + first zones CSV + map update"
       },
-      "lastSeen": "2026-10-27T14:38:54Z",
+      "lastSeen": "2026-10-27T14:59:25Z",
       "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
-      "nextWake": "2026-10-27 18:18",
+      "nextWake": "2026-10-27 18:30",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-8c228bb5-858c-4336-9e86-af621a0eb70e",
