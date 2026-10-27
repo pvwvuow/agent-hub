@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:38:56.873Z",
+  "generatedAt": "2026-10-27T15:39:03.897Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:38:56.873Z"
+    "generatedAt": "2026-10-27T15:39:03.897Z"
   },
   "roles": [
     {
@@ -292,8 +292,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T15:30:00Z",
-        "msg": "forever: PR #94 opened in wowfa (forever branch) — token restored, all buffers flushed"
+        "at": "2026-10-27T15:36:26Z",
+        "msg": "forever: PR #94 finalized — root GAP.md + canonical datasets; wd-14 session"
       },
       "lastSeen": "2026-10-27T15:38:27.000Z",
       "currentTask": "forever-wow-data",
@@ -347,8 +347,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T15:30:03Z",
-        "msg": "inbox: official protocol doc 2026-10-27-inbox.md — referenced by general message; unify wi"
+        "at": "2026-10-27T15:37:42Z",
+        "msg": "shift end: off, next_wake 19:16, watchdog heartbeat"
       },
       "lastSeen": "2026-10-27T15:37:42.000Z",
       "currentTask": null,
@@ -451,7 +451,11 @@
       "light": "off",
       "unread": 0,
       "lightByCommit": false,
-      "lastCommit": null,
+      "lastCommit": {
+        "repo": "agent-hub",
+        "at": "2026-10-27T15:31:39Z",
+        "msg": "watchdog: armed — z-ai-item · name=غلام · inbox: read · light: off · next_wake 19:11"
+      },
       "lastSeen": "2026-10-27T15:30:04Z",
       "currentTask": null,
       "nextWake": "2026-10-27 19:11",
