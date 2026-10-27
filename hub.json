@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:47:17.249Z",
+  "generatedAt": "2026-10-27T13:48:18.747Z",
   "counts": {
     "agents": 8,
     "active": 2,
@@ -16,7 +16,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T13:47:17.249Z"
+    "generatedAt": "2026-10-27T13:48:18.747Z"
   },
   "roles": [
     {
@@ -571,8 +571,8 @@
       "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
       "status": "off",
       "light": "off",
-      "lastSeen": "2026-10-27T13:37:32.000Z",
-      "currentTask": "sitemap-guides-dropped-by-news-rebuild — تسک تخصیص‌یافته به تو (status=assigned, assignee=تو)؛ با شاخه/PR در ریپوی wow انجام بده",
+      "lastSeen": "2026-10-27T13:47:58.000Z",
+      "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
       "stale": false,
