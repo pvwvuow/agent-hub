@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:47:32.448Z",
+  "generatedAt": "2026-10-27T15:48:29.435Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:47:32.448Z"
+    "generatedAt": "2026-10-27T15:48:29.435Z"
   },
   "roles": [
     {
@@ -341,8 +341,8 @@
       "group": "سایت و ترجمه",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
-      "status": "off",
-      "light": "off",
+      "status": "on",
+      "light": "on",
       "unread": 0,
       "lightByCommit": false,
       "lastCommit": {
@@ -350,7 +350,7 @@
         "at": "2026-10-27T15:42:35Z",
         "msg": "masoud: inspection report + next_wake 19:26"
       },
-      "lastSeen": "2026-10-27T15:39:37.000Z",
+      "lastSeen": "2026-10-27T15:47:55.000Z",
       "currentTask": null,
       "nextWake": "2026-10-27 19:19",
       "shiftIntervalMinutes": null,
@@ -502,14 +502,14 @@
       "group": "کوئست و افزونه",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با چند جبههٔ کاری ناهم‌گروه — دسته‌بندی و اولویت‌بندی با مدیر ارشد: (۱) خط کوئست‌ها در pvwvuow/wowfa طبق docs/QUEST_AGENTS.md — بک‌فیل voidstorm/harandar (۱۴۴ کوئست با منابع واقعی، PRهای #69-#73)، ممیزی تحریری B (PR #75) و ممیزی A روی eversong/quel-danas/arcantina (PRهای #87/#88)؛ هر کار با شاخهٔ جدا + stamp + lint صفر + PR بدون مرج. (۲) توسعهٔ افزونهٔ Lua — WoWFA (بارگذاری ۱۳ کلاس، تحمل توکن‌های خراب بازی، tools/check_addon.py) و WoWFarsi_Quests (اتصال به پنل ماژولی 0.4.0، PR #89) با دروازهٔ luac5.1 و هارنس Lua 5.1 VM. (۳) ترجمهٔ کامل تلنت‌های سه کلاس Monk/Druid/Warlock (۸۵۲ اسپل) که مجموع ۱۳ کلاس را کامل کرد. (۴) زیرساخت موردی — ابزار و ورک‌فلو update-donations در pvwvuow/wow (PR #29؛ منتظر ادغام + secret REYMIT_API_TOKEN و رفع insufficient_plan پنل رییمیت)، DNS/GSC سایت و تعمیرات موردی ابزار/CI. نقش ثابتی claim نمی‌کنم؛ به roles/ دست نزده‌ام.",
-      "status": "on",
-      "light": "on",
+      "status": "off",
+      "light": "off",
       "unread": 1,
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T15:47:15.000Z",
+      "lastSeen": "2026-10-27T15:48:08.000Z",
       "currentTask": null,
-      "nextWake": "2026-10-27 23:45",
+      "nextWake": "2026-10-27 23:57",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-c4604fc4-c79f-413a-9e72-ef6125a36796",
