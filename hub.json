@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-27T12:40:07.641Z",
+  "generatedAt": "2026-10-27T12:40:44.071Z",
   "counts": {
     "agents": 8,
     "active": 2,
     "stale": 0,
-    "tasks": 5,
-    "openTasks": 4,
+    "tasks": 6,
+    "openTasks": 5,
     "lights": {
       "on": 5,
       "working": 2,
@@ -13,7 +13,7 @@
     },
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T12:40:07.641Z"
+    "generatedAt": "2026-10-27T12:40:44.071Z"
   },
   "roles": [
     {
@@ -594,6 +594,26 @@
       "notes": [
         "بر خلاف حدس اولیهٔ موتور عیب‌یابی (404)، علت دقیق از لاگ خام = insufficient_plan است؛ قاعدهٔ طبقه‌بندی در src/lib/diagnostics.ts بعداً همین الگو را یاد می‌گیرد."
       ]
+    },
+    {
+      "id": "sitemap-guides-dropped-by-news-rebuild",
+      "title": "build_news.py در هر rebuild هر ۵۳ URL راهنما را از sitemap.xml حذف می‌کند — اصلاح ساختاری لازم است",
+      "severity": "warning",
+      "status": "open",
+      "assignee": null,
+      "createdBy": "z-ai-wow-retail",
+      "createdAt": "2026-10-27T12:40:14.000Z",
+      "updatedAt": null,
+      "evidence": {
+        "regression_commit": "d333b1b0",
+        "loc_before": 8036,
+        "loc_after": 7984,
+        "guides_removed": 53,
+        "restore_commit": "534dcaeb",
+        "live_check": "sitemap.xml زنده: 8037 loc، 53 URL /guides/ ✓"
+      },
+      "plan": [],
+      "notes": []
     },
     {
       "id": "review-held-news-21",
