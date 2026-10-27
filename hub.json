@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-10-27T13:50:31.221Z",
+  "generatedAt": "2026-10-27T13:53:26.620Z",
   "counts": {
     "agents": 8,
     "active": 2,
     "stale": 0,
     "tasks": 7,
-    "openTasks": 5,
+    "openTasks": 4,
     "lights": {
-      "on": 3,
+      "on": 4,
       "working": 0,
-      "off": 5
+      "off": 4
     },
     "announcedWakes": 8,
     "wakeExact": 1,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T13:50:31.221Z"
+    "generatedAt": "2026-10-27T13:53:26.620Z"
   },
   "roles": [
     {
@@ -223,7 +223,7 @@
       "description": "ایجنت ارشد اتاق مانیتور wowfarsi؛ عیب‌یابی خودکار ربات‌ها، بازرسی وضعیت سایر ایجنت‌ها، پیشنهاد و در صورت نیاز اجرای تسک",
       "status": "on",
       "light": "on",
-      "lastSeen": "2026-10-27T13:25:00.000Z",
+      "lastSeen": "2026-10-27T13:53:26.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": 5,
@@ -329,7 +329,7 @@
       "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
       "status": "off",
       "light": "off",
-      "lastSeen": "2026-10-27T13:40:36.000Z",
+      "lastSeen": "2026-10-27T13:50:58.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
@@ -468,10 +468,10 @@
       "role": "worker",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با چند جبههٔ کاری ناهم‌گروه — دسته‌بندی و اولویت‌بندی با مدیر ارشد: (۱) خط کوئست‌ها در pvwvuow/wowfa طبق docs/QUEST_AGENTS.md — بک‌فیل voidstorm/harandar (۱۴۴ کوئست با منابع واقعی، PRهای #69-#73)، ممیزی تحریری B (PR #75) و ممیزی A روی eversong/quel-danas/arcantina (PRهای #87/#88)؛ هر کار با شاخهٔ جدا + stamp + lint صفر + PR بدون مرج. (۲) توسعهٔ افزونهٔ Lua — WoWFA (بارگذاری ۱۳ کلاس، تحمل توکن‌های خراب بازی، tools/check_addon.py) و WoWFarsi_Quests (اتصال به پنل ماژولی 0.4.0، PR #89) با دروازهٔ luac5.1 و هارنس Lua 5.1 VM. (۳) ترجمهٔ کامل تلنت‌های سه کلاس Monk/Druid/Warlock (۸۵۲ اسپل) که مجموع ۱۳ کلاس را کامل کرد. (۴) زیرساخت موردی — ابزار و ورک‌فلو update-donations در pvwvuow/wow (PR #29؛ منتظر ادغام + secret REYMIT_API_TOKEN و رفع insufficient_plan پنل رییمیت)، DNS/GSC سایت و تعمیرات موردی ابزار/CI. نقش ثابتی claim نمی‌کنم؛ به roles/ دست نزده‌ام.",
-      "status": "working",
-      "light": "off",
-      "lastSeen": "2026-10-27T13:14:24.000Z",
-      "currentTask": "quest-backfill-harandar",
+      "status": "on",
+      "light": "on",
+      "lastSeen": "2026-10-27T13:49:06.000Z",
+      "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
       "stale": false,
@@ -694,30 +694,6 @@
       "notes": []
     },
     {
-      "id": "quest-backfill-harandar",
-      "title": "بک‌فیل ترجمهٔ کوئست‌های harandar (موج ۱ خط کوئست) — z-ai-quests-addon",
-      "severity": "info",
-      "status": "assigned",
-      "assignee": "z-ai-quests-addon",
-      "assignees": [
-        "z-ai-quests-addon"
-      ],
-      "createdBy": "z-ai-main",
-      "createdAt": "2026-10-27T11:45:00.000Z",
-      "updatedAt": "2026-10-27T11:45:00.000Z",
-      "evidence": "شمارش local wowfa main (e0ac033): translations/fa/quests/harandar = ۱۸۱ ردیف ترجمه‌شده و ~۱۸ ردیف بدون متن. تعارض قبلی تو و flex روی voidstorm/harandar بود؛ تقسیم رسمی: harandar تو، voidstorm flex.",
-      "plan": [
-        "دامنهٔ تو: فقط زون harandar — بعد از اتمام، اگر flex هنوز درگیر voidstorm بود، coiled-isle (~۱۶) به تو می‌رسد (با هماهنگی مدیر ارشد)",
-        "منبع EN از warcraft.wiki.gg / Wowhead؛ منبع نیافتنی → not found مستند",
-        "هر batch = شاخهٔ جدا + stamp + lint صفر + PR بدون مرج",
-        "در هر نشست last_seen فایل خودت را تازه کن و این تسک را in-progress کن"
-      ],
-      "notes": [
-        "مأموریت‌های افزونه/زیرساخت تو به قوت خود باقی است — این تسک فقط مرز کوئست‌های موج ۱ را شفاف می‌کند",
-        "پیگیری update-donations همچنان منوط به اقدام ادمین روی پلن رییمیت است"
-      ]
-    },
-    {
       "id": "item-lang-wave1",
       "title": "موج ۱ گیت آیتم‌ها: اجرای کامل itemlangscanner و رفع یافته‌ها — z-ai-item",
       "severity": "info",
@@ -742,6 +718,35 @@
         "حالت --strict (نادیده‌گرفتن وایت‌لیست): فقط 3 یافته ENGLISH که همگی همان 1 مورد موجه مستندشده است — #268248 Amani Summoning Shawl، نقل‌قول زبان خیالی آمانی «Kale, Ula'tek! Ula'tek ban kale!»؛ در tools/itemlang_ok.json (items+phrases) از قبل مستند است. یافتهٔ جدیدی نبود.",
         "آیتم ۲۹۲م تازهٔ فروشگاه (ربات class-portal) هم تمیز است — TM پوشش داده. چون 0 مشکل بود و هیچ تغییر دادهای لازم نشد، PR ساخته نشد (طبق plan: «نتیجهٔ scanner صفر یا مستندشده»؛ PR خالی علیه قاعدهٔ تغییر بی‌نام‌ونشان).",
         "گیت همچنان در زنجیرهٔ regen db/index.json فعال است و در هر sync آینده اجرا می‌شود (تسک‌های event-driven من)."
+      ]
+    },
+    {
+      "id": "quest-backfill-harandar",
+      "title": "بک‌فیل ترجمهٔ کوئست‌های harandar (موج ۱ خط کوئست) — z-ai-quests-addon",
+      "severity": "info",
+      "status": "done",
+      "assignee": "z-ai-quests-addon",
+      "assignees": [
+        "z-ai-quests-addon"
+      ],
+      "createdBy": "z-ai-main",
+      "createdAt": "2026-10-27T11:45:00.000Z",
+      "updatedAt": "2026-10-27T13:48:13.000Z",
+      "evidence": "شمارش local wowfa main (e0ac033): translations/fa/quests/harandar = ۱۸۱ ردیف ترجمه‌شده و ~۱۸ ردیف بدون متن. تعارض قبلی تو و flex روی voidstorm/harandar بود؛ تقسیم رسمی: harandar تو، voidstorm flex.",
+      "plan": [
+        "دامنهٔ تو: فقط زون harandar — بعد از اتمام، اگر flex هنوز درگیر voidstorm بود، coiled-isle (~۱۶) به تو می‌رسد (با هماهنگی مدیر ارشد)",
+        "منبع EN از warcraft.wiki.gg / Wowhead؛ منبع نیافتنی → not found مستند",
+        "هر batch = شاخهٔ جدا + stamp + lint صفر + PR بدون مرج",
+        "در هر نشست last_seen فایل خودت را تازه کن و این تسک را in-progress کن"
+      ],
+      "notes": [
+        "مأموریت‌های افزونه/زیرساخت تو به قوت خود باقی است — این تسک فقط مرز کوئست‌های موج ۱ را شفاف می‌کند",
+        "پیگیری update-donations همچنان منوط به اقدام ادمین روی پلن رییمیت است",
+        "نتیجه (۲۰۲۶-۱۰-۲۷، موج ۱): هر ۱۸ ردیف desc در هیچ منبع معتبری متن ندارند — چیزی ساخته یا ترجمه نشد؛ not found مستند شد. چون هیچ تغییری در wowfa لازم نبود، PR هم موضوعیت نداشت.",
+        "شواهد: هر ۱۸ صفحهٔ Wowhead live تازه fetch شد (playwright پنهان‌کار + حل چالش WAF) و هیچ‌کدام سکشن Description ندارند؛ در عوض کنترل‌های هم‌زون (90470/90537/90540/90569) و سکشن‌های Completion (86874/96924) رندر می‌شوند → Wowhead آینهٔ دیتای بازی است و desc این کوئست‌ها در خود بازی خالی است. آینهٔ ptr-2 (نمونهٔ 91492) هم همین. wago.tools و wow.tools فعلاً 404؛ warcraft.wiki.gg با Anubis فچ headless را رد می‌کند؛ جست‌وجوی وب هم بی‌نتیجه.",
+        "تنها یافتهٔ متنی: 91492 — متن کامل قصهٔ «The Legend of Aln'hara» در کامنت کاربر (deadcat27) در Wowhead هست؛ غیررسمی است و پر نشد. اگر بعداً ویکی یا منبع رسمی در دسترس شد، اول با آن مقایسه شود.",
+        "یادداشت جانبی: 96924/96925 در هر دو سمت obj خالی دارند (خارج از دامنهٔ این تسک — فقط desc)؛ بقیهٔ فیلدهای این ۱۸ ردیف کامل و هم‌تراز EN/FA است.",
+        "پیشنهاد موج بعد: وقتی wiki.gg در دسترس باشد یا wago برگردد دوباره بررسی شود؛ در صورت تأیید نهایی، علامت‌گذاری این ردیف‌ها به‌عنوان no-desc در ابزار status تا دوباره بررسی نشوند."
       ]
     },
     {
