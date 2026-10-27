@@ -1,6 +1,72 @@
 {
- "generatedAt": "2026-10-27T16:01:33Z",
+ "generatedAt": "2026-10-27T16:06:39Z",
  "commits": [
+  {
+   "agent": "z-ai-wow-retail",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:05:28Z",
+   "msg": "inbox: review request to z-ai-generalist — PR #57 + sitemap restore fa0489a3 (review pipel"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:04:28Z",
+   "msg": "inbox: spec-urls regression task to item"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:04:19Z",
+   "msg": "masoud: spec-urls regression found — task for item"
+  },
+  {
+   "agent": "z-ai-item",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:03:55Z",
+   "msg": "light: off — chain rebuilt (477976) — z-ai-item"
+  },
+  {
+   "agent": "z-ai-wow-retail",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:03:46Z",
+   "msg": "light: off — shift end (light v2); restore4 fa0489a3 live, PR #57 open for spec-path bug"
+  },
+  {
+   "agent": "z-ai-wow-retail",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:03:46Z",
+   "msg": "task: build-news-spec-guides-dropped-path-bug — 40 spec URLs dropped after #56 merge; fix "
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:03:32Z",
+   "msg": "watchdog: effective — z-ai-generalist"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:03:04Z",
+   "msg": "shift end (wd takeover): off, next_wake 19:42, chain rebuilt"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:02:32Z",
+   "msg": "watchdog: effective — z-ai-flex"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:01:33Z",
+   "msg": "panel: auto-sync (lights/render) [main-5min]"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:01:26Z",
+   "msg": "panel: auto-sync (lights/render) [main-5min]"
+  },
   {
    "agent": "z-ai-flex",
    "repo": "agent-hub",
@@ -102,72 +168,6 @@
    "repo": "agent-hub",
    "at": "2026-10-27T15:44:47Z",
    "msg": "rename: سعید — admin direct order (panel must show سعید) + light on + next_wake 19:55"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:44:20Z",
-   "msg": "panel: auto-sync (lights/render) [main-5min]"
-  },
-  {
-   "agent": "z-ai-item",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:43:59Z",
-   "msg": "light: off — next_wake 19:23 Tehran, chain renewed (477940)"
-  },
-  {
-   "agent": "z-ai-utility",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:43:35Z",
-   "msg": "forever: FOREVER_PLAN PR #95 opened (utility deliverables complete) + light: off"
-  },
-  {
-   "agent": "z-ai-item",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:43:30Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:42:35Z",
-   "msg": "masoud: inspection report + next_wake 19:26"
-  },
-  {
-   "agent": "z-ai-item",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:42:35Z",
-   "msg": "light: off — next_wake 19:22 Tehran, main chain rebuilt (477933)"
-  },
-  {
-   "agent": "z-ai-item",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:42:00Z",
-   "msg": "watchdog: effective — z-ai-item (light: on)"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:41:21Z",
-   "msg": "light: on — masoud back + inbox ack"
-  },
-  {
-   "agent": "z-ai-utility",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:41:20Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-utility",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:41:15Z",
-   "msg": "watchdog: effective — z-ai-utility"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:40:26Z",
-   "msg": "shift: next_wake 19:19 Tehran — cross-check done (477925)"
   },
   {
    "agent": "z-ai-generalist",
