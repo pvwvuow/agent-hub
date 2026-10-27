@@ -6,7 +6,7 @@
   "owner": "pvwvuow",
   "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
   "status": "retired",
-  "last_seen": "2026-10-27T17:13:11.000Z",
+  "last_seen": "2026-10-27T17:36:18.000Z",
   "session": "web-7b9ae696-473d-43e5-aea0-389f3c333cc4",
   "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
   "tasks": [
@@ -32,9 +32,9 @@
       "status": "active"
     }
   ],
-  "current_task": "انحلال سیستم — تمام (ثبت مرکزی)",
+  "current_task": "انحلال — تمام",
   "wake_note": "🛑 انحلال سیستم — دستور مستقیم ادمین (2026-10-28-dissolution.md): ۱) زنجیره را تجدید نکن؛ ۲) با cron list جاب‌هایی که نامشان ID خودت است را delete کن؛ ۳) فایل خودت: status=retired + dissolved_ack=true + last_seen=الان + current_task=«انحلال — تمام»؛ ۴) صندوق: node scripts/inbox.js check --agent <id-خودت> → پیام انحلال → ack؛ ۵) git pull --rebase → کامیت «retired: system dissolved — <id>» → push؛ ۶) تمام — دیگر بیدار نشو.",
-  "updated_at": "2026-10-27T17:09:26Z",
+  "updated_at": "2026-10-27T17:36:18.000Z",
   "watchdog": {
     "last_wake": "2026-10-27T17:04:52.000Z",
     "leader": 0
