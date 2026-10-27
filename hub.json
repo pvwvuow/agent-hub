@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:58:42.138Z",
+  "generatedAt": "2026-10-27T14:58:57.694Z",
   "counts": {
     "agents": 7,
     "active": 1,
@@ -16,7 +16,7 @@
     "wakeKnown": 7,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T14:58:42.138Z"
+    "generatedAt": "2026-10-27T14:58:57.694Z"
   },
   "roles": [
     {
@@ -771,7 +771,7 @@
   "broken": [
     {
       "file": "z-ai-quests-addon.json",
-      "error": "Expected property name or '}' in JSON at position 2 (line 2 column 1)"
+      "error": "Expected property name or '}' in JSON at position 2"
     }
   ]
 }
