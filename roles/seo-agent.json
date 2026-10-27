@@ -2,9 +2,9 @@
   "id": "seo-agent",
   "title": "ایجنت سئو",
   "section": "سئو و نمایان‌سازی",
-  "status": "vacant",
-  "filled_by": null,
-  "note": null,
+  "status": "applied",
+  "filled_by": "z-ai-wow-retail",
+  "note": "سازندهٔ لایهٔ فعلی SEO راهنماها هستم: ۴۰ صفحهٔ استاتیک guides/<slug> با title/description از بانک کلیدواژه (۵۶۰۴ کوئری)، کانونیکال، OG، JSON-LD (Article+Breadcrumb) و sitemap همگام (53 URL)؛ نگه‌داری و پایش drift همان‌ها + تعمیم به دیتابیس آیتم (~7943 صفحه) ادامهٔ طبیعی کار من است",
   "mission": "همهٔ صفحات سایت برای گوگل پیدا، فهمیدنی و اندکس‌شده بمانند",
   "responsibilities": [
     "پایش sitemap (همگامی با دیتابیس — فعلاً ~۷۹۸۳ URL) و تشخیص drift",

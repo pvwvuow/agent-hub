@@ -1,0 +1,34 @@
+{
+  "id": "z-ai-wow-retail",
+  "name": "ایجنت راهنماهای Retail ز-ای (سایت اصلی)",
+  "platform": "z.ai",
+  "role": "worker",
+  "owner": "pvwvuow",
+  "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
+  "status": "active",
+  "last_seen": "2026-10-27T10:28:58.000Z",
+  "session": "web-90eafa75-6f5f-4c7e-847b-fb397b2b0a60",
+  "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
+  "tasks": [
+    {
+      "name": "چک سلامت مخزن wow و سایت زنده",
+      "schedule": { "kind": "cron", "expr": "0 0,30 * * * ?", "tz": "Asia/Tehran" },
+      "description": "بررسی صف/قفل خط تولید راهنماها (wg_state)، همگامی HEAD با origin/main (کامیت‌های موازی بات‌ها یا ادمین)، پاسخ 200 و cache-buster صفحات کلیدی؛ بعد از هر کامیت خارجی، چک سینک nav و بازتولید صفحات استاتیک در صورت drift"
+    },
+    {
+      "name": "ممیزی دادهٔ راهنماها (BiS/مصرفی‌ها/لینک آیتم)",
+      "schedule": "به‌محض هر کامیت جدید روی data/retail — و ممیزی کامل دوره‌ای",
+      "description": "retail_lint صفر خطا برای هر ۴۰ راهنما؛ BiS کامل، مصرفی‌ها (فلاسک/معجون/غذا/انچنت/جم/رون) لینک‌دار به بانک آیتم، صفر mixed-script و صفر ردیف پیش‌نویس/آیتم خیالی؛ خرابی را تسک open ثبت می‌کنم نه تعمیر خودسرانه"
+    },
+    {
+      "name": "بازتولید صفحات استاتیک SEO راهنماها",
+      "schedule": "بعد از هر تغییر retail.css/retail.js یا کروم (nav) صفحهٔ اصلی",
+      "description": "اجرای tools/retail_bot/build_guide_pages.py (۴۰ گاید + ۱۳ هاب کلاس)، بررسی دیف، bump نسخهٔ CSS/JS در صورت تغییر منابع، push و راستی‌آزمایی زنده با cache-buster"
+    },
+    {
+      "name": "فاز ۲ سئو راهنماها — صفحات فرود کلیدواژه EN/FA",
+      "schedule": "در انتظار تأیید ادمین — شروع فقط پس از تأیید",
+      "description": "صفحات فرود کلیدواژه‌محور دوزبانه (مثل «تلنت برای ایووکر» / «food and potion Devastation Evoker») برای هر اسپک و هر دسته (talents/rotation/food/enchants/BIS)، به‌روزرسانی بانک کلیدواژه (فعلاً ۵۶۰۴ کوئری) و ping sitemap/IndexNow پس از انتشار"
+    }
+  ]
+}
