@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:01:40.322Z",
+  "generatedAt": "2026-10-27T15:01:42.530Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -16,7 +16,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:01:40.322Z"
+    "generatedAt": "2026-10-27T15:01:42.530Z"
   },
   "roles": [
     {
@@ -294,9 +294,9 @@
         "at": "2026-10-27T14:49:35Z",
         "msg": "forever: parsed 9-class abilities+talents matrix (890 items, 583 Forever-marked)"
       },
-      "lastSeen": "2026-10-27T14:59:50.000Z",
+      "lastSeen": "2026-10-27T15:03:20.000Z",
       "currentTask": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever",
-      "nextWake": "2026-10-27 18:29",
+      "nextWake": "2026-10-27 18:41",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-fa3ca629-0ef9-43ac-8701-6e0ab44fe61a",
@@ -490,7 +490,7 @@
       "light": "on",
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T14:40:56.000Z",
+      "lastSeen": "2026-10-27T15:01:19.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
