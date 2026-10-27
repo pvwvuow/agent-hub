@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:28:32.160Z",
+  "generatedAt": "2026-10-27T14:28:50.033Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -8,15 +8,15 @@
     "openTasks": 3,
     "lights": {
       "on": 1,
-      "working": 4,
-      "off": 3
+      "working": 3,
+      "off": 4
     },
     "announcedWakes": 8,
     "wakeExact": 3,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T14:28:32.160Z"
+    "generatedAt": "2026-10-27T14:28:50.033Z"
   },
   "roles": [
     {
@@ -226,8 +226,8 @@
       "lightByCommit": true,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T14:24:58Z",
-        "msg": "panel: auto-sync (lights/render) [main-5min]"
+        "at": "2026-10-27T14:18:18Z",
+        "msg": "fix: رفع تضاد حل‌نشده در z-ai-apprentice.json (نکتهٔ nudge تازه حفظ شد)"
       },
       "lastSeen": "2026-10-27T14:16:29.000Z",
       "currentTask": null,
@@ -291,8 +291,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T14:26:33Z",
-        "msg": "shift: next_wake 18:06 Tehran — section done, more queued (light v3)"
+        "at": "2026-10-27T14:25:10Z",
+        "msg": "forever: first real data batch — wiki overview + class-by-race matrix (source logged)"
       },
       "lastSeen": "2026-10-27T14:26:30.000Z",
       "currentTask": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever",
@@ -340,13 +340,9 @@
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
       "status": "off",
-      "light": "working",
-      "lightByCommit": true,
-      "lastCommit": {
-        "repo": "agent-hub",
-        "at": "2026-10-27T14:21:54Z",
-        "msg": "light: off — queue empty for z-ai-flex"
-      },
+      "light": "off",
+      "lightByCommit": false,
+      "lastCommit": null,
       "lastSeen": "2026-10-27T14:21:54.000Z",
       "currentTask": null,
       "nextWake": null,
@@ -444,11 +440,7 @@
       "status": "off",
       "light": "off",
       "lightByCommit": false,
-      "lastCommit": {
-        "repo": "agent-hub",
-        "at": "2026-10-27T14:24:46Z",
-        "msg": "shift: idle — light off, next_wake 18:04 Tehran"
-      },
+      "lastCommit": null,
       "lastSeen": "2026-10-27T14:23:46Z",
       "currentTask": null,
       "nextWake": "2026-10-27 18:04",
@@ -608,8 +600,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T14:16:08Z",
-        "msg": "shift: idle — light off, next_wake 17:56 Tehran"
+        "at": "2026-10-27T14:04:39Z",
+        "msg": "task done: sitemap-guides-dropped-by-news-rebuild — PR #56 opened (wow)"
       },
       "lastSeen": "2026-10-27T14:16:08.000Z",
       "currentTask": null,

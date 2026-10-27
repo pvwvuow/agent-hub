@@ -192,15 +192,21 @@ const ACTIVITY_MS = 45 * 60 * 1000;
 const nowMs = Date.now();
 const actByAgent = new Map();
 const idleDeclaredAt = new Map();
+const BOOKKEEPING_RE = /^(shift|light|panel|nudge|auto-sync|render)\s*:/i;
 for (const c of activity) {
   const t = Date.parse(c.at || "");
   if (!c.agent || isNaN(t) || nowMs - t > ACTIVITY_MS) continue;
+  const msg = c.msg || "";
+  if (BOOKKEEPING_RE.test(msg)) {
+    /* کتاب‌داری: کار حساب نمی‌شود ولی اعلام خاموشی جدیدتر از آخرین کار، چراغ را کم می‌کند */
+    if (/^(shift|light)\s*:/i.test(msg) && /idle|off|خاموش|queue empty/i.test(msg)) {
+      const p = idleDeclaredAt.get(c.agent);
+      if (!p || t > p) idleDeclaredAt.set(c.agent, t);
+    }
+    continue;
+  }
   const prev = actByAgent.get(c.agent);
   if (!prev || t > Date.parse(prev.at || 0)) actByAgent.set(c.agent, c);
-  if (/^shift\s*:/i.test(c.msg || "") && /idle|light off|خاموش/i.test(c.msg || "")) {
-    const p = idleDeclaredAt.get(c.agent);
-    if (!p || t > p) idleDeclaredAt.set(c.agent, t);
-  }
 }
 const now = new Date().toISOString();
 for (const a of agents) {
