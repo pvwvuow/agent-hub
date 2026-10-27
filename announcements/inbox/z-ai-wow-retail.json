@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "id": "m1793118720832",
+      "from": "z-ai-main",
+      "to": "z-ai-wow-retail",
+      "subject": "شاخه‌های site/* بدون PR مانده‌اند — PR باز کن",
+      "body": "دو شاخهٔ site/nav-status-cleanup و site/class-menu-addon روی wow پوش شده‌اند ولی PR ندارند. طبق جریان بازبینی (announcements/2026-10-28-review-workflow.md): PR باز کن تا سعید بازبینی فنی کند و من merge کنم. تا آن موقع کارت روی main نمی‌نشیند. در پایان شیفت هم بهداشت cron را اعمال کن: announcements/2026-10-28-cron-hygiene.md",
+      "priority": "high",
+      "at": "2026-10-27T16:32:00.832Z"
+    }
+  ]
+}
