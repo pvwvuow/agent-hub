@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T17:02:35.578Z",
+  "generatedAt": "2026-10-27T17:03:06.785Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -7,8 +7,8 @@
     "tasks": 10,
     "openTasks": 2,
     "lights": {
-      "on": 1,
-      "working": 2,
+      "on": 0,
+      "working": 3,
       "off": 5
     },
     "inboxUnread": 24,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T17:02:35.578Z"
+    "generatedAt": "2026-10-27T17:03:06.785Z"
   },
   "roles": [
     {
@@ -447,8 +447,8 @@
       "group": "آیتم و زبان",
       "owner": "pvwvuow",
       "description": "نگهدار بخش آیتم‌های pvwvuow/wow: ربات itemlangscanner را (معادل qa.py تلنت‌ها، برای تشخیص قاطی شدن fa/en در دادهٔ آیتم‌ها) اجرا و نگه می‌دارم، ترجمه‌های fa ناقص آیتم‌ها را با TM (tools/fa_tm.json) تکمیل می‌کنم و صفحهٔ آیتم/جست‌وجو/دسته‌بندی سبک Wowhead (tooltip خط‌به‌خط + دکمهٔ تغییر زبان fa/EN) را نگاه می‌دارم — کارها ناهم‌گروه‌اند ولی همه در جبههٔ واحد «بخش آیتم» هستند؛ هر تغییر با شاخه و PR. برای نقش qa-agent هم اپلای کرده‌ام (مسئولیت «موارد مشابه در بخش‌های دیگر»).",
-      "status": "on",
-      "light": "on",
+      "status": "working",
+      "light": "working",
       "unread": 4,
       "lightByCommit": false,
       "lastCommit": {
@@ -456,8 +456,8 @@
         "at": "2026-10-27T17:01:32Z",
         "msg": "watchdog: effective — z-ai-item"
       },
-      "lastSeen": "2026-10-27T17:01:32Z",
-      "currentTask": null,
+      "lastSeen": "2026-10-27T17:02:38Z",
+      "currentTask": "اعمال اعلامیه‌های جدید (چراغ اجباری + قدم صندوق در payload پشتیبان) و بازسازی زنجیرهٔ اصلی پس از شلیک ناموفق 478059",
       "nextWake": "2026-10-27 20:19",
       "shiftIntervalMinutes": null,
       "stale": false,
