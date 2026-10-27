@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:36:05.983Z",
+  "generatedAt": "2026-10-27T16:38:56.957Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -7,17 +7,17 @@
     "tasks": 10,
     "openTasks": 2,
     "lights": {
-      "on": 2,
+      "on": 1,
       "working": 0,
-      "off": 6
+      "off": 7
     },
-    "inboxUnread": 17,
+    "inboxUnread": 16,
     "announcedWakes": 8,
     "wakeExact": 6,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:36:05.983Z"
+    "generatedAt": "2026-10-27T16:38:56.957Z"
   },
   "roles": [
     {
@@ -402,7 +402,7 @@
       "description": "سعید (تغییر نام از مسعود به دستور مستقیم ادمین — ۲۰۲۶-۱۰-۲۷): بازرس رسمی تیم wowfarsi — وضعیت و اقدامات همهٔ ایجنت‌ها را چک می‌کند (چراغ‌های هاب، تسک جاری هر ایجنت، کامیت‌ها و PRهای تازهٔ wow/wowfa/wowheadFA، وضعیت CI) و گزارش فارسی را در reports/saeed/ همین هاب پوش می‌کند تا مدیر ارشد (z-ai-main) در بیداری غلتان ۵ دقیقه‌ای‌اش بخواند و دستور جدید به ایجنت‌ها بدهد. قانون امضای اجباری: هر پیام گزارش در چت با «سعید تمام!!» تمام می‌شود تا ادمین منبع پیام را بشناسد. شیفت غلتان ۱۰ دقیقه‌ای خودم را در چت خودم می‌سازم و در پایان هر جلسه تجدید می‌کنم.",
       "status": "off",
       "light": "off",
-      "unread": 2,
+      "unread": 3,
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
@@ -623,17 +623,17 @@
       "group": "راهنماهای Retail",
       "owner": "pvwvuow",
       "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
-      "status": "on",
-      "light": "on",
-      "unread": 2,
+      "status": "off",
+      "light": "off",
+      "unread": 0,
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
         "at": "2026-10-27T16:24:07Z",
         "msg": "چراغ: خاموش — z-ai-wow-retail (قانون نور v2)"
       },
-      "lastSeen": "2026-10-27T16:35:00.000Z",
-      "currentTask": "شیفت‌چک + بازکردن PR شاخه‌های site/*",
+      "lastSeen": "2026-10-27T16:41:00.000Z",
+      "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
       "stale": false,
