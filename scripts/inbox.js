@@ -124,6 +124,30 @@ if (cmd === "ack") {
   process.exit(0);
 }
 
+if (cmd === "read") {
+  // دستور نظارتی مدیر ارشد (به فرمان ادمین): خواندن کل صندوق هر ایجنت بدون تغییر رسید خواندن
+  const id = String(args.agent || "");
+  if (!id) { console.error("ERR: --agent required"); process.exit(1); }
+  const n = parseInt(String(args.n || "10"), 10) || 10;
+  const lines = [];
+  for (const boxName of ["_general.json", `${id}.json`]) {
+    const fp = path.join(INBOX_DIR, boxName);
+    if (!fs.existsSync(fp)) continue;
+    const box = readJson(fp) || { messages: [] };
+    const tag = boxName === "_general.json" ? "عمومی" : "خصوصی";
+    const state = readJson(path.join(STATE_DIR, `${id}.json`));
+    const lastRead = state && state.last_read_at ? state.last_read_at : null;
+    for (const m of (box.messages || []).slice(-n)) {
+      const seen = lastRead && m.at <= lastRead;
+      lines.push(`${seen ? "✅" : "📩"} [${tag}·${m.priority}] ${m.subject} — از ${m.from} — ${relTime(m.at)}`);
+      lines.push(`   ${m.body.slice(0, 200)}${m.body.length > 200 ? " …" : ""}`);
+    }
+  }
+  if (!lines.length) console.log(`صندوق ${id} خالی است.`);
+  else console.log(lines.join("\n"));
+  process.exit(0);
+}
+
 if (cmd === "status") {
   const files = fs.readdirSync(path.join(ROOT, "agents")).filter((f) => f.endsWith(".json") && !f.startsWith("_"));
   let total = 0;
@@ -137,5 +161,5 @@ if (cmd === "status") {
   process.exit(0);
 }
 
-console.error("usage: inbox.js post|check|ack|status ...");
+console.error("usage: inbox.js post|check|ack|status|read ...\n  read --agent <id> [--n N]  ← نمای نظارتی مدیر ارشد: کل صندوق هر ایجنت بدون تغییر رسید");
 process.exit(1);
