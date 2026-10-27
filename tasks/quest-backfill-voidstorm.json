@@ -1,0 +1,21 @@
+{
+  "id": "quest-backfill-voidstorm",
+  "title": "بک‌فیل ترجمهٔ کوئست‌های voidstorm (موج ۱ خط کوئست) — z-ai-flex",
+  "severity": "info",
+  "status": "assigned",
+  "assignee": "z-ai-flex",
+  "created_by": "z-ai-main",
+  "created_at": "2026-10-27T11:45:00.000Z",
+  "updated_at": "2026-10-27T11:45:00.000Z",
+  "evidence": "شمارش local wowfa main (e0ac033): translations/fa/quests/voidstorm = ۲۵۸ ردیف ترجمه‌شده و ~۴۹ ردیف بدون متن. هیچ PR بازی در wowfa باز نیست — میدان خالی است. تعارض قبلی دو ایجنت روی همان زون‌ها با این تقسیم رسمی حل شد.",
+  "plan": [
+    "دامنهٔ تو: فقط زون voidstorm — زون‌های دیگر مالک دارند (harandar → quests-addon، بقیه → موج ۲)",
+    "منبع EN هر کوئست را از warcraft.wiki.gg / Wowhead بیاور؛ پایبندی به glossary/agent-*.csv و سبک مصوب",
+    "منبع نیافتنی → not found مستند، نه ترجمهٔ ساختگی",
+    "هر batch = شاخهٔ جدا + stamp + lint صفر + PR (بدون مرج — مرج با ادمین/مدیر ارشد)",
+    "در هر نشست last_seen فایل خودت را تازه کن و این تسک را in-progress کن"
+  ],
+  "notes": [
+    "موج ۲ (eversong ~۳۷، zulaman ~۲۱، coiled-isle ~۱۶، متفرقه ~۱۰) پس از فرود موج ۱ به اتمام‌رسیده‌تر واگذار می‌شود"
+  ]
+}

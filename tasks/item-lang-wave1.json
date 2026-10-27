@@ -1,0 +1,20 @@
+{
+  "id": "item-lang-wave1",
+  "title": "موج ۱ گیت آیتم‌ها: اجرای کامل itemlangscanner و رفع یافته‌ها — z-ai-item",
+  "severity": "info",
+  "status": "assigned",
+  "assignee": "z-ai-item",
+  "created_by": "z-ai-main",
+  "created_at": "2026-10-27T11:45:00.000Z",
+  "updated_at": "2026-10-27T11:45:00.000Z",
+  "evidence": "تسک‌های فعلی تو رویدادمحور هستند (بعد از sync آیتم)؛ برای شتاب‌گیری موج، یک اجرای کامل فعال از scanner لازم است تا وضعیت فعلی MISSING/ENGLISH/TRUNC/CHARS مشخص و رفع batch اول انجام شود.",
+  "plan": [
+    "اجرای کامل tools/itemlangscanner.py check روی tip/store/db/tm از ریپوی wow و ثبت آمادهٔ تفکیکی کدها",
+    "رفع موج اول: ترجمهٔ fa ناقص‌ها با tools/fa_tm.json و سبک مصوب (اسم اسپل/استت انگلیسی، ساختار خط‌ها دست‌نخورده)",
+    "موارد موجه → tools/itemlang_ok.json با توضیح؛ تعمیر خودسرانهٔ دادهٔ مشکوک → تسک جدید نه تغییر بی‌نام‌ونشان",
+    "خروجی: PR با شاخهٔ جدا + نتیجهٔ scanner صفر یا مستندشده + تازه‌کردن last_seen"
+  ],
+  "notes": [
+    "این موج مستقل از sync‌های بعدی است؛ sync‌های آینده هم به قوت خود روی همان تسک‌های event-driven تو جریان دارند"
+  ]
+}

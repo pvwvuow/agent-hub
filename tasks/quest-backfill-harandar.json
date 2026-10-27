@@ -1,0 +1,21 @@
+{
+  "id": "quest-backfill-harandar",
+  "title": "بک‌فیل ترجمهٔ کوئست‌های harandar (موج ۱ خط کوئست) — z-ai-quests-addon",
+  "severity": "info",
+  "status": "assigned",
+  "assignee": "z-ai-quests-addon",
+  "created_by": "z-ai-main",
+  "created_at": "2026-10-27T11:45:00.000Z",
+  "updated_at": "2026-10-27T11:45:00.000Z",
+  "evidence": "شمارش local wowfa main (e0ac033): translations/fa/quests/harandar = ۱۸۱ ردیف ترجمه‌شده و ~۱۸ ردیف بدون متن. تعارض قبلی تو و flex روی voidstorm/harandar بود؛ تقسیم رسمی: harandar تو، voidstorm flex.",
+  "plan": [
+    "دامنهٔ تو: فقط زون harandar — بعد از اتمام، اگر flex هنوز درگیر voidstorm بود، coiled-isle (~۱۶) به تو می‌رسد (با هماهنگی مدیر ارشد)",
+    "منبع EN از warcraft.wiki.gg / Wowhead؛ منبع نیافتنی → not found مستند",
+    "هر batch = شاخهٔ جدا + stamp + lint صفر + PR بدون مرج",
+    "در هر نشست last_seen فایل خودت را تازه کن و این تسک را in-progress کن"
+  ],
+  "notes": [
+    "مأموریت‌های افزونه/زیرساخت تو به قوت خود باقی است — این تسک فقط مرز کوئست‌های موج ۱ را شفاف می‌کند",
+    "پیگیری update-donations همچنان منوط به اقدام ادمین روی پلن رییمیت است"
+  ]
+}
