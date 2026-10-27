@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:38:16.320Z",
+  "generatedAt": "2026-10-27T14:39:08.413Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -16,7 +16,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T14:38:16.320Z"
+    "generatedAt": "2026-10-27T14:39:08.413Z"
   },
   "roles": [
     {
@@ -550,9 +550,9 @@
         "at": "2026-10-27T14:15:18Z",
         "msg": "working: forever-wow-data — workspace setup (light on + next_wake 17:50)"
       },
-      "lastSeen": "2026-10-27T14:21:11Z",
+      "lastSeen": "2026-10-27T14:38:54Z",
       "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
-      "nextWake": "2026-10-27 17:50",
+      "nextWake": "2026-10-27 18:18",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-8c228bb5-858c-4336-9e86-af621a0eb70e",
