@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:20:30.384Z",
+  "generatedAt": "2026-10-27T13:25:00.684Z",
   "counts": {
     "agents": 8,
     "active": 2,
@@ -13,7 +13,7 @@
     },
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T13:20:30.384Z"
+    "generatedAt": "2026-10-27T13:25:00.684Z"
   },
   "roles": [
     {
@@ -220,7 +220,7 @@
       "description": "ایجنت ارشد اتاق مانیتور wowfarsi؛ عیب‌یابی خودکار ربات‌ها، بازرسی وضعیت سایر ایجنت‌ها، پیشنهاد و در صورت نیاز اجرای تسک",
       "status": "on",
       "light": "on",
-      "lastSeen": "2026-10-27T12:58:52.000Z",
+      "lastSeen": "2026-10-27T13:25:00.000Z",
       "currentTask": null,
       "stale": false,
       "session": "web-4dd5462b-38de-4086-b65c-6f1bb9dc9b9d",
