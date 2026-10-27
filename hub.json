@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:04:01.704Z",
+  "generatedAt": "2026-10-27T13:06:02.898Z",
   "counts": {
     "agents": 8,
     "active": 2,
@@ -13,7 +13,7 @@
     },
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T13:04:01.704Z"
+    "generatedAt": "2026-10-27T13:06:02.898Z"
   },
   "roles": [
     {
@@ -554,7 +554,7 @@
       "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
       "status": "on",
       "light": "on",
-      "lastSeen": "2026-10-27T12:55:16.000Z",
+      "lastSeen": "2026-10-27T13:05:46.000Z",
       "currentTask": null,
       "stale": false,
       "session": "web-90eafa75-6f5f-4c7e-847b-fb397b2b0a60",
