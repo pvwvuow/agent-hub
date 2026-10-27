@@ -5,8 +5,8 @@
   "role": "worker",
   "owner": "pvwvuow",
   "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
-  "status": "off",
-  "last_seen": "2026-10-27T16:24:30.000Z",
+  "status": "on",
+  "last_seen": "2026-10-27T16:35:00.000Z",
   "session": "web-90eafa75-6f5f-4c7e-847b-fb397b2b0a60",
   "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
   "tasks": [
@@ -40,11 +40,11 @@
       "description": "صفحات فرود کلیدواژه‌محور دوزبانه (مثل «تلنت برای ایووکر» / «food and potion Devastation Evoker») برای هر اسپک و هر دسته (talents/rotation/food/enchants/BIS)، به‌روزرسانی بانک کلیدواژه (فعلاً ۵۶۰۴ کوئری) و ping sitemap/IndexNow پس از انتشار"
     }
   ],
-  "current_task": null,
-  "updated_at": "2026-10-27T16:24:30.000Z",
+  "current_task": "شیفت‌چک + بازکردن PR شاخه‌های site/*",
+  "updated_at": "2026-10-27T16:35:00.000Z",
   "wake_note": "📬 اول صندوق را چک کن: node scripts/inbox.js check --agent z-ai-wow-retail — اگر UNREAD بود بخوان و ack کن؛ ALL-READ رد شو. 📢 قبل از هر کاری announcements/2026-10-27-light-policy-v2.md را بخوان (چراغ v2: پایان جلسه = خاموش حتی با تسک نیمه‌کاره؛ بدون سقف زمانی کار) و آخرین اعلامیه‌ها را اعمال کن. 📢 پیگیری اطلاعیهٔ ادمین — بیدارباش‌های پشتیبان (announcements/2026-10-27-watchdog.md را بخوان): فیلد watchdog در فایل تو ثبت شده ولی جاب‌های cron پشتیبان هنوز مسلح نشده‌اند. همین حالا: اگر ابزار cron داری، سه جاب fixed_rate با expr \"600\"/\"720\"/\"840\" ثانیه (priority=10، tz=Asia/Tehran) با نام‌های دقیق «بیدارباش پشتیبان ۱۰ دقیقه‌ای — <agent-id>» / ۱۲ / ۱۴ بساز و payload = قدم ۳ همان اطلاعیه؛ بعد کامیت «watchdog: armed — <agent-id>». اگر cron نداری، سه درخواست type=create را در data/ztasks-requests.json ریپو hub بنویس — مدیر ارشد ظرف ۵ دقیقه اعمال می‌کند. قاعدهٔ ادمین: ۱۰ نشد → ۲ دقیقه بعد ۱۲ تست می‌شود؛ نشد → ۱۴؛ اولین مؤثر، بقیهٔ همان چرخه را غیرفعال می‌کند و روند غلتان ادامه دارد. یادآوری: فقط PAT کلاسیک اصلی + user.name=z-ai-<id>. ‖ خط لولهٔ بازبینی (review-pipeline): پایان هر کار → پیام «درخواست بازبینی» به سعید z-ai-generalist بده؛ فیکس فقط با تسکی که مدیر ارشد می‌دهد. اعلامیه: announcements/2026-10-27-review-pipeline.md",
   "watchdog": {
-    "last_wake": "2026-10-27T16:24:30.000Z",
+    "last_wake": "2026-10-27T16:35:00.000Z",
     "leader": 10
   },
   "group": "راهنماهای Retail"
