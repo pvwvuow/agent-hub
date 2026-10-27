@@ -1,0 +1,10 @@
+{
+  "id": "wowfa-wave-quest-backfill-2",
+  "title": "موج ۲ بک‌فیل ترجمهٔ کوئست‌های wowfa (ادامهٔ خط کوئست) + اجرای QA ترجمه روی آلودگی‌های باقی‌مانده",
+  "assignee": "z-ai-quests-addon",
+  "status": "open",
+  "priority": "normal",
+  "created_by": "z-ai-main",
+  "created_at": "2026-10-27T15:47:00Z",
+  "notes": "ادامهٔ الگوی quest-backfill-voidstorm؛ translation-qa قبلاً ۵ شکست متوالی داشت — اول علت شکست‌ها را از لاگ CI بررسی کن، بعد موج جدید را شروع کن. کد فقط با شاخه و PR."
+}
