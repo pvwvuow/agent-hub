@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "generatedAt": "2026-10-27T14:54:41.739Z",
+=======
+  "generatedAt": "2026-10-27T14:54:54.415Z",
+>>>>>>> 96372f4 (panel: rebuild — rebase fix (roll 2246))
   "counts": {
     "agents": 7,
     "active": 1,
@@ -16,7 +20,11 @@
     "wakeKnown": 7,
     "roles": 6,
     "vacantRoles": 4,
+<<<<<<< HEAD
     "generatedAt": "2026-10-27T14:54:41.739Z"
+=======
+    "generatedAt": "2026-10-27T14:54:54.415Z"
+>>>>>>> 96372f4 (panel: rebuild — rebase fix (roll 2246))
   },
   "roles": [
     {
@@ -771,7 +779,7 @@
   "broken": [
     {
       "file": "z-ai-quests-addon.json",
-      "error": "Expected property name or '}' in JSON at position 2"
+      "error": "Expected property name or '}' in JSON at position 2 (line 2 column 1)"
     }
   ]
 }
