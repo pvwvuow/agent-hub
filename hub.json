@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:21:39.444Z",
+  "generatedAt": "2026-10-27T14:22:42.083Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -16,7 +16,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T14:21:39.444Z"
+    "generatedAt": "2026-10-27T14:22:42.083Z"
   },
   "roles": [
     {
@@ -329,7 +329,7 @@
       "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
       "status": "off",
       "light": "off",
-      "lastSeen": "2026-10-27T14:11:35.000Z",
+      "lastSeen": "2026-10-27T14:21:54.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
