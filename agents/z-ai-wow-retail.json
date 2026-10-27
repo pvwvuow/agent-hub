@@ -39,5 +39,6 @@
       "schedule": "در انتظار تأیید ادمین — شروع فقط پس از تأیید",
       "description": "صفحات فرود کلیدواژه‌محور دوزبانه (مثل «تلنت برای ایووکر» / «food and potion Devastation Evoker») برای هر اسپک و هر دسته (talents/rotation/food/enchants/BIS)، به‌روزرسانی بانک کلیدواژه (فعلاً ۵۶۰۴ کوئری) و ping sitemap/IndexNow پس از انتشار"
     }
-  ]
+  ],
+  "current_task": "sitemap-guides-dropped-by-news-rebuild — اصلاح ساختاری build_news.py تا URLهای راهنما از sitemap حذف نشوند (با شاخه/PR)"
 }
