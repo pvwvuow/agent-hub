@@ -1,0 +1,18 @@
+{
+ "meta": {
+  "source": "https://warcraft.wiki.gg/wiki/Legacy_Tree",
+  "accessed_at_utc": "2026-10-27T16:16:01Z",
+  "note": "صفحهٔ Legacy Tree = سیستم Legacy سیستم‌محور Forever (نه فقط درخت حرفه‌ها) — پیوند صفحات legacy talentهای ۳۷تایی فقط-ویکی"
+ },
+ "summary_lines": [
+  "The Legacy System is the -specific implementation of [[achievement]]s. Available after reaching level 25 on at least one character and accessed via the default  keybind or the Legacy button in the [[micro menu]], Legacy improves the leveling experience for alts and professions.",
+  "The Legacy interface is divided into three sections: Rewards, Challenges, and Trees.",
+  "[[File:Legacy Rewards.jpg|thumb|Legacy Rewards UI]]",
+  "There are 65 Legacy Points available with the launch of Forever, and players earn account-wide rewards at point thresholds:",
+  "[[File:Legacy Challenges.jpg|thumb|Legacy Challenges UI]]",
+  "Earn Legacy Points by completing challenges, such as leveling one of each class to level 25, 45, and 60, or reaching 150, 225, or 300 skill in the six non-gathering primary tradeskills.",
+  "[[File:Legacy Trees.jpg|thumb|Legacy Trees UI]]",
+  "Points are earned account-wide, but each character can individually fill out their own trees and respec the trees as necessary at class trainers, so if one character is already maxed out and doesn't need any help with leveling, that character can spend points on tradeskill buffs instead. There are three trees available: Professions, Adventure, and Resourcefulness."
+ ],
+ "raw_wikitext_len": 5810
+}
