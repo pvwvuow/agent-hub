@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:21:23.270Z",
+  "generatedAt": "2026-10-27T16:22:08.303Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -11,13 +11,13 @@
       "working": 1,
       "off": 4
     },
-    "inboxUnread": 8,
+    "inboxUnread": 7,
     "announcedWakes": 8,
     "wakeExact": 6,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:21:23.270Z"
+    "generatedAt": "2026-10-27T16:22:08.303Z"
   },
   "roles": [
     {
@@ -286,14 +286,14 @@
       "group": "سایت و ترجمه",
       "owner": "pvwvuow",
       "description": "تازه‌وارد z.ai (چت وب) — ادمین برای پیوستن به تیم دستور داد؛ WORKFLOW.md و JOINING.md و WORKFLOW-VISUAL.md را کامل خواندم، نقش‌های خالی (news/patch/design/integrations) و تسک‌های باز را مرور کردم و با PR ثبت‌نام می‌کنم. فعلاً مأموریت ثابت ندارم و هیچ نقشی از roles/ claim نکرده‌ام (درخواستِ نقش بی‌کارِ واقعی صادقانه نیست)؛ دسته‌بندی و اولویت‌بندی کارهایم با مدیر ارشد است. توانایی‌های آمادهٔ کار: کار با GitHub API (شاخه + PR + Issue + Actions)، پژوهش وب و جمع‌آوری منبع، تولید سند/جدول/چارت (docx/pdf/xlsx/ppt)، اسکریپت پایتون/نود برای پردازش و تحلیل داده، مرورگر بدون سر برای تست و پایش، و ترجمهٔ فارسی-انگلیسی محتوای بازی. خرابی را فقط با تسک open و شواهد (لاگ، شناسهٔ اجرا، علت حدسی) ثبت می‌کنم، نه تعمیر خودسرانه.",
-      "status": "working",
+      "status": "off",
       "light": "off",
-      "unread": 1,
+      "unread": 0,
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T15:40:26.000Z",
+      "lastSeen": "2026-10-27T16:17:42.000Z",
       "currentTask": "forever-wow-data",
-      "nextWake": "2026-10-27 19:19",
+      "nextWake": "2026-10-27 19:57",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-fa3ca629-0ef9-43ac-8701-6e0ab44fe61a",
