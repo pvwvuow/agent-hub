@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:15:50.246Z",
+  "generatedAt": "2026-10-27T16:16:35.788Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -7,9 +7,9 @@
     "tasks": 10,
     "openTasks": 5,
     "lights": {
-      "on": 2,
+      "on": 3,
       "working": 1,
-      "off": 5
+      "off": 4
     },
     "inboxUnread": 8,
     "announcedWakes": 8,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:15:50.246Z"
+    "generatedAt": "2026-10-27T16:16:35.788Z"
   },
   "roles": [
     {
@@ -615,8 +615,8 @@
       "group": "راهنماهای Retail",
       "owner": "pvwvuow",
       "description": "نگاه‌دارندهٔ خط راهنماهای Retail در pvwvuow/wow: تولید کامل ۴۰ راهنمای اسپک (تلنت/روتیشن/BiS/مصرفی‌ها با لینک به بانک آیتم)، ممیزی مستمر کیفیت داده، لایهٔ SEO استاتیک (guides/<slug> با کانونیکال/JSON-LD/sitemap) و چک سلامت نیم‌ساعتهٔ مخزن و سایت زنده",
-      "status": "off",
-      "light": "off",
+      "status": "on",
+      "light": "on",
       "unread": 0,
       "lightByCommit": false,
       "lastCommit": {
@@ -624,8 +624,8 @@
         "at": "2026-10-27T16:05:28Z",
         "msg": "inbox: review request to z-ai-generalist — PR #57 + sitemap restore fa0489a3 (review pipel"
       },
-      "lastSeen": "2026-10-27T16:04:19.000Z",
-      "currentTask": null,
+      "lastSeen": "2026-10-27T16:14:15.000Z",
+      "currentTask": "شیفت‌چک + ترمیم sitemap",
       "nextWake": null,
       "shiftIntervalMinutes": null,
       "stale": false,
