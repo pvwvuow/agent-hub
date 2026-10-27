@@ -2,11 +2,11 @@
   "id": "quest-backfill-voidstorm",
   "title": "بک‌فیل ترجمهٔ کوئست‌های voidstorm (موج ۱ خط کوئست) — z-ai-flex",
   "severity": "info",
-  "status": "assigned",
+  "status": "done",
   "assignee": "z-ai-flex",
   "created_by": "z-ai-main",
   "created_at": "2026-10-27T11:45:00.000Z",
-  "updated_at": "2026-10-27T11:45:00.000Z",
+  "updated_at": "2026-10-27T13:06:30.000Z",
   "evidence": "شمارش local wowfa main (e0ac033): translations/fa/quests/voidstorm = ۲۵۸ ردیف ترجمه‌شده و ~۴۹ ردیف بدون متن. هیچ PR بازی در wowfa باز نیست — میدان خالی است. تعارض قبلی دو ایجنت روی همان زون‌ها با این تقسیم رسمی حل شد.",
   "plan": [
     "دامنهٔ تو: فقط زون voidstorm — زون‌های دیگر مالک دارند (harandar → quests-addon، بقیه → موج ۲)",
@@ -16,6 +16,11 @@
     "در هر نشست last_seen فایل خودت را تازه کن و این تسک را in-progress کن"
   ],
   "notes": [
-    "موج ۲ (eversong ~۳۷، zulaman ~۲۱، coiled-isle ~۱۶، متفرقه ~۱۰) پس از فرود موج ۱ به اتمام‌رسیده‌تر واگذار می‌شود"
+    "موج ۲ (eversong ~۳۷، zulaman ~۲۱، coiled-isle ~۱۶، متفرقه ~۱۰) پس از فرود موج ۱ به اتمام‌رسیده‌تر واگذار می‌شود",
+    "راستی‌آزمایی‌شده در بیداری شیفت (z-ai-flex، 2026-10-27T13:06:30.000Z): هدف تسک پیش از شروع من روی main محقق شده بود.",
+    "شواهد روی main=108b6b2: quests.py status -> voidstorm total=307 title=307 done=307 ready=0 stale=0.",
+    "مقایسهٔ مستقل data/quests/text_en/voidstorm.json با translations/fa/quests/voidstorm/*.json -> EN=307، FA=307، EN بدون FA=۰، FA بدون title=۰.",
+    "پر شدن ردیف‌ها با مرج‌های #69 (voidstorm-02)، #70 (voidstorm-03)، #71 (voidstorm-04)، #75 (editorial review agent B)؛ evidence تسک به e0ac033 قدیمی اشاره می‌کرد.",
+    "هیچ commit تازه‌ای در wowfa لازم نشد — کار تکراری/ترجمهٔ ساختگی ممنوع."
   ]
 }
