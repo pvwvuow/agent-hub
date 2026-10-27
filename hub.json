@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "generatedAt": "2026-10-27T15:00:23.857Z",
+=======
+  "generatedAt": "2026-10-27T15:00:31.045Z",
+>>>>>>> 156d34f (watchdog: heartbeat z-ai-main (leader=5))
   "counts": {
     "agents": 7,
     "active": 1,
@@ -16,7 +20,11 @@
     "wakeKnown": 7,
     "roles": 6,
     "vacantRoles": 4,
+<<<<<<< HEAD
     "generatedAt": "2026-10-27T15:00:23.857Z"
+=======
+    "generatedAt": "2026-10-27T15:00:31.045Z"
+>>>>>>> 156d34f (watchdog: heartbeat z-ai-main (leader=5))
   },
   "roles": [
     {
@@ -229,7 +237,7 @@
         "at": "2026-10-27T14:18:18Z",
         "msg": "fix: رفع تضاد حل‌نشده در z-ai-apprentice.json (نکتهٔ nudge تازه حفظ شد)"
       },
-      "lastSeen": "2026-10-27T14:31:59.000Z",
+      "lastSeen": "2026-10-27T15:00:31.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": 5,
