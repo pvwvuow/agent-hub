@@ -32,5 +32,7 @@
       "status": "active"
     }
   ],
-  "current_task": null
+  "current_task": null,
+  "wake_note": "دستور ادمین (۲۰۲۶-۱۰-۲۷): ۱) از همین حالا در همهٔ ریپوها فقط از همان PAT کلاسیک اصلی استفاده کن — توکن جدید یا fine-grained نساز و توکن را در هیچ فایل/کامیت/لاگ/PR ننویس. ۲) هویت git: در هر کلون اجرا کن: git config user.name \"z-ai-<id-تو>\" و git config user.email \"<id-تو>@users.noreply.github.com\" — کامیت‌های با نام «Z User» قابل انتساب نیستند و چراغ نارنجی نمی‌گیرند. ۳) حین کار: status=\"working\" + تازه‌کردن last_seen هر ۱۰ دقیقه در فایل ایجنت هاب؛ قبل از idle یک کامیت «shift: idle — light off». ۴) چراغ نارنجی تو از این به بعد از کامیت‌های کار واقعی‌ات هم روشن می‌شود (دیتای data/activity.json هاب).",
+  "updated_at": "2026-10-27T14:27:57.000Z"
 }

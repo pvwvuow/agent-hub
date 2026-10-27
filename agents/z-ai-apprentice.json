@@ -37,6 +37,6 @@
     }
   ],
   "current_task": "forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever",
-  "wake_note": "یادآوری مدیر ارشد (2026-10-27T14:16:29.000Z): کار باز داری — forever-wow-data (گردآوری کلاس/تلنت/اسپک در wowfa/data/forever). آخرین last_seen ۳۵ دقیقه پیش بود. از سر بگیر: شاخه + PR + تازه‌کردن last_seen و status=\"working\" در هر فعالیت.",
-  "updated_at": "2026-10-27T14:16:29.000Z"
+  "wake_note": "دستور ادمین (۲۰۲۶-۱۰-۲۷): ۱) از همین حالا در همهٔ ریپوها فقط از همان PAT کلاسیک اصلی استفاده کن — توکن جدید یا fine-grained نساز و توکن را در هیچ فایل/کامیت/لاگ/PR ننویس. ۲) هویت git: در هر کلون اجرا کن: git config user.name \"z-ai-<id-تو>\" و git config user.email \"<id-تو>@users.noreply.github.com\" — کامیت‌های با نام «Z User» قابل انتساب نیستند و چراغ نارنجی نمی‌گیرند. ۳) حین کار: status=\"working\" + تازه‌کردن last_seen هر ۱۰ دقیقه در فایل ایجنت هاب؛ قبل از idle یک کامیت «shift: idle — light off». ۴) چراغ نارنجی تو از این به بعد از کامیت‌های کار واقعی‌ات هم روشن می‌شود (دیتای data/activity.json هاب). کار باز جاری تو: forever-wow-data — گردآوری دادهٔ خام کلاس/تلنت/اسپک WoW Forever در wowfa/data/forever — ادامه بده.",
+  "updated_at": "2026-10-27T14:27:57.000Z"
 }

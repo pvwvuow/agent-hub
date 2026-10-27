@@ -184,10 +184,35 @@ const sevRank = { critical: 0, warning: 1, info: 2 };
 const taskStRank = { open: 0, assigned: 1, "in-progress": 2, done: 3, rejected: 4 };
 tasks.sort((a, b) => (sevRank[a.severity] ?? 3) - (sevRank[b.severity] ?? 3) || (taskStRank[a.status] ?? 9) - (taskStRank[b.status] ?? 9));
 
+/* فعالیت زنده از کامیت‌ها — دستور ادمین ۲۰۲۶-۱۰-۲۷: ایجنتی که کامیت کارِ تازه دارد = 🟠 حتی اگر ضربانش کهنه باشد.
+   کامیت‌های bookkeeping (shift:/light:/panel:) فعالیت حساب نمی‌شوند؛ اعلام idle جدیدتر از آخرین کار، چراغ را خاموش می‌کند. */
+let activity = [];
+try { activity = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "activity.json"), "utf8")).commits || []; } catch (e) {}
+const ACTIVITY_MS = 45 * 60 * 1000;
+const nowMs = Date.now();
+const actByAgent = new Map();
+const idleDeclaredAt = new Map();
+for (const c of activity) {
+  const t = Date.parse(c.at || "");
+  if (!c.agent || isNaN(t) || nowMs - t > ACTIVITY_MS) continue;
+  const prev = actByAgent.get(c.agent);
+  if (!prev || t > Date.parse(prev.at || 0)) actByAgent.set(c.agent, c);
+  if (/^shift\s*:/i.test(c.msg || "") && /idle|light off|خاموش/i.test(c.msg || "")) {
+    const p = idleDeclaredAt.get(c.agent);
+    if (!p || t > p) idleDeclaredAt.set(c.agent, t);
+  }
+}
 const now = new Date().toISOString();
 for (const a of agents) {
   a.__stale = !a.last_seen || isNaN(Date.parse(a.last_seen)) || Date.now() - Date.parse(a.last_seen) > STALE_MS;
   a.__light = lightOf(a);
+  const id = a.id || a.__file.replace(/\.json$/, "");
+  const act = actByAgent.get(id);
+  a.__lastCommit = act || null;
+  if (act && a.__light.key !== "working") {
+    const idleT = idleDeclaredAt.get(id);
+    if (!(idleT && Date.parse(act.at) <= idleT)) a.__light = { key: "working", fresh: true, byCommit: true };
+  }
 }
 
 const validAgents = agents.filter((a) => !a.__broken);
@@ -333,6 +358,8 @@ const hub = {
     description: a.description || null,
     status: a.status || "unknown",
     light: a.__light.key,
+    lightByCommit: Boolean(a.__light.byCommit),
+    lastCommit: a.__lastCommit ? { repo: a.__lastCommit.repo || null, at: a.__lastCommit.at || null, msg: a.__lastCommit.msg || null } : null,
     lastSeen: a.last_seen || null,
     currentTask: a.current_task || null,
     nextWake: a.next_wake || a.nextWake || null,
@@ -396,7 +423,7 @@ function agentCard(a) {
         <span class="badge">${esc(a.platform || "—")}</span>
         <span class="badge ${stCls}">${esc(stTxt)}</span>${curTask}</div>
       ${a.description ? `<p class="desc">${esc(a.description)}</p>` : ""}
-      <div class="wkline">${wkHtml}<span class="badge">فعالیت: ${esc(a.lastSeen ? relTime(a.lastSeen) : "—")}</span></div>
+      <div class="wkline">${wkHtml}<span class="badge">فعالیت: ${esc(a.last_seen ? relTime(a.last_seen) : "—")}</span>${a.__lastCommit ? `<span class="badge" title="${esc(a.__lastCommit.msg || "")}">🔧 کامیت: ${esc(String(a.__lastCommit.msg || "").slice(0, 44))} — ${esc(a.__lastCommit.repo || "؟")}، ${esc(relTime(a.__lastCommit.at))}</span>` : ""}</div>
       ${mineHtml}
       <ul class="tasks">${tasksHtml || '<li class="t-desc">تسک زمان‌داری ثبت نشده</li>'}</ul>
       <div class="meta">مالک: ${esc(a.owner || "—")}</div>

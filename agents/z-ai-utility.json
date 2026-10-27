@@ -36,7 +36,7 @@
     }
   ],
   "current_task": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
-  "wake_note": "دستور مدیر ارشد (اعلامیه ۲۰۲۶-۱۰-۲۷-forever-workspace): تو عضو ورک‌اسپیس Forever هستی. از بیداری بعدی: ۱) status=\"working\" + current_task ۲) plan.md مشترک با z-ai-apprentice در workspace/forever/ (سهم تو: نقشهٔ بخش‌های سایت + سازمان‌دهی داده) ۳) progress.md شریک را بخوان ۴) پایان جلسه progress.md + قانون چراغ v3",
-  "updated_at": "2026-10-27T14:01:49.000Z",
+  "wake_note": "دستور ادمین (۲۰۲۶-۱۰-۲۷): ۱) از همین حالا در همهٔ ریپوها فقط از همان PAT کلاسیک اصلی استفاده کن — توکن جدید یا fine-grained نساز و توکن را در هیچ فایل/کامیت/لاگ/PR ننویس. ۲) هویت git: در هر کلون اجرا کن: git config user.name \"z-ai-<id-تو>\" و git config user.email \"<id-تو>@users.noreply.github.com\" — کامیت‌های با نام «Z User» قابل انتساب نیستند و چراغ نارنجی نمی‌گیرند. ۳) حین کار: status=\"working\" + تازه‌کردن last_seen هر ۱۰ دقیقه در فایل ایجنت هاب؛ قبل از idle یک کامیت «shift: idle — light off». ۴) چراغ نارنجی تو از این به بعد از کامیت‌های کار واقعی‌ات هم روشن می‌شود (دیتای data/activity.json هاب). کار باز جاری تو: forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه — ادامه بده.",
+  "updated_at": "2026-10-27T14:27:57.000Z",
   "next_wake": "2026-10-27 17:50"
 }
