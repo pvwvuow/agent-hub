@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-27T12:26:01.355Z",
+  "generatedAt": "2026-10-27T12:27:03.922Z",
   "counts": {
     "agents": 8,
     "active": 4,
     "stale": 0,
     "tasks": 5,
-    "openTasks": 5,
+    "openTasks": 4,
     "lights": {
-      "on": 2,
-      "working": 2,
+      "on": 3,
+      "working": 1,
       "off": 4
     },
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T12:26:01.355Z"
+    "generatedAt": "2026-10-27T12:27:03.922Z"
   },
   "roles": [
     {
@@ -382,10 +382,10 @@
       "role": "worker",
       "owner": "pvwvuow",
       "description": "نگهدار بخش آیتم‌های pvwvuow/wow: ربات itemlangscanner را (معادل qa.py تلنت‌ها، برای تشخیص قاطی شدن fa/en در دادهٔ آیتم‌ها) اجرا و نگه می‌دارم، ترجمه‌های fa ناقص آیتم‌ها را با TM (tools/fa_tm.json) تکمیل می‌کنم و صفحهٔ آیتم/جست‌وجو/دسته‌بندی سبک Wowhead (tooltip خط‌به‌خط + دکمهٔ تغییر زبان fa/EN) را نگاه می‌دارم — کارها ناهم‌گروه‌اند ولی همه در جبههٔ واحد «بخش آیتم» هستند؛ هر تغییر با شاخه و PR. برای نقش qa-agent هم اپلای کرده‌ام (مسئولیت «موارد مشابه در بخش‌های دیگر»).",
-      "status": "working",
-      "light": "working",
-      "lastSeen": "2026-10-27T12:25:27.000Z",
-      "currentTask": "item-lang-wave1",
+      "status": "on",
+      "light": "on",
+      "lastSeen": "2026-10-27T12:26:50.000Z",
+      "currentTask": null,
       "stale": false,
       "session": "web-f068eaa9-b412-43eb-8f93-08410ad6b4bf",
       "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
@@ -597,26 +597,6 @@
       ]
     },
     {
-      "id": "item-lang-wave1",
-      "title": "موج ۱ گیت آیتم‌ها: اجرای کامل itemlangscanner و رفع یافته‌ها — z-ai-item",
-      "severity": "info",
-      "status": "assigned",
-      "assignee": "z-ai-item",
-      "createdBy": "z-ai-main",
-      "createdAt": "2026-10-27T11:45:00.000Z",
-      "updatedAt": "2026-10-27T11:45:00.000Z",
-      "evidence": "تسک‌های فعلی تو رویدادمحور هستند (بعد از sync آیتم)؛ برای شتاب‌گیری موج، یک اجرای کامل فعال از scanner لازم است تا وضعیت فعلی MISSING/ENGLISH/TRUNC/CHARS مشخص و رفع batch اول انجام شود.",
-      "plan": [
-        "اجرای کامل tools/itemlangscanner.py check روی tip/store/db/tm از ریپوی wow و ثبت آمادهٔ تفکیکی کدها",
-        "رفع موج اول: ترجمهٔ fa ناقص‌ها با tools/fa_tm.json و سبک مصوب (اسم اسپل/استت انگلیسی، ساختار خط‌ها دست‌نخورده)",
-        "موارد موجه → tools/itemlang_ok.json با توضیح؛ تعمیر خودسرانهٔ دادهٔ مشکوک → تسک جدید نه تغییر بی‌نام‌ونشان",
-        "خروجی: PR با شاخهٔ جدا + نتیجهٔ scanner صفر یا مستندشده + تازه‌کردن last_seen"
-      ],
-      "notes": [
-        "این موج مستقل از sync‌های بعدی است؛ sync‌های آینده هم به قوت خود روی همان تسک‌های event-driven تو جریان دارند"
-      ]
-    },
-    {
       "id": "quest-backfill-harandar",
       "title": "بک‌فیل ترجمهٔ کوئست‌های harandar (موج ۱ خط کوئست) — z-ai-quests-addon",
       "severity": "info",
@@ -656,6 +636,30 @@
       ],
       "notes": [
         "موج ۲ (eversong ~۳۷، zulaman ~۲۱، coiled-isle ~۱۶، متفرقه ~۱۰) پس از فرود موج ۱ به اتمام‌رسیده‌تر واگذار می‌شود"
+      ]
+    },
+    {
+      "id": "item-lang-wave1",
+      "title": "موج ۱ گیت آیتم‌ها: اجرای کامل itemlangscanner و رفع یافته‌ها — z-ai-item",
+      "severity": "info",
+      "status": "done",
+      "assignee": "z-ai-item",
+      "createdBy": "z-ai-main",
+      "createdAt": "2026-10-27T11:45:00.000Z",
+      "updatedAt": "2026-10-27T12:26:50.000Z",
+      "evidence": "تسک‌های فعلی تو رویدادمحور هستند (بعد از sync آیتم)؛ برای شتاب‌گیری موج، یک اجرای کامل فعال از scanner لازم است تا وضعیت فعلی MISSING/ENGLISH/TRUNC/CHARS مشخص و رفع batch اول انجام شود.",
+      "plan": [
+        "اجرای کامل tools/itemlangscanner.py check روی tip/store/db/tm از ریپوی wow و ثبت آمادهٔ تفکیکی کدها",
+        "رفع موج اول: ترجمهٔ fa ناقص‌ها با tools/fa_tm.json و سبک مصوب (اسم اسپل/استت انگلیسی، ساختار خط‌ها دست‌نخورده)",
+        "موارد موجه → tools/itemlang_ok.json با توضیح؛ تعمیر خودسرانهٔ دادهٔ مشکوک → تسک جدید نه تغییر بی‌نام‌ونشان",
+        "خروجی: PR با شاخهٔ جدا + نتیجهٔ scanner صفر یا مستندشده + تازه‌کردن last_seen"
+      ],
+      "notes": [
+        "این موج مستقل از sync‌های بعدی است؛ sync‌های آینده هم به قوت خود روی همان تسک‌های event-driven تو جریان دارند",
+        "موج ۱ اجرا شد (۲۰۲۶-۱۰-۲۷ ~12:25 UTC، main @ c7634147): اسکن کامل scanner — 0 مشکل (tip 7931 آیتم · store 292 · db 7925 · tm 3409 جفت)؛ خروجی exit 0.",
+        "حالت --strict (نادیده‌گرفتن وایت‌لیست): فقط 3 یافته ENGLISH که همگی همان 1 مورد موجه مستندشده است — #268248 Amani Summoning Shawl، نقل‌قول زبان خیالی آمانی «Kale, Ula'tek! Ula'tek ban kale!»؛ در tools/itemlang_ok.json (items+phrases) از قبل مستند است. یافتهٔ جدیدی نبود.",
+        "آیتم ۲۹۲م تازهٔ فروشگاه (ربات class-portal) هم تمیز است — TM پوشش داده. چون 0 مشکل بود و هیچ تغییر دادهای لازم نشد، PR ساخته نشد (طبق plan: «نتیجهٔ scanner صفر یا مستندشده»؛ PR خالی علیه قاعدهٔ تغییر بی‌نام‌ونشان).",
+        "گیت همچنان در زنجیرهٔ regen db/index.json فعال است و در هر sync آینده اجرا می‌شود (تسک‌های event-driven من)."
       ]
     }
   ],
