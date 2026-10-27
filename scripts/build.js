@@ -430,6 +430,8 @@ function agentCard(a) {
     ? `<span class="badge wk${wk.est ? " wk-est" : ""}${wk.stale ? " wk-over" : ""}" title="${wkTitle}">⏰ ${wk.est ? "~" : ""}${esc(wk.text)}${wk.rel ? ` · ${esc(wk.rel)}` : ""}${wk.stale ? " ⚠ کهنه" : ""}</span>`
     : `<span class="badge wk-none" title="شیفت زنده نیست یا بیداری بعدی قابل محاسبه نیست">⏰ بیداری بعدی: نامعلوم</span>`;
   const mine = (openTasksByAgent[a.id || ""] || []).slice(0, 4);
+  const nMine = (openTasksByAgent[a.id || ""] || []).length;
+  const qHtml = nMine ? `<span class="badge q" title="تسک‌های باز این ایجنت — تا خالی‌شدن دستِ او در صف می‌مانند">📋 ${faNum(nMine)} در صف</span>` : "";
   const unreadHtml = a.unread > 0 ? `<span class="badge unread" title="پیام نخواندهٔ صندوق اعلامیه‌ها — موظف به خواندن در اولین بیداری">📩 ${faNum(a.unread)} نخوانده</span>` : "";
   const mineHtml = mine.length
     ? `<div class="hub-tasks"><span class="ht-label">تسک‌های هاب من:</span>${mine.map((t) => `<span class="badge tbadge ${t.severity === "critical" ? "sev-c" : t.severity === "warning" ? "sev-w" : "sev-i"}" title="${esc(t.title)}">${esc(t.id || t.__file?.replace(/\.json$/, "") || "؟")}</span>`).join("")}</div>`
@@ -443,7 +445,7 @@ function agentCard(a) {
         <h3>${esc(a.name)}${a.role === "manager" ? ' <span class="badge mgr">👑 مدیر ارشد</span>' : ""}</h3>
         <span class="badge ${stCls}">${esc(stTxt)}</span>${curTask}</div>
       ${a.description ? `<p class="desc">${esc(a.description)}</p>` : ""}
-      <div class="wkline">${unreadHtml}${wkHtml}<span class="badge">فعالیت: ${esc(a.lastSeen ? relTime(a.lastSeen) : "—")}</span>${a.lastCommit ? `<span class="badge" title="${esc(a.lastCommit.msg || "")}">🔧 آخرین کار: ${esc(String(a.lastCommit.msg || "").slice(0, 40))} · ${esc(relTime(a.lastCommit.at))}</span>` : ""}</div>
+      <div class="wkline">${unreadHtml}${qHtml}${wkHtml}<span class="badge">فعالیت: ${esc(a.lastSeen ? relTime(a.lastSeen) : "—")}</span>${a.lastCommit ? `<span class="badge" title="${esc(a.lastCommit.msg || "")}">🔧 آخرین کار: ${esc(String(a.lastCommit.msg || "").slice(0, 40))} · ${esc(relTime(a.lastCommit.at))}</span>` : ""}</div>
       ${mineHtml}
       ${nSch ? `<details class="scht"><summary>تسک‌های زمان‌دار (${faNum(nSch)})</summary><ul class="tasks">${tasksHtml}</ul></details>` : ""}
       <div class="meta">${esc(a.id || "—")} · ${esc(a.group || "سایر")} · مالک: ${esc(a.owner || "—")}</div>
@@ -723,8 +725,8 @@ const html = `<!DOCTYPE html>
   <h2 id="announce">📣 اعلامیه‌های مدیریت</h2>
   ${ANN_LATEST ? `<div class="annhead"><span class="badge">جدیدترین: ${esc(ANN_FILES[0])}</span>${ANN_FILES.slice(1).map((f) => `<a class="badge" href="https://github.com/pvwvuow/agent-hub/blob/main/announcements/${esc(f)}">${esc(f)} ↗</a>`).join("")}</div><pre class="mdbox" role="region" aria-label="متن اعلامیه">${esc(ANN_LATEST)}</pre>` : '<div class="card desc">اعلامیه‌ای ثبت نشده است.</div>'}
 
-  <h2 id="report">📋 گزارش بازرس (مسعود)</h2>
-  ${MASOUD_REPORT ? `<pre class="mdbox" role="region" aria-label="آخرین گزارش مسعود">${esc(MASOUD_REPORT)}</pre><div class="meta">آرشیو: <a href="https://github.com/pvwvuow/agent-hub/tree/main/reports/masoud">reports/masoud/ ↗</a></div>` : '<div class="card desc">هنوز گزارشی ثبت نشده — بازرس پس از راه‌اندازی شیفتش، گزارشش را در reports/masoud/report-latest.md می‌گذارد.</div>'}
+  <h2 id="report">📋 گزارش بازرس (سعید — z-ai-generalist)</h2>
+  ${MASOUD_REPORT ? `<pre class="mdbox" role="region" aria-label="آخرین گزارش سعید">${esc(MASOUD_REPORT)}</pre><div class="meta">آرشیو: <a href="https://github.com/pvwvuow/agent-hub/tree/main/reports/masoud">reports/masoud/ ↗</a></div>` : '<div class="card desc">هنوز گزارشی ثبت نشده — بازرس پس از راه‌اندازی شیفتش، گزارشش را در reports/masoud/report-latest.md می‌گذارد.</div>'}
 
   <footer>مدیر ارشد ایجنت‌ها: ز-ای اورکستراتور (z.ai) · پروژه: <a href="https://wowfarsi.ir">wowfarsi.ir</a> · <a href="https://github.com/pvwvuow/agent-hub">github.com/pvwvuow/agent-hub</a></footer>
 </div>
