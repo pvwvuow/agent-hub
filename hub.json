@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:32:47.696Z",
+  "generatedAt": "2026-10-27T15:35:53.087Z",
   "counts": {
     "agents": 8,
     "active": 1,
@@ -7,9 +7,9 @@
     "tasks": 7,
     "openTasks": 2,
     "lights": {
-      "on": 2,
+      "on": 3,
       "working": 2,
-      "off": 4
+      "off": 3
     },
     "inboxUnread": 8,
     "announcedWakes": 8,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:32:47.696Z"
+    "generatedAt": "2026-10-27T15:35:53.087Z"
   },
   "roles": [
     {
@@ -225,7 +225,7 @@
       "description": "ایجنت ارشد اتاق مانیتور wowfarsi؛ عیب‌یابی خودکار ربات‌ها، بازرسی وضعیت سایر ایجنت‌ها، پیشنهاد و در صورت نیاز اجرای تسک",
       "status": "on",
       "light": "on",
-      "unread": 1,
+      "unread": 2,
       "lightByCommit": false,
       "lastCommit": null,
       "lastSeen": "2026-10-27T15:31:21.000Z",
@@ -335,22 +335,22 @@
     },
     {
       "id": "z-ai-flex",
-      "name": "ایجنت آزاد ز-ای (سایت و ترجمه)",
+      "name": "رضا — ایجنت آزاد ز-ای (سایت و ترجمه)",
       "platform": "z.ai",
       "role": "worker",
       "group": "سایت و ترجمه",
       "owner": "pvwvuow",
       "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
-      "status": "off",
-      "light": "off",
-      "unread": 1,
+      "status": "on",
+      "light": "on",
+      "unread": 0,
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
         "at": "2026-10-27T15:30:03Z",
         "msg": "inbox: official protocol doc 2026-10-27-inbox.md — referenced by general message; unify wi"
       },
-      "lastSeen": "2026-10-27T15:17:51.000Z",
+      "lastSeen": "2026-10-27T15:35:36.000Z",
       "currentTask": null,
       "nextWake": "2026-10-27 18:58",
       "shiftIntervalMinutes": null,
