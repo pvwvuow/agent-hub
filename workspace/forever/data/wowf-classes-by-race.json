@@ -1,0 +1,558 @@
+{
+  "source": "https://warcraft.wiki.gg/wiki/Template:Forever_class_by_race (via api.php action=parse)",
+  "accessed_at_utc": "2026-10-27T14:24:38Z",
+  "note": "جدول کلاس-نژاد Forever (۹ کلاس کلاسیک). in_classic=در Classic هم بود · in_forever=در Forever هست · فیلد restriction=محدود فراکشن · کلاس با in_classic=false یعنی فقط در Forever",
+  "classes": [
+    "Druid",
+    "Hunter",
+    "Mage",
+    "Paladin",
+    "Priest",
+    "Rogue",
+    "Shaman",
+    "Warlock",
+    "Warrior"
+  ],
+  "rows": [
+    {
+      "faction": "Alliance",
+      "race": "Dwarf",
+      "classes": [
+        {
+          "name": "Druid",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Hunter",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Mage",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Paladin",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Priest",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Rogue",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Shaman",
+          "in_classic": false,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Warlock",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Warrior",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        }
+      ]
+    },
+    {
+      "faction": "Alliance",
+      "race": "Gnome",
+      "classes": [
+        {
+          "name": "Druid",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Hunter",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Mage",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Paladin",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Priest",
+          "in_classic": false,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Rogue",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Shaman",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Warlock",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Warrior",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        }
+      ]
+    },
+    {
+      "faction": "Alliance",
+      "race": "Human",
+      "classes": [
+        {
+          "name": "Druid",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Hunter",
+          "in_classic": false,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Mage",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Paladin",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Priest",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Rogue",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Shaman",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Warlock",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Warrior",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        }
+      ]
+    },
+    {
+      "faction": "Alliance",
+      "race": "Night elf",
+      "classes": [
+        {
+          "name": "Druid",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Hunter",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Mage",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Paladin",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Priest",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Rogue",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Shaman",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Warlock",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Warrior",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        }
+      ]
+    },
+    {
+      "faction": "Both",
+      "race": "Skyborne",
+      "classes": [
+        {
+          "name": "Druid",
+          "in_classic": false,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Hunter",
+          "in_classic": false,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Mage",
+          "in_classic": false,
+          "in_forever": true,
+          "restriction": "Alliance"
+        },
+        {
+          "name": "Paladin",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Priest",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Rogue",
+          "in_classic": false,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Shaman",
+          "in_classic": false,
+          "in_forever": true,
+          "restriction": "Horde"
+        },
+        {
+          "name": "Warlock",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Warrior",
+          "in_classic": false,
+          "in_forever": true,
+          "restriction": null
+        }
+      ]
+    },
+    {
+      "faction": "Horde",
+      "race": "Orc",
+      "classes": [
+        {
+          "name": "Druid",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Hunter",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Mage",
+          "in_classic": false,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Paladin",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Priest",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Rogue",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Shaman",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Warlock",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Warrior",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        }
+      ]
+    },
+    {
+      "faction": "Horde",
+      "race": "Tauren",
+      "classes": [
+        {
+          "name": "Druid",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Hunter",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Mage",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Paladin",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Priest",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Rogue",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Shaman",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Warlock",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Warrior",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        }
+      ]
+    },
+    {
+      "faction": "Horde",
+      "race": "Troll",
+      "classes": [
+        {
+          "name": "Druid",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Hunter",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Mage",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Paladin",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Priest",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Rogue",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Shaman",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Warlock",
+          "in_classic": false,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Warrior",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        }
+      ]
+    },
+    {
+      "faction": "Horde",
+      "race": "Undead",
+      "classes": [
+        {
+          "name": "Druid",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Hunter",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Mage",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Paladin",
+          "in_classic": false,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Priest",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Rogue",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Shaman",
+          "in_classic": false,
+          "in_forever": false,
+          "restriction": null
+        },
+        {
+          "name": "Warlock",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        },
+        {
+          "name": "Warrior",
+          "in_classic": true,
+          "in_forever": true,
+          "restriction": null
+        }
+      ]
+    }
+  ]
+}

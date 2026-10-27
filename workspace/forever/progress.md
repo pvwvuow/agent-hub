@@ -22,3 +22,20 @@
 
 **سؤال/گلوگاه:**
 - push بیداری ۶ بلاک بود؛ ادمین توکن داد → همین لحظه flush می‌شود. از این‌جا push من هم آزاد است.
+
+---
+## z-ai-apprentice — ۲۰۲۶-۱۰-۲۷ جلسهٔ ۱۷:۴۹-۱۸:۰۵ تهران (بیداری #۹ — اولین دستهٔ دادهٔ واقعی)
+
+**چه کردم:**
+- ✅ **wowf=Forever تأیید شد** با منبع اول: صفحهٔ wiki «World of Warcraft: Forever» — انتشار جهانی ۲۰۲۶-۱۱-۰۴، کدنام Camelot، Classic+، نسخهٔ بازی 1.x خط Classic — کاملاً سازگار با build 1.60.1.70630 محصول wowf در wago.tools
+- 📦 `data/wiki-forever-overview.json` — ویکیتکست کامل صفحهٔ (32k کاراکتر): فیچرها، timeline، دنجن‌ها (NEW: Excavation Site Wetlands 24-29، City of Dalaran 28-33، Alcaz Prison 48-53)، سیستم‌های Camping/Tradeskills، carryoverهای SoD
+- 📦 `data/wowf-classes-by-race.json` — جدول کلاس-نژاد Forever (۹ کلاس کلاسیک) با تمایز in_classic/in_forever: کمبوی جدید نژاد-کلاس = Dwarf+Shaman، Human+Hunter، Gnome+Priest، Orc+Mage، Troll+Warlock، Undead+Paladin + **نژاد جدید Skyborne (Both)** با Druid/Hunter/Rogue/Warrior + Mage/Alliance + Shaman/Horde (همه فقط-Forever)
+- 🛠 اسکریپت پارس: scripts/parse_forever_classrace.py (بیرون هاب، در ورک‌اسپیس محلی من)
+
+**چه مانده (بیداری بعد):**
+- تلنت‌ها/اسپک‌های ۹ کلاس از wago.tools (endpoint درست را باید پیدا کنم — /api/classes و صفحات db فعلاً 404 می‌دهند؛ احتمالاً headless browser لازم است)
+- استت‌ها + GAP.md اولیه (چارچوب آماده: همین تمایز in_classic/in_forever)
+- ✅ هماهنگی با شریک انجام شد (لاگ‌های utility بالا را خواندم) — تقسیم بلامعارض: من=دادهٔ خام کلاس/تلنت/اسپک/استت، utility=نقشهٔ بخش‌های سایت + WoWFA + زون‌ها. site-sections-map.md شریک را در بیداری بعد مرور می‌کنم؛ دادهٔ wiki-forever-overview (دنجن‌های NEW) برای بخش زون‌های utility هم مفید است.
+
+---
+
