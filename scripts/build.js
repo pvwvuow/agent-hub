@@ -482,8 +482,9 @@ const html = `<!DOCTYPE html>
 <meta http-equiv="refresh" content="90">
 <title>هاب ایجنت‌های wowfarsi</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap">
 <style>
-  :root { --bg:#0b0906; --card:#151009; --line:#c8aa6e26; --gold:#c8aa6e; --txt:#f0e6d2; --dim:#a89b7e; }
+  :root { --bg:#04060b; --card:#070a12; --card2:#0b0f1a; --line:#f0c75e29; --gold:#f0c75e; --gold1:#f6e0a3; --gold3:#c9a232; --blue:#8fb4e8; --txt:#e8e3d6; --dim:#a8a294; }
   html { color-scheme:dark; }
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; }
@@ -492,15 +493,15 @@ const html = `<!DOCTYPE html>
          font-family:Vazirmatn,Tahoma,sans-serif; }
   .wrap { max-width:1100px; margin:0 auto; }
   header.top { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-bottom:8px; }
-  h1 { font-size:22px; margin:0; color:var(--gold); }
+  h1 { font-size:22px; margin:0; color:var(--gold); font-family:Cinzel,Vazirmatn,serif; letter-spacing:.5px; }
   .sub { color:var(--dim); font-size:13px; margin:0 0 20px; }
   .stats { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:24px; }
-  .stat { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:10px 18px; text-align:center; }
+  .stat { background:var(--card2); border:1px solid var(--line); border-radius:8px; padding:10px 18px; text-align:center; }
   .stat b { display:block; font-size:22px; color:var(--gold); }
   .stat span { font-size:12px; color:var(--dim); }
-  h2 { font-size:16px; color:var(--gold); margin:28px 0 12px; border-bottom:1px solid var(--line); padding-bottom:8px; }
+  h2 { font-size:16px; color:var(--gold); margin:28px 0 12px; border-bottom:1px solid var(--line); padding-bottom:8px; font-family:Cinzel,Vazirmatn,serif; letter-spacing:.5px; }
   .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:14px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px; }
   .card .row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
   .card h3 { font-size:15px; margin:0; }
   .dot { width:10px; height:10px; border-radius:50%; flex:none; }
@@ -510,7 +511,7 @@ const html = `<!DOCTYPE html>
   .st-off { background:#6b7280; }
   .badge.st-active, .badge.st-working, .badge.st-paused, .badge.st-off { color:var(--txt); background:none; border:1px solid var(--line); }
   .badge { font-size:11px; border:1px solid var(--line); border-radius:99px; padding:2px 10px; color:var(--dim); }
-  .badge.mgr { color:#1a1409; background:var(--gold); border-color:var(--gold); font-weight:700; }
+  .badge.mgr { color:#04060b; background:var(--gold); border-color:var(--gold); font-weight:700; }
   .badge.filled { color:#4ade80; border-color:#4ade8066; }
   .badge.applied { color:#93c5fd; border-color:#93c5fd66; }
   .badge.vacant { color:var(--dim); border-style:dashed; }
@@ -521,7 +522,7 @@ const html = `<!DOCTYPE html>
   ul.duties li.more { color:#6d6050; }
   .badge.sev-c { color:#fca5a5; border-color:#fca5a566; }
   .badge.sev-w { color:#fcd34d; border-color:#fcd34d66; }
-  .badge.sev-i { color:#93c5fd; border-color:#93c5fd66; }
+  .badge.sev-i { color:var(--blue); border-color:#8fb4e866; }
   .desc { color:var(--dim); font-size:12.5px; line-height:1.9; margin:10px 0 0; }
   ul.tasks { list-style:none; margin:12px 0 0; padding:0; }
   ul.tasks li { border-top:1px dashed var(--line); padding:8px 0; }
@@ -529,16 +530,16 @@ const html = `<!DOCTYPE html>
   .t-sched { font-size:11.5px; color:var(--gold); }
   .t-desc { font-size:11.5px; color:var(--dim); line-height:1.8; display:block; margin-top:2px; }
   .meta { margin-top:12px; font-size:11.5px; color:var(--dim); }
-  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
   th, td { padding:10px 12px; text-align:right; font-size:13px; border-bottom:1px solid var(--line); vertical-align:top; }
-  th { color:var(--gold); font-size:12px; background:#1a1409; }
+  th { color:var(--gold); font-size:12px; background:var(--card2); }
   footer { margin-top:36px; color:var(--dim); font-size:12px; text-align:center; line-height:2; }
   a { color:var(--gold); text-decoration:none; }
   a:focus-visible, button:focus-visible { outline:2px solid var(--gold); outline-offset:2px; border-radius:4px; }
   nav.jump { display:flex; gap:8px; flex-wrap:wrap; margin:0 0 16px; }
   nav.jump a { font-size:12.5px; border:1px solid var(--line); border-radius:99px; padding:4px 14px; }
-  nav.jump a:hover { background:#c8aa6e14; }
-  .badge.wk { color:#e7c780; border-color:#c8aa6e66; background:#c8aa6e0d; font-weight:600; }
+  nav.jump a:hover { background:#f0c75e14; }
+  .badge.wk { color:var(--gold1); border-color:#f0c75e66; background:#f0c75e0d; font-weight:600; }
   .badge.wk-none { color:var(--dim); border-style:dashed; }
   .badge.cur { color:#fdba74; border-color:#fdba7455; }
   .wkline { display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
@@ -557,9 +558,9 @@ const html = `<!DOCTYPE html>
   .duties li b { color:var(--txt); font-weight:600; font-size:12px; }
   .filterbar { display:flex; gap:6px; margin:10px 0; }
   .fbtn { background:var(--card); color:var(--dim); border:1px solid var(--line); border-radius:99px; padding:7px 18px; font-family:inherit; font-size:12.5px; cursor:pointer; }
-  .fbtn:hover { background:#c8aa6e14; }
-  .fbtn.on { color:#1a1409; background:var(--gold); border-color:var(--gold); font-weight:700; }
-  #agsearch { background:#0e0b06; color:var(--txt); border:1px solid var(--line); border-radius:99px; padding:7px 16px; font-family:inherit; font-size:12.5px; min-width:200px; flex:1; max-width:320px; }
+  .fbtn:hover { background:#f0c75e14; }
+  .fbtn.on { color:#04060b; background:var(--gold); border-color:var(--gold); font-weight:700; }
+  #agsearch { background:#0b0f1a; color:var(--txt); border:1px solid var(--line); border-radius:99px; padding:7px 16px; font-family:inherit; font-size:12.5px; min-width:200px; flex:1; max-width:320px; }
   #agsearch::placeholder { color:#7d7059; }
   #agsearch:focus { outline:2px solid var(--gold); outline-offset:1px; }
   .badge.wk-est { border-style:dashed; color:#cbbb93; }
@@ -570,10 +571,10 @@ const html = `<!DOCTYPE html>
   .tblwrap { overflow-x:auto; border-radius:14px; }
   .tblwrap table { border-radius:0; }
   .btn-refresh { background:var(--card); color:var(--gold); border:1px solid var(--line); border-radius:99px; padding:4px 14px; font-family:inherit; font-size:12px; cursor:pointer; }
-  .btn-refresh:hover { background:#c8aa6e14; }
-  #tehranClock { color:#e7c780; font-weight:600; font-variant-numeric:tabular-nums; min-width:118px; text-align:center; }
+  .btn-refresh:hover { background:#f0c75e14; }
+  #tehranClock { color:var(--gold1); font-weight:600; font-variant-numeric:tabular-nums; min-width:118px; text-align:center; }
   tr.done-row { opacity:.45; }
-  .mdbox { background:#0e0b06; border:1px solid var(--line); border-radius:12px; padding:14px 16px; white-space:pre-wrap; word-wrap:break-word; font-size:12px; line-height:2; color:#d8cbb0; font-family:inherit; max-height:420px; overflow:auto; margin:0; }
+  .mdbox { background:#0b0f1a; border:1px solid var(--line); border-radius:8px; padding:14px 16px; white-space:pre-wrap; word-wrap:break-word; font-size:12px; line-height:2; color:#d8d2c2; font-family:inherit; max-height:420px; overflow:auto; margin:0; }
   .annhead { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:8px; }
   @media (prefers-reduced-motion: no-preference) { .dot { transition:background .3s; } }
   .sr-only { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
