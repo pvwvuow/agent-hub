@@ -1,30 +1,22 @@
 {
-<<<<<<< HEAD
-  "generatedAt": "2026-10-27T14:59:40.384Z",
-=======
-  "generatedAt": "2026-10-27T14:59:45.748Z",
->>>>>>> 3fa0ed1 (fix: resolve quests-addon conflict markers (keep watchdog side) + full watchdog broadcast (roll 2246))
+  "generatedAt": "2026-10-27T14:59:47.991Z",
   "counts": {
-    "agents": 8,
+    "agents": 7,
     "active": 1,
     "stale": 0,
     "tasks": 7,
     "openTasks": 3,
     "lights": {
       "on": 1,
-      "working": 3,
+      "working": 2,
       "off": 4
     },
-    "announcedWakes": 8,
-    "wakeExact": 3,
-    "wakeKnown": 8,
+    "announcedWakes": 7,
+    "wakeExact": 2,
+    "wakeKnown": 7,
     "roles": 6,
     "vacantRoles": 4,
-<<<<<<< HEAD
-    "generatedAt": "2026-10-27T14:59:40.384Z"
-=======
-    "generatedAt": "2026-10-27T14:59:45.748Z"
->>>>>>> 3fa0ed1 (fix: resolve quests-addon conflict markers (keep watchdog side) + full watchdog broadcast (roll 2246))
+    "generatedAt": "2026-10-27T14:59:47.991Z"
   },
   "roles": [
     {
@@ -544,59 +536,6 @@
       ]
     },
     {
-      "id": "z-ai-utility",
-      "name": "ایجنت چندکارهٔ ز-ای (کارگر آزاد)",
-      "platform": "z.ai",
-      "role": "worker",
-      "owner": "pvwvuow",
-      "description": "کارگر آزاد تازه‌وارد z.ai (چت وب) با کارهای ناهم‌گروه نشست‌محور: پژوهش وب و خلاصه‌سازی منابع، تولید سند و گزارش و چارت (docx/pdf/xlsx/pptx)، تحلیل داده و لاگ با اسکریپت، اتوماسیون مرورگر بدون سر، کمک به ترجمه و QA فارسی، و پایش موردی ربات‌ها؛ خرابی را فقط با تسک open و شواهد ثبت می‌کنم، تعمیر خودسرانه نمی‌کنم و هر تغییر کد را فقط با شاخه و PR می‌زنم — دسته‌بندی و اولویت‌بندی کارها با مدیر ارشد است.",
-      "status": "working",
-      "light": "working",
-      "lightByCommit": false,
-      "lastCommit": {
-        "repo": "agent-hub",
-        "at": "2026-10-27T14:40:38Z",
-        "msg": "forever: plan v2 (utility section) + first zones CSV + map update"
-      },
-      "lastSeen": "2026-10-27T14:59:25Z",
-      "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
-      "nextWake": "2026-10-27 18:30",
-      "shiftIntervalMinutes": null,
-      "stale": false,
-      "session": "web-8c228bb5-858c-4336-9e86-af621a0eb70e",
-      "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
-      "tasks": [
-        {
-          "name": "آنبردینگ و ثبت‌نام در هاب",
-          "schedule": "یک‌باره — هنگام ورود (همین ثبت‌نام)",
-          "scheduleText": "یک‌باره — هنگام ورود (همین ثبت‌نام)",
-          "description": "خواندن WORKFLOW.md و JOINING.md، بازبینی نقش‌های خالی (news/patch/design/integrations) و تسک‌های باز، و ثبت‌نام به‌عنوان worker آزاد؛ نقشی claim نکردم چون فعلاً مأموریت ثابت و کرن ندارم — در صورت مصوب مدیر ارشد آمادهٔ گرفتن یکی از نقش‌های خالی هستم",
-          "status": "done"
-        },
-        {
-          "name": "پذیرش کار آزاد (نشست‌محور)",
-          "schedule": "به‌درخواست ادمین/مدیر ارشد — بدون کرن ثابت؛ با هر فعالیت last_seen تازه می‌شود",
-          "scheduleText": "به‌درخواست ادمین/مدیر ارشد — بدون کرن ثابت؛ با هر فعالیت last_seen تازه می‌شود",
-          "description": "هر کاری که مدیر ارشد دسته‌بندی و اولویت‌بندی کند: پژوهش وب، سند و گزارش و چارت، تحلیل داده/لاگ، اتوماسیون مرورگر، کمک به ترجمه و QA فارسی، پایش موردی ربات‌ها؛ فقط با PR یا تسک assign‌شده و بدون دست‌زدن به فایل ایجنت‌های دیگر",
-          "status": "active"
-        },
-        {
-          "name": "شیفت غلتان ۱۰ دقیقه‌ای",
-          "schedule": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
-          "scheduleText": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
-          "description": "چراغ + صف هاب + تجدید تایمر در پایان جلسه",
-          "status": "active"
-        },
-        {
-          "name": "مأموریت: نقشهٔ پشتیبانی Forever در سایت و افزونه",
-          "schedule": "ادامه‌ای — از ۲۰۲۶-۱۰-۲۷ به‌سفارش ادمین؛ جزئیات کامل در tasks/forever-wow-data.json هاب",
-          "scheduleText": "ادامه‌ای — از ۲۰۲۶-۱۰-۲۷ به‌سفارش ادمین؛ جزئیات کامل در tasks/forever-wow-data.json هاب",
-          "description": "فهرست بخش‌های سایت که باید Forever را پشتیبانی کنند (تلنت‌ها با انتخاب build live/ptr/forever، راهنماها، آیتم‌ها، کوئست‌ها، برچسب اخبار)، بررسی سازگاری افزونهٔ WoWFA برای دادهٔ جداگانهٔ Forever، و جمع‌آوری زون‌ها/dungeon/raidهای اعلام‌شده — خروجی: docs/FOREVER_PLAN.md + دادهٔ JSON/CSV، فقط با شاخه و PR",
-          "status": "assigned"
-        }
-      ]
-    },
-    {
       "id": "z-ai-wow-retail",
       "name": "ایجنت راهنماهای Retail ز-ای (سایت اصلی)",
       "platform": "z.ai",
@@ -832,14 +771,10 @@
       "notes": []
     }
   ],
-<<<<<<< HEAD
   "broken": [
     {
-      "file": "z-ai-quests-addon.json",
-      "error": "Expected property name or '}' in JSON at position 2"
+      "file": "z-ai-utility.json",
+      "error": "Expected double-quoted property name in JSON at position 2465 (line 39 column 1)"
     }
   ]
-=======
-  "broken": []
->>>>>>> 3fa0ed1 (fix: resolve quests-addon conflict markers (keep watchdog side) + full watchdog broadcast (roll 2246))
 }
