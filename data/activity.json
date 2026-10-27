@@ -1,6 +1,90 @@
 {
- "generatedAt": "2026-10-27T15:39:03Z",
+ "generatedAt": "2026-10-27T15:44:20Z",
  "commits": [
+  {
+   "agent": "z-ai-item",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:43:59Z",
+   "msg": "light: off — next_wake 19:23 Tehran, chain renewed (477940)"
+  },
+  {
+   "agent": "z-ai-utility",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:43:35Z",
+   "msg": "forever: FOREVER_PLAN PR #95 opened (utility deliverables complete) + light: off"
+  },
+  {
+   "agent": "z-ai-item",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:43:30Z",
+   "msg": "light: on — shift check"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:42:35Z",
+   "msg": "masoud: inspection report + next_wake 19:26"
+  },
+  {
+   "agent": "z-ai-item",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:42:35Z",
+   "msg": "light: off — next_wake 19:22 Tehran, main chain rebuilt (477933)"
+  },
+  {
+   "agent": "z-ai-item",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:42:00Z",
+   "msg": "watchdog: effective — z-ai-item (light: on)"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:41:21Z",
+   "msg": "light: on — masoud back + inbox ack"
+  },
+  {
+   "agent": "z-ai-utility",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:41:20Z",
+   "msg": "light: on — shift check"
+  },
+  {
+   "agent": "z-ai-utility",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:41:15Z",
+   "msg": "watchdog: effective — z-ai-utility"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:40:26Z",
+   "msg": "shift: next_wake 19:19 Tehran — cross-check done (477925)"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:39:37Z",
+   "msg": "light: off — session end · next_wake 2026-10-27 19:19 · wd heartbeat"
+  },
+  {
+   "agent": "z-ai-apprentice",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:39:30Z",
+   "msg": "forever: abilities cross-check (91 matched / 37 wiki-only) — validates GAP stats"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:39:26Z",
+   "msg": "watchdog: armed — z-ai-flex — 3 backup jobs (10/12/14) created in own chat"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:39:03Z",
+   "msg": "panel: auto-sync (lights/render) [main-5min]"
+  },
   {
    "agent": "z-ai-apprentice",
    "repo": "agent-hub",
@@ -38,10 +122,22 @@
    "msg": "light: off — session end · next_wake 2026-10-27 19:15 · name=رضا"
   },
   {
+   "agent": "z-ai-utility",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:35:49Z",
+   "msg": "light: off — session end (wowfa v0.2 + full CSV delivered)"
+  },
+  {
    "agent": "z-ai-flex",
    "repo": "agent-hub",
    "at": "2026-10-27T15:35:36Z",
    "msg": "name: رضا (admin order) + light on + inbox msg to main"
+  },
+  {
+   "agent": "z-ai-utility",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:35:17Z",
+   "msg": "forever: wowfa-compat v0.2 (TOC/load findings) + full dungeons CSV (37 rows from partner p"
   },
   {
    "agent": "z-ai-main",
@@ -60,6 +156,12 @@
    "repo": "agent-hub",
    "at": "2026-10-27T15:31:24Z",
    "msg": "panel: auto-sync (lights/render) [main-5min]"
+  },
+  {
+   "agent": "z-ai-utility",
+   "repo": "agent-hub",
+   "at": "2026-10-27T15:31:18Z",
+   "msg": "light: on — shift check (inbox acked)"
   },
   {
    "agent": "z-ai-flex",
@@ -98,30 +200,6 @@
    "msg": "inbox: send → all — پروتکل چراغ v2 + خواندن اجباری اعلامیه‌ها"
   },
   {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:25:04Z",
-   "msg": "fix: resolve quests-addon.json conflict — keep full tasks + fresher last_seen"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:24:29Z",
-   "msg": "fix: resolve quests-addon.json conflict markers"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:24:23Z",
-   "msg": "render: hub page [skip ci]"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:24:20Z",
-   "msg": "inbox: Telegram-style announcement system with read receipts + panel unread badges"
-  },
-  {
    "agent": "z-ai-apprentice",
    "repo": "agent-hub",
    "at": "2026-10-27T15:23:08Z",
@@ -134,70 +212,10 @@
    "msg": "forever: item stats fetched — 140 items (89 with stat tips) from Category:Forever items"
   },
   {
-   "agent": "z-ai-main",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:22:09Z",
-   "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:20:44Z",
-   "msg": "panel: auto-sync (lights/render) [main-5min]"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:19:38Z",
-   "msg": "watchdog: armed — z-ai-flex"
-  },
-  {
-   "agent": "z-ai-utility",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:18:17Z",
-   "msg": "watchdog: armed — z-ai-utility"
-  },
-  {
    "agent": "z-ai-apprentice",
    "repo": "agent-hub",
    "at": "2026-10-27T15:18:15Z",
    "msg": "forever: dungeon/raid tables parsed (36 rows, 11 NEW) + wiki category lists (items/abiliti"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:18:04Z",
-   "msg": "review-held-news-21: done — 2 verdicts recorded (383598 fixable, 383599 unjustified hold);"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:17:03Z",
-   "msg": "render: hub page [skip ci]"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:16:57Z",
-   "msg": "panel rework v2: session-based lights + groups + where-board — masoud wake order + light p"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:14:48Z",
-   "msg": "light: on — assigned news review"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:14:15Z",
-   "msg": "watchdog: armed — z-ai-apprentice"
-  },
-  {
-   "agent": "z-ai-apprentice",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:12:06Z",
-   "msg": "light: on — shift check"
   }
  ]
 }

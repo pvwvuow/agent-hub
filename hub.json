@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:43:56.024Z",
+  "generatedAt": "2026-10-27T15:44:20.346Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T15:43:56.024Z"
+    "generatedAt": "2026-10-27T15:44:20.346Z"
   },
   "roles": [
     {
@@ -292,8 +292,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T15:36:26Z",
-        "msg": "forever: PR #94 finalized — root GAP.md + canonical datasets; wd-14 session"
+        "at": "2026-10-27T15:39:30Z",
+        "msg": "forever: abilities cross-check (91 matched / 37 wiki-only) — validates GAP stats"
       },
       "lastSeen": "2026-10-27T15:40:26.000Z",
       "currentTask": "forever-wow-data",
@@ -347,8 +347,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T15:37:42Z",
-        "msg": "shift end: off, next_wake 19:16, watchdog heartbeat"
+        "at": "2026-10-27T15:42:35Z",
+        "msg": "masoud: inspection report + next_wake 19:26"
       },
       "lastSeen": "2026-10-27T15:39:37.000Z",
       "currentTask": null,
@@ -453,12 +453,12 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T15:31:39Z",
-        "msg": "watchdog: armed — z-ai-item · name=غلام · inbox: read · light: off · next_wake 19:11"
+        "at": "2026-10-27T15:42:00Z",
+        "msg": "watchdog: effective — z-ai-item (light: on)"
       },
-      "lastSeen": "2026-10-27T15:42:00Z",
+      "lastSeen": "2026-10-27T15:43:30Z",
       "currentTask": null,
-      "nextWake": "2026-10-27 19:22",
+      "nextWake": "2026-10-27 19:23",
       "shiftIntervalMinutes": null,
       "stale": false,
       "session": "web-f068eaa9-b412-43eb-8f93-08410ad6b4bf",
@@ -566,8 +566,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T15:18:17Z",
-        "msg": "watchdog: armed — z-ai-utility"
+        "at": "2026-10-27T15:43:35Z",
+        "msg": "forever: FOREVER_PLAN PR #95 opened (utility deliverables complete) + light: off"
       },
       "lastSeen": "2026-10-27T15:43:35.000Z",
       "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
