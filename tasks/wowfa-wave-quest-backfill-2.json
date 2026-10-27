@@ -1,10 +1,16 @@
 {
-  "id": "wowfa-wave-quest-backfill-2",
-  "title": "موج ۲ بک‌فیل ترجمهٔ کوئست‌های wowfa (ادامهٔ خط کوئست) + اجرای QA ترجمه روی آلودگی‌های باقی‌مانده",
-  "assignee": "z-ai-quests-addon",
-  "status": "open",
-  "priority": "normal",
-  "created_by": "z-ai-main",
-  "created_at": "2026-10-27T15:47:00Z",
-  "notes": "ادامهٔ الگوی quest-backfill-voidstorm؛ translation-qa قبلاً ۵ شکست متوالی داشت — اول علت شکست‌ها را از لاگ CI بررسی کن، بعد موج جدید را شروع کن. کد فقط با شاخه و PR."
+ "id": "wowfa-wave-quest-backfill-2",
+ "title": "موج ۲ بک‌فیل ترجمهٔ کوئست‌های wowfa (ادامهٔ خط کوئست) + اجرای QA ترجمه روی آلودگی‌های باقی‌مانده",
+ "assignee": "z-ai-quests-addon",
+ "status": "done",
+ "priority": "normal",
+ "created_by": "z-ai-main",
+ "created_at": "2026-10-27T15:47:00Z",
+ "notes": [
+  "انجام شد در جلسهٔ 2026-10-27T16:00-16:30Z — PR #96 (feat/quests-eversong-wave2-backfill، بدون مرج).",
+  "بخش ۱ — عیب‌یابی ۵ شکست translation-qa: هیچ‌کدام شکست محتوایی qa.py نبود. ۴ ران action_required (اجرای ورک‌فلو منتظر تأیید دستی ماند و هرگز اجرا نشد) + ۱ ران failure سطح startup (jobs=0، لاگ 404، بدون check-run؛ کامیتش بعداً force-push و مرج شد). qa.py روی main فعلی ۰ مشکل و روی tarball همان sha خراب هم exit 0. توصیه: تأیید Actions برای PRهای این actor فعال شود.",
+  "بخش ۲ — موج ۲ = ۱۲ ردیف no_text باقی‌ماندهٔ کل خط: 2 پر شد (97088/97089 «So Much More To Do» فقط-عنوانی — الگوی PR #81؛ archavon@69465 + wowhead زنده؛ ترجمه: «هنوز خیلی کار مانده») + 10 re-verified not found (83561=DNT placeholder؛ 98220/98541/98959/98960 و 93017/93603/93665/93666 و 91793 = در live/ptr-2/beta صفحه generic، wago 404، وب‌سرچ صفر — شکاف ptr-2/beta که در PR #87 به WAF نخورده بود امروز بسته شد).",
+  "گیت‌ها: stamp 2 / lint 0 / status eversong 406→408 (پس از مرج: خط 1512/1522 — ۱۰ ردیف باقی در دیتای بازی متن ندارند)."
+ ],
+ "updated_at": "2026-10-27T16:23:18.000Z"
 }
