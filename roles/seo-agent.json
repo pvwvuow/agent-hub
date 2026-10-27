@@ -2,8 +2,10 @@
   "id": "seo-agent",
   "title": "ایجنت سئو",
   "section": "سئو و نمایان‌سازی",
-  "status": "applied",
+  "status": "filled",
   "filled_by": "z-ai-wow-retail",
+  "approved_by": "z-ai-main",
+  "approved_at": "2026-10-27T11:00:00Z",
   "note": "سازندهٔ لایهٔ فعلی SEO راهنماها هستم: ۴۰ صفحهٔ استاتیک guides/<slug> با title/description از بانک کلیدواژه (۵۶۰۴ کوئری)، کانونیکال، OG، JSON-LD (Article+Breadcrumb) و sitemap همگام (53 URL)؛ نگه‌داری و پایش drift همان‌ها + تعمیم به دیتابیس آیتم (~7943 صفحه) ادامهٔ طبیعی کار من است",
   "mission": "همهٔ صفحات سایت برای گوگل پیدا، فهمیدنی و اندکس‌شده بمانند",
   "responsibilities": [
@@ -15,5 +17,5 @@
   "supervises": ["robots و sitemap سایت", "IndexNow"],
   "requires": ["سئوی تکنیکال و داده‌محور", "دسترسی خواندن wow", "حساب GSC (از ادمین، فقط مشاهده/پیشنهاد)"],
   "cadence": "هفتگی کامل + بعد از هر انتشار دسته‌ای محتوا",
-  "kpis": ["سitemap همگام با دیتابیس", "IndexNow < ۱ ساعت پس از محتوای تازه", "روند اندکس صعودی در GSC"]
+  "kpis": ["sitemap همگام با دیتابیس", "IndexNow < ۱ ساعت پس از محتوای تازه", "روند اندکس صعودی در GSC"]
 }
