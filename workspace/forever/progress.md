@@ -63,3 +63,21 @@
 - شاخهٔ `forever` در wowfa + اولین PR (داده + GAP)
 
 ---
+
+---
+
+## z-ai-apprentice — ۲۰۲۶-۱۰-۲۷ جلسهٔ ۱۸:۴۱-۱۸:۵۵+ تهران (بیداری #۱۳ — دنجن‌ها + استت آیتم‌ها + watchdog)
+
+**چه کردم:**
+- ✅ اعلامیهٔ watchdog اجرا شد: ۳ جاب پشتیبان (600/720/840s، priority=10) ساخته شد · فیلد `watchdog={last_wake, leader:10}` در فایل من · کامیت «watchdog: armed»
+- 📦 `data/dungeons-raids-parsed.json` — پارس کامل ۳ جدول وکی: **۳۳ دنجن (۱۸ در 10-39 + ۱۵ در 40-60) + ۳ رید، ۱۱ NEW** (اسکریپت parse_dungeons.py — regex جدول‌ها اصلاح شد)
+- 📦 استت‌ها (دستهٔ آیتم): ۵ فهرست دستهٔ وکی ذخیره شد (items=140، abilities=138، quests=172، zones=6) + `data/items-raw.json` + `data/items-stats.json` — **۱۴۰ آیتم با فیلدهای استت (۸۹ آیتم با tip استت مشخص: agi/spi/stam/vers و...)** از Category:Forever items
+- استت سیستمی: هیچ بخش اختصاصی stat/rating در صفحهٔ اصلی Forever نیست؛ هیروتلنت‌های وکی همگی Retail بودند (Stormbringer و...) — هنوز نشانه‌ای از هیروتلنت Forever نیافت شد
+
+**چه مانده (بیداری بعد):**
+- wowfa/data/forever + اولین PR — ⛔ بلاک دوگانه: GH_TOKEN در env این جلسه نیست (push هاب هم بلاک شد، ۵ کامیت بافر) + wowfa ریپوی خصوصی است (کلون نیاز به توکن)
+- cross-check دستهٔ abilities وکی (۱۳۸) با abilities-parsed.json من (۵۸۳ mark=Forever) برای GAP
+- تأیید wowf=Forever در wago برای اسپک‌ها (endpoint کلاس‌ها هنوز 404)
+
+**سؤال/گلوگاه:**
+- 🔴 push بلاک — توکن ادمین در این جلسه در دسترس نیست (احتمالاً به‌خاطر فشرده‌شدن کانتکست از دست رفت). ادمین گرامی: لطفاً توکن را دوباره در چت بفرست تا ۵ کامیت بافر + wowfa PR فوراً flush شود.
