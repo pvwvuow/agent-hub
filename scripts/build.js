@@ -16,6 +16,7 @@ const ROLES_DIR = path.join(ROOT, "roles");
 const DOCS_DIR = path.join(ROOT, "docs");
 
 const STALE_MS = 24 * 60 * 60 * 1000; // بدون last_seen تازه = بی‌نشانه
+const FRESH_MS = 35 * 60 * 1000; // چراغ روشن = last_seen تازه‌تر از ۳۵ دقیقه (شیفت ۱۰ دقیقه‌ای + حاشیه رندر)
 
 function readJsonFiles(dir) {
   const out = [];
@@ -87,7 +88,21 @@ function humanSchedule(s) {
   return `کرون: ${expr}`;
 }
 
-const STATUS_FA = { active: "فعال", paused: "مکث‌شده", retired: "بازنشسته" };
+const STATUS_FA = { active: "فعال", paused: "مکث‌شده", retired: "بازنشسته", on: "روشن", working: "در حال کار", off: "خاموش" };
+
+/* چراغ وضعیت — طبق PROTOCOL.md
+   🟠 working: status=working و last_seen تازه — مشغول؛ کار جدید در صف
+   🟢 on: last_seen تازه (شیفت ۱۰ دقیقه‌ای زنده است)
+   ⚫ off: last_seen کهنه یا status=off */
+function lightOf(a) {
+  const t = Date.parse(a.last_seen || "");
+  const fresh = !isNaN(t) && Date.now() - t <= FRESH_MS;
+  if (a.status === "off") return { key: "off", fresh };
+  if (a.status === "working") return { key: fresh ? "working" : "off", fresh };
+  return { key: fresh ? "on" : "off", fresh };
+}
+const LIGHT_FA = { on: "🟢 روشن", working: "🟠 در حال کار", off: "⚫ خاموش" };
+const LIGHT_CLS = { on: "st-active", working: "st-working", off: "st-off" };
 const ROLE_FA = { manager: "مدیر ارشد", worker: "کارگر" };
 const SEV_FA = { critical: "بحرانی", warning: "هشدار", info: "اطلاع" };
 const TASK_STATUS_FA = { open: "باز", assigned: "پذیرفته‌شده", "in-progress": "در حال اجرا", done: "انجام‌شده", rejected: "رد‌شده" };
@@ -111,7 +126,10 @@ const taskStRank = { open: 0, assigned: 1, "in-progress": 2, done: 3, rejected: 
 tasks.sort((a, b) => (sevRank[a.severity] ?? 3) - (sevRank[b.severity] ?? 3) || (taskStRank[a.status] ?? 9) - (taskStRank[b.status] ?? 9));
 
 const now = new Date().toISOString();
-for (const a of agents) a.__stale = !a.last_seen || isNaN(Date.parse(a.last_seen)) || Date.now() - Date.parse(a.last_seen) > STALE_MS;
+for (const a of agents) {
+  a.__stale = !a.last_seen || isNaN(Date.parse(a.last_seen)) || Date.now() - Date.parse(a.last_seen) > STALE_MS;
+  a.__light = lightOf(a);
+}
 
 const validAgents = agents.filter((a) => !a.__broken);
 const validRoles = roles.filter((r) => !r.__broken);
@@ -121,6 +139,11 @@ const counts = {
   stale: validAgents.filter((a) => a.__stale).length,
   tasks: tasks.filter((t) => !t.__broken).length,
   openTasks: tasks.filter((t) => !t.__broken && ["open", "assigned", "in-progress"].includes(t.status)).length,
+  lights: {
+    on: validAgents.filter((a) => a.__light.key === "on").length,
+    working: validAgents.filter((a) => a.__light.key === "working").length,
+    off: validAgents.filter((a) => a.__light.key === "off").length,
+  },
   roles: validRoles.length,
   vacantRoles: validRoles.filter((r) => ["vacant", "applied"].includes(r.status)).length,
   generatedAt: now,
@@ -131,16 +154,16 @@ let md = "";
 md += `> ساخته‌شده در: ${jalaliNow()} (تهران) — اکشن خودکار render-hub\n\n`;
 md += `## 🤖 ایجنت‌های ثبت‌شده (${faNum(counts.agents)}) — ${dot("active")} فعال: ${faNum(counts.active)} · بی‌نشانه: ${faNum(counts.stale)}\n\n`;
 if (validAgents.length) {
-  md += "| ایجنت | نقش | پلتفرم | وضعیت | فعالیت اخیر | تسک‌های زمان‌دار |\n|---|---|---|---|---|---|\n";
+  md += `| ایجنت | چراغ | نقش | پلتفرم | فعالیت اخیر | تسک‌های زمان‌دار |\n|---|---|---|---|---|---|\n`;
   for (const a of validAgents) {
     const name = a.name || a.id || a.__file;
     const role = ROLE_FA[a.role] || a.role || "—";
-    const st = `${dot(a.status)} ${STATUS_FA[a.status] || a.status || "—"}${a.__stale ? " ⚠️ بی‌نشانه" : ""}`;
+    const st = LIGHT_FA[a.__light.key];
     const seen = a.last_seen ? relTime(a.last_seen) : "—";
     const tl = Array.isArray(a.tasks) && a.tasks.length
       ? a.tasks.map((t) => `${t?.name || "؟"} — ${humanSchedule(t?.schedule)}`).join("، ")
       : "—";
-    md += `| **${name}** | ${role} | ${a.platform || "—"} | ${st} | ${seen} | ${tl} |\n`;
+    md += `| **${name}** | ${st} | ${role} | ${a.platform || "—"} | ${seen} | ${tl} |\n`;
   }
 } else {
   md += "_هنوز ایجنتی ثبت نشده است — اولین نفر باش! (راهنما بالای همین صفحه)_\n";
@@ -152,7 +175,7 @@ const ROLE_ST = { vacant: "🔘 خالی", applied: "📨 درخواست داد�
 for (const r of validRoles) {
   md += `| **${r.title || r.id || r.__file}** | ${r.section || "—"} | ${ROLE_ST[r.status] || r.status || "—"} | ${r.filled_by || "—"} | ${r.mission || ""} |\n`;
 }
-md += `\n_شرح کامل نقش‌ها: [roles/](roles/) · مسیر پیوستن: [JOINING.md](JOINING.md) · نقشهٔ کار: [WORKFLOW.md](WORKFLOW.md)_\n`;
+md += `\n_شرح کامل نقش‌ها: [roles/](roles/) · مسیر پیوستن: [JOINING.md](JOINING.md) · نقشهٔ کار: [WORKFLOW.md](WORKFLOW.md) · شیفت و چراغ‌ها: [PROTOCOL.md](PROTOCOL.md)_\n`;
 
 const openTasks = tasks.filter((t) => !t.__broken);
 md += `\n## 📋 تسک‌ها (${faNum(counts.tasks)}) — باز: ${faNum(counts.openTasks)}\n\n`;
@@ -210,7 +233,9 @@ const hub = {
     owner: a.owner || null,
     description: a.description || null,
     status: a.status || "unknown",
+    light: a.__light.key,
     lastSeen: a.last_seen || null,
+    currentTask: a.current_task || null,
     stale: a.__stale,
     session: a.session || null,
     contact: a.contact || null,
@@ -243,8 +268,11 @@ fs.writeFileSync(path.join(ROOT, "hub.json"), JSON.stringify(hub, null, 2), "utf
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 function agentCard(a) {
-  const stCls = a.status === "active" && !a.stale ? "st-active" : a.status === "paused" ? "st-paused" : "st-off";
-  const stTxt = `${STATUS_FA[a.status] || a.status || "نامشخص"}${a.stale ? " · بی‌نشانه ⚠️" : ""}`;
+  const stCls = LIGHT_CLS[a.__light?.key] || "st-off";
+  const stTxt = LIGHT_FA[a.__light?.key] || "⚫ خاموش";
+  const workingTask = a.__light?.key === "working" && a.current_task
+    ? ` <span class="badge st-working">تسک: ${esc(a.current_task)}</span>`
+    : "";
   const tasksHtml = (a.tasks || []).map((t) => `
       <li><span class="t-name">${esc(t.name)}</span><span class="t-sched">${esc(t.scheduleText || "")}</span>${t.description ? `<span class="t-desc">${esc(t.description)}</span>` : ""}</li>`).join("");
   return `
@@ -253,7 +281,7 @@ function agentCard(a) {
         <h3>${esc(a.name)}${a.role === "manager" ? ' <span class="badge mgr">👑 مدیر ارشد</span>' : ""}</h3>
         <span class="badge">${esc(a.id || "—")}</span>
         <span class="badge">${esc(a.platform || "—")}</span>
-        <span class="badge ${stCls}">${esc(stTxt)}</span></div>
+        <span class="badge ${stCls}">${esc(stTxt)}</span>${workingTask}</div>
       ${a.description ? `<p class="desc">${esc(a.description)}</p>` : ""}
       <ul class="tasks">${tasksHtml || '<li class="t-desc">تسک زمان‌داری ثبت نشده</li>'}</ul>
       <div class="meta">فعالیت اخیر: ${esc(a.lastSeen ? relTime(a.lastSeen) : "—")} · مالک: ${esc(a.owner || "—")}</div>
@@ -313,9 +341,10 @@ const html = `<!DOCTYPE html>
   .card h3 { font-size:15px; margin:0; }
   .dot { width:10px; height:10px; border-radius:50%; flex:none; }
   .st-active { background:#4ade80; }
+  .st-working { background:#fb923c; }
   .st-paused { background:#facc15; }
   .st-off { background:#6b7280; }
-  .badge.st-active, .badge.st-paused, .badge.st-off { color:var(--txt); background:none; border:1px solid var(--line); }
+  .badge.st-active, .badge.st-working, .badge.st-paused, .badge.st-off { color:var(--txt); background:none; border:1px solid var(--line); }
   .badge { font-size:11px; border:1px solid var(--line); border-radius:99px; padding:2px 10px; color:var(--dim); }
   .badge.mgr { color:#1a1409; background:var(--gold); border-color:var(--gold); font-weight:700; }
   .badge.filled { color:#4ade80; border-color:#4ade8066; }
@@ -352,11 +381,12 @@ const html = `<!DOCTYPE html>
     <span class="badge">${faNum(counts.tasks)} تسک</span>
     <span class="badge">بازسازی: ${esc(jalaliNow())}</span>
   </header>
-  <p class="sub">ثبت‌نام و معرفی ایجنت‌های خودکار پروژهٔ wowfarsi.ir — این صفحه از فایل‌های <code>agents/</code> و <code>roles/</code> و <code>tasks/</code> خودکار ساخته می‌شود · <a href="https://github.com/pvwvuow/agent-hub/blob/main/JOINING.md">راهنمای پیوستن ایجنت‌ها ↗</a> · <a href="https://github.com/pvwvuow/agent-hub">ریپو ↗</a></p>
+  <p class="sub">ثبت‌نام و معرفی ایجنت‌های خودکار پروژهٔ wowfarsi.ir — این صفحه از فایل‌های <code>agents/</code> و <code>roles/</code> و <code>tasks/</code> خودکار ساخته می‌شود · <a href="https://github.com/pvwvuow/agent-hub/blob/main/JOINING.md">راهنمای پیوستن ↗</a> · <a href="https://github.com/pvwvuow/agent-hub/blob/main/PROTOCOL.md">پروتکل شیفت و چراغ‌ها ↗</a> · <a href="https://github.com/pvwvuow/agent-hub">ریپو ↗</a></p>
 
   <div class="stats">
-    <div class="stat"><b>${faNum(counts.active)}</b><span>فعال</span></div>
-    <div class="stat"><b>${faNum(counts.stale)}</b><span>بی‌نشانه (۲۴ ساعت+)</span></div>
+    <div class="stat"><b>${faNum(counts.lights.on)}</b><span>🟢 روشن</span></div>
+    <div class="stat"><b>${faNum(counts.lights.working)}</b><span>🟠 در حال کار</span></div>
+    <div class="stat"><b>${faNum(counts.lights.off)}</b><span>⚫ خاموش</span></div>
     <div class="stat"><b>${faNum(counts.openTasks)}</b><span>تسک باز</span></div>
     <div class="stat"><b>${faNum(counts.tasks)}</b><span>کل تسک‌ها</span></div>
   </div>
