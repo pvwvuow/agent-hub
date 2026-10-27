@@ -1,0 +1,84 @@
+{
+  "generatedAt": "2026-10-27T09:23:00.514Z",
+  "counts": {
+    "agents": 1,
+    "active": 1,
+    "stale": 0,
+    "tasks": 1,
+    "openTasks": 1,
+    "generatedAt": "2026-10-27T09:23:00.514Z"
+  },
+  "agents": [
+    {
+      "id": "z-ai-main",
+      "name": "ز-ای اورکستراتور (مدیر ارشد)",
+      "platform": "z.ai",
+      "role": "manager",
+      "owner": "pvwvuow",
+      "description": "ایجنت ارشد اتاق مانیتور wowfarsi؛ عیب‌یابی خودکار ربات‌ها، بازرسی وضعیت سایر ایجنت‌ها، پیشنهاد و در صورت نیاز اجرای تسک",
+      "status": "active",
+      "lastSeen": "2026-10-27T09:21:00.000Z",
+      "stale": false,
+      "session": "web-4dd5462b-38de-4086-b65c-6f1bb9dc9b9d",
+      "contact": "چت z.ai ادمین (وب)",
+      "tasks": [
+        {
+          "name": "گزارش سلامت ربات‌ها و سایت",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 40 */6 * * ?",
+            "tz": "Asia/Tehran"
+          },
+          "scheduleText": "هر ۶ ساعت (دقیقهٔ ۴۰)",
+          "description": "اجرای scripts/health-report.ts و اعلام خلاصهٔ بحرانی/هشدار در چت ادمین",
+          "status": "active"
+        },
+        {
+          "name": "همگام‌ساز پنل",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 10 */3 * * ?",
+            "tz": "Asia/Tehran"
+          },
+          "scheduleText": "هر ۳ ساعت (دقیقهٔ ۱۰)",
+          "description": "اعمال درخواست‌های صف پنل روی تسک‌های زمان‌دار z.ai و به‌روزرسانی اسنپ‌شات",
+          "status": "active"
+        },
+        {
+          "name": "بازرس هاب ایجنت‌ها",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 25 */6 * * ?",
+            "tz": "Asia/Tehran"
+          },
+          "scheduleText": "هر ۶ ساعت (دقیقهٔ ۲۵)",
+          "description": "بازرسی همین هاب: ایجنت تازه، تغییر وضعیت، بی‌نشانه‌ها و تسک‌های باز؛ گزارش در چت ادمین",
+          "status": "active"
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "fix-update-donations",
+      "title": "رفع شکست مزمن ربات update-donations — خطای insufficient_plan از API رییمیت",
+      "severity": "critical",
+      "status": "open",
+      "assignee": "z-ai-main",
+      "createdBy": "z-ai-main",
+      "createdAt": "2026-10-27T09:21:00.000Z",
+      "updatedAt": "2026-10-27T09:21:00.000Z",
+      "evidence": "لاگ اجرای 40451975991 (۲۰۲۶-۱۰-۲۷ ۰۴:۵۰ UTC): «error: API error on donates/totals: insufficient_plan» — پلن/اشتراک توکن REYMIT_API_TOKEN (Secret ریپوی pvwvuow/wow) دسترسی به اندپوینت donates/totals را ندارد یا منقضی شده است. از اجراهای اخیر هیچ‌کدام موفق نبوده و data/donations.json دیگر به‌روز نمی‌شود (مجموع تومان در سایت ثابت مانده).",
+      "plan": [
+        "بررسی وضعیت اشتراک/پلن API در پنل reymit.ir با اکانت صاحب توکن (نیازمند ادمین)",
+        "اگر پلن منقضی است: تمدید/ارتقای پلن و سپس rerun دستی ورک‌فلو از پنل (تب ربات‌ها)",
+        "اگر پلن سالم است: چک تغییر schema اندپوینت donates/totals و سازگاری tools/update_donations.py",
+        "بعد از رفع: rerun دستی + تأیید commit تازهٔ data/donations.json در ریپو"
+      ],
+      "notes": [
+        "بر خلاف حدس اولیهٔ موتور عیب‌یابی (404)، علت دقیق از لاگ خام = insufficient_plan است؛ قاعدهٔ طبقه‌بندی در src/lib/diagnostics.ts بعداً همین الگو را یاد می‌گیرد."
+      ]
+    }
+  ],
+  "broken": []
+}

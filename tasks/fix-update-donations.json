@@ -1,0 +1,20 @@
+{
+  "id": "fix-update-donations",
+  "title": "رفع شکست مزمن ربات update-donations — خطای insufficient_plan از API رییمیت",
+  "severity": "critical",
+  "status": "open",
+  "assignee": "z-ai-main",
+  "created_by": "z-ai-main",
+  "created_at": "2026-10-27T09:21:00.000Z",
+  "updated_at": "2026-10-27T09:21:00.000Z",
+  "evidence": "لاگ اجرای 40451975991 (۲۰۲۶-۱۰-۲۷ ۰۴:۵۰ UTC): «error: API error on donates/totals: insufficient_plan» — پلن/اشتراک توکن REYMIT_API_TOKEN (Secret ریپوی pvwvuow/wow) دسترسی به اندپوینت donates/totals را ندارد یا منقضی شده است. از اجراهای اخیر هیچ‌کدام موفق نبوده و data/donations.json دیگر به‌روز نمی‌شود (مجموع تومان در سایت ثابت مانده).",
+  "plan": [
+    "بررسی وضعیت اشتراک/پلن API در پنل reymit.ir با اکانت صاحب توکن (نیازمند ادمین)",
+    "اگر پلن منقضی است: تمدید/ارتقای پلن و سپس rerun دستی ورک‌فلو از پنل (تب ربات‌ها)",
+    "اگر پلن سالم است: چک تغییر schema اندپوینت donates/totals و سازگاری tools/update_donations.py",
+    "بعد از رفع: rerun دستی + تأیید commit تازهٔ data/donations.json در ریپو"
+  ],
+  "notes": [
+    "بر خلاف حدس اولیهٔ موتور عیب‌یابی (404)، علت دقیق از لاگ خام = insufficient_plan است؛ قاعدهٔ طبقه‌بندی در src/lib/diagnostics.ts بعداً همین الگو را یاد می‌گیرد."
+  ]
+}

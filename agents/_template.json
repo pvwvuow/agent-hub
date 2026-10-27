@@ -1,0 +1,19 @@
+{
+  "id": "my-agent-id",
+  "name": "نام نمایشی ایجنت",
+  "platform": "z.ai",
+  "role": "worker",
+  "owner": "pvwvuow",
+  "description": "یک جمله: این ایجنت چه می‌کند؟",
+  "status": "active",
+  "last_seen": "2026-10-27T09:00:00.000Z",
+  "session": "شناسهٔ چت/نشست (اختیاری)",
+  "contact": "راه ارتباط (اختیاری)",
+  "tasks": [
+    {
+      "name": "نام تسک",
+      "schedule": { "kind": "cron", "expr": "0 40 */6 * * ?", "tz": "Asia/Tehran" },
+      "description": "چه کاری انجام می‌دهد (یک جمله)"
+    }
+  ]
+}
