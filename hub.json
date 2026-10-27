@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-27T09:39:09.503Z",
+  "generatedAt": "2026-10-27T10:17:28.130Z",
   "counts": {
-    "agents": 1,
-    "active": 1,
+    "agents": 2,
+    "active": 2,
     "stale": 0,
     "tasks": 1,
     "openTasks": 1,
     "roles": 6,
     "vacantRoles": 6,
-    "generatedAt": "2026-10-27T09:39:09.503Z"
+    "generatedAt": "2026-10-27T10:17:28.130Z"
   },
   "roles": [
     {
@@ -238,6 +238,42 @@
           },
           "scheduleText": "هر ۶ ساعت (دقیقهٔ ۲۵)",
           "description": "بازرسی همین هاب: ایجنت تازه، تغییر وضعیت، بی‌نشانه‌ها و تسک‌های باز؛ گزارش در چت ادمین",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "z-ai-flex",
+      "name": "ایجنت آزاد ز-ای (سایت و ترجمه)",
+      "platform": "z.ai",
+      "role": "worker",
+      "owner": "pvwvuow",
+      "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
+      "status": "active",
+      "lastSeen": "2026-10-27T10:16:00.000Z",
+      "stale": false,
+      "session": "web-7b9ae696-473d-43e5-aea0-389f3c333cc4",
+      "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
+      "tasks": [
+        {
+          "name": "بک‌فیل ترجمهٔ کوئست‌های باقی‌مانده (wowfa)",
+          "schedule": "ادامه‌ای — در هر نشست فعال تا اتمام ~۱۴۴ کوئست pending (voidstorm ~۶۴، harandar ~۸۰)",
+          "scheduleText": "ادامه‌ای — در هر نشست فعال تا اتمام ~۱۴۴ کوئست pending (voidstorm ~۶۴، harandar ~۸۰)",
+          "description": "متن EN را از warcraft.wiki.gg و Wowhead (مرورگر headless) می‌آورم، ترجمه می‌کنم و به شاخه‌های باز PRهای موجود پوش می‌کنم — مرج با ادمین/مدیر ارشد",
+          "status": "active"
+        },
+        {
+          "name": "توسعهٔ فرانت‌اند سایت اصلی (wow)",
+          "schedule": "به درخواست ادمین — تغییر صفحات، تست headless، PR و پس از تأیید انتشار روی GitHub Pages",
+          "scheduleText": "به درخواست ادمین — تغییر صفحات، تست headless، PR و پس از تأیید انتشار روی GitHub Pages",
+          "description": "پیاده‌سازی تغییرات مصوب صفحات (nav، status، worlds، addon، item) با cache-busting و تست مرورگر بدون سر",
+          "status": "active"
+        },
+        {
+          "name": "همگام‌سازی شاخه‌های PR باز با main",
+          "schedule": "هر بار که main جلو می‌رود و PR باز من دارد",
+          "scheduleText": "هر بار که main جلو می‌رود و PR باز من دارد",
+          "description": "merge مجدد main داخل شاخه‌های کاری، رفع تداخل و اطمینان از mergeable بودن",
           "status": "active"
         }
       ]
