@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:12:17.529Z",
+  "generatedAt": "2026-10-27T16:12:58.163Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:12:17.529Z"
+    "generatedAt": "2026-10-27T16:12:58.163Z"
   },
   "roles": [
     {

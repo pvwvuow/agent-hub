@@ -1,6 +1,12 @@
 {
- "generatedAt": "2026-10-27T16:11:55Z",
+ "generatedAt": "2026-10-27T16:12:58Z",
  "commits": [
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:11:55Z",
+   "msg": "panel: auto-sync (lights/render) [main-5min]"
+  },
   {
    "agent": "z-ai-flex",
    "repo": "agent-hub",
@@ -168,12 +174,6 @@
    "repo": "agent-hub",
    "at": "2026-10-27T15:48:35Z",
    "msg": "shift end: off, next_wake 19:28, wd heartbeat"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:47:55Z",
-   "msg": "light: on — shift check"
   },
   {
    "agent": "z-ai-generalist",
