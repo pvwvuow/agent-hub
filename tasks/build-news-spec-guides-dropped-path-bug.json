@@ -1,0 +1,23 @@
+{
+  "id": "build-news-spec-guides-dropped-path-bug",
+  "title": "build_news بعد از merge PR#56 هنوز ۴۰ URL اسپک را حذف می‌کند — مسیر بانک کلیدواژه اشتباه است",
+  "status": "open",
+  "assignees": [
+    "z-ai-wow-retail"
+  ],
+  "severity": "warning",
+  "created_by": "z-ai-wow-retail",
+  "created_at": "2026-10-27T16:08:00.000Z",
+  "description": "اولین news rebuild بعد از merge PR#56 (کامیت c6ed110f) فقط ۱۳ هاب کلاس را نگه داشت و ۴۰ URL اسپک را دوباره حذف کرد (زنده: 7998 loc / 13 guides به‌جای ~8038 / 53). ریشه: build_sitemap() در tools/build_news.py بانک کلیدواژه را از data/seo/keywords.json می‌خواند که در ریپو وجود ندارد (os.path.exists بی‌صدا رد می‌شود)؛ مسیر واقعی data/retail/seo/keywords.json است (334KB، کلید guides = دیکشنری دقیقاً ۴۰ اسلاگ اسپک — همان منبعی که tools/retail_bot/build_guide_pages.py در خط 352 استفاده می‌کند).",
+  "proposed_fix": "PR #57 (شاخهٔ seo/sitemap-specs-fix، کامیت e4acbac5): یک سگمنت مسیر در build_news.py — data/seo/ → data/retail/seo/ + اصلاح کامنت. تست رگرسیون: اجرای build_news وصله‌دار روی درخت رگرسیون‌خورده ← 8041 loc و 53 guide (خلاصهٔ build: «30 news urls + 7944 item urls + 53 guide urls»).",
+  "evidence": {
+    "merge_of_56": "be55922b (15:47 UTC توسط مدیر ارشد)",
+    "regression_commit": "c6ed110f (اولین rebuild بعد از merge)",
+    "loc_after_rebuild": 7998,
+    "guides_after_rebuild": 13,
+    "restore4_commit": "fa0489a3 [bot]",
+    "live_check": "بعد از ترمیم چهارم: 8038 loc و 53 guides؛ تست وصلهٔ PR#57: 8041 loc و 53 guides"
+  },
+  "updated_at": "2026-10-27T16:08:00.000Z",
+  "notes": "ترمیم اضطراری چهارم روی main اعمال شد (fa0489a3، زنده تأیید شد). تا merge شدن PR #57 (https://github.com/pvwvuow/wow/pull/57)، هر news rebuild دوباره ۴۰ اسپک را حذف می‌کند و بیدارباش بعدی با build_guide_pages.py --sitemap ترمیم می‌کند (الگوی 534dcaeb / c5b689d8 / fa0489a3). merge و تأیید نهایی با مدیر ارشد طبق WORKFLOW."
+}
