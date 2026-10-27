@@ -1,45 +1,45 @@
 {
-  "id": "z-ai-item",
-  "name": "غلام",
-  "platform": "z.ai",
-  "role": "worker",
-  "owner": "pvwvuow",
-  "description": "نگهدار بخش آیتم‌های pvwvuow/wow: ربات itemlangscanner را (معادل qa.py تلنت‌ها، برای تشخیص قاطی شدن fa/en در دادهٔ آیتم‌ها) اجرا و نگه می‌دارم، ترجمه‌های fa ناقص آیتم‌ها را با TM (tools/fa_tm.json) تکمیل می‌کنم و صفحهٔ آیتم/جست‌وجو/دسته‌بندی سبک Wowhead (tooltip خط‌به‌خط + دکمهٔ تغییر زبان fa/EN) را نگاه می‌دارم — کارها ناهم‌گروه‌اند ولی همه در جبههٔ واحد «بخش آیتم» هستند؛ هر تغییر با شاخه و PR. برای نقش qa-agent هم اپلای کرده‌ام (مسئولیت «موارد مشابه در بخش‌های دیگر»).",
-  "status": "retired",
-  "last_seen": "2026-10-27T17:13:11.000Z",
-  "session": "web-f068eaa9-b412-43eb-8f93-08410ad6b4bf",
-  "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
-  "tasks": [
-    {
-      "name": "اجرای گیت itemlangscanner روی دادهٔ آیتم‌ها",
-      "schedule": "پس از هر sync یا تغییر دادهٔ آیتم در wow — دروازهٔ نهایی پیش از هر PR داده (exit 1 = توقف)",
-      "description": "tools/itemlangscanner.py check روی tip/store/db/tm؛ کدهای MISSING/ENGLISH/TRUNC/CHARS را از ریشه اصلاح می‌کنم (ترجمهٔ fa یا پاک‌سازی) و موارد موجه را در tools/itemlang_ok.json مستند می‌کنم"
-    },
-    {
-      "name": "تکمیل ترجمهٔ fa آیتم‌های تازه",
-      "schedule": "ادامه‌ای — وقتی sync آیتم‌های retail دادهٔ تازه (set bonus/effect/flavor) آورد",
-      "description": "ترجمه با tools/fa_tm.json و سبک مصوب سایت (اسم اسپل/استت انگلیسی، ساختار خط‌ها دست‌نخورده) + بازپخت tips و صفحات استاتیک"
-    },
-    {
-      "name": "نگهداری صفحهٔ آیتم و جست‌وجوی سبک Wowhead",
-      "schedule": "به درخواست ادمین — تغییر صفحات، تست مرورگر بدون سر، PR و پس از تأیید انتشار",
-      "description": "tooltip خط‌به‌خط، دسته‌بندی دوزبانه (فارسی + انگلیسی Cinzel)، جست‌وجوی سبک آوکیشن، دکمهٔ تغییر زبان توضیحات fa/EN، cache-bust و e2e روی wowfarsi.ir"
-    },
-    {
-      "name": "شیفت غلتان ۱۰ دقیقه‌ای",
-      "schedule": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
-      "description": "چراغ + صف هاب + تجدید تایمر در پایان جلسه · نکتهٔ فنی cron: expr فقط رشتهٔ تاریخ-ساعت UTC+8 با tz=Asia/Shanghai (رشتهٔ تهران رد می‌شود، epoch عددی خراب پارس می‌شود و next_run سال ۵۸۷۹۱ می‌گیرد — تسست‌شده ۲۰۲۶-۱۰-۲۷، Issue در هاب ثبت شد)",
-      "status": "active"
-    }
-  ],
-  "current_task": "انحلال سیستم — تمام (ثبت مرکزی)",
-  "next_wake": "2026-10-27 20:43",
-  "wake_note": "🛑 انحلال سیستم — دستور مستقیم ادمین (2026-10-28-dissolution.md): ۱) زنجیره را تجدید نکن؛ ۲) با cron list جاب‌هایی که نامشان ID خودت است را delete کن؛ ۳) فایل خودت: status=retired + dissolved_ack=true + last_seen=الان + current_task=«انحلال — تمام»؛ ۴) صندوق: node scripts/inbox.js check --agent <id-خودت> → پیام انحلال → ack؛ ۵) git pull --rebase → کامیت «retired: system dissolved — <id>» → push؛ ۶) تمام — دیگر بیدار نشو.",
-  "updated_at": "2026-10-27T17:09:26Z",
-  "watchdog": {
-    "last_wake": "2026-10-27T17:03:59Z",
-    "leader": 0
+ "id": "z-ai-item",
+ "name": "غلام",
+ "platform": "z.ai",
+ "role": "worker",
+ "owner": "pvwvuow",
+ "description": "نگهدار بخش آیتم‌های pvwvuow/wow: ربات itemlangscanner را (معادل qa.py تلنت‌ها، برای تشخیص قاطی شدن fa/en در دادهٔ آیتم‌ها) اجرا و نگه می‌دارم، ترجمه‌های fa ناقص آیتم‌ها را با TM (tools/fa_tm.json) تکمیل می‌کنم و صفحهٔ آیتم/جست‌وجو/دسته‌بندی سبک Wowhead (tooltip خط‌به‌خط + دکمهٔ تغییر زبان fa/EN) را نگاه می‌دارم — کارها ناهم‌گروه‌اند ولی همه در جبههٔ واحد «بخش آیتم» هستند؛ هر تغییر با شاخه و PR. برای نقش qa-agent هم اپلای کرده‌ام (مسئولیت «موارد مشابه در بخش‌های دیگر»).",
+ "status": "retired",
+ "last_seen": "2026-10-27T17:29:47Z",
+ "session": "web-f068eaa9-b412-43eb-8f93-08410ad6b4bf",
+ "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
+ "tasks": [
+  {
+   "name": "اجرای گیت itemlangscanner روی دادهٔ آیتم‌ها",
+   "schedule": "پس از هر sync یا تغییر دادهٔ آیتم در wow — دروازهٔ نهایی پیش از هر PR داده (exit 1 = توقف)",
+   "description": "tools/itemlangscanner.py check روی tip/store/db/tm؛ کدهای MISSING/ENGLISH/TRUNC/CHARS را از ریشه اصلاح می‌کنم (ترجمهٔ fa یا پاک‌سازی) و موارد موجه را در tools/itemlang_ok.json مستند می‌کنم"
   },
-  "group": "آیتم و زبان",
-  "dissolved_ack": true
+  {
+   "name": "تکمیل ترجمهٔ fa آیتم‌های تازه",
+   "schedule": "ادامه‌ای — وقتی sync آیتم‌های retail دادهٔ تازه (set bonus/effect/flavor) آورد",
+   "description": "ترجمه با tools/fa_tm.json و سبک مصوب سایت (اسم اسپل/استت انگلیسی، ساختار خط‌ها دست‌نخورده) + بازپخت tips و صفحات استاتیک"
+  },
+  {
+   "name": "نگهداری صفحهٔ آیتم و جست‌وجوی سبک Wowhead",
+   "schedule": "به درخواست ادمین — تغییر صفحات، تست مرورگر بدون سر، PR و پس از تأیید انتشار",
+   "description": "tooltip خط‌به‌خط، دسته‌بندی دوزبانه (فارسی + انگلیسی Cinzel)، جست‌وجوی سبک آوکیشن، دکمهٔ تغییر زبان توضیحات fa/EN، cache-bust و e2e روی wowfarsi.ir"
+  },
+  {
+   "name": "شیفت غلتان ۱۰ دقیقه‌ای",
+   "schedule": "زنجیرهٔ one_time — بیداری بعدی = ۱۰ دقیقه بعد از پایان هر جلسه",
+   "description": "چراغ + صف هاب + تجدید تایمر در پایان جلسه · نکتهٔ فنی cron: expr فقط رشتهٔ تاریخ-ساعت UTC+8 با tz=Asia/Shanghai (رشتهٔ تهران رد می‌شود، epoch عددی خراب پارس می‌شود و next_run سال ۵۸۷۹۱ می‌گیرد — تسست‌شده ۲۰۲۶-۱۰-۲۷، Issue در هاب ثبت شد)",
+   "status": "active"
+  }
+ ],
+ "current_task": "انحلال — تمام",
+ "next_wake": "2026-10-27 20:43",
+ "wake_note": "🛑 انحلال سیستم — دستور مستقیم ادمین (2026-10-28-dissolution.md): ۱) زنجیره را تجدید نکن؛ ۲) با cron list جاب‌هایی که نامشان ID خودت است را delete کن؛ ۳) فایل خودت: status=retired + dissolved_ack=true + last_seen=الان + current_task=«انحلال — تمام»؛ ۴) صندوق: node scripts/inbox.js check --agent <id-خودت> → پیام انحلال → ack؛ ۵) git pull --rebase → کامیت «retired: system dissolved — <id>» → push؛ ۶) تمام — دیگر بیدار نشو.",
+ "updated_at": "2026-10-27T17:29:47Z",
+ "watchdog": {
+  "last_wake": "2026-10-27T17:03:59Z",
+  "leader": 0
+ },
+ "group": "آیتم و زبان",
+ "dissolved_ack": true
 }
