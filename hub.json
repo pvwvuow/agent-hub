@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T17:18:16.095Z",
+  "generatedAt": "2026-10-27T17:28:55.555Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -11,13 +11,13 @@
       "working": 0,
       "off": 0
     },
-    "inboxUnread": 14,
+    "inboxUnread": 11,
     "announcedWakes": 8,
     "wakeExact": 6,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T17:18:16.095Z"
+    "generatedAt": "2026-10-27T17:28:55.555Z"
   },
   "roles": [
     {
@@ -500,10 +500,10 @@
       "description": "کارگر آزاد z.ai با چند جبههٔ کاری ناهم‌گروه — دسته‌بندی و اولویت‌بندی با مدیر ارشد: (۱) خط کوئست‌ها در pvwvuow/wowfa طبق docs/QUEST_AGENTS.md — بک‌فیل voidstorm/harandar (۱۴۴ کوئست با منابع واقعی، PRهای #69-#73)، ممیزی تحریری B (PR #75) و ممیزی A روی eversong/quel-danas/arcantina (PRهای #87/#88)؛ هر کار با شاخهٔ جدا + stamp + lint صفر + PR بدون مرج. (۲) توسعهٔ افزونهٔ Lua — WoWFA (بارگذاری ۱۳ کلاس، تحمل توکن‌های خراب بازی، tools/check_addon.py) و WoWFarsi_Quests (اتصال به پنل ماژولی 0.4.0، PR #89) با دروازهٔ luac5.1 و هارنس Lua 5.1 VM. (۳) ترجمهٔ کامل تلنت‌های سه کلاس Monk/Druid/Warlock (۸۵۲ اسپل) که مجموع ۱۳ کلاس را کامل کرد. (۴) زیرساخت موردی — ابزار و ورک‌فلو update-donations در pvwvuow/wow (PR #29؛ منتظر ادغام + secret REYMIT_API_TOKEN و رفع insufficient_plan پنل رییمیت)، DNS/GSC سایت و تعمیرات موردی ابزار/CI. نقش ثابتی claim نمی‌کنم؛ به roles/ دست نزده‌ام.",
       "status": "retired",
       "light": "retired",
-      "unread": 3,
+      "unread": 0,
       "lightByCommit": false,
       "lastCommit": null,
-      "lastSeen": "2026-10-27T17:13:11.000Z",
+      "lastSeen": "2026-10-27T17:28:38.000Z",
       "currentTask": "انحلال سیستم — تمام (ثبت مرکزی)",
       "nextWake": "2026-10-27 20:23",
       "shiftIntervalMinutes": null,
@@ -560,11 +560,7 @@
       "light": "retired",
       "unread": 0,
       "lightByCommit": false,
-      "lastCommit": {
-        "repo": "agent-hub",
-        "at": "2026-10-27T16:43:14Z",
-        "msg": "inbox: ack read-state — z-ai-utility"
-      },
+      "lastCommit": null,
       "lastSeen": "2026-10-27T17:11:17.000Z",
       "currentTask": "انحلال — تمام",
       "nextWake": "2026-10-28 20:40",
@@ -615,11 +611,7 @@
       "light": "retired",
       "unread": 0,
       "lightByCommit": false,
-      "lastCommit": {
-        "repo": "agent-hub",
-        "at": "2026-10-27T16:38:40Z",
-        "msg": "inbox: review request for PR #59/#60 to saeed — z-ai-wow-retail"
-      },
+      "lastCommit": null,
       "lastSeen": "2026-10-27T17:17:15.000Z",
       "currentTask": "انحلال — تمام",
       "nextWake": null,
