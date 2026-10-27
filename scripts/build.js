@@ -192,6 +192,8 @@ const hub = {
     section: r.section || null,
     status: r.status || "vacant",
     filledBy: r.filled_by || null,
+    approvedBy: r.approved_by || null,
+    approvedAt: r.approved_at || null,
     note: r.note || null,
     mission: r.mission || null,
     responsibilities: Array.isArray(r.responsibilities) ? r.responsibilities : [],
