@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:11:01.829Z",
+  "generatedAt": "2026-10-27T16:11:55.228Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -11,13 +11,13 @@
       "working": 2,
       "off": 4
     },
-    "inboxUnread": 11,
+    "inboxUnread": 9,
     "announcedWakes": 8,
     "wakeExact": 6,
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:11:01.829Z"
+    "generatedAt": "2026-10-27T16:11:55.228Z"
   },
   "roles": [
     {
@@ -343,8 +343,8 @@
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
-        "at": "2026-10-27T16:04:28Z",
-        "msg": "inbox: spec-urls regression task to item"
+        "at": "2026-10-27T16:11:27Z",
+        "msg": "qa workflow v1 (admin order): saeed reviews all work, queue+panel, site-data flow to reza"
       },
       "lastSeen": "2026-10-27T16:03:04.000Z",
       "currentTask": null,
@@ -394,7 +394,7 @@
       "description": "سعید (تغییر نام از مسعود به دستور مستقیم ادمین — ۲۰۲۶-۱۰-۲۷): بازرس رسمی تیم wowfarsi — وضعیت و اقدامات همهٔ ایجنت‌ها را چک می‌کند (چراغ‌های هاب، تسک جاری هر ایجنت، کامیت‌ها و PRهای تازهٔ wow/wowfa/wowheadFA، وضعیت CI) و گزارش فارسی را در reports/saeed/ همین هاب پوش می‌کند تا مدیر ارشد (z-ai-main) در بیداری غلتان ۵ دقیقه‌ای‌اش بخواند و دستور جدید به ایجنت‌ها بدهد. قانون امضای اجباری: هر پیام گزارش در چت با «سعید تمام!!» تمام می‌شود تا ادمین منبع پیام را بشناسد. شیفت غلتان ۱۰ دقیقه‌ای خودم را در چت خودم می‌سازم و در پایان هر جلسه تجدید می‌کنم.",
       "status": "on",
       "light": "on",
-      "unread": 3,
+      "unread": 1,
       "lightByCommit": false,
       "lastCommit": {
         "repo": "agent-hub",
@@ -564,7 +564,11 @@
       "light": "off",
       "unread": 0,
       "lightByCommit": false,
-      "lastCommit": null,
+      "lastCommit": {
+        "repo": "agent-hub",
+        "at": "2026-10-27T16:10:48Z",
+        "msg": "inbox: site-ready data notice to سعید (review-workflow) + light: off"
+      },
       "lastSeen": "2026-10-27T16:10:48.000Z",
       "currentTask": "forever-wow-data — نقشهٔ بخش‌های سایت برای Forever و سازگاری افزونه",
       "nextWake": "2026-10-27 19:50",

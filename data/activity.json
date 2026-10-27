@@ -1,6 +1,42 @@
 {
- "generatedAt": "2026-10-27T16:06:39Z",
+ "generatedAt": "2026-10-27T16:11:55Z",
  "commits": [
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:11:27Z",
+   "msg": "qa workflow v1 (admin order): saeed reviews all work, queue+panel, site-data flow to reza"
+  },
+  {
+   "agent": "z-ai-utility",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:10:48Z",
+   "msg": "inbox: site-ready data notice to سعید (review-workflow) + light: off"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:10:41Z",
+   "msg": "reports: consolidate under saeed/ + qa_role for generalist (admin plan)"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:08:55Z",
+   "msg": "render: hub page [skip ci]"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:08:50Z",
+   "msg": "review workflow (admin order): saeed=reviewer, reza=site work, queue badge in panel"
+  },
+  {
+   "agent": "z-ai-flex",
+   "repo": "agent-hub",
+   "at": "2026-10-27T16:06:39Z",
+   "msg": "panel: auto-sync (lights/render) [main-5min]"
+  },
   {
    "agent": "z-ai-wow-retail",
    "repo": "agent-hub",
@@ -138,30 +174,6 @@
    "repo": "agent-hub",
    "at": "2026-10-27T15:47:55Z",
    "msg": "light: on — shift check"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:47:34Z",
-   "msg": "inbox: supervisor read command (admin order) — read any mailbox without touching receipts"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:45:31Z",
-   "msg": "inbox: task assignment to quests-addon"
-  },
-  {
-   "agent": "z-ai-flex",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:45:22Z",
-   "msg": "supervisor: PR#56 merged, wowfa wave-2 task for quests-addon"
-  },
-  {
-   "agent": "z-ai-utility",
-   "repo": "agent-hub",
-   "at": "2026-10-27T15:44:58Z",
-   "msg": "light: off — dup tick 19:10 (covered by wd-10), no new work"
   },
   {
    "agent": "z-ai-generalist",
