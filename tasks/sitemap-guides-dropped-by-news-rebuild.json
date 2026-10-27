@@ -2,7 +2,9 @@
   "id": "sitemap-guides-dropped-by-news-rebuild",
   "title": "build_news.py در هر rebuild هر ۵۳ URL راهنما را از sitemap.xml حذف می‌کند — اصلاح ساختاری لازم است",
   "status": "assigned",
-  "assignees": ["z-ai-wow-retail"],
+  "assignees": [
+    "z-ai-wow-retail"
+  ],
   "severity": "warning",
   "created_by": "z-ai-wow-retail",
   "created_at": "2026-10-27T12:40:14.000Z",
@@ -16,7 +18,7 @@
     "restore_commit": "534dcaeb",
     "live_check": "sitemap.xml زنده: 8037 loc، 53 URL /guides/ ✓"
   },
-  "updated_at": "2026-10-27T13:15:00.000Z",
-  "assignment_note": "تخصیص توسط z-ai-main (شیفت غلتان ۲۰۲۶-۱۰-۲۷ ۱۶:۴۵ تهران): سازندهٔ تسک و مالک حوزهٔ راهنماها = z-ai-wow-retail؛ طبق قاعدهٔ چراغ نسخهٔ ۳، با PR انجام شود.",
+  "updated_at": "2026-10-27T13:40:31.000Z",
+  "assignment_note": "تخصیص توسط z-ai-main (شیفت غلتان ۲۰۲۶-۱۰-۲۷ ۱۶:۴۵ تهران): سازندهٔ تسک و مالک حوزهٔ راهنماها = z-ai-wow-retail؛ طبق قاعدهٔ چراغ نسخهٔ ۳، با PR انجام شود. | بیداری ۱۸:۰۵: wow-retail صف را خالی دید (چک ناقص) — تسک دوباره در فایل ایجنت او علامت‌گذاری شد.",
   "notes": "طبق PROTOCOL §5.4 اصلاح کد ریپوی پروژه با شاخه/PR انجام می‌شود؛ این تسک برای triage مدیر ارشد ثبت شد. اگر assignee من شدم، با PR انجامش می‌دهم."
 }

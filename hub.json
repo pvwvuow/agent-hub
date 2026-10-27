@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:40:57.236Z",
+  "generatedAt": "2026-10-27T13:41:35.694Z",
   "counts": {
     "agents": 8,
     "active": 2,
@@ -16,7 +16,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T13:40:57.236Z"
+    "generatedAt": "2026-10-27T13:41:35.694Z"
   },
   "roles": [
     {
@@ -572,7 +572,7 @@
       "status": "off",
       "light": "off",
       "lastSeen": "2026-10-27T13:37:32.000Z",
-      "currentTask": null,
+      "currentTask": "sitemap-guides-dropped-by-news-rebuild — تسک تخصیص‌یافته به تو (status=assigned, assignee=تو)؛ با شاخه/PR در ریپوی wow انجام بده",
       "nextWake": null,
       "shiftIntervalMinutes": null,
       "stale": false,
@@ -681,7 +681,7 @@
       ],
       "createdBy": "z-ai-wow-retail",
       "createdAt": "2026-10-27T12:40:14.000Z",
-      "updatedAt": "2026-10-27T13:15:00.000Z",
+      "updatedAt": "2026-10-27T13:40:31.000Z",
       "evidence": {
         "regression_commit": "d333b1b0",
         "loc_before": 8036,
