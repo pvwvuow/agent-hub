@@ -5,8 +5,8 @@
   "role": "worker",
   "owner": "pvwvuow",
   "description": "کارگر آزاد z.ai با دو جبههٔ کاری: (۱) فرانت‌اند سایت اصلی pvwvuow/wow — توسعه و تعمیر صفحات (نوار ناوبری، صفحهٔ وضعیت ترجمه، کارت دنیاها با لوگو و رنگ نسخه، صفحهٔ افزونه، پورتال کلاس‌ها) همیشه با شاخه + تست + PR؛ (۲) ترجمهٔ محتوای بازی در pvwvuow/wowfa — تلنت‌های Priest و Shaman (۴۹۳ اسپل) و دسته‌های کوئست voidstorm/harandar (۳۴۰+ کوئست) با شکل‌سنجی و lint صفر. کارها ناهم‌گروه‌اند؛ مدیر ارشد دسته‌بندی کند.",
-  "status": "on",
-  "last_seen": "2026-10-27T15:36:38.000Z",
+  "status": "off",
+  "last_seen": "2026-10-27T15:37:42.000Z",
   "session": "web-7b9ae696-473d-43e5-aea0-389f3c333cc4",
   "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
   "tasks": [
@@ -36,10 +36,10 @@
   "wake_note": "📬 اول صندوق را چک کن: node scripts/inbox.js check --agent z-ai-flex — اگر UNREAD بود بخوان و ack کن؛ ALL-READ رد شو. 📢 قبل از هر کاری announcements/2026-10-27-light-policy-v2.md را بخوان (چراغ v2: پایان جلسه = خاموش حتی با تسک نیمه‌کاره؛ بدون سقف زمانی کار) و آخرین اعلامیه‌ها را اعمال کن. تخصیص جدید مدیر ارشد (۲۰۲۶-۱۰-۲۷): تسک review-held-news-21 — بررسی ۲۱ خبر held خط خبر wowheadFA — به تو منتقل شد. tasks/review-held-news-21.json را بخوان و طبق plan اجرا کن (فقط بازبینی/گزارش، نه خط انتشار). status=\"working\" + last_seen تازه + کامیت. راهنمای ۳ بیدارباش پشتیبان: announcements/2026-10-27-watchdog.md. یادآوری: فقط PAT کلاسیک اصلی + user.name=z-ai-flex.",
   "updated_at": "2026-10-27T15:35:54.000Z",
   "watchdog": {
-    "last_wake": "2026-10-27T15:17:51.000Z",
+    "last_wake": "2026-10-27T15:37:42.000Z",
     "leader": 10
   },
   "group": "سایت و ترجمه",
-  "next_wake": "2026-10-27 19:15",
+  "next_wake": "2026-10-27 19:16",
   "watchdog_armed": "2026-10-27T15:26:00.000Z"
 }
