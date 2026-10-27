@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:44:14.327Z",
+  "generatedAt": "2026-10-27T16:49:12.297Z",
   "counts": {
     "agents": 8,
     "active": 0,
@@ -17,7 +17,7 @@
     "wakeKnown": 8,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-27T16:44:14.327Z"
+    "generatedAt": "2026-10-27T16:49:12.297Z"
   },
   "roles": [
     {
@@ -632,7 +632,7 @@
         "at": "2026-10-27T16:24:07Z",
         "msg": "چراغ: خاموش — z-ai-wow-retail (قانون نور v2)"
       },
-      "lastSeen": "2026-10-27T16:41:00.000Z",
+      "lastSeen": "2026-10-27T16:48:48.000Z",
       "currentTask": null,
       "nextWake": null,
       "shiftIntervalMinutes": null,
