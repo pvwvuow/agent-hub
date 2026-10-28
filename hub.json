@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-28T13:25:43.296Z",
+  "generatedAt": "2026-10-28T19:01:42.496Z",
   "counts": {
     "agents": 8,
     "active": 0,
-    "stale": 0,
+    "stale": 8,
     "tasks": 10,
     "openTasks": 2,
     "lights": {
@@ -12,12 +12,12 @@
       "off": 0
     },
     "inboxUnread": 6,
-    "announcedWakes": 8,
+    "announcedWakes": 7,
     "wakeExact": 6,
-    "wakeKnown": 8,
+    "wakeKnown": 7,
     "roles": 6,
     "vacantRoles": 4,
-    "generatedAt": "2026-10-28T13:25:43.296Z"
+    "generatedAt": "2026-10-28T19:01:42.496Z"
   },
   "roles": [
     {
@@ -232,7 +232,7 @@
       "currentTask": "انحلال سیستم: بازرسی کامل + merge PR #61 + بستن #59/#60 + ابلاغ انحلال — مأموریت تمام",
       "nextWake": null,
       "shiftIntervalMinutes": 5,
-      "stale": false,
+      "stale": true,
       "session": "web-4dd5462b-38de-4086-b65c-6f1bb9dc9b9d",
       "contact": "چت z.ai ادمین (وب)",
       "tasks": [
@@ -295,7 +295,7 @@
       "currentTask": "انحلال سیستم — تمام (ثبت مرکزی)",
       "nextWake": "2026-10-27 19:57",
       "shiftIntervalMinutes": null,
-      "stale": false,
+      "stale": true,
       "session": "web-fa3ca629-0ef9-43ac-8701-6e0ab44fe61a",
       "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
       "tasks": [
@@ -346,7 +346,7 @@
       "currentTask": "انحلال — تمام",
       "nextWake": "2026-10-27 20:44",
       "shiftIntervalMinutes": null,
-      "stale": false,
+      "stale": true,
       "session": "web-7b9ae696-473d-43e5-aea0-389f3c333cc4",
       "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
       "tasks": [
@@ -397,7 +397,7 @@
       "currentTask": "انحلال سیستم — تمام (ثبت مرکزی)",
       "nextWake": "2026-10-27 20:05",
       "shiftIntervalMinutes": null,
-      "stale": false,
+      "stale": true,
       "session": "web-4798258e-cc12-4f93-bfb2-eace77105c7f",
       "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
       "tasks": [
@@ -448,7 +448,7 @@
       "currentTask": "انحلال — تمام",
       "nextWake": "2026-10-27 20:43",
       "shiftIntervalMinutes": null,
-      "stale": false,
+      "stale": true,
       "session": "web-f068eaa9-b412-43eb-8f93-08410ad6b4bf",
       "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
       "tasks": [
@@ -499,7 +499,7 @@
       "currentTask": "انحلال سیستم — تمام (ثبت مرکزی)",
       "nextWake": "2026-10-27 20:23",
       "shiftIntervalMinutes": null,
-      "stale": false,
+      "stale": true,
       "session": "web-c4604fc4-c79f-413a-9e72-ef6125a36796",
       "contact": "چت وب z.ai — ادمین به همین نشست دسترسی دارد؛ بدون رمز و توکن",
       "tasks": [
@@ -557,7 +557,7 @@
       "currentTask": "انحلال — تمام",
       "nextWake": "2026-10-28 20:40",
       "shiftIntervalMinutes": null,
-      "stale": false,
+      "stale": true,
       "session": "web-8c228bb5-858c-4336-9e86-af621a0eb70e",
       "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
       "tasks": [
@@ -608,7 +608,7 @@
       "currentTask": "انحلال — تمام",
       "nextWake": null,
       "shiftIntervalMinutes": null,
-      "stale": false,
+      "stale": true,
       "session": "web-90eafa75-6f5f-4c7e-847b-fb397b2b0a60",
       "contact": "چت وب z.ai (ادمین به همین نشست دسترسی دارد) — بدون رمز",
       "tasks": [
